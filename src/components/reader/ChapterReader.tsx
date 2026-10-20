@@ -25,7 +25,7 @@ function renderInline(text: string): React.ReactNode {
       {boldParts.map((seg, bi) => {
         if (bi % 2 === 1) {
           return (
-            <strong key={bi} className="font-semibold text-white">
+            <strong key={bi} className="font-semibold text-[#1E1225]">
               {seg}
             </strong>
           );
@@ -35,7 +35,7 @@ function renderInline(text: string): React.ReactNode {
           <React.Fragment key={bi}>
             {italicParts.map((iSeg, ii) =>
               ii % 2 === 1 ? (
-                <em key={ii} className="italic text-[#8892B0]">
+                <em key={ii} className="italic text-[#6B5F7A]">
                   {iSeg}
                 </em>
               ) : (
@@ -157,7 +157,7 @@ function TipBox({ lines }: { lines: string[] }) {
   return (
     <div className="my-6 bg-[#FFD700]/10 border border-[#FFD700]/20 rounded-2xl p-5 flex gap-3">
       <span className="text-xl shrink-0 mt-0.5">💡</span>
-      <div className="text-sm text-[#F0F4FF] leading-relaxed space-y-1">
+      <div className="text-sm text-[#1E1225] leading-relaxed space-y-1">
         {lines.map((line, li) => (
           <p key={li}>{renderInline(line.replace(/^💡\s*/, ""))}</p>
         ))}
@@ -170,7 +170,7 @@ function WarningBox({ lines }: { lines: string[] }) {
   return (
     <div className="my-6 bg-orange-500/10 border border-orange-500/20 rounded-2xl p-5 flex gap-3">
       <span className="text-xl shrink-0 mt-0.5">⚠️</span>
-      <div className="text-sm text-[#F0F4FF] leading-relaxed space-y-1">
+      <div className="text-sm text-[#1E1225] leading-relaxed space-y-1">
         {lines.map((line, li) => (
           <p key={li}>{renderInline(line.replace(/^⚠️\s*/, ""))}</p>
         ))}
@@ -190,7 +190,7 @@ function CultureNote({ lines }: { lines: string[] }) {
       </div>
       <div className="px-5 py-4 space-y-1.5">
         {lines.map((line, li) => (
-          <p key={li} className="text-sm text-[#C0C8D8] leading-relaxed">
+          <p key={li} className="text-sm text-[#3D2F48] leading-relaxed">
             {renderInline(line.replace(/^🌏\s*/, ""))}
           </p>
         ))}
@@ -209,7 +209,7 @@ function ConversationBox({ lines }: { lines: string[] }) {
       </div>
       <div className="px-5 py-4 space-y-2">
         {lines.map((line, li) => (
-          <p key={li} className="text-sm text-[#C0C8D8] leading-relaxed">
+          <p key={li} className="text-sm text-[#3D2F48] leading-relaxed">
             {renderInline(line)}
           </p>
         ))}
@@ -222,7 +222,7 @@ function DefaultBlockquote({ lines }: { lines: string[] }) {
   return (
     <div className="my-5 border-l-4 border-[#4F7FE8] bg-[#4F7FE8]/5 rounded-r-xl pl-4 pr-4 py-3">
       {lines.map((line, li) => (
-        <p key={li} className="text-sm text-[#8892B0] leading-relaxed">
+        <p key={li} className="text-sm text-[#6B5F7A] leading-relaxed">
           {renderInline(line)}
         </p>
       ))}
@@ -253,7 +253,7 @@ function TableBlock({
   );
 
   return (
-    <div className="my-6 overflow-x-auto rounded-2xl border border-white/10">
+    <div className="my-6 overflow-x-auto rounded-2xl border border-[#F0E6EE]">
       <table className="w-full text-sm border-collapse">
         <thead>
           <tr className="bg-[#4F7FE8]/20">
@@ -274,7 +274,7 @@ function TableBlock({
           {rows.map((row, ri) => (
             <tr
               key={ri}
-              className={`border-t border-white/5 transition-colors hover:bg-white/5 ${
+              className={`border-t border-[#F0E6EE] transition-colors hover:bg-[#FFF5F8] ${
                 ri % 2 === 0 ? "bg-transparent" : "bg-white/[0.02]"
               }`}
             >
@@ -288,8 +288,8 @@ function TableBlock({
                       ci === 0
                         ? "font-bold text-[#4F7FE8] text-base"
                         : ci === romanizationColIdx
-                        ? "text-[#8892B0] text-xs"
-                        : "text-[#C0C8D8]"
+                        ? "text-[#6B5F7A] text-xs"
+                        : "text-[#3D2F48]"
                     }`}
                   >
                     <span className="flex items-center gap-2">
@@ -347,7 +347,7 @@ export function ChapterReader({
             return (
               <h2
                 key={idx}
-                className="text-lg font-bold text-white mt-10 mb-4 pb-2 border-b border-white/10 flex items-center gap-2"
+                className="text-lg font-bold text-[#1E1225] mt-10 mb-4 pb-2 border-b border-[#F0E6EE] flex items-center gap-2"
               >
                 {renderInline(block.text)}
               </h2>
@@ -364,7 +364,7 @@ export function ChapterReader({
             );
 
           case "hr":
-            return <hr key={idx} className="my-8 border-white/10" />;
+            return <hr key={idx} className="my-8 border-[#F0E6EE]" />;
 
           case "blockquote":
             if (block.flavor === "culture")
@@ -394,7 +394,7 @@ export function ChapterReader({
                 {block.items.map((item, ii) => (
                   <li
                     key={ii}
-                    className="flex items-start gap-3 text-[#C0C8D8] leading-relaxed"
+                    className="flex items-start gap-3 text-[#3D2F48] leading-relaxed"
                   >
                     <span className="mt-2 w-1.5 h-1.5 rounded-full bg-[#4F7FE8] shrink-0" />
                     <span>{renderInline(item)}</span>
@@ -409,7 +409,7 @@ export function ChapterReader({
                 {block.items.map((item, ii) => (
                   <li
                     key={ii}
-                    className="flex items-start gap-3 text-[#C0C8D8] leading-relaxed"
+                    className="flex items-start gap-3 text-[#3D2F48] leading-relaxed"
                   >
                     <span className="shrink-0 w-6 h-6 rounded-full bg-[#4F7FE8]/20 text-[#4F7FE8] text-xs font-bold flex items-center justify-center mt-0.5">
                       {ii + 1}
@@ -422,7 +422,7 @@ export function ChapterReader({
 
           case "paragraph":
             return (
-              <p key={idx} className="text-[#C0C8D8] leading-8 mb-4">
+              <p key={idx} className="text-[#3D2F48] leading-8 mb-4">
                 {renderInline(block.text)}
               </p>
             );

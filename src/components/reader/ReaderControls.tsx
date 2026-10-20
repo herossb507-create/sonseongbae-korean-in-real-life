@@ -52,7 +52,7 @@ export function ReaderControls({ content, chapterId }: Props) {
   return (
     <div>
       {/* ── 컨트롤 바 ── */}
-      <div className="flex items-center gap-3 mb-6 p-3 bg-white/5 border border-white/10 rounded-xl flex-wrap">
+      <div className="flex items-center gap-3 mb-6 p-3 bg-[#FFF5F8] border border-[#F0E6EE] rounded-xl flex-wrap">
         {/* 로마자 토글 */}
         <button
           onClick={() => setShowRomanization((v) => !v)}
@@ -60,7 +60,7 @@ export function ReaderControls({ content, chapterId }: Props) {
             "flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-lg border transition-colors",
             showRomanization
               ? "bg-[#4F7FE8]/20 border-[#4F7FE8]/40 text-[#4F7FE8]"
-              : "bg-white/5 border-white/10 text-[#4A5568] hover:text-[#8892B0]",
+              : "bg-[#FFF5F8] border-[#F0E6EE] text-[#4A5568] hover:text-[#1E1225]",
           ].join(" ")}
         >
           <span>🈳</span>
@@ -78,7 +78,7 @@ export function ReaderControls({ content, chapterId }: Props) {
                 "text-xs px-2.5 py-1.5 rounded-lg border transition-colors",
                 ttsRate === r.value
                   ? "bg-[#4F7FE8]/20 border-[#4F7FE8]/40 text-[#4F7FE8]"
-                  : "bg-white/5 border-white/10 text-[#4A5568] hover:text-[#8892B0]",
+                  : "bg-[#FFF5F8] border-[#F0E6EE] text-[#4A5568] hover:text-[#1E1225]",
               ].join(" ")}
             >
               {r.label}
@@ -91,7 +91,7 @@ export function ReaderControls({ content, chapterId }: Props) {
           <button
             onClick={() => changeFontSize("down")}
             disabled={fontSize === "sm"}
-            className="text-xs px-2 py-1.5 rounded-lg border bg-white/5 border-white/10 text-[#8892B0] hover:text-white disabled:opacity-30 transition-colors"
+            className="text-xs px-2 py-1.5 rounded-lg border bg-[#FFF5F8] border-[#F0E6EE] text-[#6B5F7A] hover:text-[#1E1225] disabled:opacity-30 transition-colors"
             title="Decrease font size"
           >
             A−
@@ -99,7 +99,7 @@ export function ReaderControls({ content, chapterId }: Props) {
           <button
             onClick={() => changeFontSize("up")}
             disabled={fontSize === "xl"}
-            className="text-xs px-2 py-1.5 rounded-lg border bg-white/5 border-white/10 text-[#8892B0] hover:text-white disabled:opacity-30 transition-colors"
+            className="text-xs px-2 py-1.5 rounded-lg border bg-[#FFF5F8] border-[#F0E6EE] text-[#6B5F7A] hover:text-[#1E1225] disabled:opacity-30 transition-colors"
             title="Increase font size"
           >
             A+
@@ -114,7 +114,7 @@ export function ReaderControls({ content, chapterId }: Props) {
             "ml-auto flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-lg border transition-colors",
             completed
               ? "bg-[#10B981]/20 border-[#10B981]/40 text-[#10B981] cursor-default"
-              : "bg-white/5 border-white/10 text-[#8892B0] hover:border-[#10B981]/40 hover:text-[#10B981]",
+              : "bg-[#FFF5F8] border-[#F0E6EE] text-[#6B5F7A] hover:border-[#10B981]/40 hover:text-[#10B981]",
           ].join(" ")}
         >
           {completed ? "✓ Completed" : "✓ Mark complete"}
