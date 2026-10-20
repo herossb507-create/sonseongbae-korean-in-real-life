@@ -1,0 +1,242 @@
+[
+  {
+    "id": "bts",
+    "name": "BTS",
+    "nameKo": "방탄소년단",
+    "official": {},
+    "sourceIds": {},
+    "watch": true
+  },
+  {
+    "id": "blackpink",
+    "name": "BLACKPINK",
+    "nameKo": "블랙핑크",
+    "official": {},
+    "sourceIds": {},
+    "watch": true
+  },
+  {
+    "id": "stray-kids",
+    "name": "Stray Kids",
+    "nameKo": "스트레이 키즈",
+    "official": {},
+    "sourceIds": {},
+    "watch": true
+  },
+  {
+    "id": "seventeen",
+    "name": "SEVENTEEN",
+    "nameKo": "세븐틴",
+    "official": {},
+    "sourceIds": {},
+    "watch": true
+  },
+  {
+    "id": "twice",
+    "name": "TWICE",
+    "nameKo": "트와이스",
+    "official": {},
+    "sourceIds": {},
+    "watch": true
+  },
+  {
+    "id": "enhypen",
+    "name": "ENHYPEN",
+    "nameKo": "엔하이픈",
+    "official": {},
+    "sourceIds": {},
+    "watch": true
+  },
+  {
+    "id": "txt",
+    "name": "TOMORROW X TOGETHER",
+    "nameKo": "투모로우바이투게더",
+    "official": {},
+    "sourceIds": {},
+    "watch": true
+  },
+  {
+    "id": "ateez",
+    "name": "ATEEZ",
+    "nameKo": "에이티즈",
+    "official": {},
+    "sourceIds": {},
+    "watch": true
+  },
+  {
+    "id": "aespa",
+    "name": "aespa",
+    "nameKo": "에스파",
+    "official": {},
+    "sourceIds": {},
+    "watch": true
+  },
+  {
+    "id": "le-sserafim",
+    "name": "LE SSERAFIM",
+    "nameKo": "르세라핌",
+    "official": {},
+    "sourceIds": {},
+    "watch": true
+  },
+  {
+    "id": "ive",
+    "name": "IVE",
+    "nameKo": "아이브",
+    "official": {},
+    "sourceIds": {},
+    "watch": true
+  },
+  {
+    "id": "i-dle",
+    "name": "i-dle",
+    "nameKo": "아이들",
+    "official": {},
+    "sourceIds": {},
+    "watch": true
+  },
+  {
+    "id": "nct-127",
+    "name": "NCT 127",
+    "nameKo": "엔시티 127",
+    "official": {},
+    "sourceIds": {},
+    "watch": true
+  },
+  {
+    "id": "nct-dream",
+    "name": "NCT DREAM",
+    "nameKo": "엔시티 드림",
+    "official": {},
+    "sourceIds": {},
+    "watch": true
+  },
+  {
+    "id": "itzy",
+    "name": "ITZY",
+    "nameKo": "있지",
+    "official": {},
+    "sourceIds": {},
+    "watch": true
+  },
+  {
+    "id": "nmixx",
+    "name": "NMIXX",
+    "nameKo": "엔믹스",
+    "official": {},
+    "sourceIds": {},
+    "watch": true
+  },
+  {
+    "id": "treasure",
+    "name": "TREASURE",
+    "nameKo": "트레저",
+    "official": {},
+    "sourceIds": {},
+    "watch": true
+  },
+  {
+    "id": "babymonster",
+    "name": "BABYMONSTER",
+    "nameKo": "베이비몬스터",
+    "official": {},
+    "sourceIds": {},
+    "watch": true
+  },
+  {
+    "id": "zerobaseone",
+    "name": "ZEROBASEONE",
+    "nameKo": "제로베이스원",
+    "official": {},
+    "sourceIds": {},
+    "watch": true
+  },
+  {
+    "id": "riize",
+    "name": "RIIZE",
+    "nameKo": "라이즈",
+    "official": {},
+    "sourceIds": {},
+    "watch": true
+  },
+  {
+    "id": "boynextdoor",
+    "name": "BOYNEXTDOOR",
+    "nameKo": "보이넥스트도어",
+    "official": {},
+    "sourceIds": {},
+    "watch": true
+  },
+  {
+    "id": "andteam",
+    "name": "&TEAM",
+    "nameKo": "앤팀",
+    "official": {},
+    "sourceIds": {},
+    "watch": true
+  },
+  {
+    "id": "illit",
+    "name": "ILLIT",
+    "nameKo": "아일릿",
+    "official": {},
+    "sourceIds": {},
+    "watch": true
+  },
+  {
+    "id": "cortis",
+    "name": "CORTIS",
+    "nameKo": "코르티스",
+    "official": {},
+    "sourceIds": {},
+    "watch": true
+  },
+  {
+    "id": "p1harmony",
+    "name": "P1Harmony",
+    "nameKo": "피원하모니",
+    "official": {},
+    "sourceIds": {},
+    "watch": true
+  },
+  {
+    "id": "the-boyz",
+    "name": "THE BOYZ",
+    "nameKo": "더보이즈",
+    "official": {},
+    "sourceIds": {},
+    "watch": true
+  },
+  {
+    "id": "monsta-x",
+    "name": "MONSTA X",
+    "nameKo": "몬스타엑스",
+    "official": {},
+    "sourceIds": {},
+    "watch": true
+  },
+  {
+    "id": "tws",
+    "name": "TWS",
+    "nameKo": "투어스",
+    "official": {},
+    "sourceIds": {},
+    "watch": true
+  },
+  {
+    "id": "kiss-of-life",
+    "name": "KISS OF LIFE",
+    "nameKo": "키스오브라이프",
+    "official": {},
+    "sourceIds": {},
+    "watch": true
+  },
+  {
+    "id": "red-velvet",
+    "name": "Red Velvet",
+    "nameKo": "레드벨벳",
+    "official": {},
+    "sourceIds": {},
+    "watch": true
+  }
+]

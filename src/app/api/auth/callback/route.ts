@@ -1,4 +1,3 @@
-// Supabase Auth — OAuth 콜백 처리 (Google 소셜 로그인 등)
 import { createServerClient } from "@supabase/ssr";
 import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
@@ -7,7 +6,6 @@ import type { NextRequest } from "next/server";
 export async function GET(request: NextRequest) {
   const { searchParams, origin } = new URL(request.url);
   const code = searchParams.get("code");
-  const next = searchParams.get("next") ?? "/learn";
 
   if (code) {
     const cookieStore = cookies();
@@ -19,7 +17,7 @@ export async function GET(request: NextRequest) {
           getAll() {
             return cookieStore.getAll();
           },
-          setAll(cookiesToSet) {
+          setAll(cookiesToSet: { name: string; value: string; options?: object }[]) {
             cookiesToSet.forEach(({ name, value, options }) =>
               cookieStore.set(name, value, options)
             );
@@ -30,7 +28,8 @@ export async function GET(request: NextRequest) {
 
     const { error } = await supabase.auth.exchangeCodeForSession(code);
     if (!error) {
-      return NextResponse.redirect(`${origin}${next}`);
+      // 이메일 인증 완료 → 홈페이지로 이동
+      return NextResponse.redirect(`${origin}/home`);
     }
   }
 

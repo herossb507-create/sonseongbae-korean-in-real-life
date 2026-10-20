@@ -1,0 +1,435 @@
+[
+  {
+    "id": "estadio-unico-la-plata",
+    "name": "Estadio Único Diego Armando Maradona",
+    "city": "La Plata",
+    "country": "Argentina",
+    "countryCode": "AR",
+    "lat": -34.9138,
+    "lng": -57.989,
+    "timezone": "America/Argentina/Buenos_Aires"
+  },
+  {
+    "id": "morumbis",
+    "name": "Estádio do MorumBIS",
+    "city": "São Paulo",
+    "country": "Brazil",
+    "countryCode": "BR",
+    "lat": -23.6001,
+    "lng": -46.7201,
+    "timezone": "America/Sao_Paulo"
+  },
+  {
+    "id": "kaohsiung-national-stadium",
+    "name": "Kaohsiung National Stadium",
+    "city": "Kaohsiung",
+    "country": "Taiwan",
+    "countryCode": "TW",
+    "lat": 22.7029,
+    "lng": 120.2936,
+    "timezone": "Asia/Taipei"
+  },
+  {
+    "id": "kaohsiung-arena",
+    "name": "Kaohsiung Arena",
+    "city": "Kaohsiung",
+    "country": "Taiwan",
+    "countryCode": "TW",
+    "lat": 22.6686,
+    "lng": 120.3019,
+    "timezone": "Asia/Taipei"
+  },
+  {
+    "id": "taipei-dome",
+    "name": "Taipei Dome",
+    "city": "Taipei",
+    "country": "Taiwan",
+    "countryCode": "TW",
+    "lat": 25.0424,
+    "lng": 121.5596,
+    "timezone": "Asia/Taipei"
+  },
+  {
+    "id": "taipei-arena",
+    "name": "Taipei Arena",
+    "city": "Taipei",
+    "country": "Taiwan",
+    "countryCode": "TW",
+    "lat": 25.0507,
+    "lng": 121.5501,
+    "timezone": "Asia/Taipei"
+  },
+  {
+    "id": "ntsu-arena",
+    "name": "NTSU Arena",
+    "city": "Taoyuan",
+    "country": "Taiwan",
+    "countryCode": "TW",
+    "lat": 25.0311,
+    "lng": 121.3848,
+    "timezone": "Asia/Taipei"
+  },
+  {
+    "id": "rajamangala-stadium",
+    "name": "Rajamangala National Stadium",
+    "city": "Bangkok",
+    "country": "Thailand",
+    "countryCode": "TH",
+    "lat": 13.7554,
+    "lng": 100.6222,
+    "timezone": "Asia/Bangkok"
+  },
+  {
+    "id": "impact-arena",
+    "name": "IMPACT Arena",
+    "city": "Bangkok",
+    "country": "Thailand",
+    "countryCode": "TH",
+    "lat": 13.9116,
+    "lng": 100.5484,
+    "timezone": "Asia/Bangkok"
+  },
+  {
+    "id": "thammasat-stadium",
+    "name": "Thammasat Stadium",
+    "city": "Bangkok",
+    "country": "Thailand",
+    "countryCode": "TH",
+    "lat": 14.0681,
+    "lng": 100.5996,
+    "timezone": "Asia/Bangkok"
+  },
+  {
+    "id": "gbk-main-stadium",
+    "name": "Gelora Bung Karno Main Stadium",
+    "city": "Jakarta",
+    "country": "Indonesia",
+    "countryCode": "ID",
+    "lat": -6.2186,
+    "lng": 106.8026,
+    "timezone": "Asia/Jakarta"
+  },
+  {
+    "id": "singapore-national-stadium",
+    "name": "National Stadium",
+    "city": "Singapore",
+    "country": "Singapore",
+    "countryCode": "SG",
+    "lat": 1.3045,
+    "lng": 103.8743,
+    "timezone": "Asia/Singapore",
+    "capacity": 55000
+  },
+  {
+    "id": "sg-indoor",
+    "name": "Singapore Indoor Stadium",
+    "city": "Singapore",
+    "country": "Singapore",
+    "countryCode": "SG",
+    "lat": 1.3009,
+    "lng": 103.8744,
+    "timezone": "Asia/Singapore"
+  },
+  {
+    "id": "apex-expo",
+    "name": "Apex @ EXPO",
+    "city": "Singapore",
+    "country": "Singapore",
+    "countryCode": "SG",
+    "lat": 1.3352,
+    "lng": 103.9599,
+    "timezone": "Asia/Singapore"
+  },
+  {
+    "id": "unifi-arena",
+    "name": "Unifi Arena",
+    "city": "Kuala Lumpur",
+    "country": "Malaysia",
+    "countryCode": "MY",
+    "lat": 3.0537,
+    "lng": 101.6935,
+    "timezone": "Asia/Kuala_Lumpur"
+  },
+  {
+    "id": "moa-arena",
+    "name": "SM Mall of Asia Arena",
+    "city": "Manila",
+    "country": "Philippines",
+    "countryCode": "PH",
+    "lat": 14.5322,
+    "lng": 120.9837,
+    "timezone": "Asia/Manila"
+  },
+  {
+    "id": "kai-tak-stadium",
+    "name": "Kai Tak Stadium",
+    "city": "Hong Kong",
+    "country": "Hong Kong",
+    "countryCode": "HK",
+    "lat": 22.3222,
+    "lng": 114.1974,
+    "timezone": "Asia/Hong_Kong",
+    "capacity": 50000
+  },
+  {
+    "id": "galaxy-arena",
+    "name": "Galaxy Arena",
+    "city": "Macau",
+    "country": "Macau",
+    "countryCode": "MO",
+    "lat": 22.1439,
+    "lng": 113.5569,
+    "timezone": "Asia/Macau",
+    "capacity": 16000
+  },
+  {
+    "id": "kspo-dome",
+    "name": "KSPO Dome",
+    "city": "Seoul",
+    "country": "South Korea",
+    "countryCode": "KR",
+    "lat": 37.5192,
+    "lng": 127.1275,
+    "timezone": "Asia/Seoul"
+  },
+  {
+    "id": "inspire-arena",
+    "name": "Inspire Arena",
+    "city": "Incheon",
+    "country": "South Korea",
+    "countryCode": "KR",
+    "lat": 37.4668,
+    "lng": 126.3906,
+    "timezone": "Asia/Seoul"
+  },
+  {
+    "id": "tokyo-dome",
+    "name": "Tokyo Dome",
+    "city": "Tokyo",
+    "country": "Japan",
+    "countryCode": "JP",
+    "lat": 35.7056,
+    "lng": 139.752,
+    "timezone": "Asia/Tokyo"
+  },
+  {
+    "id": "lala-arena-tokyo-bay",
+    "name": "LaLa arena TOKYO-BAY",
+    "city": "Funabashi",
+    "country": "Japan",
+    "countryCode": "JP",
+    "lat": 35.6838,
+    "lng": 139.9897,
+    "timezone": "Asia/Tokyo"
+  },
+  {
+    "id": "saitama-super-arena",
+    "name": "Saitama Super Arena",
+    "city": "Saitama",
+    "country": "Japan",
+    "countryCode": "JP",
+    "lat": 35.8951,
+    "lng": 139.6308,
+    "timezone": "Asia/Tokyo"
+  },
+  {
+    "id": "vantelin-dome-nagoya",
+    "name": "Vantelin Dome Nagoya",
+    "city": "Nagoya",
+    "country": "Japan",
+    "countryCode": "JP",
+    "lat": 35.186,
+    "lng": 136.9474,
+    "timezone": "Asia/Tokyo"
+  },
+  {
+    "id": "kyocera-dome",
+    "name": "Kyocera Dome Osaka",
+    "city": "Osaka",
+    "country": "Japan",
+    "countryCode": "JP",
+    "lat": 34.6693,
+    "lng": 135.4761,
+    "timezone": "Asia/Tokyo"
+  },
+  {
+    "id": "paypay-dome",
+    "name": "Mizuho PayPay Dome Fukuoka",
+    "city": "Fukuoka",
+    "country": "Japan",
+    "countryCode": "JP",
+    "lat": 33.5953,
+    "lng": 130.3621,
+    "timezone": "Asia/Tokyo"
+  },
+  {
+    "id": "marvel-stadium",
+    "name": "Marvel Stadium",
+    "city": "Melbourne",
+    "country": "Australia",
+    "countryCode": "AU",
+    "lat": -37.8165,
+    "lng": 144.9475,
+    "timezone": "Australia/Melbourne"
+  },
+  {
+    "id": "rod-laver-arena",
+    "name": "Rod Laver Arena",
+    "city": "Melbourne",
+    "country": "Australia",
+    "countryCode": "AU",
+    "lat": -37.8216,
+    "lng": 144.9786,
+    "timezone": "Australia/Melbourne"
+  },
+  {
+    "id": "accor-stadium",
+    "name": "Accor Stadium",
+    "city": "Sydney",
+    "country": "Australia",
+    "countryCode": "AU",
+    "lat": -33.8471,
+    "lng": 151.0634,
+    "timezone": "Australia/Sydney"
+  },
+  {
+    "id": "qudos-arena",
+    "name": "Qudos Bank Arena",
+    "city": "Sydney",
+    "country": "Australia",
+    "countryCode": "AU",
+    "lat": -33.8443,
+    "lng": 151.0622,
+    "timezone": "Australia/Sydney"
+  },
+  {
+    "id": "kia-forum",
+    "name": "Kia Forum",
+    "city": "Los Angeles",
+    "country": "United States",
+    "countryCode": "US",
+    "lat": 33.9582,
+    "lng": -118.342,
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "id": "peacock-theater",
+    "name": "Peacock Theater",
+    "city": "Los Angeles",
+    "country": "United States",
+    "countryCode": "US",
+    "lat": 34.0445,
+    "lng": -118.2671,
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "id": "bill-graham-civic",
+    "name": "The Theater at Bill Graham Civic Auditorium",
+    "city": "San Francisco",
+    "country": "United States",
+    "countryCode": "US",
+    "lat": 37.7781,
+    "lng": -122.4173,
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "id": "warfield",
+    "name": "The Warfield",
+    "city": "San Francisco",
+    "country": "United States",
+    "countryCode": "US",
+    "lat": 37.7826,
+    "lng": -122.4103,
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "id": "wamu-theater",
+    "name": "WAMU Theater",
+    "city": "Seattle",
+    "country": "United States",
+    "countryCode": "US",
+    "lat": 47.5932,
+    "lng": -122.3329,
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "id": "showbox-sodo",
+    "name": "Showbox SoDo",
+    "city": "Seattle",
+    "country": "United States",
+    "countryCode": "US",
+    "lat": 47.588,
+    "lng": -122.3339,
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "id": "bomb-factory",
+    "name": "The Bomb Factory",
+    "city": "Dallas",
+    "country": "United States",
+    "countryCode": "US",
+    "lat": 32.7824,
+    "lng": -96.7837,
+    "timezone": "America/Chicago"
+  },
+  {
+    "id": "salt-shed",
+    "name": "The Salt Shed",
+    "city": "Chicago",
+    "country": "United States",
+    "countryCode": "US",
+    "lat": 41.9067,
+    "lng": -87.6592,
+    "timezone": "America/Chicago"
+  },
+  {
+    "id": "pompano-beach-amphitheater",
+    "name": "Pompano Beach Amphitheatre",
+    "city": "Pompano Beach",
+    "country": "United States",
+    "countryCode": "US",
+    "lat": 26.2383,
+    "lng": -80.1051,
+    "timezone": "America/New_York"
+  },
+  {
+    "id": "msg-infosys",
+    "name": "Infosys Theater at Madison Square Garden",
+    "city": "New York",
+    "country": "United States",
+    "countryCode": "US",
+    "lat": 40.7505,
+    "lng": -73.9935,
+    "timezone": "America/New_York"
+  },
+  {
+    "id": "qe-theatre-toronto",
+    "name": "Queen Elizabeth Theatre",
+    "city": "Toronto",
+    "country": "Canada",
+    "countryCode": "CA",
+    "lat": 43.6327,
+    "lng": -79.4214,
+    "timezone": "America/Toronto"
+  },
+  {
+    "id": "qe-theatre-vancouver",
+    "name": "Queen Elizabeth Theatre",
+    "city": "Vancouver",
+    "country": "Canada",
+    "countryCode": "CA",
+    "lat": 49.2803,
+    "lng": -123.1132,
+    "timezone": "America/Vancouver"
+  },
+  {
+    "id": "arena-cdmx",
+    "name": "Arena CDMX",
+    "city": "Mexico City",
+    "country": "Mexico",
+    "countryCode": "MX",
+    "lat": 19.4976,
+    "lng": -99.1752,
+    "timezone": "America/Mexico_City"
+  }
+]

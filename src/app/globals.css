@@ -4,44 +4,46 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 340 60% 99%;
+    --foreground: 290 30% 10%;
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-    --primary: 221.2 83.2% 53.3%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 221.2 83.2% 53.3%;
+    --card-foreground: 290 30% 10%;
+    --primary: 340 77% 57%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 290 40% 97%;
+    --secondary-foreground: 290 30% 25%;
+    --muted: 290 20% 96%;
+    --muted-foreground: 290 20% 55%;
+    --accent: 280 50% 93%;
+    --accent-foreground: 290 30% 25%;
+    --destructive: 340 77% 57%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 340 30% 90%;
+    --input: 340 20% 93%;
+    --ring: 340 77% 57%;
     --radius: 0.5rem;
-  }
 
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-    --primary: 217.2 91.2% 59.8%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 224.3 76.3% 48%;
+    /* ── K-Beauty Light Design Tokens ── */
+    --bg-base:         #FFF5F8;   /* soft rose-white main bg */
+    --bg-surface:      #FFFFFF;   /* pure white surface */
+    --bg-subtle:       #FFF0F5;   /* slightly richer rose tint */
+
+    --glass-bg:        rgba(255, 255, 255, 0.85);
+    --glass-border:    rgba(232, 67, 111, 0.10);
+
+    --accent-rose:     #E8436F;   /* primary CTA — Korean rose */
+    --accent-lavender: #9B7FE8;   /* secondary — soft purple */
+    --accent-peach:    #F4A261;   /* XP / warm gold */
+    --accent-mint:     #34C899;   /* success */
+    --accent-sky:      #60B8F4;   /* info */
+
+    --text-primary:    #1E1225;   /* very dark purple-black */
+    --text-secondary:  #6B5F7A;   /* muted purple-gray */
+    --text-muted:      #B0A8BB;   /* light muted */
+
+    --success: #34C899;
+    --warning: #F4A261;
+    --error:   #E8436F;
   }
 }
 
@@ -50,6 +52,44 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-[#FFF5F8] text-[#1E1225];
   }
+}
+
+/* Accordion animations */
+@keyframes accordion-down {
+  from { height: 0; }
+  to   { height: var(--radix-accordion-content-height); }
+}
+@keyframes accordion-up {
+  from { height: var(--radix-accordion-content-height); }
+  to   { height: 0; }
+}
+.animate-accordion-down { animation: accordion-down 0.2s ease-out; }
+.animate-accordion-up   { animation: accordion-up   0.2s ease-out; }
+
+/* ── K-pop concert map pins (Leaflet divIcon) ── */
+.pin {
+  display: grid;
+  place-items: center;
+  border-radius: 9999px;
+  background: #e8436f;
+  border: 2px solid #fff;
+  color: #fff;
+  font: 700 12px/1 var(--font-inter), sans-serif;
+  box-shadow: 0 0 0 6px rgb(232 67 111 / 0.2), 0 2px 8px rgb(30 18 37 / 0.25);
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+.pin:hover {
+  transform: scale(1.15);
+}
+.pin--selected {
+  background: #9b7fe8;
+  box-shadow: 0 0 0 8px rgb(155 127 232 / 0.3), 0 2px 8px rgb(30 18 37 / 0.25);
+  transform: scale(1.2);
+}
+.pin--inactive {
+  background: #b0a8bb;
+  box-shadow: none;
 }
