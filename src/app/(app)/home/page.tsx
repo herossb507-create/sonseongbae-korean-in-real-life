@@ -1,61 +1,34 @@
+"use client";
+
 import Link from "next/link";
-import { redirect } from "next/navigation";
-import { createClient } from "@/lib/supabase/server";
 import { getTodayString } from "@/lib/daily-challenge";
 import { CHAPTER_CONTENT } from "@/lib/chapter-content";
+import {
+  EMPTY_PROGRESS,
+  completedChapterIds,
+  currentStreak,
+  knownWordCount,
+  lastReadChapter,
+  useProgress,
+} from "@/lib/progress";
 
-export default async function HomePage() {
-  const supabase = createClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+export default function HomePage() {
+  const progress = useProgress() ?? EMPTY_PROGRESS;
 
-  if (!user) redirect("/login");
-
-  const [
-    profileResult,
-    gamificationResult,
-    progressResult,
-    vocabStatsResult,
-  ] = await Promise.all([
-    supabase.from("profiles").select("display_name").eq("id", user.id).single(),
-    supabase
-      .from("user_gamification")
-      .select("xp, level, streak_current")
-      .eq("user_id", user.id)
-      .single(),
-    supabase
-      .from("user_progress")
-      .select("chapter_id, is_completed, last_read_at")
-      .eq("user_id", user.id)
-      .order("last_read_at", { ascending: false }),
-    supabase
-      .from("user_vocab_stats")
-      .select("id")
-      .eq("user_id", user.id)
-      .eq("status", "mastered"),
-  ]);
-
-  const displayName =
-    profileResult.data?.display_name ??
-    user.email?.split("@")[0] ??
-    "Learner";
-  const gamification = gamificationResult.data;
-  const progressRows = progressResult.data ?? [];
-  const masteredWords = vocabStatsResult.data?.length ?? 0;
-
-  const completedChapters = progressRows.filter((p) => p.is_completed).length;
+  const displayName = progress.displayName;
+  const completedChapters = completedChapterIds(progress).length;
   const totalChapters = 16;
+  const masteredWords = knownWordCount(progress);
 
   // Last read chapter (for "Continue" section)
-  const lastRead = progressRows[0] ?? null;
-  const lastChapterData = lastRead ? CHAPTER_CONTENT[lastRead.chapter_id] : null;
+  const lastRead = lastReadChapter(progress);
+  const lastChapterData = lastRead ? CHAPTER_CONTENT[lastRead.slug] : null;
 
   const todayStr = getTodayString();
 
   // Stats
-  const streak = gamification?.streak_current ?? 0;
-  const xp = gamification?.xp ?? 0;
+  const streak = currentStreak(progress);
+  const xp = progress.xp;
 
   return (
     <div className="min-h-screen bg-[#FFF5F8]">
@@ -64,7 +37,7 @@ export default async function HomePage() {
         {/* Section 1: Greeting */}
         <div className="mb-8">
           <h1 className="text-2xl sm:text-3xl font-bold text-[#1E1225] mb-1">
-            Welcome back, {displayName}!
+            {displayName ? `Welcome back, ${displayName}!` : "Welcome!"}
           </h1>
           <p className="text-[#6B5F7A] text-sm">
             오늘도 한국어 학습을 시작해볼까요?
@@ -131,7 +104,7 @@ export default async function HomePage() {
               {masteredWords}
             </div>
             <div className="text-xs text-[#6B5F7A]">🎯 Words</div>
-            <div className="text-xs text-[#B0A8BB] mt-0.5">mastered</div>
+            <div className="text-xs text-[#B0A8BB] mt-0.5">known</div>
           </div>
         </div>
 
@@ -142,7 +115,7 @@ export default async function HomePage() {
           </h2>
           {lastRead ? (
             <Link
-              href={`/learn/${lastRead.chapter_id}`}
+              href={`/learn/${lastRead.slug}`}
               className="flex items-center gap-4 p-4 bg-[#FFF5F8] border border-[#F0E6EE] rounded-xl hover:bg-[#FFF0F5] hover:border-[#E8D5E0] transition-all group shadow-sm"
             >
               <div className="w-10 h-10 rounded-full bg-[#9B7FE8]/20 flex items-center justify-center text-[#9B7FE8] text-lg shrink-0">
@@ -156,7 +129,7 @@ export default async function HomePage() {
                 </p>
                 <p className="text-xs text-[#6B5F7A] mt-0.5">
                   Last read{" "}
-                  {new Date(lastRead.last_read_at).toLocaleDateString("en-US", {
+                  {new Date(lastRead.lastReadAt).toLocaleDateString("en-US", {
                     month: "short",
                     day: "numeric",
                   })}
@@ -228,27 +201,27 @@ export default async function HomePage() {
           </div>
         </div>
 
-        {/* Section 6: Leaderboard Teaser */}
+        {/* Section 6: K-pop concerts */}
         <div>
           <h2 className="text-base font-semibold text-[#1E1225] mb-3">
-            Leaderboard
+            K-pop Concerts
           </h2>
           <Link
-            href="/leaderboard"
-            className="flex items-center gap-4 p-4 bg-gradient-to-r from-[#F4A261]/10 to-[#E8436F]/5 border border-[#F4A261]/20 rounded-xl hover:border-[#F4A261]/40 transition-all group shadow-sm"
+            href="/concerts"
+            className="flex items-center gap-4 p-4 bg-gradient-to-r from-[#9B7FE8]/10 to-[#E8436F]/5 border border-[#9B7FE8]/20 rounded-xl hover:border-[#9B7FE8]/40 transition-all group shadow-sm"
           >
-            <div className="w-10 h-10 rounded-full bg-[#F4A261]/20 flex items-center justify-center text-lg shrink-0">
-              🏆
+            <div className="w-10 h-10 rounded-full bg-[#9B7FE8]/20 flex items-center justify-center text-lg shrink-0">
+              🎤
             </div>
             <div className="flex-1 min-w-0">
-              <div className="text-[#1E1225] font-medium text-sm group-hover:text-[#F4A261] transition-colors">
-                Check your ranking
+              <div className="text-[#1E1225] font-medium text-sm group-hover:text-[#9B7FE8] transition-colors">
+                Find a K-pop show near you
               </div>
               <div className="text-xs text-[#6B5F7A] mt-0.5">
-                Compete with other learners
+                Tour dates worldwide, on one map
               </div>
             </div>
-            <span className="text-[#F4A261] group-hover:translate-x-1 transition-transform">
+            <span className="text-[#9B7FE8] group-hover:translate-x-1 transition-transform">
               →
             </span>
           </Link>

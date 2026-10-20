@@ -13,7 +13,7 @@ const notoSansKr = Noto_Sans_KR({
 
 export const metadata: Metadata = {
   title: "Korean in Real Life",
-  description: "한국어를 실생활에서 배우는 구독형 학습 플랫폼",
+  description: "Learn practical Korean for free — 16 chapters, audio, flashcards and games — plus a world map of K-pop concerts.",
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,

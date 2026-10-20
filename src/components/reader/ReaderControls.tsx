@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { ChapterReader } from "@/components/reader/ChapterReader";
-import { createClient } from "@/lib/supabase/client";
+import { markChapterComplete, markChapterRead, readProgress } from "@/lib/progress";
 
 interface Props {
   content: string;
@@ -22,8 +22,13 @@ export function ReaderControls({ content, chapterId }: Props) {
   const [showRomanization, setShowRomanization] = useState(true);
   const [ttsRate, setTtsRate] = useState(1.0);
   const [completed, setCompleted] = useState(false);
-  const [completing, setCompleting] = useState(false);
   const [fontSize, setFontSize] = useState<FontSize>("base");
+
+  useEffect(() => {
+    // Opening a chapter counts as reading it ("Continue learning" on Home).
+    markChapterRead(chapterId);
+    setCompleted(readProgress().chapters[chapterId]?.completed ?? false);
+  }, [chapterId]);
 
   useEffect(() => {
     const saved = localStorage.getItem("reader-font-size") as FontSize | null;
@@ -38,39 +43,10 @@ export function ReaderControls({ content, chapterId }: Props) {
     localStorage.setItem("reader-font-size", newSize);
   }
 
-  async function handleComplete() {
-    if (completed || completing) return;
-    setCompleting(true);
-
-    const supabase = createClient();
-    const {
-      data: { user },
-    } = await supabase.auth.getUser();
-
-    if (user) {
-      // chapter_id를 slug로 조회
-      const { data: chapter } = await supabase
-        .from("chapters")
-        .select("id")
-        .eq("slug", chapterId)
-        .single();
-
-      if (chapter) {
-        await supabase.from("user_progress").upsert(
-          {
-            user_id: user.id,
-            chapter_id: chapter.id,
-            is_completed: true,
-            completed_at: new Date().toISOString(),
-            last_read_at: new Date().toISOString(),
-          },
-          { onConflict: "user_id,chapter_id" }
-        );
-      }
-    }
-
+  function handleComplete() {
+    if (completed) return;
+    markChapterComplete(chapterId);
     setCompleted(true);
-    setCompleting(false);
   }
 
   return (
@@ -133,7 +109,7 @@ export function ReaderControls({ content, chapterId }: Props) {
         {/* 완료 버튼 */}
         <button
           onClick={handleComplete}
-          disabled={completed || completing}
+          disabled={completed}
           className={[
             "ml-auto flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-lg border transition-colors",
             completed
@@ -141,7 +117,7 @@ export function ReaderControls({ content, chapterId }: Props) {
               : "bg-white/5 border-white/10 text-[#8892B0] hover:border-[#10B981]/40 hover:text-[#10B981]",
           ].join(" ")}
         >
-          {completed ? "✓ Completed" : completing ? "Saving…" : "✓ Mark complete"}
+          {completed ? "✓ Completed" : "✓ Mark complete"}
         </button>
       </div>
 

@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { createClient } from "@/lib/supabase/client";
+import { markWordKnown, readProgress } from "@/lib/progress";
 import { speakKorean } from "@/lib/tts";
 
 interface Props {
@@ -16,45 +16,21 @@ interface Props {
 export function VocabCard({ id, korean, romanization, english, audioHint }: Props) {
   const [flipped, setFlipped] = useState(false);
   const [known, setKnown] = useState(false);
-  const [saving, setSaving] = useState(false);
+
+  useEffect(() => {
+    setKnown(Boolean(readProgress().vocab[id]));
+  }, [id]);
 
   function playAudio(e: React.MouseEvent) {
     e.stopPropagation();
     speakKorean(audioHint);
   }
 
-  async function handleKnown(e: React.MouseEvent) {
+  function handleKnown(e: React.MouseEvent) {
     e.stopPropagation();
     if (known) return; // already in review queue
     setKnown(true);
-    setSaving(true);
-
-    const supabase = createClient();
-    const {
-      data: { user },
-    } = await supabase.auth.getUser();
-
-    if (user) {
-      const tomorrow = new Date();
-      tomorrow.setDate(tomorrow.getDate() + 1);
-
-      await supabase.from("user_vocab_stats").upsert(
-        {
-          user_id: user.id,
-          vocab_id: id,
-          status: "learning",
-          next_review_at: tomorrow.toISOString(),
-          interval_days: 1,
-          ease_factor: 2.5,
-          review_count: 0,
-          correct_count: 0,
-          last_reviewed: new Date().toISOString(),
-        },
-        { onConflict: "user_id,vocab_id" }
-      );
-    }
-
-    setSaving(false);
+    markWordKnown(id);
   }
 
   function handleDragEnd(_: unknown, info: { offset: { x: number } }) {
@@ -134,7 +110,7 @@ export function VocabCard({ id, korean, romanization, english, audioHint }: Prop
             </button>
             <button
               onClick={handleKnown}
-              disabled={saving || known}
+              disabled={known}
               className={[
                 "text-xs px-3 py-1.5 rounded-lg transition-colors",
                 known
@@ -142,7 +118,7 @@ export function VocabCard({ id, korean, romanization, english, audioHint }: Prop
                   : "border border-[#F0E6EE] text-[#6B5F7A] hover:bg-[#FFF5F8]",
               ].join(" ")}
             >
-              {saving ? "Saving…" : known ? "✓ Added to review" : "Mark as known"}
+              {known ? "✓ Added to review" : "Mark as known"}
             </button>
           </div>
         </div>

@@ -1,8 +1,9 @@
 import type { MetadataRoute } from "next";
+import { CHAPTER_CONTENT } from "@/lib/chapter-content";
 import { getCities, getConcerts, getListedArtists } from "@/lib/concerts/data";
 import { SITE_URL } from "@/lib/concerts/site";
 
-// Public pages only; app pages behind login are left out.
+// Public, indexable pages. Progress pages (home, stats, settings) are per-browser and left out.
 export default function sitemap(): MetadataRoute.Sitemap {
   const concerts = getConcerts();
   const latest = (list: { updatedAt: string }[]) =>
@@ -10,7 +11,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     { url: `${SITE_URL}/`, changeFrequency: "weekly", priority: 1 },
-    { url: `${SITE_URL}/pricing`, changeFrequency: "monthly" },
+    { url: `${SITE_URL}/learn`, changeFrequency: "monthly", priority: 0.9 },
+    ...Object.keys(CHAPTER_CONTENT).map((id) => ({ url: `${SITE_URL}/learn/${id}`, changeFrequency: "monthly" as const })),
+    { url: `${SITE_URL}/games`, changeFrequency: "monthly" },
+    { url: `${SITE_URL}/kdrama`, changeFrequency: "monthly" },
+    { url: `${SITE_URL}/dialogues`, changeFrequency: "monthly" },
     { url: `${SITE_URL}/concerts`, lastModified: latest(concerts), changeFrequency: "daily", priority: 0.9 },
     { url: `${SITE_URL}/concerts/artists`, lastModified: latest(concerts), changeFrequency: "daily" },
     { url: `${SITE_URL}/concerts/cities`, lastModified: latest(concerts), changeFrequency: "daily" },

@@ -1,40 +1,17 @@
 import Link from "next/link";
-import { notFound, redirect } from "next/navigation";
+import { notFound } from "next/navigation";
 import { ReaderControls } from "@/components/reader/ReaderControls";
 import { CHAPTER_CONTENT } from "@/lib/chapter-content";
-import { createClient } from "@/lib/supabase/server";
-import { getUserAccess } from "@/lib/auth";
-import { ProGate } from "@/components/subscription/ProGate";
-
-const FREE_CHAPTERS = new Set(["ch01", "ch02"]);
 
 interface Props {
   params: { chapterId: string };
 }
 
-export default async function ChapterPage({ params }: Props) {
+export default function ChapterPage({ params }: Props) {
   const { chapterId } = params;
 
   const chapter = CHAPTER_CONTENT[chapterId];
   if (!chapter) notFound();
-
-  // Auth check
-  const supabase = createClient();
-  const { data: { user } } = await supabase.auth.getUser();
-  if (!user) redirect("/login");
-
-  // Pro check for non-free chapters
-  const { isPro } = await getUserAccess();
-  if (!FREE_CHAPTERS.has(chapterId) && !isPro) {
-    return (
-      <ProGate
-        feature="This chapter is Pro"
-        description="Chapters 3–16 require a Pro subscription. Upgrade to access all 16 chapters with full audio, vocabulary flashcards, and quizzes."
-        backHref="/learn"
-        backLabel="← Back to all chapters"
-      />
-    );
-  }
 
   const chapterKeys = Object.keys(CHAPTER_CONTENT);
   const totalChapters = chapterKeys.length;
@@ -191,4 +168,8 @@ export default async function ChapterPage({ params }: Props) {
       </div>
     </div>
   );
+}
+
+export function generateStaticParams() {
+  return Object.keys(CHAPTER_CONTENT).map((chapterId) => ({ chapterId }));
 }

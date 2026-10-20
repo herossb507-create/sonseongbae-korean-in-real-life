@@ -13,26 +13,26 @@ const FEATURES = [
   { icon: "🃏", title: "Vocab Flashcards",        desc: "Chapter-by-chapter vocabulary with flip cards and spaced repetition." },
   { icon: "🧠", title: "Chapter Quizzes",         desc: "4-choice quizzes after each chapter to cement what you learned." },
   { icon: "🔥", title: "Streak & XP System",     desc: "Daily streaks, experience points, and levels keep you motivated." },
-  { icon: "✅", title: "Free Preview",            desc: "Try Chapters 1–2 and 50 vocabulary words for free — no card needed." },
+  { icon: "✅", title: "100% Free, No Sign-up",   desc: "Every chapter, game and quiz is free. Your progress saves in your browser." },
 ];
 
 const CHAPTERS = [
-  { num: 1,  title: "Meet Hangul",          free: true  },
-  { num: 2,  title: "Grammar Overview",     free: true  },
-  { num: 3,  title: "Numbers & Counting",   free: false },
-  { num: 4,  title: "Time & Dates",         free: false },
-  { num: 5,  title: "Food & Restaurants",   free: false },
-  { num: 6,  title: "Getting Around",       free: false },
-  { num: 7,  title: "Shopping",             free: false },
-  { num: 8,  title: "People & Family",      free: false },
-  { num: 9,  title: "Work & School",        free: false },
-  { num: 10, title: "Health & Body",        free: false },
-  { num: 11, title: "Feelings & Opinions",  free: false },
-  { num: 12, title: "Social Media & Tech",  free: false },
-  { num: 13, title: "K-Drama Phrases",      free: false },
-  { num: 14, title: "K-Pop & Music",        free: false },
-  { num: 15, title: "Advanced Conversation",free: false },
-  { num: 16, title: "Real-Life Fluency",    free: false },
+  { num: 1,  title: "Meet Hangul" },
+  { num: 2,  title: "Grammar Overview" },
+  { num: 3,  title: "Numbers & Counting" },
+  { num: 4,  title: "Time & Dates" },
+  { num: 5,  title: "Food & Restaurants" },
+  { num: 6,  title: "Getting Around" },
+  { num: 7,  title: "Shopping" },
+  { num: 8,  title: "People & Family" },
+  { num: 9,  title: "Work & School" },
+  { num: 10, title: "Health & Body" },
+  { num: 11, title: "Feelings & Opinions" },
+  { num: 12, title: "Social Media & Tech" },
+  { num: 13, title: "K-Drama Phrases" },
+  { num: 14, title: "K-Pop & Music" },
+  { num: 15, title: "Advanced Conversation" },
+  { num: 16, title: "Real-Life Fluency" },
 ];
 
 const COMPARISON = [
@@ -44,14 +44,14 @@ const COMPARISON = [
   { feature: "Chapter quizzes",              us: true,  duo: true,  book: false },
   { feature: "Mobile-friendly",             us: true,  duo: true,  book: false },
   { feature: "Offline PDF cheat sheets",     us: true,  duo: false, book: true  },
-  { feature: "Free to try",                  us: true,  duo: true,  book: false },
+  { feature: "Completely free, no sign-up",  us: true,  duo: false, book: false },
 ];
 
 const FAQS = [
   { q: "Do I need any Korean background to start?",       a: "No. Chapter 1 teaches Hangul (the Korean alphabet) from scratch — you'll be reading Korean within an hour." },
   { q: "How is this different from Duolingo?",            a: "Korean in Real Life focuses on real-world Korean you'll actually use: conversations, social contexts, and cultural nuance — not gamified drills." },
-  { q: "Can I access all chapters after subscribing?",    a: "Yes. A Pro subscription unlocks all 16 chapters, flashcards, audio, quizzes, and SRS reviews immediately." },
-  { q: "Is there a refund policy?",                       a: "Yes — if you're not satisfied within 7 days of your subscription, contact us for a full refund." },
+  { q: "Is it really free?",                              a: "Yes. All 16 chapters, flashcards, audio, quizzes and games are free. There's no subscription and no account." },
+  { q: "Where is my progress saved?",                     a: "In your browser on this device. Use Settings → Download backup to keep a copy or move it to another device." },
   { q: "Can I use this on mobile?",                       a: "Absolutely. The platform is fully responsive, works great on phones and tablets, and can be added to your home screen as an app." },
   { q: "How long does it take to finish all 16 chapters?",a: "At a comfortable pace of one chapter per week, you'll complete the course in about 4 months — with real conversational ability." },
 ];
@@ -73,10 +73,9 @@ export default function LandingPage() {
         </span>
         <div className="flex gap-4 items-center">
           <Link href="/concerts" className="text-sm text-[#6B5F7A] hover:text-[#1E1225] transition-colors">🎤 <span className="hidden sm:inline">K-pop </span>Concerts</Link>
-          <Link href="/pricing" className="text-sm text-[#6B5F7A] hover:text-[#1E1225] transition-colors hidden sm:block">Pricing</Link>
-          <Link href="/login"   className="text-sm text-[#6B5F7A] hover:text-[#1E1225] transition-colors">Log in</Link>
-          <Link href="/signup"  className="text-sm bg-gradient-to-r from-[#E8436F] to-[#F06B8A] text-white px-4 py-1.5 rounded-lg hover:opacity-90 transition-opacity font-medium">
-            Start free
+          <Link href="/learn" className="text-sm text-[#6B5F7A] hover:text-[#1E1225] transition-colors hidden sm:block">Chapters</Link>
+          <Link href="/home"  className="text-sm bg-gradient-to-r from-[#E8436F] to-[#F06B8A] text-white px-4 py-1.5 rounded-lg hover:opacity-90 transition-opacity font-medium">
+            Start learning
           </Link>
         </div>
       </nav>
@@ -101,14 +100,14 @@ export default function LandingPage() {
           </h1>
           <p className="text-xl text-[#6B5F7A] mb-10 max-w-2xl mx-auto leading-relaxed">
             16 chapters of practical Korean — with pronunciation audio, vocabulary flashcards,
-            quizzes, and spaced repetition. Start free with Chapters 1 &amp; 2.
+            quizzes, and spaced repetition. Free, with no sign-up.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <Link href="/signup"  className="bg-gradient-to-r from-[#E8436F] to-[#F06B8A] text-white px-8 py-3.5 rounded-xl text-base font-semibold hover:opacity-90 transition-opacity shadow-lg shadow-[#E8436F]/20">
-              Start for free →
+            <Link href="/learn/ch01" className="bg-gradient-to-r from-[#E8436F] to-[#F06B8A] text-white px-8 py-3.5 rounded-xl text-base font-semibold hover:opacity-90 transition-opacity shadow-lg shadow-[#E8436F]/20">
+              Start with Chapter 1 →
             </Link>
-            <Link href="/pricing" className="border border-[#F0E6EE] bg-white text-[#6B5F7A] px-8 py-3.5 rounded-xl text-base font-medium hover:bg-[#FFF0F5] transition-colors shadow-sm">
-              See pricing
+            <Link href="/concerts" className="border border-[#F0E6EE] bg-white text-[#6B5F7A] px-8 py-3.5 rounded-xl text-base font-medium hover:bg-[#FFF0F5] transition-colors shadow-sm">
+              🎤 K-pop concert map
             </Link>
           </div>
           {/* Stats row */}
@@ -116,8 +115,8 @@ export default function LandingPage() {
             {[
               { n: "16", label: "Chapters" },
               { n: "300+", label: "Vocabulary words" },
-              { n: "Free", label: "Chapters 1 & 2" },
-              { n: "$7.99", label: "/ month" },
+              { n: "Free", label: "Every chapter" },
+              { n: "0", label: "Sign-ups needed" },
             ].map((s) => (
               <div key={s.label}>
                 <p className="text-2xl font-bold text-[#1E1225]">{s.n}</p>
@@ -152,36 +151,24 @@ export default function LandingPage() {
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-[#1E1225] mb-3">Your learning journey</h2>
-            <p className="text-[#6B5F7A]">16 chapters from zero to confident — Chapters 1 &amp; 2 are free.</p>
+            <p className="text-[#6B5F7A]">16 chapters from zero to confident — all free.</p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
             {CHAPTERS.map((ch) => (
               <div
                 key={ch.num}
-                className={[
-                  "relative rounded-xl border p-3.5 transition-all",
-                  ch.free
-                    ? "bg-[#10B981]/10 border-[#10B981]/30"
-                    : "bg-white border-[#F0E6EE]",
-                ].join(" ")}
+                className="relative rounded-xl border p-3.5 transition-all bg-white border-[#F0E6EE]"
               >
                 <div className="flex items-center justify-between mb-1.5">
-                  <span className={`text-xs font-bold ${ch.free ? "text-[#10B981]" : "text-[#B0A8BB]"}`}>
-                    Ch {ch.num}
-                  </span>
-                  {ch.free && (
-                    <span className="text-[10px] bg-[#10B981]/20 text-[#10B981] px-1.5 py-0.5 rounded-full font-semibold">
-                      FREE
-                    </span>
-                  )}
+                  <span className="text-xs font-bold text-[#E8436F]">Ch {ch.num}</span>
                 </div>
                 <p className="text-xs text-[#6B5F7A] leading-snug">{ch.title}</p>
               </div>
             ))}
           </div>
           <div className="text-center mt-8">
-            <Link href="/signup" className="inline-block bg-gradient-to-r from-[#E8436F] to-[#F06B8A] text-white px-7 py-3 rounded-xl text-sm font-semibold hover:opacity-90 transition-opacity">
-              Start with Chapter 1 — free →
+            <Link href="/learn/ch01" className="inline-block bg-gradient-to-r from-[#E8436F] to-[#F06B8A] text-white px-7 py-3 rounded-xl text-sm font-semibold hover:opacity-90 transition-opacity">
+              Start with Chapter 1 →
             </Link>
           </div>
         </div>
@@ -260,9 +247,9 @@ export default function LandingPage() {
         <div className="max-w-xl mx-auto px-6">
           <div className="bg-gradient-to-br from-[#E8436F]/8 to-[#9B7FE8]/8 border border-[#F0E6EE] rounded-3xl p-12 shadow-sm">
             <h2 className="text-3xl font-bold text-[#1E1225] mb-4">Ready to start?</h2>
-            <p className="text-[#6B5F7A] mb-8">Free chapters 1 &amp; 2. No credit card required.</p>
-            <Link href="/signup" className="inline-block bg-gradient-to-r from-[#E8436F] to-[#F06B8A] text-white px-10 py-4 rounded-xl text-base font-semibold hover:opacity-90 transition-opacity shadow-lg shadow-[#E8436F]/20">
-              Get started free →
+            <p className="text-[#6B5F7A] mb-8">Every chapter is free. No account, no credit card.</p>
+            <Link href="/home" className="inline-block bg-gradient-to-r from-[#E8436F] to-[#F06B8A] text-white px-10 py-4 rounded-xl text-base font-semibold hover:opacity-90 transition-opacity shadow-lg shadow-[#E8436F]/20">
+              Start learning →
             </Link>
           </div>
         </div>
@@ -300,17 +287,16 @@ export default function LandingPage() {
               <ul className="space-y-2 text-sm text-[#B0A8BB]">
                 <li><Link href="/learn"    className="hover:text-[#1E1225] transition-colors">Chapters</Link></li>
                 <li><Link href="/vocab/ch01" className="hover:text-[#1E1225] transition-colors">Vocabulary</Link></li>
-                <li><Link href="/leaderboard" className="hover:text-[#1E1225] transition-colors">Leaderboard</Link></li>
                 <li><Link href="/dashboard" className="hover:text-[#1E1225] transition-colors">Dashboard</Link></li>
                 <li><Link href="/concerts" className="hover:text-[#1E1225] transition-colors">K-pop Concerts</Link></li>
               </ul>
             </div>
             <div>
-              <p className="text-xs font-semibold text-[#6B5F7A] uppercase tracking-wider mb-3">Account</p>
+              <p className="text-xs font-semibold text-[#6B5F7A] uppercase tracking-wider mb-3">Practice</p>
               <ul className="space-y-2 text-sm text-[#B0A8BB]">
-                <li><Link href="/signup"  className="hover:text-[#1E1225] transition-colors">Sign up</Link></li>
-                <li><Link href="/login"   className="hover:text-[#1E1225] transition-colors">Log in</Link></li>
-                <li><Link href="/pricing" className="hover:text-[#1E1225] transition-colors">Pricing</Link></li>
+                <li><Link href="/games"    className="hover:text-[#1E1225] transition-colors">Games</Link></li>
+                <li><Link href="/daily"    className="hover:text-[#1E1225] transition-colors">Daily Challenge</Link></li>
+                <li><Link href="/kdrama"   className="hover:text-[#1E1225] transition-colors">K-Drama Phrases</Link></li>
                 <li><Link href="/settings" className="hover:text-[#1E1225] transition-colors">Settings</Link></li>
               </ul>
             </div>
@@ -324,8 +310,7 @@ export default function LandingPage() {
           <div className="border-t border-[#F0E6EE] pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-[#B0A8BB]">
             <p>© 2026 Korean in Real Life. All rights reserved.</p>
             <div className="flex gap-4">
-              <Link href="/pricing" className="hover:text-[#1E1225] transition-colors">Privacy</Link>
-              <Link href="/pricing" className="hover:text-[#1E1225] transition-colors">Terms</Link>
+              <Link href="/concerts/disclosure" className="hover:text-[#1E1225] transition-colors">Affiliate disclosure</Link>
             </div>
           </div>
         </div>

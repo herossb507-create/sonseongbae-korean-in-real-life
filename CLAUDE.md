@@ -11,11 +11,15 @@
 |------|------|
 | 앱 이름 | **Korean in Real Life** |
 | 부제 | AI-Powered Korean Learning Platform |
-| 목적 | 동명 전자책 콘텐츠 기반 구독형 한국어 학습 SaaS |
+| 목적 | 동명 전자책 콘텐츠 기반 무료 한국어 학습 사이트 + K-pop 공연 지도 |
 | 타겟 유저 | 완전 초보자 ~ 초급 수준의 영어권 한국어 학습자 |
-| 수익 모델 | Stripe 월/연 구독 (Free Tier 포함) |
+| 수익 모델 | 광고·제휴 링크 (구독 없음, 2026-10-20 결정) |
 
 ---
+
+> **2026-10-20 변경:** 로그인·회원가입·구독(Pro)·결제(Stripe/Lemon Squeezy)·Supabase·리더보드를 모두 제거함.
+> 모든 콘텐츠 무료 공개. XP·스트릭·챕터 진도·아는 단어는 `src/lib/progress.ts`가 브라우저에 저장하고,
+> 설정 페이지에서 백업 파일로 내보내기/불러오기. 아래 기능 목록의 FREE/PRO 구분과 Auth·Payment 관련 항목은 과거 기록.
 
 ## ⚙️ 기술 스택
 
@@ -26,10 +30,7 @@
 | Styling | Tailwind CSS | v4 |
 | Components | shadcn/ui | latest |
 | Animation | Framer Motion | 11.x |
-| Auth | Supabase Auth | latest |
-| Database | Supabase PostgreSQL | latest |
-| Storage | Supabase Storage | latest |
-| Payment | Stripe (Subscriptions + Webhook) | latest |
+| 진도 저장 | 브라우저 localStorage (`src/lib/progress.ts`) | - |
 | TTS | Web Speech API (여성 목소리 자동 선택) | - |
 | AI (Future) | Vercel AI SDK + OpenAI | latest |
 | Deployment | Vercel | - |

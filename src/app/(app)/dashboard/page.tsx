@@ -1,45 +1,23 @@
+"use client";
+
 import Link from "next/link";
-import { redirect } from "next/navigation";
-import { createClient } from "@/lib/supabase/server";
 import ActivityHeatmap from "@/components/dashboard/ActivityHeatmap";
 import { CHAPTER_CONTENT } from "@/lib/chapter-content";
+import { EMPTY_PROGRESS, currentStreak, knownWordCount, lastReadChapter, useProgress } from "@/lib/progress";
 
-export default async function DashboardPage() {
-  const supabase = createClient();
+export default function DashboardPage() {
+  const progress = useProgress() ?? EMPTY_PROGRESS;
 
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
-
-  if (!user) redirect("/login");
-
-  // Build chapter list from static data (no DB query needed)
+  // Build chapter list from static data
   const chapterList = Object.entries(CHAPTER_CONTENT)
     .map(([slug, ch]) => ({ slug, num: ch.num, title: ch.title }))
     .sort((a, b) => a.num - b.num);
 
-  // Supabase에서 병렬 fetch
-  const [
-    { data: progressRows },
-    { data: vocabStats },
-    { data: gamification },
-  ] = await Promise.all([
-    supabase
-      .from("user_progress")
-      .select("*")
-      .eq("user_id", user.id)
-      .order("last_read_at", { ascending: false }),
-    supabase
-      .from("user_vocab_stats")
-      .select("id")
-      .eq("user_id", user.id)
-      .eq("status", "mastered"),
-    supabase
-      .from("user_gamification")
-      .select("*")
-      .eq("user_id", user.id)
-      .single(),
-  ]);
+  const progressRows = Object.entries(progress.chapters).map(([chapter_id, c]) => ({
+    chapter_id,
+    is_completed: c.completed,
+    last_read_at: c.lastReadAt,
+  }));
 
   const completedIds = new Set(
     (progressRows ?? [])
@@ -47,11 +25,9 @@ export default async function DashboardPage() {
       .map((p) => p.chapter_id)
   );
 
-  const lastRead = progressRows?.[0] ?? null;
-  // chapter_id in user_progress is the slug (e.g. "ch01")
-  const lastReadChapter = lastRead
-    ? chapterList.find((c) => c.slug === lastRead.chapter_id)
-    : null;
+  const last = lastReadChapter(progress);
+  const lastRead = last ? { chapter_id: last.slug, last_read_at: last.lastReadAt } : null;
+  const lastReadChapterInfo = lastRead ? chapterList.find((c) => c.slug === lastRead.chapter_id) : null;
 
   // 이번 주 읽은 챕터 수
   const oneWeekAgo = new Date();
@@ -63,8 +39,8 @@ export default async function DashboardPage() {
   const stats = {
     chaptersCompleted: completedIds.size,
     totalChapters: chapterList.length,
-    wordsKnown: vocabStats?.length ?? 0,
-    streakDays: gamification?.streak_current ?? 0,
+    wordsKnown: knownWordCount(progress),
+    streakDays: currentStreak(progress),
   };
 
   const progressPercent = Math.round(
@@ -77,7 +53,7 @@ export default async function DashboardPage() {
       <div className="mb-8">
         <h1 className="text-2xl font-bold text-[#1E1225]">My Progress</h1>
         <p className="text-[#6B5F7A] text-sm mt-1">
-          Welcome back! Keep up the streak.
+          Saved in this browser. Keep up the streak!
         </p>
       </div>
 
@@ -129,13 +105,13 @@ export default async function DashboardPage() {
           <h3 className="text-sm font-semibold text-[#6B5F7A] uppercase tracking-wide mb-3">
             Last read
           </h3>
-          {lastReadChapter ? (
+          {lastReadChapterInfo ? (
             <Link
-              href={`/learn/${lastReadChapter.slug}`}
+              href={`/learn/${lastReadChapterInfo.slug}`}
               className="group"
             >
               <p className="text-[#1E1225] font-medium group-hover:text-[#9B7FE8] transition-colors">
-                Ch{lastReadChapter.num}. {lastReadChapter.title}
+                Ch{lastReadChapterInfo.num}. {lastReadChapterInfo.title}
               </p>
               <p className="text-xs text-[#6B5F7A] mt-1">
                 {new Date(lastRead!.last_read_at).toLocaleDateString("en-US", {

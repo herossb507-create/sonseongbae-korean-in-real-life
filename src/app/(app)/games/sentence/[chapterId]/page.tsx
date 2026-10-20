@@ -1,10 +1,7 @@
-import { notFound, redirect } from "next/navigation";
+import { notFound } from "next/navigation";
 import { CHAPTER_CONTENT } from "@/lib/chapter-content";
 import { CHAPTER_SENTENCES } from "@/lib/sentence-data";
 import SentenceBuilder, { SentenceQuestion } from "@/components/games/SentenceBuilder";
-import { createClient } from "@/lib/supabase/server";
-import { getUserAccess } from "@/lib/auth";
-import { ProGate } from "@/components/subscription/ProGate";
 
 interface PageProps {
   params: Promise<{ chapterId: string }>;
@@ -35,23 +32,6 @@ export default async function SentencePage({ params }: PageProps) {
 
   const chapter = CHAPTER_CONTENT[chapterId];
   if (!chapter) return notFound();
-
-  // Auth + Pro check
-  const supabase = createClient();
-  const { data: { user } } = await supabase.auth.getUser();
-  if (!user) redirect("/login");
-
-  const { isPro } = await getUserAccess();
-  if (!isPro) {
-    return (
-      <ProGate
-        feature="Games are Pro"
-        description="All games require a Pro subscription. Upgrade to play Memory Match, Listening Quiz, Speed Round, Sentence Builder, and Dictation."
-        backHref="/games"
-        backLabel="← Back to games"
-      />
-    );
-  }
 
   const sentences = CHAPTER_SENTENCES[chapterId] ?? [];
 

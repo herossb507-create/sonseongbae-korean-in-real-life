@@ -1,41 +1,18 @@
 import Link from "next/link";
-import { notFound, redirect } from "next/navigation";
+import { notFound } from "next/navigation";
 import { CHAPTER_CONTENT } from "@/lib/chapter-content";
 import { CHAPTER_VOCAB } from "@/lib/vocab-data";
 import { QuizSession } from "@/components/quiz/QuizSession";
-import { createClient } from "@/lib/supabase/server";
-import { getUserAccess } from "@/lib/auth";
-import { ProGate } from "@/components/subscription/ProGate";
-
-const FREE_CHAPTERS = new Set(["ch01", "ch02"]);
 
 interface Props {
   params: { chapterId: string };
 }
 
-export default async function QuizPage({ params }: Props) {
+export default function QuizPage({ params }: Props) {
   const { chapterId } = params;
 
   const chapter = CHAPTER_CONTENT[chapterId];
   if (!chapter) notFound();
-
-  // Auth check
-  const supabase = createClient();
-  const { data: { user } } = await supabase.auth.getUser();
-  if (!user) redirect("/login");
-
-  // Pro check
-  const { isPro } = await getUserAccess();
-  if (!FREE_CHAPTERS.has(chapterId) && !isPro) {
-    return (
-      <ProGate
-        feature="Pro Quiz"
-        description="Quizzes for chapters 3–16 require a Pro subscription."
-        backHref="/learn"
-        backLabel="← Back to all chapters"
-      />
-    );
-  }
 
   // Normalize key: vocab uses "ch01" style, chapterId might be "ch01-hangul" etc.
   const vocabKey = chapterId.split("-")[0]; // "ch01-hangul" → "ch01"
@@ -99,4 +76,8 @@ export default async function QuizPage({ params }: Props) {
       </div>
     </main>
   );
+}
+
+export function generateStaticParams() {
+  return Object.keys(CHAPTER_CONTENT).map((chapterId) => ({ chapterId }));
 }

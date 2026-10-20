@@ -1,241 +1,153 @@
-import Link from "next/link";
-import { redirect } from "next/navigation";
-import { createClient } from "@/lib/supabase/server";
-import { getUserAccess } from "@/lib/auth";
-import { updateDisplayName, updatePassword } from "./actions";
+"use client";
 
-interface Props {
-  searchParams: { error?: string; success?: string };
-}
+import { useEffect, useRef, useState } from "react";
+import {
+  EMPTY_PROGRESS,
+  type Progress,
+  readProgress,
+  resetProgress,
+  setDisplayName,
+  updateProgress,
+  useProgress,
+} from "@/lib/progress";
 
-export default async function SettingsPage({ searchParams }: Props) {
-  const supabase = createClient();
-  const { data: { user } } = await supabase.auth.getUser();
-  if (!user) redirect("/login");
+const BACKUP_VERSION = 1;
 
-  const { isPro, isAdmin } = await getUserAccess();
+export default function SettingsPage() {
+  const progress = useProgress() ?? EMPTY_PROGRESS;
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState<{ ok: boolean; text: string } | null>(null);
+  const fileInput = useRef<HTMLInputElement>(null);
 
-  const { data: profile } = await supabase
-    .from("profiles")
-    .select("display_name")
-    .eq("id", user.id)
-    .single();
+  useEffect(() => {
+    setName(readProgress().displayName);
+  }, []);
+
+  function saveName(e: React.FormEvent) {
+    e.preventDefault();
+    setDisplayName(name);
+    setMessage({ ok: true, text: "✓ Name saved." });
+  }
+
+  // Progress lives in this browser only, so a file is the way to move it to another device.
+  function exportProgress() {
+    const blob = new Blob([JSON.stringify({ version: BACKUP_VERSION, progress: readProgress() }, null, 2)], {
+      type: "application/json",
+    });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `korean-in-real-life-progress-${new Date().toLocaleDateString("sv-SE")}.json`;
+    a.click();
+    URL.revokeObjectURL(url);
+  }
+
+  async function importProgress(file: File) {
+    try {
+      const data = JSON.parse(await file.text()) as { version?: number; progress?: Partial<Progress> };
+      if (data.version !== BACKUP_VERSION || typeof data.progress !== "object" || data.progress === null) {
+        throw new Error("not a progress backup");
+      }
+      updateProgress(() => ({ ...EMPTY_PROGRESS, ...data.progress }));
+      setName(readProgress().displayName);
+      setMessage({ ok: true, text: "✓ Progress restored from backup." });
+    } catch {
+      setMessage({ ok: false, text: "That file isn't a Korean in Real Life progress backup." });
+    }
+  }
+
+  function reset() {
+    if (!window.confirm("Delete all progress saved in this browser? This can't be undone.")) return;
+    resetProgress();
+    setName("");
+    setMessage({ ok: true, text: "Progress reset." });
+  }
 
   return (
     <div className="min-h-screen bg-[#FFF5F8]">
       <div className="max-w-2xl mx-auto px-6 py-10">
-        <h1 className="text-2xl font-bold text-[#1E1225] mb-8">Account Settings</h1>
+        <h1 className="text-2xl font-bold text-[#1E1225] mb-2">Settings</h1>
+        <p className="text-sm text-[#6B5F7A] mb-8">
+          No account needed. Your progress is saved in this browser on this device.
+        </p>
 
-        {/* 성공/에러 메시지 */}
-        {searchParams.success === "profile" && (
-          <div className="mb-4 p-3 bg-[#34C899]/10 border border-[#34C899]/30 rounded-lg text-sm text-[#34C899]">
-            ✓ Display name updated successfully.
-          </div>
-        )}
-        {searchParams.success === "password" && (
-          <div className="mb-4 p-3 bg-[#34C899]/10 border border-[#34C899]/30 rounded-lg text-sm text-[#34C899]">
-            ✓ Password changed successfully.
-          </div>
-        )}
-        {searchParams.error && (
-          <div className="mb-4 p-3 bg-[#EF4444]/10 border border-[#EF4444]/30 rounded-lg text-sm text-[#EF4444]">
-            {searchParams.error}
+        {message && (
+          <div
+            className={`mb-4 p-3 rounded-lg text-sm border ${
+              message.ok
+                ? "bg-[#34C899]/10 border-[#34C899]/30 text-[#1F9E76]"
+                : "bg-[#EF4444]/10 border-[#EF4444]/30 text-[#EF4444]"
+            }`}
+          >
+            {message.text}
           </div>
         )}
 
-        {/* Plan badge */}
-        <div className="mb-6">
-          {isAdmin && (
-            <span className="bg-purple-500/20 text-purple-600 text-xs font-semibold px-2.5 py-1 rounded-full">
-              👑 Admin
-            </span>
-          )}
-          {!isAdmin && isPro && (
-            <span className="bg-[#9B7FE8]/20 text-[#9B7FE8] text-xs font-semibold px-2.5 py-1 rounded-full">
-              ⭐ Pro
-            </span>
-          )}
-        </div>
-
-        {/* Profile */}
+        {/* Name */}
         <section className="bg-white border border-[#F0E6EE] rounded-xl p-6 mb-4 shadow-sm">
-          <h2 className="font-semibold text-[#1E1225] mb-4">Profile</h2>
-          <form action={updateDisplayName} className="space-y-4">
-            <div>
-              <label className="block text-sm font-medium text-[#6B5F7A] mb-1">Display name</label>
-              <input
-                name="display_name"
-                type="text"
-                required
-                defaultValue={profile?.display_name ?? ""}
-                className="w-full bg-white border border-[#F0E6EE] rounded-lg px-3 py-2 text-sm text-[#1E1225] shadow-sm focus:outline-none focus:ring-2 focus:ring-[#E8436F]/20 focus:border-[#E8436F] transition-colors"
-              />
-            </div>
-            <div>
-              <label className="block text-sm font-medium text-[#6B5F7A] mb-1">Email</label>
-              <input
-                type="email"
-                value={user.email ?? ""}
-                readOnly
-                className="w-full bg-[#FFF5F8] border border-[#F0E6EE] rounded-lg px-3 py-2 text-sm text-[#B0A8BB]"
-              />
-            </div>
+          <h2 className="font-semibold text-[#1E1225] mb-4">Your name</h2>
+          <form onSubmit={saveName} className="flex gap-3">
+            <input
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              maxLength={40}
+              placeholder="What should we call you?"
+              className="flex-1 bg-white border border-[#F0E6EE] rounded-lg px-3 py-2 text-sm text-[#1E1225] placeholder:text-[#B0A8BB] shadow-sm focus:outline-none focus:ring-2 focus:ring-[#E8436F]/20 focus:border-[#E8436F] transition-colors"
+            />
             <button
               type="submit"
               className="text-sm bg-gradient-to-r from-[#9B7FE8] to-[#B099FF] text-white px-4 py-2 rounded-lg hover:opacity-90 transition-opacity"
             >
-              Save changes
+              Save
             </button>
           </form>
+          <p className="text-xs text-[#B0A8BB] mt-2">Shown on your Home page. Optional.</p>
         </section>
 
-        {/* Change Password */}
+        {/* Backup */}
         <section className="bg-white border border-[#F0E6EE] rounded-xl p-6 mb-4 shadow-sm">
-          <h2 className="font-semibold text-[#1E1225] mb-4">Change Password</h2>
-          <form action={updatePassword} className="space-y-4">
-            <div>
-              <label className="block text-sm font-medium text-[#6B5F7A] mb-1">New password</label>
-              <input
-                name="new_password"
-                type="password"
-                required
-                minLength={8}
-                placeholder="Min. 8 characters"
-                className="w-full bg-white border border-[#F0E6EE] rounded-lg px-3 py-2 text-sm text-[#1E1225] placeholder:text-[#B0A8BB] shadow-sm focus:outline-none focus:ring-2 focus:ring-[#E8436F]/20 focus:border-[#E8436F] transition-colors"
-              />
-            </div>
-            <div>
-              <label className="block text-sm font-medium text-[#6B5F7A] mb-1">Confirm new password</label>
-              <input
-                name="confirm_password"
-                type="password"
-                required
-                minLength={8}
-                placeholder="Re-enter new password"
-                className="w-full bg-white border border-[#F0E6EE] rounded-lg px-3 py-2 text-sm text-[#1E1225] placeholder:text-[#B0A8BB] shadow-sm focus:outline-none focus:ring-2 focus:ring-[#E8436F]/20 focus:border-[#E8436F] transition-colors"
-              />
-            </div>
-            <button
-              type="submit"
-              className="text-sm bg-[#FFF5F8] border border-[#F0E6EE] text-[#6B5F7A] px-4 py-2 rounded-lg hover:bg-[#FFF0F5] transition-colors"
-            >
-              Update password
-            </button>
-          </form>
-        </section>
-
-        {/* Subscription */}
-        <section className="bg-white border border-[#F0E6EE] rounded-xl p-6 mb-4 shadow-sm">
-          <div className="flex items-center justify-between mb-4">
-            <h2 className="font-semibold text-[#1E1225]">Subscription</h2>
-            <span
-              className="text-xs font-bold px-3 py-1 rounded-full"
-              style={
-                isAdmin
-                  ? { background: "rgba(139,92,246,0.15)", color: "#8B5CF6" }
-                  : isPro
-                  ? { background: "rgba(155,127,232,0.15)", color: "#9B7FE8" }
-                  : { background: "rgba(176,168,187,0.15)", color: "#6B5F7A" }
-              }
-            >
-              {isAdmin ? "👑 Admin" : isPro ? "⭐ Pro" : "Free"}
-            </span>
-          </div>
-
-          {/* Feature comparison */}
-          <div className="grid grid-cols-2 gap-3 mb-5">
-            {/* Free column */}
-            <div
-              className="rounded-xl p-4"
-              style={{
-                background: isPro ? "rgba(240,230,238,0.3)" : "rgba(232,67,111,0.04)",
-                border: isPro ? "1px solid rgba(240,230,238,0.8)" : "1px solid rgba(232,67,111,0.15)",
-              }}
-            >
-              <p className="text-xs font-bold mb-3" style={{ color: isPro ? "#B0A8BB" : "#1E1225" }}>
-                Free {!isPro && <span className="ml-1">← current</span>}
-              </p>
-              {[
-                "Ch01–02 reading",
-                "Ch01–02 flashcards",
-                "Ch01–02 quiz",
-                "Basic TTS audio",
-                "Streak tracking",
-                "Basic dashboard",
-              ].map((f) => (
-                <div key={f} className="flex items-center gap-1.5 mb-1.5">
-                  <span className="text-xs" style={{ color: "#34C899" }}>✓</span>
-                  <span className="text-xs" style={{ color: isPro ? "#B0A8BB" : "#6B5F7A" }}>{f}</span>
-                </div>
-              ))}
-            </div>
-
-            {/* Pro column */}
-            <div
-              className="rounded-xl p-4"
-              style={{
-                background: isPro
-                  ? "linear-gradient(135deg, rgba(232,67,111,0.06), rgba(155,127,232,0.06))"
-                  : "rgba(240,230,238,0.4)",
-                border: isPro
-                  ? "1px solid rgba(232,67,111,0.2)"
-                  : "1px solid rgba(240,230,238,0.8)",
-              }}
-            >
-              <p className="text-xs font-bold mb-3" style={{ color: isPro ? "#E8436F" : "#B0A8BB" }}>
-                Pro {isPro && <span className="ml-1">← current</span>}
-              </p>
-              {[
-                "All 16 chapters",
-                "All flashcards & quizzes",
-                "5 interactive games",
-                "SRS spaced review",
-                "K-Drama phrases",
-                "Conversation dialogues",
-                "Leaderboard & full XP",
-              ].map((f) => (
-                <div key={f} className="flex items-center gap-1.5 mb-1.5">
-                  <span className="text-xs" style={{ color: isPro ? "#E8436F" : "#B0A8BB" }}>
-                    {isPro ? "✓" : "🔒"}
-                  </span>
-                  <span className="text-xs" style={{ color: isPro ? "#6B5F7A" : "#B0A8BB" }}>{f}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* CTA */}
-          {!isPro && !isAdmin && (
-            <Link
-              href="/pricing"
-              className="flex items-center justify-center gap-2 w-full py-3 rounded-xl font-semibold text-white text-sm transition-opacity hover:opacity-90"
-              style={{
-                background: "linear-gradient(to right, #E8436F, #F06B8A)",
-                boxShadow: "0 4px 16px rgba(232,67,111,0.25)",
-              }}
-            >
-              <span>👑</span>
-              <span>Upgrade to Pro — from $7.99/mo</span>
-            </Link>
-          )}
-          {isPro && !isAdmin && (
-            <Link
-              href="/api/billing/portal"
-              className="inline-block text-sm border border-[#F0E6EE] text-[#6B5F7A] px-4 py-2 rounded-lg hover:bg-[#FFF5F8] transition-colors"
-            >
-              Manage billing
-            </Link>
-          )}
-        </section>
-
-        {/* Danger zone */}
-        <section className="bg-white border border-[#EF4444]/20 rounded-xl p-6 shadow-sm">
-          <h2 className="font-semibold text-[#EF4444] mb-2">Danger zone</h2>
+          <h2 className="font-semibold text-[#1E1225] mb-1">Back up or move your progress</h2>
           <p className="text-sm text-[#6B5F7A] mb-4">
-            Permanently delete your account and all associated data.
+            {progress.xp} XP · {Object.values(progress.chapters).filter((c) => c.completed).length} chapters completed ·{" "}
+            {Object.keys(progress.vocab).length} words known. Download a backup file to keep it safe or to continue on
+            another device.
           </p>
-          <button className="text-sm border border-[#EF4444]/30 text-[#EF4444] px-4 py-2 rounded-lg hover:bg-[#EF4444]/10 transition-colors">
-            Delete account
+          <div className="flex flex-wrap gap-3">
+            <button
+              onClick={exportProgress}
+              className="text-sm bg-[#FFF5F8] border border-[#F0E6EE] text-[#1E1225] px-4 py-2 rounded-lg hover:bg-[#FFF0F5] transition-colors"
+            >
+              ⬇ Download backup
+            </button>
+            <button
+              onClick={() => fileInput.current?.click()}
+              className="text-sm bg-[#FFF5F8] border border-[#F0E6EE] text-[#1E1225] px-4 py-2 rounded-lg hover:bg-[#FFF0F5] transition-colors"
+            >
+              ⬆ Restore from file
+            </button>
+            <input
+              ref={fileInput}
+              type="file"
+              accept="application/json,.json"
+              className="hidden"
+              onChange={(e) => {
+                const file = e.target.files?.[0];
+                if (file) importProgress(file);
+                e.target.value = "";
+              }}
+            />
+          </div>
+        </section>
+
+        {/* Reset */}
+        <section className="bg-white border border-[#F0E6EE] rounded-xl p-6 shadow-sm">
+          <h2 className="font-semibold text-[#1E1225] mb-1">Start over</h2>
+          <p className="text-sm text-[#6B5F7A] mb-4">Clears XP, streak, chapter progress and known words in this browser.</p>
+          <button
+            onClick={reset}
+            className="text-sm border border-[#EF4444]/30 text-[#EF4444] px-4 py-2 rounded-lg hover:bg-[#EF4444]/10 transition-colors"
+          >
+            Reset progress
           </button>
         </section>
       </div>

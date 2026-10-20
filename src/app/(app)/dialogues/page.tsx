@@ -1,9 +1,5 @@
 import Link from "next/link";
-import { redirect } from "next/navigation";
 import { DIALOGUE_SCENARIOS } from "@/lib/dialogue-data";
-import { createClient } from "@/lib/supabase/server";
-import { getUserAccess } from "@/lib/auth";
-import { ProGate } from "@/components/subscription/ProGate";
 
 export const metadata = {
   title: "Conversation Dialogues | Korean in Real Life",
@@ -29,23 +25,7 @@ const DIFFICULTY_BADGE: Record<string, { label: string; style: React.CSSProperti
   },
 };
 
-export default async function DialoguesPage() {
-  const supabase = createClient();
-  const { data: { user } } = await supabase.auth.getUser();
-  if (!user) redirect("/login");
-
-  const { isPro } = await getUserAccess();
-  if (!isPro) {
-    return (
-      <ProGate
-        feature="Conversation Dialogues is Pro"
-        description="Practice real-life Korean conversations across everyday scenarios. Upgrade to Pro to unlock this feature."
-        backHref="/dashboard"
-        backLabel="← Back to dashboard"
-      />
-    );
-  }
-
+export default function DialoguesPage() {
   return (
     <div className="min-h-screen" style={{ background: "#FFF5F8" }}>
       <div className="max-w-4xl mx-auto px-4 py-8">

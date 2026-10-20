@@ -1,13 +1,8 @@
 import Link from "next/link";
-import { notFound, redirect } from "next/navigation";
+import { notFound } from "next/navigation";
 import { VocabCard } from "@/components/vocab/VocabCard";
 import { CHAPTER_VOCAB } from "@/lib/vocab-data";
 import { CHAPTER_CONTENT } from "@/lib/chapter-content";
-import { createClient } from "@/lib/supabase/server";
-import { getUserAccess } from "@/lib/auth";
-import { ProGate } from "@/components/subscription/ProGate";
-
-const FREE_CHAPTERS = new Set(["ch01", "ch02"]);
 
 interface Props {
   params: { chapterId: string };
@@ -73,30 +68,12 @@ const stepColors: Record<
   },
 };
 
-export default async function VocabPage({ params, searchParams }: Props) {
+export default function VocabPage({ params, searchParams }: Props) {
   const { chapterId } = params;
 
   const allVocab = CHAPTER_VOCAB[chapterId];
   const chapter = CHAPTER_CONTENT[chapterId];
   if (!allVocab || !chapter) notFound();
-
-  // Auth check
-  const supabase = createClient();
-  const { data: { user } } = await supabase.auth.getUser();
-  if (!user) redirect("/login");
-
-  // Pro check
-  const { isPro } = await getUserAccess();
-  if (!FREE_CHAPTERS.has(chapterId) && !isPro) {
-    return (
-      <ProGate
-        feature="Pro Flashcards"
-        description="Vocabulary flashcards for chapters 3–16 require a Pro subscription."
-        backHref="/learn"
-        backLabel="← Back to all chapters"
-      />
-    );
-  }
 
   // Parse & clamp step
   const rawStep = parseInt(searchParams.step ?? "1", 10);
