@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getCities, getConcertsByCity } from "@/lib/concerts/data";
 import { flag } from "@/lib/concerts/format";
-import { SITE_URL } from "@/lib/concerts/site";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "K-pop concerts by city | Korean in Real Life",
+export const metadata: Metadata = pageMeta({
+  title: "K-pop concerts by city",
   description: "Find K-pop concerts near you: every city with announced K-pop shows.",
-  alternates: { canonical: `${SITE_URL}/concerts/cities` },
-};
+  path: "/concerts/cities",
+});
 
 export default function CitiesPage() {
   return (

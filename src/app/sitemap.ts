@@ -1,5 +1,7 @@
 import type { MetadataRoute } from "next";
 import { CHAPTER_CONTENT } from "@/lib/chapter-content";
+import { DIALOGUE_SCENARIOS } from "@/lib/dialogue-data";
+import { CHAPTER_VOCAB } from "@/lib/vocab-data";
 import { getCities, getConcerts, getListedArtists } from "@/lib/concerts/data";
 import { SITE_URL } from "@/lib/concerts/site";
 
@@ -17,7 +19,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/privacy`, changeFrequency: "yearly", priority: 0.2 },
     { url: `${SITE_URL}/games`, changeFrequency: "monthly" },
     { url: `${SITE_URL}/kdrama`, changeFrequency: "monthly" },
+    ...Object.keys(CHAPTER_VOCAB)
+      .filter((id) => CHAPTER_CONTENT[id])
+      .map((id) => ({ url: `${SITE_URL}/vocab/${id}`, changeFrequency: "monthly" as const })),
+    { url: `${SITE_URL}/daily`, changeFrequency: "daily" },
     { url: `${SITE_URL}/dialogues`, changeFrequency: "monthly" },
+    ...DIALOGUE_SCENARIOS.map((d) => ({ url: `${SITE_URL}/dialogues/${d.id}`, changeFrequency: "monthly" as const })),
     { url: `${SITE_URL}/concerts`, lastModified: latest(concerts), changeFrequency: "daily", priority: 0.9 },
     { url: `${SITE_URL}/concerts/artists`, lastModified: latest(concerts), changeFrequency: "daily" },
     { url: `${SITE_URL}/concerts/cities`, lastModified: latest(concerts), changeFrequency: "daily" },

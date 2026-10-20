@@ -8,6 +8,7 @@ import { ticketLinksFor } from "@/lib/concerts/affiliate";
 import { getConcert, getConcerts, startDateTime } from "@/lib/concerts/data";
 import { citySlug, flag, formatDate, sourceLabel } from "@/lib/concerts/format";
 import { SITE_URL } from "@/lib/concerts/site";
+import { pageMeta } from "@/lib/seo";
 import { BookCover } from "@/components/books/BookCover";
 import { BOOKS } from "@/lib/books";
 
@@ -28,11 +29,11 @@ function title(c: ConcertWithRefs) {
 export function generateMetadata({ params }: Props): Metadata {
   const c = getConcert(params.slug);
   if (!c) return {};
-  return {
-    title: `${title(c)} | Korean in Real Life`,
+  return pageMeta({
+    title: `${title(c)}`,
     description: `${c.artist.name} ${c.tour} at ${c.venue.name}, ${c.venue.city} on ${formatDate(c.date)}. Showtime, ticket status and where to buy.`,
-    alternates: { canonical: `${SITE_URL}/concerts/${params.slug}` },
-  };
+    path: `/concerts/${params.slug}`,
+  });
 }
 
 const EVENT_STATUS = {

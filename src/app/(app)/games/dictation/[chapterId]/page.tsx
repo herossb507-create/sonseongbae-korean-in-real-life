@@ -2,6 +2,14 @@ import { notFound } from "next/navigation";
 import { CHAPTER_CONTENT } from "@/lib/chapter-content";
 import { CHAPTER_VOCAB } from "@/lib/vocab-data";
 import DictationGame from "@/components/games/DictationGame";
+import { pageMeta } from "@/lib/seo";
+
+export const metadata = pageMeta({
+  title: "Korean Dictation Game",
+  description: "Practice Korean vocabulary with Dictation.",
+  path: "/games",
+  noindex: true,
+});
 
 interface PageProps {
   params: Promise<{ chapterId: string }>;

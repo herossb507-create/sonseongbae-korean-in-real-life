@@ -3,9 +3,20 @@ import { notFound } from "next/navigation";
 import { ReaderControls } from "@/components/reader/ReaderControls";
 import { CHAPTER_CONTENT } from "@/lib/chapter-content";
 import { ChapterBookCTA } from "@/components/books/ChapterBookCTA";
+import { chapterSummary, pageMeta } from "@/lib/seo";
 
 interface Props {
   params: { chapterId: string };
+}
+
+export function generateMetadata({ params }: Props) {
+  const chapter = CHAPTER_CONTENT[params.chapterId];
+  if (!chapter) return {};
+  return pageMeta({
+    title: `Korean Lesson ${chapter.num}: ${chapter.title}`,
+    description: `${chapterSummary(params.chapterId)}. Free Korean lesson with romanization, audio and culture notes.`,
+    path: `/learn/${params.chapterId}`,
+  });
 }
 
 export default function ChapterPage({ params }: Props) {

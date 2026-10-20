@@ -1,11 +1,13 @@
 import { getDailyVocab, getTodayString } from "@/lib/daily-challenge";
 import { CHAPTER_VOCAB } from "@/lib/vocab-data";
 import { DailyChallenge } from "@/components/games/DailyChallenge";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
-  title: "Daily Challenge · Korean in Real Life",
-  description: "10 new questions every day — same challenge for all learners worldwide.",
-};
+export const metadata = pageMeta({
+  title: "Daily Korean Challenge — 10 New Questions Every Day",
+  description: "A free daily Korean vocabulary quiz: 10 new questions every day, the same for every learner worldwide.",
+  path: "/daily",
+});
 
 export default function DailyChallengePage() {
   const todayStr = getTodayString();

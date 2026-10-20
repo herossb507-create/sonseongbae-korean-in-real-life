@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getConcertsByArtist, getListedArtists } from "@/lib/concerts/data";
-import { SITE_URL } from "@/lib/concerts/site";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "K-pop artists on tour | Korean in Real Life",
+export const metadata: Metadata = pageMeta({
+  title: "K-pop artists on tour",
   description: "Every K-pop artist with announced concert dates, with links to each tour stop.",
-  alternates: { canonical: `${SITE_URL}/concerts/artists` },
-};
+  path: "/concerts/artists",
+});
 
 export default function ArtistsPage() {
   return (

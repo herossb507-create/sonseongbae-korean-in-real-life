@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Noto_Sans_KR } from "next/font/google";
+import { SITE_URL } from "@/lib/concerts/site";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -12,6 +13,7 @@ const notoSansKr = Noto_Sans_KR({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "Korean in Real Life",
   description: "Learn practical Korean for free — 16 chapters, audio, flashcards and games — plus a world map of K-pop concerts.",
   manifest: "/manifest.json",

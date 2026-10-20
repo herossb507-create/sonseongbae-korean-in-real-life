@@ -1,5 +1,8 @@
 import Link from "next/link";
 import { FloatingWords } from "@/components/FloatingWords";
+import { pageMeta } from "@/lib/seo";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { SITE_URL } from "@/lib/concerts/site";
 import { BookCard } from "@/components/books/BookCard";
 import { FreePdfBanner } from "@/components/books/FreePdfBanner";
 import { BOOKS } from "@/lib/books";
@@ -9,6 +12,13 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+
+export const metadata = pageMeta({
+  title: "Learn Korean Free — Real-Life Phrases, Audio & Flashcards",
+  description:
+    "Learn practical Korean for free: 16 chapters from Hangul to real conversations, native audio, flashcards, quizzes and games — no sign-up. Plus a world map of K-pop concerts.",
+  path: "/",
+});
 
 const FEATURES = [
   { icon: "📖", title: "16 Structured Chapters", desc: "From Hangul basics to real conversations — organized for steady progress." },
@@ -68,6 +78,16 @@ function Check({ ok }: { ok: boolean }) {
 export default function LandingPage() {
   return (
     <main className="min-h-screen bg-[#FFF5F8] overflow-x-hidden">
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "Korean in Real Life",
+          url: `${SITE_URL}/`,
+          description: "Free practical Korean lessons with audio, flashcards and games, plus a world map of K-pop concerts.",
+          inLanguage: "en",
+        }}
+      />
 
       {/* ── Nav ── */}
       <nav className="relative z-20 border-b border-[#F0E6EE] bg-white/95 backdrop-blur-md px-6 py-4 flex justify-between items-center shadow-sm">

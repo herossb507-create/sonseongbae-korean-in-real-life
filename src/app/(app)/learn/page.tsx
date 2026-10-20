@@ -1,10 +1,15 @@
 import Link from "next/link";
 import { ChapterDoneMark, LearnProgress } from "@/components/progress/ProgressBits";
+import { pageMeta } from "@/lib/seo";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { SITE_URL } from "@/lib/concerts/site";
 
-export const metadata = {
-  title: "Chapters | Korean in Real Life",
-  description: "16 free chapters of practical Korean, from Hangul to real conversations.",
-};
+export const metadata = pageMeta({
+  title: "Learn Korean: 16 Free Chapters from Hangul to Real Conversations",
+  description:
+    "A free, structured Korean course: Hangul, greetings, numbers, food, shopping, honorifics, K-pop and K-drama Korean. Read each chapter with audio, flashcards and quizzes.",
+  path: "/learn",
+});
 
 const CHAPTERS = [
   { id: "ch01", num: 1, title: "Meet Hangul — The Korean Alphabet", wordCount: 20 },
@@ -28,6 +33,31 @@ const CHAPTERS = [
 export default function LearnPage() {
   return (
     <div className="max-w-3xl mx-auto px-6 py-10">
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Course",
+          name: "Korean in Real Life: Practical Korean from Hangul to Real Conversations",
+          description:
+            "A free 16-chapter Korean course for beginners: Hangul, greetings, numbers, food, shopping, honorifics, K-pop and K-drama Korean, with audio and flashcards.",
+          url: `${SITE_URL}/learn`,
+          inLanguage: "en",
+          educationalLevel: "Beginner",
+          isAccessibleForFree: true,
+          offers: { "@type": "Offer", price: 0, priceCurrency: "USD", category: "Free" },
+          provider: { "@type": "Organization", name: "Korean in Real Life", url: `${SITE_URL}/` },
+          hasCourseInstance: {
+            "@type": "CourseInstance",
+            courseMode: "Online",
+            courseWorkload: "PT10H",
+          },
+          syllabusSections: CHAPTERS.map((ch) => ({
+            "@type": "Syllabus",
+            name: `Chapter ${ch.num}: ${ch.title}`,
+            url: `${SITE_URL}/learn/${ch.id}`,
+          })),
+        }}
+      />
       <div className="flex justify-between items-center mb-8">
         <div>
           <h1 className="text-2xl font-bold text-[#1E1225]">Chapters</h1>

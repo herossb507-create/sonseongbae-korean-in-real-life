@@ -3,6 +3,14 @@ import Link from "next/link";
 import { CHAPTER_CONTENT } from "@/lib/chapter-content";
 import { CHAPTER_VOCAB } from "@/lib/vocab-data";
 import ListeningQuiz from "@/components/games/ListeningQuiz";
+import { pageMeta } from "@/lib/seo";
+
+export const metadata = pageMeta({
+  title: "Korean Listening Quiz Game",
+  description: "Practice Korean vocabulary with Listening Quiz.",
+  path: "/games",
+  noindex: true,
+});
 
 interface PageProps {
   params: Promise<{ chapterId: string }>;

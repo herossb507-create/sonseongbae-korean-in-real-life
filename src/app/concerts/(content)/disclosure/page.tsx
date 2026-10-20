@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { SITE_URL } from "@/lib/concerts/site";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Affiliate disclosure | Korean in Real Life",
-  alternates: { canonical: `${SITE_URL}/concerts/disclosure` },
-};
+export const metadata: Metadata = pageMeta({
+  title: "Affiliate disclosure",
+  description: "How Korean in Real Life chooses ticket links and when it earns a commission.",
+  path: "/concerts/disclosure",
+});
 
 export default function DisclosurePage() {
   return (

@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import ConcertList from "@/components/concerts/ConcertList";
 import { getCities, getConcertsByCity } from "@/lib/concerts/data";
 import { flag } from "@/lib/concerts/format";
-import { SITE_URL } from "@/lib/concerts/site";
+import { pageMeta } from "@/lib/seo";
 
 interface Props {
   params: { slug: string };
@@ -23,11 +23,11 @@ export function generateMetadata({ params }: Props): Metadata {
   const city = findCity(params.slug);
   if (!city) return {};
   const artists = [...new Set(getConcertsByCity(params.slug).map((c) => c.artist.name))];
-  return {
-    title: `K-pop concerts in ${city.name} | Korean in Real Life`,
+  return pageMeta({
+    title: `K-pop concerts in ${city.name}`,
     description: `Upcoming K-pop concerts in ${city.name}, ${city.country}: ${artists.slice(0, 6).join(", ")}. Dates, venues and tickets.`,
-    alternates: { canonical: `${SITE_URL}/concerts/cities/${params.slug}` },
-  };
+    path: `/concerts/cities/${params.slug}`,
+  });
 }
 
 export default function CityPage({ params }: Props) {

@@ -3,6 +3,14 @@ import Link from "next/link";
 import { CHAPTER_CONTENT } from "@/lib/chapter-content";
 import { CHAPTER_VOCAB } from "@/lib/vocab-data";
 import SpeedRound from "@/components/games/SpeedRound";
+import { pageMeta } from "@/lib/seo";
+
+export const metadata = pageMeta({
+  title: "Korean Speed Round Game",
+  description: "Practice Korean vocabulary with Speed Round.",
+  path: "/games",
+  noindex: true,
+});
 
 interface PageProps {
   params: Promise<{ chapterId: string }>;

@@ -2,6 +2,14 @@ import { notFound } from "next/navigation";
 import { CHAPTER_CONTENT } from "@/lib/chapter-content";
 import { CHAPTER_VOCAB } from "@/lib/vocab-data";
 import MemoryMatch from "@/components/games/MemoryMatch";
+import { pageMeta } from "@/lib/seo";
+
+export const metadata = pageMeta({
+  title: "Korean Memory Match Game",
+  description: "Practice Korean vocabulary with Memory Match.",
+  path: "/games",
+  noindex: true,
+});
 
 interface PageProps {
   params: Promise<{ chapterId: string }>;

@@ -2,6 +2,14 @@ import { notFound } from "next/navigation";
 import { CHAPTER_CONTENT } from "@/lib/chapter-content";
 import { CHAPTER_SENTENCES } from "@/lib/sentence-data";
 import SentenceBuilder, { SentenceQuestion } from "@/components/games/SentenceBuilder";
+import { pageMeta } from "@/lib/seo";
+
+export const metadata = pageMeta({
+  title: "Korean Sentence Builder Game",
+  description: "Practice Korean vocabulary with Sentence Builder.",
+  path: "/games",
+  noindex: true,
+});
 
 interface PageProps {
   params: Promise<{ chapterId: string }>;

@@ -2,6 +2,14 @@ import Link from "next/link";
 import { CHAPTER_CONTENT } from "@/lib/chapter-content";
 import { CHAPTER_VOCAB } from "@/lib/vocab-data";
 import { CHAPTER_SENTENCES } from "@/lib/sentence-data";
+import { pageMeta } from "@/lib/seo";
+
+export const metadata = pageMeta({
+  title: "Korean Vocabulary Games: Memory Match, Listening, Dictation & More",
+  description:
+    "Free Korean learning games for every chapter: Memory Match, Listening Quiz, Speed Round, Sentence Builder and Dictation.",
+  path: "/games",
+});
 
 const CHAPTER_EMOJI: Record<string, string> = {
   ch01: "🔤",

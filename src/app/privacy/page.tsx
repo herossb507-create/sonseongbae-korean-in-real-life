@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { FREE_PDF } from "@/lib/books";
 import { SITE_URL } from "@/lib/concerts/site";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Privacy Policy | Korean in Real Life",
+export const metadata = pageMeta({
+  title: "Privacy Policy",
   description: "What Korean in Real Life stores, which services it uses, and your choices.",
-  alternates: { canonical: `${SITE_URL}/privacy` },
-};
+  path: "/privacy",
+});
 
 const EFFECTIVE_DATE = "October 20, 2026";
 const CONTACT_EMAIL = "hello@koreaninreallife.com";

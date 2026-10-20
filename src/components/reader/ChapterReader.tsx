@@ -339,14 +339,9 @@ export function ChapterReader({
       {blocks.map((block, idx) => {
         switch (block.type) {
           case "h1":
-            return (
-              <h1
-                key={idx}
-                className="text-3xl font-bold text-white mb-6 leading-tight"
-              >
-                {renderInline(block.text)}
-              </h1>
-            );
+            // The chapter page already shows this title as its <h1>; a second
+            // (previously white-on-white) heading only confused search engines.
+            return null;
 
           case "h2":
             return (

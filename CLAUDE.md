@@ -613,3 +613,12 @@ export function speakKorean(text: string, options?: { rate?: number; pitch?: num
 ## 🚀 배포: Cloudflare Workers 정적 자산 (정적 내보내기 + wrangler.jsonc, 2026-10-20)
 
 `next.config.mjs`에 `output: "export"` → `out/` 정적 파일. 서버 기능(API 라우트, 서버 액션, `searchParams`, `cookies()` 등) 추가 금지 — 쓰면 빌드가 깨짐. 단어장 단계(`?step=`)는 브라우저에서 읽음(`src/components/vocab/VocabSteps.tsx`). 설정 절차는 `docs/DEPLOY-cloudflare.md`.
+
+---
+
+## 🔎 SEO (2026-10-20)
+
+- 페이지 메타데이터는 `src/lib/seo.ts`의 `pageMeta({ title, description, path, noindex? })`로 통일 — 제목 뒤 "| Korean in Real Life", canonical, Open Graph·Twitter, 공유 이미지(`public/og-image.png`)를 한 번에 넣음. 새 페이지도 이걸 쓸 것(제목 중복 금지).
+- 검색 제외(noindex): 브라우저 저장 진도 페이지(home·dashboard·settings), 퀴즈·게임 개별 페이지, voice-test.
+- 구조화 데이터: 랜딩 WebSite, `/learn` Course, `/books` Book, 공연 상세 MusicEvent (`src/components/seo/JsonLd.tsx`).
+- `NEXT_PUBLIC_APP_URL`이 canonical·sitemap 주소의 기준. 도메인 바꾸면 이 값 바꾸고 재배포.

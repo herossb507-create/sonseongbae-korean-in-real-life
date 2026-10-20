@@ -3,9 +3,21 @@ import { notFound } from "next/navigation";
 import { CHAPTER_CONTENT } from "@/lib/chapter-content";
 import { CHAPTER_VOCAB } from "@/lib/vocab-data";
 import { QuizSession } from "@/components/quiz/QuizSession";
+import { pageMeta } from "@/lib/seo";
 
 interface Props {
   params: { chapterId: string };
+}
+
+export function generateMetadata({ params }: Props) {
+  const chapter = CHAPTER_CONTENT[params.chapterId];
+  if (!chapter) return {};
+  return pageMeta({
+    title: `Quiz: ${chapter.title}`,
+    description: `Test your Korean from chapter ${chapter.num}, ${chapter.title}.`,
+    path: `/quiz/${params.chapterId}`,
+    noindex: true,
+  });
 }
 
 export default function QuizPage({ params }: Props) {

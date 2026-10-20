@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { DIALOGUE_SCENARIOS } from "@/lib/dialogue-data";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
-  title: "Conversation Dialogues | Korean in Real Life",
-  description: "Practice real-life Korean conversations across everyday scenarios.",
-};
+export const metadata = pageMeta({
+  title: "Korean Conversation Dialogues for Real-Life Situations",
+  description: "Practice real Korean conversations: ordering at a café, shopping, restaurants and more, with audio and romanization.",
+  path: "/dialogues",
+});
 
 const DIFFICULTY_BADGE: Record<string, { label: string; style: React.CSSProperties }> = {
   beginner: {

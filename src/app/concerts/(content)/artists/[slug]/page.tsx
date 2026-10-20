@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import ConcertList from "@/components/concerts/ConcertList";
 import { getArtist, getConcertsByArtist, getListedArtists } from "@/lib/concerts/data";
-import { SITE_URL } from "@/lib/concerts/site";
+import { pageMeta } from "@/lib/seo";
 
 interface Props {
   params: { slug: string };
@@ -19,11 +19,11 @@ export function generateMetadata({ params }: Props): Metadata {
   if (!artist) return {};
   const shows = getConcertsByArtist(params.slug);
   const tours = [...new Set(shows.map((c) => c.tour))].join(", ");
-  return {
-    title: `${artist.name} tour dates & tickets | Korean in Real Life`,
+  return pageMeta({
+    title: `${artist.name} Tour Dates 2026–2027 & Tickets`,
     description: `${artist.name}${artist.nameKo ? ` (${artist.nameKo})` : ""} concert dates: ${tours}. ${shows.length} shows with venues and ticket links.`,
-    alternates: { canonical: `${SITE_URL}/concerts/artists/${params.slug}` },
-  };
+    path: `/concerts/artists/${params.slug}`,
+  });
 }
 
 const OFFICIAL_LABEL = { weverse: "Weverse", site: "Official site", x: "X", instagram: "Instagram", youtube: "YouTube" };
