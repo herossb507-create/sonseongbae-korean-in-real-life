@@ -1,0 +1,15 @@
+// Cloudflare Workers static assets: serves the `out/` folder from `npm run build`.
+// No Worker script — every page is a prebuilt file.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // Must match the Worker name in the Cloudflare dashboard.
+  "name": "sonseongbae-korean-in-real-life",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./out",
+    // /concerts → concerts.html, /concerts/artists/bts → concerts/artists/bts.html
+    "html_handling": "auto-trailing-slash",
+    // Unknown paths get out/404.html with a 404 status
+    "not_found_handling": "404-page"
+  }
+}

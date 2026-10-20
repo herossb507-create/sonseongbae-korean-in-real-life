@@ -33,7 +33,7 @@
 | 진도 저장 | 브라우저 localStorage (`src/lib/progress.ts`) | - |
 | TTS | Web Speech API (여성 목소리 자동 선택) | - |
 | AI (Future) | Vercel AI SDK + OpenAI | latest |
-| Deployment | Cloudflare Pages (static export) | - |
+| Deployment | Cloudflare Workers static assets (static export) | - |
 
 ---
 
@@ -610,6 +610,6 @@ export function speakKorean(text: string, options?: { rate?: number; pitch?: num
 
 ---
 
-## 🚀 배포: Cloudflare Pages (정적 내보내기, 2026-10-20)
+## 🚀 배포: Cloudflare Workers 정적 자산 (정적 내보내기 + wrangler.jsonc, 2026-10-20)
 
-`next.config.mjs`에 `output: "export"` → `out/` 정적 파일. 서버 기능(API 라우트, 서버 액션, `searchParams`, `cookies()` 등) 추가 금지 — 쓰면 빌드가 깨짐. 단어장 단계(`?step=`)는 브라우저에서 읽음(`src/components/vocab/VocabSteps.tsx`). 설정 절차는 `docs/DEPLOY-cloudflare-pages.md`.
+`next.config.mjs`에 `output: "export"` → `out/` 정적 파일. 서버 기능(API 라우트, 서버 액션, `searchParams`, `cookies()` 등) 추가 금지 — 쓰면 빌드가 깨짐. 단어장 단계(`?step=`)는 브라우저에서 읽음(`src/components/vocab/VocabSteps.tsx`). 설정 절차는 `docs/DEPLOY-cloudflare.md`.
