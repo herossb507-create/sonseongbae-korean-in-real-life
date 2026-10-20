@@ -1,8 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  transpilePackages: ["@lemonsqueezy/lemonsqueezy.js"],
+  // Fully static site: `npm run build` writes plain HTML/JS/CSS to `out/`,
+  // which Cloudflare Pages serves directly (no server, no functions).
+  output: "export",
+  images: {
+    // The image optimizer needs a server; book covers are served as-is.
+    unoptimized: true,
+  },
   typescript: {
-    // Supabase DB 타입이 생성되기 전까지 임시로 허용
     ignoreBuildErrors: true,
   },
   eslint: {

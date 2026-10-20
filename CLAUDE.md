@@ -33,7 +33,7 @@
 | 진도 저장 | 브라우저 localStorage (`src/lib/progress.ts`) | - |
 | TTS | Web Speech API (여성 목소리 자동 선택) | - |
 | AI (Future) | Vercel AI SDK + OpenAI | latest |
-| Deployment | Vercel | - |
+| Deployment | Cloudflare Pages (static export) | - |
 
 ---
 
@@ -607,3 +607,9 @@ export function speakKorean(text: string, options?: { rate?: number; pitch?: num
 | 한국 공연 상세 | Korea Unlocked 카드 (공연장이 KR일 때만) |
 
 표지 이미지는 `public/books/*.jpg`에 넣고 `cover` 필드를 채우면 자동으로 대체됨(없으면 그라디언트 표지).
+
+---
+
+## 🚀 배포: Cloudflare Pages (정적 내보내기, 2026-10-20)
+
+`next.config.mjs`에 `output: "export"` → `out/` 정적 파일. 서버 기능(API 라우트, 서버 액션, `searchParams`, `cookies()` 등) 추가 금지 — 쓰면 빌드가 깨짐. 단어장 단계(`?step=`)는 브라우저에서 읽음(`src/components/vocab/VocabSteps.tsx`). 설정 절차는 `docs/DEPLOY-cloudflare-pages.md`.
