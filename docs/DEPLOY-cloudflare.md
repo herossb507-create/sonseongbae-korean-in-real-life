@@ -11,7 +11,7 @@
 
    | 항목 | 값 |
    |---|---|
-   | Project name | `sonseongbae-korean-in-real-life` (`wrangler.jsonc`의 `name`과 같아야 함) |
+   | Project name | `korean-in-real-life` (`wrangler.jsonc`의 `name`과 같아야 함. 이름을 바꿀 땐 대시보드에서 먼저 바꾸고 이 파일도 맞춤) |
    | Build command | `npm run build` |
    | Deploy command | `npx wrangler deploy` |
    | Root directory | `/` |
@@ -20,10 +20,10 @@
 
    | 이름 | 값 |
    |---|---|
-   | `NEXT_PUBLIC_APP_URL` | 실제 주소, 예: `https://sonseongbae-korean-in-real-life.<계정>.workers.dev` 또는 연결한 도메인 |
+   | `NEXT_PUBLIC_APP_URL` | 실제 주소, 현재 `https://korean-in-real-life.herossb507.workers.dev` (도메인 연결 시 그 주소) |
    | `NODE_VERSION` | `24` (공연 데이터 검사 스크립트가 Node 22.18+ 필요. `.node-version`에도 적혀 있음) |
 
-5. Deploy → `https://sonseongbae-korean-in-real-life.<계정>.workers.dev`로 공개
+5. Deploy → `https://korean-in-real-life.herossb507.workers.dev`로 공개
 
 이후 `main`에 push할 때마다 자동으로 다시 빌드·배포된다.
 
