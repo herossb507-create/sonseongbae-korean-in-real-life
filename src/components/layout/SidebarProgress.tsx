@@ -30,6 +30,13 @@ export function SidebarProgress({ onNavigate }: { onNavigate?: () => void }) {
       >
         Saved in this browser · Back up →
       </Link>
+      <Link
+        href="/privacy"
+        onClick={onNavigate}
+        className="mt-1 block text-xs text-[#B0A8BB] hover:text-[#6B5F7A] transition-colors"
+      >
+        Privacy
+      </Link>
     </div>
   );
 }

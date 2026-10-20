@@ -336,6 +336,7 @@ export default function LandingPage() {
           <div className="border-t border-[#F0E6EE] pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-[#B0A8BB]">
             <p>© 2026 Korean in Real Life. All rights reserved.</p>
             <div className="flex gap-4">
+              <Link href="/privacy" className="hover:text-[#1E1225] transition-colors">Privacy</Link>
               <Link href="/concerts/disclosure" className="hover:text-[#1E1225] transition-colors">Affiliate disclosure</Link>
             </div>
           </div>

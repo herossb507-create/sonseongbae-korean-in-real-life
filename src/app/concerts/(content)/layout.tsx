@@ -15,6 +15,7 @@ export default function ConcertsContentLayout({ children }: { children: React.Re
           </p>
           <p className="flex flex-wrap gap-4">
             <Link href="/concerts/disclosure" className="hover:text-[#1E1225]">Affiliate disclosure</Link>
+            <Link href="/privacy" className="hover:text-[#1E1225]">Privacy</Link>
             <Link href="/" className="hover:text-[#1E1225]">Learn Korean</Link>
             <a href="mailto:hello@koreaninreallife.com" className="hover:text-[#1E1225]">Report a wrong date</a>
           </p>

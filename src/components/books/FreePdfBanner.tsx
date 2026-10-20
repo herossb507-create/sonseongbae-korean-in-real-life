@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FREE_PDF } from "@/lib/books";
 
 /** Email sign-up for the free PDFs (hosted on MailerLite). */
@@ -18,6 +19,12 @@ export function FreePdfBanner({ compact = false }: { compact?: boolean }) {
             {FREE_PDF.title} <span className="font-medium text-[#6B5F7A]">· {FREE_PDF.subtitle}</span>
           </p>
           {!compact && <p className="mt-1 max-w-xl text-sm text-[#6B5F7A]">{FREE_PDF.description}</p>}
+          <p className="mt-1 text-[11px] text-[#B0A8BB]">
+            Sign-up by email via MailerLite ·{" "}
+            <Link href="/privacy" className="underline">
+              Privacy
+            </Link>
+          </p>
         </div>
       </div>
       <a

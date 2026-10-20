@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/learn`, changeFrequency: "monthly", priority: 0.9 },
     ...Object.keys(CHAPTER_CONTENT).map((id) => ({ url: `${SITE_URL}/learn/${id}`, changeFrequency: "monthly" as const })),
     { url: `${SITE_URL}/books`, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE_URL}/privacy`, changeFrequency: "yearly", priority: 0.2 },
     { url: `${SITE_URL}/games`, changeFrequency: "monthly" },
     { url: `${SITE_URL}/kdrama`, changeFrequency: "monthly" },
     { url: `${SITE_URL}/dialogues`, changeFrequency: "monthly" },
