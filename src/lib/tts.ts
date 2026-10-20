@@ -58,60 +58,88 @@ export interface SpeakOptions {
   pitch?: number;  // 기본 1.2
 }
 
-function doSpeak(text: string, rate: number, pitch: number): void {
-  const utter = new SpeechSynthesisUtterance(text);
-  utter.lang = "ko-KR";
-  utter.rate = rate;
-  utter.pitch = pitch;
+// Keep a reference to the current utterance: Chrome on Android can garbage-collect
+// it mid-sentence, which cuts the audio off (or never starts it).
+let currentUtterance: SpeechSynthesisUtterance | null = null;
 
-  const voice = pickKoreanVoice();
-  if (voice) utter.voice = voice;
+// Load the voice list early so the first tap already has a Korean voice to pick.
+if (typeof window !== "undefined" && "speechSynthesis" in window) {
+  speechSynthesis.getVoices();
+  speechSynthesis.addEventListener?.("voiceschanged", () => speechSynthesis.getVoices());
+}
 
-  speechSynthesis.cancel();
-  speechSynthesis.speak(utter);
+const HELP_SHOWN_KEY = "tts-help-shown";
+
+/** One-time hint when the device can't speak Korean (no voice, muted, unsupported). */
+function showTtsHelp(reason: "unsupported" | "no-korean-voice" | "error") {
+  if (typeof document === "undefined") return;
+  try {
+    if (sessionStorage.getItem(HELP_SHOWN_KEY)) return;
+    sessionStorage.setItem(HELP_SHOWN_KEY, "1");
+  } catch {
+    // storage blocked: still show it once for this page view
+    if (document.getElementById("tts-help")) return;
+  }
+  const message =
+    reason === "unsupported"
+      ? "This browser can't play pronunciation audio. Try Chrome or Safari."
+      : "Can't play Korean audio? Turn up your media volume. On Android, install a Korean voice: Settings → Text-to-speech output → Google → Install voice data → Korean.";
+
+  const box = document.createElement("div");
+  box.id = "tts-help";
+  box.setAttribute("role", "status");
+  box.style.cssText =
+    "position:fixed;left:12px;right:12px;bottom:16px;z-index:9999;max-width:480px;margin:0 auto;" +
+    "background:#1E1225;color:#fff;border-radius:14px;padding:12px 40px 12px 14px;font-size:13px;line-height:1.45;" +
+    "box-shadow:0 8px 24px rgba(0,0,0,.25)";
+  box.textContent = "🔊 " + message;
+  const close = document.createElement("button");
+  close.textContent = "✕";
+  close.setAttribute("aria-label", "Close");
+  close.style.cssText = "position:absolute;top:8px;right:10px;background:none;border:0;color:#fff;font-size:16px;cursor:pointer";
+  close.onclick = () => box.remove();
+  box.appendChild(close);
+  document.body.appendChild(box);
+  setTimeout(() => box.remove(), 12000);
 }
 
 /**
  * 한국어 TTS 재생
- * ⚠️ 반드시 사용자 클릭 핸들러에서 직접 호출할 것 (Safari autoplay 정책)
+ * ⚠️ 반드시 사용자 클릭 핸들러에서 직접 호출할 것 — 모바일 브라우저는 탭 직후에만 소리를 허용함.
+ * 그래서 목소리 목록을 기다리지 않고 항상 즉시 speak()를 호출한다. 목록이 아직 비어 있어도
+ * lang="ko-KR"이면 브라우저가 기본 한국어 음성을 고른다.
  */
 export function speakKorean(text: string, options: SpeakOptions = {}): void {
   if (typeof window === "undefined") return;
-  if (!("speechSynthesis" in window)) return;
   if (!text.trim()) return;
-
-  const rate = options.rate ?? 0.85;
-  const pitch = options.pitch ?? 1.2;
-
-  const voices = speechSynthesis.getVoices();
-
-  if (voices.length > 0) {
-    // 목소리 이미 로드됨 → 바로 실행 (Safari 동기 실행 유지)
-    doSpeak(text, rate, pitch);
+  if (!("speechSynthesis" in window) || typeof SpeechSynthesisUtterance === "undefined") {
+    showTtsHelp("unsupported");
     return;
   }
 
-  // 목소리 미로드 → voiceschanged 이벤트 대기
-  let fired = false;
+  const utter = new SpeechSynthesisUtterance(text);
+  utter.lang = "ko-KR";
+  utter.rate = options.rate ?? 0.85;
+  utter.pitch = options.pitch ?? 1.2;
 
-  const onVoicesChanged = () => {
-    if (fired) return;
-    fired = true;
-    doSpeak(text, rate, pitch);
+  const voices = speechSynthesis.getVoices();
+  const voice = pickKoreanVoice();
+  if (voice) utter.voice = voice;
+  else if (voices.length > 0) showTtsHelp("no-korean-voice"); // voices loaded, none Korean
+
+  utter.onerror = (e) => {
+    // "interrupted"/"canceled" just mean the next word replaced this one.
+    if (e.error !== "interrupted" && e.error !== "canceled") showTtsHelp("error");
+  };
+  utter.onend = () => {
+    if (currentUtterance === utter) currentUtterance = null;
   };
 
-  speechSynthesis.addEventListener("voiceschanged", onVoicesChanged, {
-    once: true,
-  });
+  // Chrome on Android drops an utterance spoken right after cancel() when nothing
+  // was playing, so only cancel when something is actually queued.
+  if (speechSynthesis.speaking || speechSynthesis.pending) speechSynthesis.cancel();
+  if (speechSynthesis.paused) speechSynthesis.resume();
 
-  // Safari 폴링 대비 (voiceschanged 미발생 케이스)
-  [200, 500, 1000].forEach((ms) => {
-    setTimeout(() => {
-      if (!fired && speechSynthesis.getVoices().length > 0) {
-        fired = true;
-        speechSynthesis.removeEventListener("voiceschanged", onVoicesChanged);
-        doSpeak(text, rate, pitch);
-      }
-    }, ms);
-  });
+  currentUtterance = utter;
+  speechSynthesis.speak(utter);
 }
