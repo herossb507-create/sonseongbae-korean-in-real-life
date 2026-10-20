@@ -8,6 +8,8 @@ import { ticketLinksFor } from "@/lib/concerts/affiliate";
 import { getConcert, getConcerts, startDateTime } from "@/lib/concerts/data";
 import { citySlug, flag, formatDate, sourceLabel } from "@/lib/concerts/format";
 import { SITE_URL } from "@/lib/concerts/site";
+import { BookCover } from "@/components/books/BookCover";
+import { BOOKS } from "@/lib/books";
 
 interface Props {
   params: { slug: string };
@@ -173,6 +175,24 @@ export default function ConcertPage({ params }: Props) {
           Start learning Korean
         </Link>
       </div>
+
+      {c.venue.countryCode === "KR" && (
+        <a
+          href={BOOKS["korea-unlocked"].url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 flex items-center gap-4 rounded-3xl border border-[#F0E6EE] bg-white p-5 transition-shadow hover:shadow-md"
+        >
+          <BookCover book={BOOKS["korea-unlocked"]} className="w-12" small />
+          <div className="min-w-0 flex-1">
+            <p className="font-semibold">Flying to Korea for the show?</p>
+            <p className="mt-1 text-sm text-[#6B5F7A]">
+              Korea Unlocked covers K-ETA and the e-Arrival Card, transport, where to stay and K-pop spots in Seoul.
+            </p>
+          </div>
+          <span className="shrink-0 text-sm font-semibold text-[#E8436F]">Amazon ↗</span>
+        </a>
+      )}
 
       <p className="mt-8">
         <Link href="/concerts" className="text-sm text-[#E8436F] hover:underline">

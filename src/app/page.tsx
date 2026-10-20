@@ -1,5 +1,8 @@
 import Link from "next/link";
 import { FloatingWords } from "@/components/FloatingWords";
+import { BookCard } from "@/components/books/BookCard";
+import { FreePdfBanner } from "@/components/books/FreePdfBanner";
+import { BOOKS } from "@/lib/books";
 import {
   Accordion,
   AccordionContent,
@@ -74,6 +77,7 @@ export default function LandingPage() {
         <div className="flex gap-4 items-center">
           <Link href="/concerts" className="text-sm text-[#6B5F7A] hover:text-[#1E1225] transition-colors">🎤 <span className="hidden sm:inline">K-pop </span>Concerts</Link>
           <Link href="/learn" className="text-sm text-[#6B5F7A] hover:text-[#1E1225] transition-colors hidden sm:block">Chapters</Link>
+          <Link href="/books" className="text-sm text-[#6B5F7A] hover:text-[#1E1225] transition-colors hidden sm:block">Books</Link>
           <Link href="/home"  className="text-sm bg-gradient-to-r from-[#E8436F] to-[#F06B8A] text-white px-4 py-1.5 rounded-lg hover:opacity-90 transition-opacity font-medium">
             Start learning
           </Link>
@@ -171,6 +175,26 @@ export default function LandingPage() {
               Start with Chapter 1 →
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* ── Books ── */}
+      <section className="px-6 py-20 bg-white border-y border-[#F0E6EE]">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-10">
+            <p className="text-xs font-semibold text-[#9B7FE8] uppercase tracking-wider mb-2">The books behind the course</p>
+            <h2 className="text-3xl font-bold text-[#1E1225] mb-2">Take Korean in Real Life with you</h2>
+            <p className="text-[#6B5F7A] max-w-2xl mx-auto">
+              Every chapter here comes from the books. Get the full lessons with dialogues, practice and answer keys,
+              Quick Reference Cards and free Listen &amp; Repeat videos.
+            </p>
+          </div>
+          <div className="grid gap-5 md:grid-cols-3 mb-8">
+            <BookCard book={BOOKS["kirl-1"]} />
+            <BookCard book={BOOKS["kirl-2"]} />
+            <BookCard book={BOOKS["korea-unlocked"]} />
+          </div>
+          <FreePdfBanner />
         </div>
       </section>
 
@@ -289,6 +313,8 @@ export default function LandingPage() {
                 <li><Link href="/vocab/ch01" className="hover:text-[#1E1225] transition-colors">Vocabulary</Link></li>
                 <li><Link href="/dashboard" className="hover:text-[#1E1225] transition-colors">Dashboard</Link></li>
                 <li><Link href="/concerts" className="hover:text-[#1E1225] transition-colors">K-pop Concerts</Link></li>
+                <li><Link href="/books" className="hover:text-[#1E1225] transition-colors">Books</Link></li>
+                <li><a href="https://kohami-abahgp.subscribepage.io" target="_blank" rel="noopener noreferrer" className="hover:text-[#1E1225] transition-colors">Free PDFs</a></li>
               </ul>
             </div>
             <div>

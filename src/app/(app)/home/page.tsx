@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { getTodayString } from "@/lib/daily-challenge";
 import { CHAPTER_CONTENT } from "@/lib/chapter-content";
+import { FreePdfBanner } from "@/components/books/FreePdfBanner";
 import {
   EMPTY_PROGRESS,
   completedChapterIds,
@@ -199,6 +200,24 @@ export default function HomePage() {
               </div>
             </Link>
           </div>
+        </div>
+
+        {/* Free PDFs + books */}
+        <div className="mb-8 space-y-3">
+          <FreePdfBanner compact />
+          <Link
+            href="/books"
+            className="flex items-center gap-4 p-4 bg-white border border-[#F0E6EE] rounded-xl hover:border-[#E8436F]/30 transition-all group shadow-sm"
+          >
+            <div className="w-10 h-10 rounded-full bg-[#E8436F]/10 flex items-center justify-center text-lg shrink-0">📚</div>
+            <div className="flex-1 min-w-0">
+              <div className="text-[#1E1225] font-medium text-sm group-hover:text-[#E8436F] transition-colors">
+                Korean in Real Life — the books
+              </div>
+              <div className="text-xs text-[#6B5F7A] mt-0.5">Full chapters, practice and Listen &amp; Repeat videos</div>
+            </div>
+            <span className="text-[#E8436F] group-hover:translate-x-1 transition-transform">→</span>
+          </Link>
         </div>
 
         {/* Section 6: K-pop concerts */}

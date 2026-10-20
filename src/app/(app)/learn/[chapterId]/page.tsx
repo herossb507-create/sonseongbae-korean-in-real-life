@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ReaderControls } from "@/components/reader/ReaderControls";
 import { CHAPTER_CONTENT } from "@/lib/chapter-content";
+import { ChapterBookCTA } from "@/components/books/ChapterBookCTA";
 
 interface Props {
   params: { chapterId: string };
@@ -117,6 +118,11 @@ export default function ChapterPage({ params }: Props) {
             <span className="text-sm font-semibold text-[#E8436F]">Take Quiz</span>
             <span className="text-xs text-[#B0A8BB]">Test yourself</span>
           </Link>
+        </div>
+
+        {/* ── The book this chapter comes from ── */}
+        <div className="mt-6">
+          <ChapterBookCTA chapterId={chapterId} />
         </div>
 
         {/* ── Bottom navigation ── */}

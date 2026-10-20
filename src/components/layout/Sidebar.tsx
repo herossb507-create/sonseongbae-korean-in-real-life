@@ -17,6 +17,7 @@ const NAV_ITEMS: NavItem[] = [
   { href: "/games", label: "Games", icon: "🎮" },
   { href: "/kdrama", label: "K-Drama", icon: "🎬" },
   { href: "/dialogues", label: "Dialogues", icon: "💬" },
+  { href: "/books", label: "Books", icon: "📚" },
   { href: "/concerts", label: "K-pop Concerts", icon: "🎤" },
   { href: "/daily", label: "Daily Challenge", icon: "🔥", gold: true },
   { href: "/dashboard", label: "Stats", icon: "📊" },

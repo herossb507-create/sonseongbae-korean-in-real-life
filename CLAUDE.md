@@ -591,3 +591,19 @@ export function speakKorean(text: string, options?: { rate?: number; pitch?: num
 | `docs/concerts/` | 데이터 수집 설계, 2026-10-19 조사 기록 |
 
 규칙: 공연 정보는 공식 발표 기준. 공식 페이지에서 확인한 것만 `verified`, 언론 보도만 있으면 `unverified`(화면에 Unconfirmed 배지). 공식 판매처를 제휴 링크보다 항상 먼저 노출.
+
+---
+
+## 📚 전자책 판매 연계 (2026-10-20)
+
+`src/lib/books.ts`에 책 3권(Korean in Real Life Vol.1·2, Korea Unlocked)의 Amazon 링크와 무료 PDF(MailerLite 구독 페이지)를 한곳에 모아둠. 링크·문구는 이 파일만 고치면 됨.
+
+| 위치 | 내용 |
+|------|------|
+| `/books` | 3권 카드 + 무료 PDF 배너 (사이드바 📚 Books) |
+| 랜딩 | 커리큘럼 아래 "The books behind the course" 섹션, 상단 nav·푸터 링크 |
+| 챕터 읽기 하단 | 해당 챕터를 다루는 권 추천 (ch01–08·14 → Vol.1, 나머지 → Vol.2) |
+| Home | 무료 PDF 배너 + Books 바로가기 |
+| 한국 공연 상세 | Korea Unlocked 카드 (공연장이 KR일 때만) |
+
+표지 이미지는 `public/books/*.jpg`에 넣고 `cover` 필드를 채우면 자동으로 대체됨(없으면 그라디언트 표지).
