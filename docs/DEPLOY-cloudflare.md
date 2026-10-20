@@ -32,6 +32,11 @@
 Worker → **Settings → Domains & Routes → Add → Custom domain**. 도메인이 Cloudflare DNS에 있어야 함(없으면 도메인을 Cloudflare로 옮기거나 네임서버 변경).
 연결 후 `NEXT_PUBLIC_APP_URL`을 그 주소로 바꾸고 다시 배포(sitemap·canonical·JSON-LD에 박히는 주소라서).
 
+## 작은 Worker (`cloudflare/worker.js`)
+
+정적 자산 서빙은 `/이름.html`을 `/이름`으로 리다이렉트한다. Google Search Console의 HTML 파일 인증은 정확한 주소에서 파일을 받아야 해서,
+`wrangler.jsonc`의 `assets.run_worker_first`에 적힌 경로만 Worker가 직접 응답한다. 나머지 요청은 전부 정적 파일 그대로(Worker 요청 수에 안 잡힘).
+
 ## 로컬에서 배포본 확인
 
 ```bash
