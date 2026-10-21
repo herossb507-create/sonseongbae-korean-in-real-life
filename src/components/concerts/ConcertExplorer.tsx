@@ -19,7 +19,7 @@ interface Props {
 }
 
 const selectCls =
-  "w-full rounded-xl border border-[#F0E6EE] bg-white px-3 py-2 text-sm text-[#1E1225] focus:border-[#E8436F] focus:outline-none focus:ring-2 focus:ring-[#E8436F]/20";
+  "w-full min-h-11 rounded-xl border border-[#F0E6EE] bg-white px-3 py-2 text-base text-[#1E1225] focus:border-[#E8436F] focus:outline-none focus:ring-2 focus:ring-[#E8436F]/20 md:min-h-0 md:text-sm";
 
 export default function ConcertExplorer({ concerts }: Props) {
   const today = useToday();
@@ -28,6 +28,7 @@ export default function ConcertExplorer({ concerts }: Props) {
   const [country, setCountry] = useState("");
   const [status, setStatus] = useState<ConcertStatus | "">("");
   const [showPast, setShowPast] = useState(false);
+  const [filtersOpen, setFiltersOpen] = useState(false);
   const [selectedVenueId, setSelectedVenueId] = useState<string | null>(null);
   const [highlightId, setHighlightId] = useState<string | null>(null);
 
@@ -73,24 +74,48 @@ export default function ConcertExplorer({ concerts }: Props) {
     setShowPast(false);
   }
 
+  const advancedFiltered = Boolean(artist || country || status || showPast);
+
   return (
     <div className="flex min-h-0 flex-1 flex-col bg-[#FFF5F8] text-[#1E1225] md:flex-row">
-      {/* Sidebar */}
-      <aside className="order-2 flex min-h-0 flex-1 flex-col border-[#F0E6EE] bg-white md:order-1 md:w-96 md:flex-none md:border-r">
+      {/* Sidebar. On phones this is a sheet under a short map; filters collapse so the first shows are on screen. */}
+      <aside className="order-2 flex min-h-0 flex-1 flex-col rounded-t-3xl border-t border-[#F0E6EE] bg-white shadow-[0_-8px_24px_rgba(30,18,37,0.08)] md:order-1 md:w-96 md:flex-none md:rounded-none md:border-t-0 md:border-r md:shadow-none">
+        <div className="mx-auto mt-2 h-1 w-10 shrink-0 rounded-full bg-[#E4D9E2] md:hidden" aria-hidden />
         <div className="hidden border-b border-[#F0E6EE] px-5 py-4 md:block">
           <h1 className="text-lg font-bold tracking-tight">K-pop concerts worldwide</h1>
           <p className="mt-0.5 text-xs text-[#6B5F7A]">Tour dates from official announcements, on one map</p>
         </div>
 
-        <div className="space-y-2 border-b border-[#F0E6EE] p-4">
-          <input
-            type="search"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search artist, city, venue…"
-            className={selectCls}
-          />
-          <div className="grid grid-cols-3 gap-2">
+        <div className="border-b border-[#F0E6EE] px-3 py-2 md:space-y-2 md:p-4">
+          <div className="flex items-center gap-2">
+            <input
+              type="search"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="Search artist, city, venue…"
+              className={`${selectCls} min-w-0 flex-1`}
+            />
+            <button
+              type="button"
+              onClick={() => setFiltersOpen((open) => !open)}
+              aria-expanded={filtersOpen}
+              aria-controls="concert-filters"
+              className={`inline-flex min-h-11 shrink-0 items-center gap-1.5 rounded-xl border px-3 text-sm font-semibold md:hidden ${
+                filtersOpen || advancedFiltered
+                  ? "border-[#E8436F]/40 bg-[#FFF0F5] text-[#E8436F]"
+                  : "border-[#F0E6EE] bg-white text-[#1E1225]"
+              }`}
+            >
+              Filters
+              {advancedFiltered && <span className="h-1.5 w-1.5 rounded-full bg-[#E8436F]" aria-hidden />}
+            </button>
+            {hasFilters && !filtersOpen && (
+              <button type="button" onClick={resetFilters} className="min-h-11 shrink-0 px-1 text-sm font-semibold text-[#E8436F] md:hidden">
+                Reset
+              </button>
+            )}
+          </div>
+          <div id="concert-filters" className={`${filtersOpen ? "mt-2 grid grid-cols-1 gap-2" : "hidden"} md:grid md:grid-cols-3 md:gap-2`}>
             <select value={artist} onChange={(e) => setArtist(e.target.value)} className={selectCls} aria-label="Artist">
               <option value="">All artists</option>
               {artists.map((a) => (
@@ -119,42 +144,42 @@ export default function ConcertExplorer({ concerts }: Props) {
               ))}
             </select>
           </div>
-          <div className="flex items-center justify-between text-xs text-[#6B5F7A]">
-            <label className="flex items-center gap-2">
-              <input type="checkbox" checked={showPast} onChange={(e) => setShowPast(e.target.checked)} className="accent-[#E8436F]" />
+          <div className={`${filtersOpen ? "mt-2 flex" : "hidden"} items-center justify-between text-sm text-[#3E3450] md:flex md:text-xs md:text-[#6B5F7A]`}>
+            <label className="flex min-h-11 items-center gap-2 md:min-h-0">
+              <input type="checkbox" checked={showPast} onChange={(e) => setShowPast(e.target.checked)} className="accent-[#E8436F] max-md:h-5 max-md:w-5" />
               Include past shows
             </label>
             {hasFilters && (
-              <button onClick={resetFilters} className="text-[#E8436F] hover:underline">
+              <button type="button" onClick={resetFilters} className="min-h-11 px-1 text-sm font-semibold text-[#E8436F] hover:underline md:min-h-0 md:text-xs md:font-normal">
                 Reset
               </button>
             )}
           </div>
         </div>
 
-        <p className="px-4 pt-3 text-xs text-[#B0A8BB]">
+        <p className="px-3 pb-1 pt-2.5 text-sm font-semibold text-[#1E1225] md:px-4 md:pb-0 md:pt-3 md:text-xs md:font-normal md:text-[#B0A8BB]">
           {filtered.length} shows · {groups.length} venues · {countryCount} countries
         </p>
 
-        <ul className="min-h-0 flex-1 overflow-y-auto p-2">
-          {filtered.length === 0 && <li className="p-6 text-center text-sm text-[#B0A8BB]">No shows match these filters.</li>}
+        <ul className="min-h-0 flex-1 overflow-y-auto px-2 pb-3 pt-1 overscroll-contain md:p-2 md:overscroll-auto">
+          {filtered.length === 0 && <li className="p-6 text-center text-base text-[#5C5368] md:text-sm md:text-[#B0A8BB]">No shows match these filters.</li>}
           {filtered.map((c) => {
             const active = c.venue.id === selectedVenueId;
             return (
-              <li key={c.id}>
+              <li key={c.id} className="border-b border-[#F3E8EE] last:border-b-0 md:border-b-0">
                 <button
                   onClick={() => selectVenue(c.venue.id, c.id)}
-                  className={`flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-left transition hover:bg-[#FFF5F8] ${
+                  className={`flex w-full items-center gap-3 rounded-xl px-2.5 py-3 text-left transition hover:bg-[#FFF5F8] md:px-3 md:py-2.5 ${
                     active ? "bg-[#FFF0F5] ring-1 ring-[#E8436F]/30" : ""
                   }`}
                 >
-                  <div className="w-11 shrink-0 text-center leading-tight">
-                    <div className="text-[10px] font-semibold uppercase text-[#E8436F]">{formatDate(c.date, { weekday: undefined, day: undefined, year: undefined })}</div>
-                    <div className="text-lg font-semibold">{Number(c.date.slice(8))}</div>
+                  <div className="w-12 shrink-0 text-center leading-tight md:w-11">
+                    <div className="text-xs font-semibold uppercase text-[#C42B56] md:text-[10px] md:text-[#E8436F]">{formatDate(c.date, { weekday: undefined, day: undefined, year: undefined })}</div>
+                    <div className="text-xl font-semibold md:text-lg">{Number(c.date.slice(8))}</div>
                   </div>
                   <div className="min-w-0 flex-1">
-                    <div className="truncate text-sm font-semibold">{c.artist.name}</div>
-                    <div className="truncate text-xs text-[#6B5F7A]">
+                    <div className="truncate text-base font-semibold leading-tight md:text-sm">{c.artist.name}</div>
+                    <div className="truncate text-[15px] leading-snug text-[#3E3450] md:text-xs md:text-[#6B5F7A]">
                       {flag(c.venue.countryCode)} {c.venue.city} · {c.venue.name}
                     </div>
                   </div>
@@ -169,13 +194,13 @@ export default function ConcertExplorer({ concerts }: Props) {
         </ul>
       </aside>
 
-      {/* Map */}
-      <main className="relative order-1 h-[45dvh] md:order-2 md:h-auto md:flex-1">
+      {/* Map — short on phones so the show list sits in the first screen. */}
+      <main className="relative order-1 h-[40dvh] shrink-0 md:order-2 md:h-auto md:shrink md:flex-1">
         <ConcertMap groups={groups} selectedVenueId={selectedVenueId} onSelectVenue={(id) => selectVenue(id)} />
 
         {/* Detail panel */}
         {selected && (
-          <section className="absolute inset-x-0 bottom-0 z-[600] max-h-[70%] overflow-y-auto rounded-t-3xl border border-[#F0E6EE] bg-white/95 p-5 shadow-[0_8px_32px_rgba(30,18,37,0.15)] backdrop-blur md:inset-x-auto md:bottom-auto md:right-4 md:top-4 md:max-h-[calc(100%-2rem)] md:w-[380px] md:rounded-3xl">
+          <section className="absolute inset-x-0 bottom-0 z-[600] max-h-[90%] overflow-y-auto rounded-t-3xl border border-[#F0E6EE] bg-white/95 p-5 shadow-[0_8px_32px_rgba(30,18,37,0.15)] backdrop-blur md:inset-x-auto md:bottom-auto md:right-4 md:top-4 md:max-h-[calc(100%-2rem)] md:w-[380px] md:rounded-3xl">
             <div className="flex items-start justify-between gap-3">
               <div>
                 <p className="text-xs text-[#6B5F7A]">
@@ -188,7 +213,7 @@ export default function ConcertExplorer({ concerts }: Props) {
               </div>
               <button
                 onClick={() => setSelectedVenueId(null)}
-                className="rounded-full p-1.5 text-[#B0A8BB] hover:bg-[#FFF0F5] hover:text-[#1E1225]"
+                className="rounded-full p-1.5 text-[#B0A8BB] hover:bg-[#FFF0F5] hover:text-[#1E1225] max-md:grid max-md:h-11 max-md:w-11 max-md:place-items-center max-md:p-0 max-md:text-lg max-md:text-[#5C5368]"
                 aria-label="Close"
               >
                 ✕

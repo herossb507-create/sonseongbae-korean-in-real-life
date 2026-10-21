@@ -31,12 +31,12 @@ function FlyToSelected({ groups, selectedVenueId }: Omit<Props, "onSelectVenue">
     const g = groups.find((x) => x.venue.id === selectedVenueId);
     if (!g) return;
     // Keep the pin clear of the detail panel: it covers the right side on desktop
-    // and the bottom ~70% on phones.
+    // and the bottom ~90% of the short phone map.
     const { x: w, y: h } = map.getSize();
     const desktop = w >= 640;
     const point = L.latLng(g.venue.lat, g.venue.lng);
     map.flyToBounds(L.latLngBounds(point, point), {
-      paddingBottomRight: desktop ? [400, 0] : [0, Math.round(h * 0.7)],
+      paddingBottomRight: desktop ? [400, 0] : [0, Math.round(h * 0.9)],
       maxZoom: Math.max(map.getZoom(), 5),
       duration: 0.8,
     });
