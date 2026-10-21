@@ -3,7 +3,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata: Metadata = pageMeta({
   title: "Affiliate disclosure",
-  description: "How Korean in Real Life chooses ticket links and when it earns a commission.",
+  description: "How Korean in Real Life chooses ticket and hotel links and when it earns a commission.",
   path: "/concerts/disclosure",
 });
 
@@ -29,7 +29,18 @@ export default function DisclosurePage() {
       <h2 className="pt-2 text-lg font-semibold text-[#1E1225]">Which links are affiliate links</h2>
       <p>
         Affiliate links are marked with a note under the ticket buttons and use the <code>rel=&quot;sponsored&quot;</code>{" "}
-        attribute. Programs we may take part in include Ticketmaster, SeatGeek and travel booking services.
+        attribute. Programs we may take part in include Ticketmaster, SeatGeek and the hotel booking sites Booking.com,
+        Agoda and Trip.com.
+      </p>
+      <h2 className="pt-2 text-lg font-semibold text-[#1E1225]">Hotels and places to eat</h2>
+      <p>
+        The &quot;Traveling to this show?&quot; box on each concert page links to hotel searches near the venue on
+        Booking.com, Agoda and Trip.com, with the show date filled in. These can be affiliate links. We show the same
+        three sites for every show and don&apos;t rank individual hotels.
+      </p>
+      <p>
+        The lists of nearby restaurants, cafés and hotels come from OpenStreetMap, sorted by distance. Nobody pays to be
+        listed there, and they link to Google Maps so you can check reviews and opening hours yourself.
       </p>
     </div>
   );

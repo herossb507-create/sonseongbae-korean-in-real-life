@@ -34,7 +34,13 @@ export interface Venue {
   lng: number;
   timezone: string; // IANA, e.g. "Asia/Seoul"
   capacity?: number;
-  externalIds?: { ticketmaster?: string; seatgeek?: string };
+  externalIds?: {
+    ticketmaster?: string;
+    seatgeek?: string;
+    // Hotel-search IDs, filled by scripts/concerts/hotels.mts
+    agoda?: { poi?: string; city?: string };
+    tripcom?: { cityId: number; landmarkId?: number; name?: string; lat?: number; lng?: number };
+  };
 }
 
 export interface TicketLink {
@@ -74,4 +80,21 @@ export interface Concert {
 export interface ConcertWithRefs extends Concert {
   artist: Artist;
   venue: Venue;
+}
+
+// data/concerts/nearby.json — OpenStreetMap places near each venue (scripts/concerts/nearby.mts)
+export interface NearbyPlace {
+  osm: string; // "node/123", for the OSM link
+  name: string; // local name
+  nameEn?: string;
+  kind: "restaurant" | "cafe" | "fast_food" | "hotel";
+  cuisine?: string;
+  lat: number;
+  lng: number;
+  distance: number; // metres from the venue
+}
+
+export interface NearbyFile {
+  attribution: string;
+  venues: Record<string, { fetchedAt: string; radius: number; food: NearbyPlace[]; hotels: NearbyPlace[] }>;
 }

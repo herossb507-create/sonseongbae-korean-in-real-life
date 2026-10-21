@@ -7,7 +7,19 @@
     "countryCode": "AR",
     "lat": -34.9138,
     "lng": -57.989,
-    "timezone": "America/Argentina/Buenos_Aires"
+    "timezone": "America/Argentina/Buenos_Aires",
+    "externalIds": {
+      "agoda": {
+        "city": "21696"
+      },
+      "tripcom": {
+        "cityId": 288924,
+        "landmarkId": 37679285,
+        "name": "Estadio Único Diego Armando Maradona",
+        "lat": -34.9137944,
+        "lng": -57.9890186
+      }
+    }
   },
   {
     "id": "morumbis",
@@ -17,7 +29,19 @@
     "countryCode": "BR",
     "lat": -23.6001,
     "lng": -46.7201,
-    "timezone": "America/Sao_Paulo"
+    "timezone": "America/Sao_Paulo",
+    "externalIds": {
+      "agoda": {
+        "city": "16638"
+      },
+      "tripcom": {
+        "cityId": 415,
+        "landmarkId": 61861939,
+        "name": "Cia Athletica Estádio do MorumBis",
+        "lat": -23.5995195,
+        "lng": -46.7213441
+      }
+    }
   },
   {
     "id": "kaohsiung-national-stadium",
@@ -27,7 +51,15 @@
     "countryCode": "TW",
     "lat": 22.7029,
     "lng": 120.2936,
-    "timezone": "Asia/Taipei"
+    "timezone": "Asia/Taipei",
+    "externalIds": {
+      "agoda": {
+        "poi": "233956"
+      },
+      "tripcom": {
+        "cityId": 720
+      }
+    }
   },
   {
     "id": "kaohsiung-arena",
@@ -37,7 +69,15 @@
     "countryCode": "TW",
     "lat": 22.6686,
     "lng": 120.3019,
-    "timezone": "Asia/Taipei"
+    "timezone": "Asia/Taipei",
+    "externalIds": {
+      "agoda": {
+        "poi": "235720"
+      },
+      "tripcom": {
+        "cityId": 720
+      }
+    }
   },
   {
     "id": "taipei-dome",
@@ -47,7 +87,15 @@
     "countryCode": "TW",
     "lat": 25.0424,
     "lng": 121.5596,
-    "timezone": "Asia/Taipei"
+    "timezone": "Asia/Taipei",
+    "externalIds": {
+      "agoda": {
+        "poi": "3187523"
+      },
+      "tripcom": {
+        "cityId": 617
+      }
+    }
   },
   {
     "id": "taipei-arena",
@@ -57,7 +105,15 @@
     "countryCode": "TW",
     "lat": 25.0507,
     "lng": 121.5501,
-    "timezone": "Asia/Taipei"
+    "timezone": "Asia/Taipei",
+    "externalIds": {
+      "agoda": {
+        "poi": "33488"
+      },
+      "tripcom": {
+        "cityId": 617
+      }
+    }
   },
   {
     "id": "ntsu-arena",
@@ -67,7 +123,19 @@
     "countryCode": "TW",
     "lat": 25.0311,
     "lng": 121.3848,
-    "timezone": "Asia/Taipei"
+    "timezone": "Asia/Taipei",
+    "externalIds": {
+      "agoda": {
+        "city": "8453"
+      },
+      "tripcom": {
+        "cityId": 7570,
+        "landmarkId": 28093553,
+        "name": "Taiwan Sport University Sports Center (Linkou Sports Center)",
+        "lat": 25.0347501,
+        "lng": 121.383549
+      }
+    }
   },
   {
     "id": "rajamangala-stadium",
@@ -77,7 +145,15 @@
     "countryCode": "TH",
     "lat": 13.7554,
     "lng": 100.6222,
-    "timezone": "Asia/Bangkok"
+    "timezone": "Asia/Bangkok",
+    "externalIds": {
+      "agoda": {
+        "poi": "213937"
+      },
+      "tripcom": {
+        "cityId": 359
+      }
+    }
   },
   {
     "id": "thammasat-stadium",
@@ -87,7 +163,19 @@
     "countryCode": "TH",
     "lat": 14.0681,
     "lng": 100.5996,
-    "timezone": "Asia/Bangkok"
+    "timezone": "Asia/Bangkok",
+    "externalIds": {
+      "agoda": {
+        "poi": "2706375"
+      },
+      "tripcom": {
+        "cityId": 90743,
+        "landmarkId": 40382771,
+        "name": "Thammasat Stadium",
+        "lat": 14.0680044,
+        "lng": 100.5988871
+      }
+    }
   },
   {
     "id": "gbk-main-stadium",
@@ -97,7 +185,19 @@
     "countryCode": "ID",
     "lat": -6.2186,
     "lng": 106.8026,
-    "timezone": "Asia/Jakarta"
+    "timezone": "Asia/Jakarta",
+    "externalIds": {
+      "agoda": {
+        "poi": "122966"
+      },
+      "tripcom": {
+        "cityId": 140744,
+        "landmarkId": 6743986,
+        "name": "Gelora Bung Karno Stadium",
+        "lat": -6.2186006,
+        "lng": 106.8029661
+      }
+    }
   },
   {
     "id": "singapore-national-stadium",
@@ -108,7 +208,15 @@
     "lat": 1.3045,
     "lng": 103.8743,
     "timezone": "Asia/Singapore",
-    "capacity": 55000
+    "capacity": 55000,
+    "externalIds": {
+      "agoda": {
+        "poi": "279195"
+      },
+      "tripcom": {
+        "cityId": 73
+      }
+    }
   },
   {
     "id": "sg-indoor",
@@ -118,7 +226,15 @@
     "countryCode": "SG",
     "lat": 1.3009,
     "lng": 103.8744,
-    "timezone": "Asia/Singapore"
+    "timezone": "Asia/Singapore",
+    "externalIds": {
+      "agoda": {
+        "poi": "26102"
+      },
+      "tripcom": {
+        "cityId": 73
+      }
+    }
   },
   {
     "id": "apex-expo",
@@ -128,7 +244,19 @@
     "countryCode": "SG",
     "lat": 1.3352,
     "lng": 103.9599,
-    "timezone": "Asia/Singapore"
+    "timezone": "Asia/Singapore",
+    "externalIds": {
+      "agoda": {
+        "city": "4064"
+      },
+      "tripcom": {
+        "cityId": 73,
+        "landmarkId": 62498143,
+        "name": "Apex @ EXPO",
+        "lat": 1.3326758,
+        "lng": 103.9568927
+      }
+    }
   },
   {
     "id": "unifi-arena",
@@ -138,7 +266,15 @@
     "countryCode": "MY",
     "lat": 3.0537,
     "lng": 101.6935,
-    "timezone": "Asia/Kuala_Lumpur"
+    "timezone": "Asia/Kuala_Lumpur",
+    "externalIds": {
+      "agoda": {
+        "poi": "267111"
+      },
+      "tripcom": {
+        "cityId": 315
+      }
+    }
   },
   {
     "id": "moa-arena",
@@ -148,7 +284,19 @@
     "countryCode": "PH",
     "lat": 14.5322,
     "lng": 120.9837,
-    "timezone": "Asia/Manila"
+    "timezone": "Asia/Manila",
+    "externalIds": {
+      "agoda": {
+        "poi": "138840"
+      },
+      "tripcom": {
+        "cityId": 121853,
+        "landmarkId": 8172281,
+        "name": "SM Mall of Asia Arena",
+        "lat": 14.5316969,
+        "lng": 120.984029
+      }
+    }
   },
   {
     "id": "kai-tak-stadium",
@@ -159,7 +307,19 @@
     "lat": 22.3222,
     "lng": 114.1974,
     "timezone": "Asia/Hong_Kong",
-    "capacity": 50000
+    "capacity": 50000,
+    "externalIds": {
+      "agoda": {
+        "city": "16808"
+      },
+      "tripcom": {
+        "cityId": 58,
+        "landmarkId": 58516665,
+        "name": "Kai Tak Stadium",
+        "lat": 22.3221699,
+        "lng": 114.1973555
+      }
+    }
   },
   {
     "id": "galaxy-arena",
@@ -170,7 +330,15 @@
     "lat": 22.1439,
     "lng": 113.5569,
     "timezone": "Asia/Macau",
-    "capacity": 16000
+    "capacity": 16000,
+    "externalIds": {
+      "agoda": {
+        "city": "21397"
+      },
+      "tripcom": {
+        "cityId": 59
+      }
+    }
   },
   {
     "id": "kspo-dome",
@@ -180,7 +348,15 @@
     "countryCode": "KR",
     "lat": 37.5192,
     "lng": 127.1275,
-    "timezone": "Asia/Seoul"
+    "timezone": "Asia/Seoul",
+    "externalIds": {
+      "agoda": {
+        "city": "14690"
+      },
+      "tripcom": {
+        "cityId": 274
+      }
+    }
   },
   {
     "id": "inspire-arena",
@@ -190,7 +366,19 @@
     "countryCode": "KR",
     "lat": 37.4668,
     "lng": 126.3906,
-    "timezone": "Asia/Seoul"
+    "timezone": "Asia/Seoul",
+    "externalIds": {
+      "agoda": {
+        "city": "17234"
+      },
+      "tripcom": {
+        "cityId": 410,
+        "landmarkId": 37380145,
+        "name": "Inspire Arena",
+        "lat": 37.4667374,
+        "lng": 126.3905989
+      }
+    }
   },
   {
     "id": "tokyo-dome",
@@ -200,7 +388,19 @@
     "countryCode": "JP",
     "lat": 35.7056,
     "lng": 139.752,
-    "timezone": "Asia/Tokyo"
+    "timezone": "Asia/Tokyo",
+    "externalIds": {
+      "agoda": {
+        "poi": "25215"
+      },
+      "tripcom": {
+        "cityId": 228,
+        "landmarkId": 55025441,
+        "name": "Tokyo Dome",
+        "lat": 35.7056396,
+        "lng": 139.7518913
+      }
+    }
   },
   {
     "id": "lala-arena-tokyo-bay",
@@ -210,7 +410,19 @@
     "countryCode": "JP",
     "lat": 35.6838,
     "lng": 139.9897,
-    "timezone": "Asia/Tokyo"
+    "timezone": "Asia/Tokyo",
+    "externalIds": {
+      "agoda": {
+        "city": "106317"
+      },
+      "tripcom": {
+        "cityId": 35718,
+        "landmarkId": 56972503,
+        "name": "LaLa arena TOKYO-BAY",
+        "lat": 35.6836436,
+        "lng": 139.9895026
+      }
+    }
   },
   {
     "id": "vantelin-dome-nagoya",
@@ -220,7 +432,15 @@
     "countryCode": "JP",
     "lat": 35.186,
     "lng": 136.9474,
-    "timezone": "Asia/Tokyo"
+    "timezone": "Asia/Tokyo",
+    "externalIds": {
+      "agoda": {
+        "city": "13740"
+      },
+      "tripcom": {
+        "cityId": 360
+      }
+    }
   },
   {
     "id": "kyocera-dome",
@@ -230,7 +450,15 @@
     "countryCode": "JP",
     "lat": 34.6693,
     "lng": 135.4761,
-    "timezone": "Asia/Tokyo"
+    "timezone": "Asia/Tokyo",
+    "externalIds": {
+      "agoda": {
+        "poi": "1851761"
+      },
+      "tripcom": {
+        "cityId": 219
+      }
+    }
   },
   {
     "id": "paypay-dome",
@@ -240,7 +468,15 @@
     "countryCode": "JP",
     "lat": 33.5953,
     "lng": 130.3621,
-    "timezone": "Asia/Tokyo"
+    "timezone": "Asia/Tokyo",
+    "externalIds": {
+      "agoda": {
+        "poi": "206779"
+      },
+      "tripcom": {
+        "cityId": 248
+      }
+    }
   },
   {
     "id": "marvel-stadium",
@@ -250,7 +486,15 @@
     "countryCode": "AU",
     "lat": -37.8165,
     "lng": 144.9475,
-    "timezone": "Australia/Melbourne"
+    "timezone": "Australia/Melbourne",
+    "externalIds": {
+      "agoda": {
+        "poi": "25068"
+      },
+      "tripcom": {
+        "cityId": 697374
+      }
+    }
   },
   {
     "id": "rod-laver-arena",
@@ -260,7 +504,15 @@
     "countryCode": "AU",
     "lat": -37.8216,
     "lng": 144.9786,
-    "timezone": "Australia/Melbourne"
+    "timezone": "Australia/Melbourne",
+    "externalIds": {
+      "agoda": {
+        "poi": "22168"
+      },
+      "tripcom": {
+        "cityId": 324466
+      }
+    }
   },
   {
     "id": "accor-stadium",
@@ -270,7 +522,15 @@
     "countryCode": "AU",
     "lat": -33.8471,
     "lng": 151.0634,
-    "timezone": "Australia/Sydney"
+    "timezone": "Australia/Sydney",
+    "externalIds": {
+      "agoda": {
+        "city": "14370"
+      },
+      "tripcom": {
+        "cityId": 699691
+      }
+    }
   },
   {
     "id": "afterpay-arena",
@@ -280,7 +540,19 @@
     "countryCode": "AU",
     "lat": -33.8443,
     "lng": 151.0622,
-    "timezone": "Australia/Sydney"
+    "timezone": "Australia/Sydney",
+    "externalIds": {
+      "agoda": {
+        "city": "14370"
+      },
+      "tripcom": {
+        "cityId": 699718,
+        "landmarkId": 9534335,
+        "name": "Afterpay Arena",
+        "lat": -33.8443,
+        "lng": 151.0621
+      }
+    }
   },
   {
     "id": "kia-forum",
@@ -290,7 +562,15 @@
     "countryCode": "US",
     "lat": 33.9582,
     "lng": -118.342,
-    "timezone": "America/Los_Angeles"
+    "timezone": "America/Los_Angeles",
+    "externalIds": {
+      "agoda": {
+        "city": "19585"
+      },
+      "tripcom": {
+        "cityId": 347
+      }
+    }
   },
   {
     "id": "peacock-theater",
@@ -300,7 +580,19 @@
     "countryCode": "US",
     "lat": 34.0445,
     "lng": -118.2671,
-    "timezone": "America/Los_Angeles"
+    "timezone": "America/Los_Angeles",
+    "externalIds": {
+      "agoda": {
+        "poi": "7340"
+      },
+      "tripcom": {
+        "cityId": 347,
+        "landmarkId": 6787818,
+        "name": "Peacock Theater",
+        "lat": 34.0444495,
+        "lng": -118.267151
+      }
+    }
   },
   {
     "id": "bill-graham-civic",
@@ -310,7 +602,19 @@
     "countryCode": "US",
     "lat": 37.7781,
     "lng": -122.4173,
-    "timezone": "America/Los_Angeles"
+    "timezone": "America/Los_Angeles",
+    "externalIds": {
+      "agoda": {
+        "poi": "1898883"
+      },
+      "tripcom": {
+        "cityId": 313,
+        "landmarkId": 0,
+        "name": "Bill Graham Civic Auditorium",
+        "lat": 37.7781454,
+        "lng": -122.4173447
+      }
+    }
   },
   {
     "id": "warfield",
@@ -320,7 +624,15 @@
     "countryCode": "US",
     "lat": 37.7826,
     "lng": -122.4103,
-    "timezone": "America/Los_Angeles"
+    "timezone": "America/Los_Angeles",
+    "externalIds": {
+      "agoda": {
+        "poi": "1761"
+      },
+      "tripcom": {
+        "cityId": 313
+      }
+    }
   },
   {
     "id": "wamu-theater",
@@ -330,7 +642,15 @@
     "countryCode": "US",
     "lat": 47.5932,
     "lng": -122.3329,
-    "timezone": "America/Los_Angeles"
+    "timezone": "America/Los_Angeles",
+    "externalIds": {
+      "agoda": {
+        "poi": "56917"
+      },
+      "tripcom": {
+        "cityId": 511
+      }
+    }
   },
   {
     "id": "showbox-sodo",
@@ -340,7 +660,15 @@
     "countryCode": "US",
     "lat": 47.588,
     "lng": -122.3339,
-    "timezone": "America/Los_Angeles"
+    "timezone": "America/Los_Angeles",
+    "externalIds": {
+      "agoda": {
+        "city": "3687"
+      },
+      "tripcom": {
+        "cityId": 511
+      }
+    }
   },
   {
     "id": "bomb-factory",
@@ -350,7 +678,19 @@
     "countryCode": "US",
     "lat": 32.7824,
     "lng": -96.7837,
-    "timezone": "America/Chicago"
+    "timezone": "America/Chicago",
+    "externalIds": {
+      "agoda": {
+        "poi": "1517183"
+      },
+      "tripcom": {
+        "cityId": 705,
+        "landmarkId": 0,
+        "name": "The Bomb Factory",
+        "lat": 32.782355,
+        "lng": -96.7838027
+      }
+    }
   },
   {
     "id": "salt-shed",
@@ -360,7 +700,15 @@
     "countryCode": "US",
     "lat": 41.9067,
     "lng": -87.6592,
-    "timezone": "America/Chicago"
+    "timezone": "America/Chicago",
+    "externalIds": {
+      "agoda": {
+        "city": "13899"
+      },
+      "tripcom": {
+        "cityId": 549
+      }
+    }
   },
   {
     "id": "pompano-beach-amphitheater",
@@ -370,7 +718,15 @@
     "countryCode": "US",
     "lat": 26.2383,
     "lng": -80.1051,
-    "timezone": "America/New_York"
+    "timezone": "America/New_York",
+    "externalIds": {
+      "agoda": {
+        "poi": "1874868"
+      },
+      "tripcom": {
+        "cityId": 3781
+      }
+    }
   },
   {
     "id": "msg-infosys",
@@ -380,7 +736,15 @@
     "countryCode": "US",
     "lat": 40.7505,
     "lng": -73.9935,
-    "timezone": "America/New_York"
+    "timezone": "America/New_York",
+    "externalIds": {
+      "agoda": {
+        "city": "318"
+      },
+      "tripcom": {
+        "cityId": 633
+      }
+    }
   },
   {
     "id": "qe-theatre-toronto",
@@ -390,7 +754,19 @@
     "countryCode": "CA",
     "lat": 43.6327,
     "lng": -79.4214,
-    "timezone": "America/Toronto"
+    "timezone": "America/Toronto",
+    "externalIds": {
+      "agoda": {
+        "city": "4495"
+      },
+      "tripcom": {
+        "cityId": 461,
+        "landmarkId": 8697796,
+        "name": "Queen Elizabeth Theatre",
+        "lat": 43.6327076,
+        "lng": -79.4213438
+      }
+    }
   },
   {
     "id": "qe-theatre-vancouver",
@@ -400,7 +776,19 @@
     "countryCode": "CA",
     "lat": 49.2803,
     "lng": -123.1132,
-    "timezone": "America/Vancouver"
+    "timezone": "America/Vancouver",
+    "externalIds": {
+      "agoda": {
+        "poi": "8575"
+      },
+      "tripcom": {
+        "cityId": 476,
+        "landmarkId": 6752539,
+        "name": "Queen Elizabeth Theatre",
+        "lat": 49.2803897,
+        "lng": -123.1126552
+      }
+    }
   },
   {
     "id": "arena-cdmx",
@@ -410,7 +798,15 @@
     "countryCode": "MX",
     "lat": 19.4976,
     "lng": -99.1752,
-    "timezone": "America/Mexico_City"
+    "timezone": "America/Mexico_City",
+    "externalIds": {
+      "agoda": {
+        "city": "2086"
+      },
+      "tripcom": {
+        "cityId": 691
+      }
+    }
   },
   {
     "id": "tm-stadium-nasional",
@@ -420,7 +816,19 @@
     "countryCode": "MY",
     "lat": 3.0547,
     "lng": 101.6914,
-    "timezone": "Asia/Kuala_Lumpur"
+    "timezone": "Asia/Kuala_Lumpur",
+    "externalIds": {
+      "agoda": {
+        "poi": "1820461"
+      },
+      "tripcom": {
+        "cityId": 315,
+        "landmarkId": 16183429,
+        "name": "TM National Stadium",
+        "lat": 3.0546304,
+        "lng": 101.6912767
+      }
+    }
   },
   {
     "id": "philippine-sports-stadium",
@@ -430,7 +838,19 @@
     "countryCode": "PH",
     "lat": 14.7949,
     "lng": 120.9507,
-    "timezone": "Asia/Manila"
+    "timezone": "Asia/Manila",
+    "externalIds": {
+      "agoda": {
+        "poi": "138811"
+      },
+      "tripcom": {
+        "cityId": 306724,
+        "landmarkId": 10777710,
+        "name": "Philippine Sports Stadium",
+        "lat": 14.7949375,
+        "lng": 120.9507344
+      }
+    }
   },
   {
     "id": "belluna-dome",
@@ -440,6 +860,18 @@
     "countryCode": "JP",
     "lat": 35.7685,
     "lng": 139.4205,
-    "timezone": "Asia/Tokyo"
+    "timezone": "Asia/Tokyo",
+    "externalIds": {
+      "agoda": {
+        "city": "18827"
+      },
+      "tripcom": {
+        "cityId": 66961,
+        "landmarkId": 9538060,
+        "name": "Belluna Dome",
+        "lat": 35.7685488,
+        "lng": 139.4205084
+      }
+    }
   }
 ]

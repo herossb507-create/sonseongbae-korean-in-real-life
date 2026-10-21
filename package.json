@@ -12,7 +12,9 @@
     "prebuild": "node scripts/concerts/validate.mts",
     "concerts:validate": "node scripts/concerts/validate.mts",
     "concerts:extract": "node scripts/concerts/extract.mts",
-    "concerts:apply": "node scripts/concerts/apply.mts"
+    "concerts:apply": "node scripts/concerts/apply.mts",
+    "concerts:hotels": "node scripts/concerts/hotels.mts",
+    "concerts:nearby": "node scripts/concerts/nearby.mts"
   },
   "dependencies": {
     "@ai-sdk/openai": "^3.0.41",

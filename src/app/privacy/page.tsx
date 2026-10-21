@@ -10,7 +10,7 @@ export const metadata = pageMeta({
   path: "/privacy",
 });
 
-const EFFECTIVE_DATE = "October 20, 2026";
+const EFFECTIVE_DATE = "October 21, 2026";
 const CONTACT_EMAIL = "hello@koreaninreallife.com";
 
 // Everything the site itself saves in the visitor's browser (see src/lib/progress.ts and friends).
@@ -84,6 +84,11 @@ export default function PrivacyPage() {
             Esri&apos;s servers, which receive your IP address and the map area being viewed.
           </li>
           <li>
+            <strong>Nearby places (OpenStreetMap).</strong> The restaurant, café and hotel lists on concert pages are
+            prepared ahead of time from OpenStreetMap data and published with the page, so viewing them sends nothing
+            to OpenStreetMap.
+          </li>
+          <li>
             <strong>Pronunciation audio.</strong> &quot;Hear it&quot; buttons use your browser&apos;s built-in speech
             feature. Some browsers, such as Chrome with Google voices, send the Korean text to the browser maker&apos;s
             servers to create the audio.
@@ -95,8 +100,10 @@ export default function PrivacyPage() {
             unsubscribe link, and you can ask us to delete your address.
           </li>
           <li>
-            <strong>Links to other sites.</strong> Book links go to Amazon, and concert ticket links go to ticket
-            sellers. Those sites have their own privacy policies. Some ticket or travel links may be affiliate links;
+            <strong>Links to other sites.</strong> Book links go to Amazon, concert ticket links go to ticket
+            sellers, hotel links go to Booking.com, Agoda and Trip.com (with the show date and venue in the link), and
+            nearby restaurant links open Google Maps. Those sites have their own privacy policies. Some ticket or hotel
+            links may be affiliate links;
             when you click one, the seller or its affiliate network may set cookies to record the referral (see our{" "}
             <Link href="/concerts/disclosure" className="text-[#E8436F] underline">
               affiliate disclosure

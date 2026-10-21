@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import StatusBadge, { UnconfirmedBadge } from "@/components/concerts/StatusBadge";
 import TicketLinks from "@/components/concerts/TicketLinks";
+import TravelSection from "@/components/concerts/TravelSection";
 import type { ConcertWithRefs } from "@/lib/concerts/types";
 import { ticketLinksFor } from "@/lib/concerts/affiliate";
 import { getConcert, getConcerts, startDateTime } from "@/lib/concerts/data";
@@ -144,6 +145,8 @@ export default function ConcertPage({ params }: Props) {
         </dl>
         <TicketLinks concert={c} />
       </div>
+
+      <TravelSection concert={c} />
 
       <section className="mt-6 text-sm text-[#6B5F7A]">
         <h2 className="mb-2 font-semibold text-[#1E1225]">Sources</h2>
