@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { ConcertWithRefs, NearbyPlace } from "@/lib/concerts/types";
-import { NEARBY_ATTRIBUTION, hotelLinks, mapsLink, nearbyPlaces, walkingMinutes } from "@/lib/concerts/hotels";
+import { hotelLinks } from "@/lib/concerts/hotels";
+import { NEARBY_ATTRIBUTION, mapsLink, nearbyPlaces, walkingMinutes } from "@/lib/concerts/nearby";
 import { formatDate } from "@/lib/concerts/format";
 
 const KIND_LABEL: Record<NearbyPlace["kind"], string> = {

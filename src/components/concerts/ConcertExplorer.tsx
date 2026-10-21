@@ -8,6 +8,7 @@ import { STATUS_LABEL, flag, formatDate, groupByVenue, sourceLabel } from "@/lib
 import { useToday } from "@/lib/concerts/useToday";
 import StatusBadge, { UnconfirmedBadge } from "./StatusBadge";
 import TicketLinks from "./TicketLinks";
+import { hotelLinks } from "@/lib/concerts/hotels";
 
 const ConcertMap = dynamic(() => import("./ConcertMap"), {
   ssr: false,
@@ -248,11 +249,29 @@ export default function ConcertExplorer({ concerts }: Props) {
                     </dd>
                   </dl>
                   <TicketLinks concert={c} />
+                  {c.status !== "cancelled" && (
+                    <div className="mt-3">
+                      <p className="text-xs text-[#6B5F7A]">Hotels near the venue for this night</p>
+                      <div className="mt-1 grid grid-cols-3 gap-1.5">
+                        {hotelLinks(c.venue, c.date).map((h) => (
+                          <a
+                            key={h.site}
+                            href={h.href}
+                            target="_blank"
+                            rel={h.rel}
+                            className="rounded-lg border border-[#F0E6EE] bg-white px-2 py-1.5 text-center text-xs font-semibold hover:border-[#E8436F]/40"
+                          >
+                            {h.site}
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                   <Link
                     href={`/concerts/${c.id}`}
                     className="mt-3 block text-center text-xs text-[#6B5F7A] hover:text-[#E8436F]"
                   >
-                    Full details →
+                    Full details, places to eat nearby →
                   </Link>
                 </li>
               ))}
