@@ -12,7 +12,7 @@ export const metadata: Metadata = pageMeta({
 
 export default function ConcertsMapPage() {
   return (
-    <div className="flex h-dvh flex-col">
+    <div className="flex min-h-dvh flex-col md:h-dvh">
       <ConcertsHeader />
       <ConcertExplorer concerts={getConcerts()} />
     </div>
