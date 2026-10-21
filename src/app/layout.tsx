@@ -17,6 +17,10 @@ export const metadata: Metadata = {
   title: "Korean in Real Life",
   description: "Learn practical Korean for free — 16 chapters, audio, flashcards and games — plus a world map of K-pop concerts.",
   manifest: "/manifest.json",
+  icons: {
+    icon: [{ url: "/favicon.ico", sizes: "any" }, { url: "/icon-192.png", type: "image/png", sizes: "192x192" }],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
+  },
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",

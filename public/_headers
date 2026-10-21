@@ -1,0 +1,15 @@
+# Cloudflare static-asset response headers (this file itself is not served).
+
+# Next.js build output: file names contain a content hash, so cache forever.
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Icons and share image: change rarely.
+/favicon.ico
+  Cache-Control: public, max-age=86400
+/icon-*.png
+  Cache-Control: public, max-age=86400
+/apple-touch-icon.png
+  Cache-Control: public, max-age=86400
+/og-image.png
+  Cache-Control: public, max-age=86400
