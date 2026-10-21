@@ -5,7 +5,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/concerts/site";
 import { BookCard } from "@/components/books/BookCard";
 import { FreePdfBanner } from "@/components/books/FreePdfBanner";
-import { BOOKS } from "@/lib/books";
+import { BOOKS, FREE_PDF } from "@/lib/books";
 import {
   Accordion,
   AccordionContent,
@@ -207,6 +207,17 @@ export default function LandingPage() {
             <p className="text-[#6B5F7A] max-w-2xl mx-auto">
               Every chapter here comes from the books. Get the full lessons with dialogues, practice and answer keys,
               Quick Reference Cards and free Listen &amp; Repeat videos.
+            </p>
+            <p className="text-sm text-[#6B5F7A] mt-3">
+              🐹 Not ready to buy? Get Kohami&apos;s free Korean phrase PDFs at{" "}
+              <a
+                href={FREE_PDF.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-[#E8436F] underline underline-offset-2"
+              >
+                {FREE_PDF.displayUrl}
+              </a>
             </p>
           </div>
           <div className="grid gap-5 md:grid-cols-3 mb-8">

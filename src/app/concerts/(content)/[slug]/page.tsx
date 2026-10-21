@@ -20,7 +20,6 @@ export function generateStaticParams() {
   return getConcerts().map((c) => ({ slug: c.id }));
 }
 
-export const dynamicParams = false;
 
 function title(c: ConcertWithRefs) {
   return `${c.artist.name} in ${c.venue.city} — ${formatDate(c.date, { weekday: undefined })}`;

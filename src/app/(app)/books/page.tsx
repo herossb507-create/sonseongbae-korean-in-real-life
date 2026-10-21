@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { BookCard } from "@/components/books/BookCard";
 import { FreePdfBanner } from "@/components/books/FreePdfBanner";
-import { BOOKS } from "@/lib/books";
+import { BOOKS, FREE_PDF } from "@/lib/books";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { pageMeta } from "@/lib/seo";
 
@@ -33,6 +33,17 @@ export default function BooksPage() {
           <p className="text-[#6B5F7A] text-sm mt-1 max-w-2xl">
             This site follows the Korean in Real Life books. Get the full chapters with dialogues, practice exercises,
             answer keys and Listen &amp; Repeat videos — and plan your trip with Korea Unlocked.
+          </p>
+          <p className="text-sm mt-3">
+            🐹 Start free: get Kohami&apos;s 3 Korean phrase PDFs at{" "}
+            <a
+              href={FREE_PDF.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-[#E8436F] underline underline-offset-2"
+            >
+              {FREE_PDF.displayUrl}
+            </a>
           </p>
         </div>
 

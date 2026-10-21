@@ -80,16 +80,6 @@
     "timezone": "Asia/Bangkok"
   },
   {
-    "id": "impact-arena",
-    "name": "IMPACT Arena",
-    "city": "Bangkok",
-    "country": "Thailand",
-    "countryCode": "TH",
-    "lat": 13.9116,
-    "lng": 100.5484,
-    "timezone": "Asia/Bangkok"
-  },
-  {
     "id": "thammasat-stadium",
     "name": "Thammasat Stadium",
     "city": "Bangkok",
@@ -223,16 +213,6 @@
     "timezone": "Asia/Tokyo"
   },
   {
-    "id": "saitama-super-arena",
-    "name": "Saitama Super Arena",
-    "city": "Saitama",
-    "country": "Japan",
-    "countryCode": "JP",
-    "lat": 35.8951,
-    "lng": 139.6308,
-    "timezone": "Asia/Tokyo"
-  },
-  {
     "id": "vantelin-dome-nagoya",
     "name": "Vantelin Dome Nagoya",
     "city": "Nagoya",
@@ -293,8 +273,8 @@
     "timezone": "Australia/Sydney"
   },
   {
-    "id": "qudos-arena",
-    "name": "Qudos Bank Arena",
+    "id": "afterpay-arena",
+    "name": "Afterpay Arena",
     "city": "Sydney",
     "country": "Australia",
     "countryCode": "AU",
@@ -431,5 +411,35 @@
     "lat": 19.4976,
     "lng": -99.1752,
     "timezone": "America/Mexico_City"
+  },
+  {
+    "id": "tm-stadium-nasional",
+    "name": "TM Stadium Nasional",
+    "city": "Kuala Lumpur",
+    "country": "Malaysia",
+    "countryCode": "MY",
+    "lat": 3.0547,
+    "lng": 101.6914,
+    "timezone": "Asia/Kuala_Lumpur"
+  },
+  {
+    "id": "philippine-sports-stadium",
+    "name": "Philippine Sports Stadium",
+    "city": "Bulacan",
+    "country": "Philippines",
+    "countryCode": "PH",
+    "lat": 14.7949,
+    "lng": 120.9507,
+    "timezone": "Asia/Manila"
+  },
+  {
+    "id": "belluna-dome",
+    "name": "Belluna Dome",
+    "city": "Saitama",
+    "country": "Japan",
+    "countryCode": "JP",
+    "lat": 35.7685,
+    "lng": 139.4205,
+    "timezone": "Asia/Tokyo"
   }
 ]

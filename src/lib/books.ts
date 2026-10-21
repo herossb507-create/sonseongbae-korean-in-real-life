@@ -74,6 +74,8 @@ export const FREE_PDF = {
   description:
     "Beginner, Intermediate and Advanced PDFs with Hangul, easy pronunciation and a tip from Kohami the hamster teacher on every page.",
   url: "https://kohami-abahgp.subscribepage.io",
+  /** Shown as text so readers can type or share it. */
+  displayUrl: "kohami-abahgp.subscribepage.io",
 };
 
 // Which volume covers each site chapter (from the books' tables of contents).

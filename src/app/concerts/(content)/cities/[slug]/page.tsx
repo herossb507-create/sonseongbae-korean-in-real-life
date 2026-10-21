@@ -13,7 +13,6 @@ export function generateStaticParams() {
   return getCities().map((c) => ({ slug: c.slug }));
 }
 
-export const dynamicParams = false;
 
 function findCity(slug: string) {
   return getCities().find((c) => c.slug === slug);

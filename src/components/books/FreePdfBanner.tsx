@@ -19,6 +19,14 @@ export function FreePdfBanner({ compact = false }: { compact?: boolean }) {
             {FREE_PDF.title} <span className="font-medium text-[#6B5F7A]">· {FREE_PDF.subtitle}</span>
           </p>
           {!compact && <p className="mt-1 max-w-xl text-sm text-[#6B5F7A]">{FREE_PDF.description}</p>}
+          <a
+            href={FREE_PDF.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-1.5 inline-block break-all text-sm font-semibold text-[#E8436F] underline decoration-[#E8436F]/30 underline-offset-2 hover:decoration-[#E8436F]"
+          >
+            👉 {FREE_PDF.displayUrl}
+          </a>
           <p className="mt-1 text-[11px] text-[#B0A8BB]">
             Sign-up by email via MailerLite ·{" "}
             <Link href="/privacy" className="underline">

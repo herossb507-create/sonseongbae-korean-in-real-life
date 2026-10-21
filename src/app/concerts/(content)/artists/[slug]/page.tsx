@@ -12,7 +12,6 @@ export function generateStaticParams() {
   return getListedArtists().map((a) => ({ slug: a.id }));
 }
 
-export const dynamicParams = false;
 
 export function generateMetadata({ params }: Props): Metadata {
   const artist = getArtist(params.slug);

@@ -132,42 +132,44 @@
     "lastSeenAt": "2026-10-19"
   },
   {
-    "id": "nct-127-saitama-super-arena-2026-10-24",
+    "id": "nct-127-belluna-dome-2026-10-24",
     "artistId": "nct-127",
     "tour": "NEO CITY – THE REDLINE",
     "date": "2026-10-24",
-    "venueId": "saitama-super-arena",
+    "time": "17:00",
+    "venueId": "belluna-dome",
     "status": "announced",
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://www.bandwagon.asia/articles/nct-127-expand-neo-city-the-redline-tour-with-manila-kuala-lumpur-saitama-macau-shows",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://eplus.jp/sf/venue/3590020/events",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "stray-kids-paypay-dome-2026-10-24",
     "artistId": "stray-kids",
     "tour": "RUN IT World Tour",
     "date": "2026-10-24",
+    "time": "18:30",
     "venueId": "paypay-dome",
     "status": "announced",
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://www.bandwagon.asia/articles/stray-kids-to-hit-singapore-bangkok-hong-kong-tokyo-seoul-more-as-part-of-run-it-world-tour",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://www.straykidsjapan.com/live/archive/?55580",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "tws-kaohsiung-arena-2026-10-24",
@@ -189,23 +191,24 @@
     "lastSeenAt": "2026-10-19"
   },
   {
-    "id": "nct-127-saitama-super-arena-2026-10-25",
+    "id": "nct-127-belluna-dome-2026-10-25",
     "artistId": "nct-127",
     "tour": "NEO CITY – THE REDLINE",
     "date": "2026-10-25",
-    "venueId": "saitama-super-arena",
+    "time": "13:00",
+    "venueId": "belluna-dome",
     "status": "announced",
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://www.bandwagon.asia/articles/nct-127-expand-neo-city-the-redline-tour-with-manila-kuala-lumpur-saitama-macau-shows",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://eplus.jp/sf/venue/3590020/events",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "bts-morumbis-2026-10-28",
@@ -238,19 +241,20 @@
     "artistId": "boynextdoor",
     "tour": "KNOCK ON Vol.2 Tour",
     "date": "2026-10-30",
+    "time": "19:30",
     "venueId": "bomb-factory",
     "status": "announced",
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://themusicuniverse.com/boynextdoor-announces-2026-north-american-tour/",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://www.thebombfactory.com/events/detail/boynextdoor-1479413",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "bts-morumbis-2026-10-30",
@@ -309,228 +313,240 @@
     "artistId": "nct-127",
     "tour": "NEO CITY – THE REDLINE",
     "date": "2026-10-31",
+    "time": "19:00",
     "venueId": "thammasat-stadium",
     "status": "announced",
     "ticketLinks": [],
     "sourceRefs": [
       {
         "source": "news",
-        "url": "https://www.bandwagon.asia/articles/nct-127-expand-neo-city-the-redline-tour-with-manila-kuala-lumpur-saitama-macau-shows",
-        "fetchedAt": "2026-10-19"
+        "url": "https://www.naewna.com/n/?p=74809",
+        "fetchedAt": "2026-10-21"
       }
     ],
     "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "boynextdoor-pompano-beach-amphitheater-2026-11-01",
     "artistId": "boynextdoor",
     "tour": "KNOCK ON Vol.2 Tour",
     "date": "2026-11-01",
+    "time": "19:30",
     "venueId": "pompano-beach-amphitheater",
-    "status": "announced",
+    "status": "soldout",
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://themusicuniverse.com/boynextdoor-announces-2026-north-american-tour/",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://www.pompanobeacharts.org/articles/boynextdoor-sells-out-pompano-beach-amphitheater-in-less-than-three-days",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "nct-127-thammasat-stadium-2026-11-01",
     "artistId": "nct-127",
     "tour": "NEO CITY – THE REDLINE",
     "date": "2026-11-01",
+    "time": "19:00",
     "venueId": "thammasat-stadium",
     "status": "announced",
     "ticketLinks": [],
     "sourceRefs": [
       {
         "source": "news",
-        "url": "https://www.bandwagon.asia/articles/nct-127-expand-neo-city-the-redline-tour-with-manila-kuala-lumpur-saitama-macau-shows",
-        "fetchedAt": "2026-10-19"
+        "url": "https://www.naewna.com/n/?p=74809",
+        "fetchedAt": "2026-10-21"
       }
     ],
     "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "boynextdoor-salt-shed-2026-11-04",
     "artistId": "boynextdoor",
     "tour": "KNOCK ON Vol.2 Tour",
     "date": "2026-11-04",
+    "time": "19:30",
     "venueId": "salt-shed",
     "status": "announced",
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://themusicuniverse.com/boynextdoor-announces-2026-north-american-tour/",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://help.ticketmaster.com/hc/en-us/articles/47993656651153-BOYNEXTDOOR-TOUR-KNOCK-ON-Vol-2-IN-NORTH-AMERICA",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "stray-kids-tokyo-dome-2026-11-06",
     "artistId": "stray-kids",
     "tour": "RUN IT World Tour",
     "date": "2026-11-06",
+    "time": "18:00",
     "venueId": "tokyo-dome",
     "status": "announced",
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://sports.khan.co.kr/en/article/202609010729007",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://www.straykidsjapan.com/live/archive/?55580",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "boynextdoor-msg-infosys-2026-11-07",
     "artistId": "boynextdoor",
     "tour": "KNOCK ON Vol.2 Tour",
     "date": "2026-11-07",
+    "time": "20:00",
     "venueId": "msg-infosys",
     "status": "announced",
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://themusicuniverse.com/boynextdoor-announces-2026-north-american-tour/",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://www.msg.com/events-tickets/boynextdoor-infosys-theater-at-madison-square-garden-november-2026/3B0064CA94C8393A",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "le-sserafim-galaxy-arena-2026-11-07",
     "artistId": "le-sserafim",
     "tour": "PUREFLOW Tour",
     "date": "2026-11-07",
+    "time": "19:00",
     "venueId": "galaxy-arena",
     "status": "announced",
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://global.hk01.com/%E4%BC%97%E4%B9%90%E8%BF%B7/60385471",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://www.galaxymacau.com/offers/entertainment/2026-le-sserafim-tour-pureflow-macau/",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "stray-kids-tokyo-dome-2026-11-07",
     "artistId": "stray-kids",
     "tour": "RUN IT World Tour",
     "date": "2026-11-07",
+    "time": "17:00",
     "venueId": "tokyo-dome",
     "status": "announced",
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://sports.khan.co.kr/en/article/202609010729007",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://www.straykidsjapan.com/live/archive/?55580",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "le-sserafim-galaxy-arena-2026-11-08",
     "artistId": "le-sserafim",
     "tour": "PUREFLOW Tour",
     "date": "2026-11-08",
+    "time": "18:00",
     "venueId": "galaxy-arena",
     "status": "announced",
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://global.hk01.com/%E4%BC%97%E4%B9%90%E8%BF%B7/60385471",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://www.galaxymacau.com/offers/entertainment/2026-le-sserafim-tour-pureflow-macau/",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "stray-kids-tokyo-dome-2026-11-08",
     "artistId": "stray-kids",
     "tour": "RUN IT World Tour",
     "date": "2026-11-08",
+    "time": "16:30",
     "venueId": "tokyo-dome",
     "status": "announced",
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://sports.khan.co.kr/en/article/202609010729007",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://www.straykidsjapan.com/live/archive/?55580",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "boynextdoor-qe-theatre-toronto-2026-11-10",
     "artistId": "boynextdoor",
     "tour": "KNOCK ON Vol.2 Tour",
     "date": "2026-11-10",
+    "time": "19:30",
     "venueId": "qe-theatre-toronto",
     "status": "announced",
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://themusicuniverse.com/boynextdoor-announces-2026-north-american-tour/",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://admitone.com/events/toronto/pro/concerts/queen-elizabeth-theatre/boynextdoor/boynextdoor/6a22e1220206e60ff0e60ed4",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "boynextdoor-qe-theatre-vancouver-2026-11-13",
     "artistId": "boynextdoor",
     "tour": "KNOCK ON Vol.2 Tour",
     "date": "2026-11-13",
+    "time": "19:30",
     "venueId": "qe-theatre-vancouver",
     "status": "announced",
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://themusicuniverse.com/boynextdoor-announces-2026-north-american-tour/",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://help.ticketmaster.ca/hc/en-us/articles/47994745900305-BOYNEXTDOOR-TOUR-KNOCK-ON-Vol-2-IN-NORTH-AMERICA",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "txt-kspo-dome-2026-11-13",
@@ -563,38 +579,40 @@
     "artistId": "babymonster",
     "tour": "CHOOM World Tour",
     "date": "2026-11-14",
+    "time": "17:00",
     "venueId": "unifi-arena",
-    "status": "announced",
+    "status": "soldout",
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://www.businesstoday.com.my/2026/06/23/kl-joins-babymonsters-expanding-global-tour-map/",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://www.livenation.my/event/2026-27-babymonster-world-tour-%EC%B6%A4-choom-in-kuala-lumpur-kuala-lumpur-tickets-edp1682916",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "le-sserafim-ntsu-arena-2026-11-14",
     "artistId": "le-sserafim",
     "tour": "PUREFLOW Tour",
     "date": "2026-11-14",
+    "time": "18:00",
     "venueId": "ntsu-arena",
     "status": "announced",
     "ticketLinks": [],
     "sourceRefs": [
       {
         "source": "news",
-        "url": "https://www.businesstoday.com.tw/article/category/183030/post/202604290016/",
-        "fetchedAt": "2026-10-19"
+        "url": "https://news.tvbs.com.tw/entertainment/jk-pop/3210587",
+        "fetchedAt": "2026-10-21"
       }
     ],
     "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "txt-kspo-dome-2026-11-14",
@@ -627,38 +645,40 @@
     "artistId": "boynextdoor",
     "tour": "KNOCK ON Vol.2 Tour",
     "date": "2026-11-15",
+    "time": "19:30",
     "venueId": "showbox-sodo",
     "status": "announced",
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://themusicuniverse.com/boynextdoor-announces-2026-north-american-tour/",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://www.showboxpresents.com/events/detail/1477898",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "le-sserafim-ntsu-arena-2026-11-15",
     "artistId": "le-sserafim",
     "tour": "PUREFLOW Tour",
     "date": "2026-11-15",
+    "time": "18:00",
     "venueId": "ntsu-arena",
     "status": "announced",
     "ticketLinks": [],
     "sourceRefs": [
       {
         "source": "news",
-        "url": "https://www.businesstoday.com.tw/article/category/183030/post/202604290016/",
-        "fetchedAt": "2026-10-19"
+        "url": "https://news.tvbs.com.tw/entertainment/jk-pop/3210587",
+        "fetchedAt": "2026-10-21"
       }
     ],
     "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "txt-kspo-dome-2026-11-15",
@@ -716,53 +736,55 @@
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://news.tvbs.com.tw/english/3210907",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://btsworldtourofficial.com",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "boynextdoor-peacock-theater-2026-11-20",
     "artistId": "boynextdoor",
     "tour": "KNOCK ON Vol.2 Tour",
     "date": "2026-11-20",
+    "time": "19:30",
     "venueId": "peacock-theater",
     "status": "announced",
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://themusicuniverse.com/boynextdoor-announces-2026-north-american-tour/",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://www.peacocktheater.com/events/detail/boynextdoor112026",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "txt-galaxy-arena-2026-11-20",
     "artistId": "txt",
     "tour": "STEAL THE WIND World Tour",
     "date": "2026-11-20",
+    "time": "20:00",
     "venueId": "galaxy-arena",
-    "status": "announced",
+    "status": "soldout",
     "notes": "Added show",
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://sports.khan.co.kr/en/article/202609231224007",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://www.galaxymacau.com/offers/entertainment/tomorrow-x-together-world-tour-macau-2026/",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "bts-kaohsiung-national-stadium-2026-11-21",
@@ -774,33 +796,34 @@
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://news.tvbs.com.tw/english/3210907",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://btsworldtourofficial.com",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "txt-galaxy-arena-2026-11-21",
     "artistId": "txt",
     "tour": "STEAL THE WIND World Tour",
     "date": "2026-11-21",
+    "time": "19:00",
     "venueId": "galaxy-arena",
-    "status": "announced",
+    "status": "soldout",
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://sports.khan.co.kr/en/article/202609231224007",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://www.galaxymacau.com/offers/entertainment/tomorrow-x-together-world-tour-macau-2026/",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "bts-kaohsiung-national-stadium-2026-11-22",
@@ -812,33 +835,34 @@
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://news.tvbs.com.tw/english/3210907",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://btsworldtourofficial.com",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "txt-galaxy-arena-2026-11-22",
     "artistId": "txt",
     "tour": "STEAL THE WIND World Tour",
     "date": "2026-11-22",
+    "time": "19:00",
     "venueId": "galaxy-arena",
-    "status": "announced",
+    "status": "soldout",
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://sports.khan.co.kr/en/article/202609231224007",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://www.galaxymacau.com/offers/entertainment/tomorrow-x-together-world-tour-macau-2026/",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "boynextdoor-arena-cdmx-2026-11-24",
@@ -851,13 +875,13 @@
     "sourceRefs": [
       {
         "source": "news",
-        "url": "https://themusicuniverse.com/boynextdoor-announces-2026-north-american-tour/",
-        "fetchedAt": "2026-10-19"
+        "url": "https://www.publimetro.com.mx/entretenimiento/2026/06/24/boynextdoor-en-la-arena-cdmx-estos-son-los-precio-oficiales-de-los-boletos/",
+        "fetchedAt": "2026-10-21"
       }
     ],
     "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "nmixx-inspire-arena-2026-11-27",
@@ -1007,14 +1031,14 @@
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://www.nationthailand.com/life/entertainment/40066529",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://btsworldtourofficial.com",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "bts-rajamangala-stadium-2026-12-05",
@@ -1026,14 +1050,14 @@
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://www.nationthailand.com/life/entertainment/40066529",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://btsworldtourofficial.com",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "le-sserafim-moa-arena-2026-12-05",
@@ -1045,33 +1069,34 @@
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://www.gmanetwork.com/entertainment/showbiznews/le-sserafims-pureflow-manila-concert-ticket-prices-are-out/137291",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://smtickets.com/events/view/18350",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "stray-kids-kai-tak-stadium-2026-12-05",
     "artistId": "stray-kids",
     "tour": "RUN IT World Tour",
     "date": "2026-12-05",
+    "time": "17:00",
     "venueId": "kai-tak-stadium",
     "status": "announced",
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://www.bandwagon.asia/articles/stray-kids-to-hit-singapore-bangkok-hong-kong-tokyo-seoul-more-as-part-of-run-it-world-tour",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://www.livenation.hk/event/stray-kids-world-tour-run-it-hong-kong--hong-kong-tickets-edp1691372",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "bts-rajamangala-stadium-2026-12-06",
@@ -1083,14 +1108,14 @@
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://www.nationthailand.com/life/entertainment/40066529",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://btsworldtourofficial.com",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "le-sserafim-moa-arena-2026-12-06",
@@ -1102,33 +1127,53 @@
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://www.gmanetwork.com/entertainment/showbiznews/le-sserafims-pureflow-manila-concert-ticket-prices-are-out/137291",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://smtickets.com/events/view/18422",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "babymonster-rod-laver-arena-2026-12-11",
     "artistId": "babymonster",
     "tour": "CHOOM World Tour",
     "date": "2026-12-11",
+    "time": "19:00",
     "venueId": "rod-laver-arena",
     "status": "announced",
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://secretsydney.com/babymonster-sydney-australia-2026/",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://rodlaverarena.com.au/event/babymonster-world-tour-choom-melbourne-2026/",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
+  },
+  {
+    "id": "bts-tm-stadium-nasional-2026-12-12",
+    "artistId": "bts",
+    "tour": "ARIRANG World Tour",
+    "date": "2026-12-12",
+    "venueId": "tm-stadium-nasional",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://btsworldtourofficial.com",
+        "fetchedAt": "2026-10-21"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "nct-127-moa-arena-2026-12-12",
@@ -1140,14 +1185,14 @@
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://www.bandwagon.asia/articles/nct-127-expand-neo-city-the-redline-tour-with-manila-kuala-lumpur-saitama-macau-shows",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://smtickets.com/events/view/18436",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "stray-kids-taipei-dome-2026-12-12",
@@ -1160,32 +1205,52 @@
     "sourceRefs": [
       {
         "source": "news",
-        "url": "https://www.bandwagon.asia/articles/stray-kids-to-hit-singapore-bangkok-hong-kong-tokyo-seoul-more-as-part-of-run-it-world-tour",
-        "fetchedAt": "2026-10-19"
+        "url": "https://news.tvbs.com.tw/entertainment/jk-pop/3243512",
+        "fetchedAt": "2026-10-21"
       }
     ],
     "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
-    "id": "babymonster-qudos-arena-2026-12-13",
+    "id": "babymonster-afterpay-arena-2026-12-13",
     "artistId": "babymonster",
     "tour": "CHOOM World Tour",
     "date": "2026-12-13",
-    "venueId": "qudos-arena",
+    "time": "19:00",
+    "venueId": "afterpay-arena",
     "status": "announced",
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://secretsydney.com/babymonster-sydney-australia-2026/",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://afterpayarena.com.au/?p=52399",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
+  },
+  {
+    "id": "bts-tm-stadium-nasional-2026-12-13",
+    "artistId": "bts",
+    "tour": "ARIRANG World Tour",
+    "date": "2026-12-13",
+    "venueId": "tm-stadium-nasional",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://btsworldtourofficial.com",
+        "fetchedAt": "2026-10-21"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "bts-singapore-national-stadium-2026-12-17",
@@ -1409,14 +1474,14 @@
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://rri.co.id/hiburan/2479178/simak-informasi-konser-bts-arirang-di-jakarta-dari-jadwal-hingga-aturan-penonton",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://btsworldtourofficial.com",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "enhypen-vantelin-dome-nagoya-2026-12-26",
@@ -1468,14 +1533,14 @@
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://rri.co.id/hiburan/2479178/simak-informasi-konser-bts-arirang-di-jakarta-dari-jadwal-hingga-aturan-penonton",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://btsworldtourofficial.com",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "enhypen-vantelin-dome-nagoya-2026-12-27",
@@ -1527,14 +1592,14 @@
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://rri.co.id/hiburan/2479178/simak-informasi-konser-bts-arirang-di-jakarta-dari-jadwal-hingga-aturan-penonton",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://btsworldtourofficial.com",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "nct-127-taipei-arena-2027-01-02",
@@ -1592,44 +1657,6 @@
       }
     ],
     "verification": "verified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
-  },
-  {
-    "id": "stray-kids-impact-arena-2027-01-16",
-    "artistId": "stray-kids",
-    "tour": "RUN IT World Tour",
-    "date": "2027-01-16",
-    "venueId": "impact-arena",
-    "status": "announced",
-    "ticketLinks": [],
-    "sourceRefs": [
-      {
-        "source": "news",
-        "url": "https://www.bandwagon.asia/articles/stray-kids-to-hit-singapore-bangkok-hong-kong-tokyo-seoul-more-as-part-of-run-it-world-tour",
-        "fetchedAt": "2026-10-19"
-      }
-    ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
-  },
-  {
-    "id": "stray-kids-impact-arena-2027-01-17",
-    "artistId": "stray-kids",
-    "tour": "RUN IT World Tour",
-    "date": "2027-01-17",
-    "venueId": "impact-arena",
-    "status": "announced",
-    "ticketLinks": [],
-    "sourceRefs": [
-      {
-        "source": "news",
-        "url": "https://www.bandwagon.asia/articles/stray-kids-to-hit-singapore-bangkok-hong-kong-tokyo-seoul-more-as-part-of-run-it-world-tour",
-        "fetchedAt": "2026-10-19"
-      }
-    ],
-    "verification": "unverified",
     "updatedAt": "2026-10-19",
     "lastSeenAt": "2026-10-19"
   },
@@ -1900,14 +1927,14 @@
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://www.tatlerasia.com/lifestyle/entertainment/bts-arirang-concert-hong-kong-it",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://btsworldtourofficial.com",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "bts-kai-tak-stadium-2027-03-06",
@@ -1920,33 +1947,34 @@
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://www.tatlerasia.com/lifestyle/entertainment/bts-arirang-concert-hong-kong-it",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://btsworldtourofficial.com",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "stray-kids-sg-indoor-2027-03-06",
     "artistId": "stray-kids",
     "tour": "RUN IT World Tour",
     "date": "2027-03-06",
+    "time": "18:00",
     "venueId": "sg-indoor",
     "status": "announced",
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://www.bandwagon.asia/articles/stray-kids-to-hit-singapore-bangkok-hong-kong-tokyo-seoul-more-as-part-of-run-it-world-tour",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://www.thekallang.com.sg/en/things-to-do/events/stray-kids-world-tour-run-it-singapore.html",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "bts-kai-tak-stadium-2027-03-07",
@@ -1959,32 +1987,90 @@
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://www.tatlerasia.com/lifestyle/entertainment/bts-arirang-concert-hong-kong-it",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://btsworldtourofficial.com",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   },
   {
     "id": "stray-kids-sg-indoor-2027-03-07",
     "artistId": "stray-kids",
     "tour": "RUN IT World Tour",
     "date": "2027-03-07",
+    "time": "18:00",
     "venueId": "sg-indoor",
     "status": "announced",
     "ticketLinks": [],
     "sourceRefs": [
       {
-        "source": "news",
-        "url": "https://www.bandwagon.asia/articles/stray-kids-to-hit-singapore-bangkok-hong-kong-tokyo-seoul-more-as-part-of-run-it-world-tour",
-        "fetchedAt": "2026-10-19"
+        "source": "official",
+        "url": "https://www.thekallang.com.sg/en/things-to-do/events/stray-kids-world-tour-run-it-singapore.html",
+        "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
+  },
+  {
+    "id": "bts-philippine-sports-stadium-2027-03-13",
+    "artistId": "bts",
+    "tour": "ARIRANG World Tour",
+    "date": "2027-03-13",
+    "venueId": "philippine-sports-stadium",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://btsworldtourofficial.com",
+        "fetchedAt": "2026-10-21"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
+  },
+  {
+    "id": "bts-philippine-sports-stadium-2027-03-14",
+    "artistId": "bts",
+    "tour": "ARIRANG World Tour",
+    "date": "2027-03-14",
+    "venueId": "philippine-sports-stadium",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://btsworldtourofficial.com",
+        "fetchedAt": "2026-10-21"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
+  },
+  {
+    "id": "bts-philippine-sports-stadium-2027-03-16",
+    "artistId": "bts",
+    "tour": "ARIRANG World Tour",
+    "date": "2027-03-16",
+    "venueId": "philippine-sports-stadium",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://btsworldtourofficial.com",
+        "fetchedAt": "2026-10-21"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-10-21",
+    "lastSeenAt": "2026-10-21"
   }
 ]
