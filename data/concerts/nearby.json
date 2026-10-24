@@ -4259,6 +4259,1360 @@
         }
       ],
       "hotels": []
+    },
+    "uber-arena": {
+      "fetchedAt": "2026-10-24",
+      "radius": 1000,
+      "food": [
+        {
+          "osm": "node/6103424394",
+          "name": "Sausalitos",
+          "kind": "restaurant",
+          "cuisine": "mexican",
+          "lat": 52.505609,
+          "lng": 13.442537,
+          "distance": 118
+        },
+        {
+          "osm": "way/740025150",
+          "name": "Starbucks",
+          "kind": "cafe",
+          "cuisine": "coffee shop",
+          "lat": 52.505822,
+          "lng": 13.445281,
+          "distance": 119
+        },
+        {
+          "osm": "node/6103423928",
+          "name": "Five Guys",
+          "kind": "fast_food",
+          "cuisine": "burger",
+          "lat": 52.505298,
+          "lng": 13.443341,
+          "distance": 123
+        },
+        {
+          "osm": "node/6103424393",
+          "name": "800°",
+          "kind": "fast_food",
+          "cuisine": "burger",
+          "lat": 52.505719,
+          "lng": 13.442283,
+          "distance": 124
+        },
+        {
+          "osm": "node/6032523119",
+          "name": "Comebuy",
+          "kind": "cafe",
+          "cuisine": "tea",
+          "lat": 52.506011,
+          "lng": 13.4456,
+          "distance": 130
+        },
+        {
+          "osm": "node/6032523112",
+          "name": "Zen",
+          "kind": "restaurant",
+          "cuisine": "asian",
+          "lat": 52.506076,
+          "lng": 13.445641,
+          "distance": 131
+        },
+        {
+          "osm": "node/6103424395",
+          "name": "OMO",
+          "kind": "restaurant",
+          "cuisine": "asian",
+          "lat": 52.505481,
+          "lng": 13.442426,
+          "distance": 134
+        },
+        {
+          "osm": "way/740025157",
+          "name": "Wrapublic",
+          "kind": "fast_food",
+          "cuisine": "wrap",
+          "lat": 52.506126,
+          "lng": 13.445709,
+          "distance": 134
+        }
+      ],
+      "hotels": [
+        {
+          "osm": "node/2954444684",
+          "name": "Holiday Inn Berlin - City East Side",
+          "kind": "hotel",
+          "lat": 52.504849,
+          "lng": 13.444605,
+          "distance": 178
+        },
+        {
+          "osm": "node/6504618663",
+          "name": "Hampton by Hilton Berlin City East Side Gallery",
+          "kind": "hotel",
+          "lat": 52.505083,
+          "lng": 13.441257,
+          "distance": 222
+        },
+        {
+          "osm": "node/6052683128",
+          "name": "Hotel Indigo",
+          "kind": "hotel",
+          "lat": 52.504889,
+          "lng": 13.441174,
+          "distance": 241
+        },
+        {
+          "osm": "node/1033893408",
+          "name": "Michelberger Hotel",
+          "kind": "hotel",
+          "lat": 52.504618,
+          "lng": 13.447962,
+          "distance": 344
+        },
+        {
+          "osm": "way/48202902",
+          "name": "East Side Hotel",
+          "kind": "hotel",
+          "lat": 52.503406,
+          "lng": 13.445517,
+          "distance": 350
+        }
+      ]
+    },
+    "ao-arena": {
+      "fetchedAt": "2026-10-24",
+      "radius": 1000,
+      "food": [
+        {
+          "osm": "node/4037143677",
+          "name": "Domino's",
+          "kind": "fast_food",
+          "cuisine": "pizza",
+          "lat": 53.488094,
+          "lng": -2.246744,
+          "distance": 170
+        },
+        {
+          "osm": "node/5628820443",
+          "name": "Hipster Burgers",
+          "kind": "fast_food",
+          "cuisine": "burger",
+          "lat": 53.486636,
+          "lng": -2.241639,
+          "distance": 233
+        },
+        {
+          "osm": "node/7672943730",
+          "name": "That’s Thai",
+          "kind": "restaurant",
+          "cuisine": "thai",
+          "lat": 53.49019,
+          "lng": -2.243896,
+          "distance": 235
+        },
+        {
+          "osm": "node/4580387944",
+          "name": "Mowgli Street Food",
+          "kind": "restaurant",
+          "cuisine": "indian",
+          "lat": 53.485112,
+          "lng": -2.243392,
+          "distance": 335
+        },
+        {
+          "osm": "node/11993280278",
+          "name": "Delhi House Cafe",
+          "kind": "restaurant",
+          "cuisine": "indian",
+          "lat": 53.48508,
+          "lng": -2.242815,
+          "distance": 346
+        },
+        {
+          "osm": "node/2683693095",
+          "name": "Wagamama",
+          "kind": "restaurant",
+          "cuisine": "asian",
+          "lat": 53.48516,
+          "lng": -2.241827,
+          "distance": 361
+        },
+        {
+          "osm": "node/4580387937",
+          "name": "Pho",
+          "kind": "restaurant",
+          "cuisine": "vietnamese",
+          "lat": 53.484851,
+          "lng": -2.243424,
+          "distance": 363
+        },
+        {
+          "osm": "node/10263430709",
+          "name": "Thai",
+          "nameEn": "Thaikhun",
+          "kind": "restaurant",
+          "cuisine": "thai",
+          "lat": 53.480123,
+          "lng": -2.251053,
+          "distance": 996
+        }
+      ],
+      "hotels": [
+        {
+          "osm": "node/6061767377",
+          "name": "Hotel Indigo",
+          "kind": "hotel",
+          "lat": 53.486082,
+          "lng": -2.241699,
+          "distance": 276
+        },
+        {
+          "osm": "way/401016418",
+          "name": "Travelodge - Manchester Central",
+          "kind": "hotel",
+          "lat": 53.490149,
+          "lng": -2.246544,
+          "distance": 278
+        },
+        {
+          "osm": "way/144335327",
+          "name": "Park Inn by Radisson Manchester City Centre",
+          "kind": "hotel",
+          "lat": 53.490037,
+          "lng": -2.241098,
+          "distance": 297
+        },
+        {
+          "osm": "way/662724303",
+          "name": "Citysuites Manchester",
+          "kind": "hotel",
+          "lat": 53.485491,
+          "lng": -2.247229,
+          "distance": 352
+        },
+        {
+          "osm": "node/4674785295",
+          "name": "C",
+          "nameEn": "Clydesdale House",
+          "kind": "hotel",
+          "lat": 53.483663,
+          "lng": -2.237326,
+          "distance": 669
+        }
+      ]
+    },
+    "the-o2": {
+      "fetchedAt": "2026-10-24",
+      "radius": 1000,
+      "food": [
+        {
+          "osm": "way/1240494139",
+          "name": "Busaba",
+          "kind": "restaurant",
+          "cuisine": "thai",
+          "lat": 51.502503,
+          "lng": 0.004212,
+          "distance": 86
+        },
+        {
+          "osm": "way/1240494137",
+          "name": "Marugame Udon",
+          "kind": "fast_food",
+          "cuisine": "noodle",
+          "lat": 51.502577,
+          "lng": 0.004297,
+          "distance": 87
+        },
+        {
+          "osm": "way/1240494134",
+          "name": "Rodizio Rico",
+          "kind": "restaurant",
+          "cuisine": "brazilian",
+          "lat": 51.502824,
+          "lng": 0.004442,
+          "distance": 88
+        },
+        {
+          "osm": "way/1240494132",
+          "name": "Frankie & Benny's",
+          "kind": "restaurant",
+          "cuisine": "american",
+          "lat": 51.502935,
+          "lng": 0.00447,
+          "distance": 89
+        },
+        {
+          "osm": "way/1240494129",
+          "name": "Slim Chickens",
+          "kind": "fast_food",
+          "cuisine": "chicken",
+          "lat": 51.503285,
+          "lng": 0.00441,
+          "distance": 93
+        },
+        {
+          "osm": "way/1240494130",
+          "name": "TGI Fridays",
+          "kind": "restaurant",
+          "cuisine": "american",
+          "lat": 51.503201,
+          "lng": 0.004516,
+          "distance": 97
+        },
+        {
+          "osm": "way/1240494133",
+          "name": "Wasabi",
+          "kind": "fast_food",
+          "cuisine": "japanese",
+          "lat": 51.502917,
+          "lng": 0.004624,
+          "distance": 100
+        },
+        {
+          "osm": "way/1240494115",
+          "name": "Chopstix",
+          "kind": "fast_food",
+          "cuisine": "noodle",
+          "lat": 51.503692,
+          "lng": 0.004087,
+          "distance": 105
+        }
+      ],
+      "hotels": [
+        {
+          "osm": "way/450475217",
+          "name": "InterContinental London - The O2",
+          "kind": "hotel",
+          "lat": 51.503289,
+          "lng": -0.000252,
+          "distance": 241
+        },
+        {
+          "osm": "way/193805783",
+          "name": "Radisson Blu Canary Wharf East",
+          "kind": "hotel",
+          "lat": 51.506865,
+          "lng": -0.004176,
+          "distance": 671
+        },
+        {
+          "osm": "way/201557327",
+          "name": "Ibis London Docklands",
+          "kind": "hotel",
+          "lat": 51.507074,
+          "lng": -0.007031,
+          "distance": 844
+        },
+        {
+          "osm": "way/968820138",
+          "name": "Travelodge London Docklands Central",
+          "kind": "hotel",
+          "lat": 51.511425,
+          "lng": -0.000319,
+          "distance": 975
+        }
+      ]
+    },
+    "ziggo-dome": {
+      "fetchedAt": "2026-10-24",
+      "radius": 1000,
+      "food": [
+        {
+          "osm": "node/3504631603",
+          "name": "Ballini",
+          "kind": "cafe",
+          "cuisine": "coffee shop",
+          "lat": 52.312518,
+          "lng": 4.938518,
+          "distance": 137
+        },
+        {
+          "osm": "node/3504628327",
+          "name": "Australian Homemade",
+          "kind": "fast_food",
+          "cuisine": "ice cream",
+          "lat": 52.311815,
+          "lng": 4.938289,
+          "distance": 194
+        },
+        {
+          "osm": "node/3504624859",
+          "name": "Bakerstreet Villa Arena",
+          "kind": "fast_food",
+          "cuisine": "sandwich",
+          "lat": 52.311693,
+          "lng": 4.938203,
+          "distance": 204
+        },
+        {
+          "osm": "node/2862921313",
+          "name": "Burger Bitch",
+          "kind": "fast_food",
+          "cuisine": "burger",
+          "lat": 52.313199,
+          "lng": 4.942433,
+          "distance": 362
+        },
+        {
+          "osm": "node/2862921341",
+          "name": "Asian Kitchen",
+          "kind": "restaurant",
+          "cuisine": "asian",
+          "lat": 52.31345,
+          "lng": 4.943128,
+          "distance": 408
+        },
+        {
+          "osm": "node/7181791288",
+          "name": "FEBO",
+          "kind": "fast_food",
+          "cuisine": "friture",
+          "lat": 52.312876,
+          "lng": 4.943505,
+          "distance": 438
+        },
+        {
+          "osm": "node/8901737937",
+          "name": "Dunkin'",
+          "kind": "fast_food",
+          "cuisine": "donut, coffee shop",
+          "lat": 52.313028,
+          "lng": 4.943556,
+          "distance": 439
+        },
+        {
+          "osm": "node/3501002894",
+          "name": "Kurio",
+          "kind": "fast_food",
+          "cuisine": "kebab",
+          "lat": 52.312911,
+          "lng": 4.944775,
+          "distance": 523
+        }
+      ],
+      "hotels": [
+        {
+          "osm": "node/13265105649",
+          "name": "Jaz in the City",
+          "kind": "hotel",
+          "lat": 52.314354,
+          "lng": 4.938723,
+          "distance": 151
+        },
+        {
+          "osm": "node/2862916256",
+          "name": "easyHotel Amsterdam Arena Boulevard",
+          "kind": "hotel",
+          "lat": 52.313178,
+          "lng": 4.944876,
+          "distance": 528
+        },
+        {
+          "osm": "node/2862920761",
+          "name": "Holiday Inn Express Amsterdam Arena Towers",
+          "kind": "hotel",
+          "lat": 52.309482,
+          "lng": 4.941995,
+          "distance": 548
+        },
+        {
+          "osm": "node/717738460",
+          "name": "Hampton by Hilton Amsterdam / Arena Boulevard",
+          "kind": "hotel",
+          "lat": 52.312993,
+          "lng": 4.947748,
+          "distance": 724
+        },
+        {
+          "osm": "node/3686282980",
+          "name": "Courtyard Amsterdam Arena Atlas",
+          "kind": "hotel",
+          "lat": 52.309783,
+          "lng": 4.946434,
+          "distance": 750
+        }
+      ]
+    },
+    "avicii-arena": {
+      "fetchedAt": "2026-10-24",
+      "radius": 1000,
+      "food": [
+        {
+          "osm": "node/6864114946",
+          "name": "Espresso House",
+          "kind": "cafe",
+          "cuisine": "coffee shop",
+          "lat": 59.293146,
+          "lng": 18.08163,
+          "distance": 104
+        },
+        {
+          "osm": "node/12030788920",
+          "name": "Keb",
+          "kind": "fast_food",
+          "cuisine": "kebab",
+          "lat": 59.292628,
+          "lng": 18.082329,
+          "distance": 121
+        },
+        {
+          "osm": "node/12030849459",
+          "name": "Sushi Arenan",
+          "kind": "fast_food",
+          "cuisine": "burger",
+          "lat": 59.293056,
+          "lng": 18.08111,
+          "distance": 135
+        },
+        {
+          "osm": "node/6866654365",
+          "name": "Sushirullen",
+          "kind": "restaurant",
+          "cuisine": "sushi",
+          "lat": 59.293322,
+          "lng": 18.080806,
+          "distance": 141
+        },
+        {
+          "osm": "node/12030839526",
+          "name": "Coffe & Baker’s",
+          "kind": "cafe",
+          "cuisine": "coffee shop",
+          "lat": 59.292204,
+          "lng": 18.082397,
+          "distance": 164
+        },
+        {
+          "osm": "node/6877923124",
+          "name": "Joe & The Juice",
+          "kind": "cafe",
+          "cuisine": "coffee shop",
+          "lat": 59.294111,
+          "lng": 18.080311,
+          "distance": 174
+        },
+        {
+          "osm": "node/6877923161",
+          "name": "Subway",
+          "kind": "fast_food",
+          "cuisine": "sandwich",
+          "lat": 59.292002,
+          "lng": 18.08277,
+          "distance": 182
+        },
+        {
+          "osm": "node/6877923128",
+          "name": "Caffè Nero",
+          "kind": "cafe",
+          "cuisine": "coffee shop",
+          "lat": 59.294154,
+          "lng": 18.080113,
+          "distance": 186
+        }
+      ],
+      "hotels": [
+        {
+          "osm": "way/31977260",
+          "name": "Quality Hotel Globe",
+          "kind": "hotel",
+          "lat": 59.29273,
+          "lng": 18.083929,
+          "distance": 107
+        }
+      ]
+    },
+    "royal-arena": {
+      "fetchedAt": "2026-10-24",
+      "radius": 1000,
+      "food": [
+        {
+          "osm": "node/4594600839",
+          "name": "The Deli 3.3",
+          "kind": "cafe",
+          "cuisine": "sandwich",
+          "lat": 55.625279,
+          "lng": 12.573515,
+          "distance": 17
+        },
+        {
+          "osm": "node/4594379738",
+          "name": "The Diner 1.5",
+          "kind": "fast_food",
+          "cuisine": "burger",
+          "lat": 55.625685,
+          "lng": 12.573791,
+          "distance": 31
+        },
+        {
+          "osm": "node/12831796285",
+          "name": "Restaurant BARK",
+          "kind": "restaurant",
+          "cuisine": "diner",
+          "lat": 55.627208,
+          "lng": 12.577291,
+          "distance": 303
+        },
+        {
+          "osm": "node/10091390202",
+          "name": "Royal burger&shawarma",
+          "kind": "fast_food",
+          "cuisine": "kebab, burger",
+          "lat": 55.629271,
+          "lng": 12.578887,
+          "distance": 540
+        },
+        {
+          "osm": "node/11840948665",
+          "name": "RAGU",
+          "kind": "fast_food",
+          "cuisine": "pasta",
+          "lat": 55.629803,
+          "lng": 12.577726,
+          "distance": 551
+        },
+        {
+          "osm": "node/1271171744",
+          "name": "Burger King",
+          "kind": "fast_food",
+          "cuisine": "burger",
+          "lat": 55.630001,
+          "lng": 12.577136,
+          "distance": 555
+        },
+        {
+          "osm": "node/5893123055",
+          "name": "Ørestad Kebab",
+          "kind": "fast_food",
+          "cuisine": "kebab",
+          "lat": 55.629343,
+          "lng": 12.579526,
+          "distance": 572
+        },
+        {
+          "osm": "node/4429455849",
+          "name": "Espresso House Fields",
+          "kind": "cafe",
+          "cuisine": "coffee shop",
+          "lat": 55.630243,
+          "lng": 12.577077,
+          "distance": 578
+        }
+      ],
+      "hotels": [
+        {
+          "osm": "node/8089020102",
+          "name": "Four Points Flex by Sheraton Copenhagen Arena",
+          "kind": "hotel",
+          "lat": 55.625586,
+          "lng": 12.577203,
+          "distance": 224
+        },
+        {
+          "osm": "node/12831796281",
+          "name": "Crowne Plaza Copenhagen Towers",
+          "kind": "hotel",
+          "lat": 55.626945,
+          "lng": 12.577179,
+          "distance": 279
+        },
+        {
+          "osm": "way/542226857",
+          "name": "Cabinn Apartments",
+          "kind": "hotel",
+          "lat": 55.630861,
+          "lng": 12.573804,
+          "distance": 606
+        },
+        {
+          "osm": "way/88288287",
+          "name": "Cabinn Metro",
+          "kind": "hotel",
+          "lat": 55.631083,
+          "lng": 12.572906,
+          "distance": 632
+        }
+      ]
+    },
+    "unipol-dome": {
+      "fetchedAt": "2026-10-24",
+      "radius": 1000,
+      "food": [
+        {
+          "osm": "node/8071498092",
+          "name": "Bagutto",
+          "kind": "restaurant",
+          "cuisine": "italian, regional",
+          "lat": 45.444159,
+          "lng": 9.260947,
+          "distance": 549
+        },
+        {
+          "osm": "node/3373387738",
+          "name": "Moby Dick 3",
+          "kind": "restaurant",
+          "cuisine": "pizza",
+          "lat": 45.445143,
+          "lng": 9.24847,
+          "distance": 674
+        },
+        {
+          "osm": "node/3373393116",
+          "name": "Piccolo Caffè",
+          "kind": "cafe",
+          "lat": 45.445746,
+          "lng": 9.248209,
+          "distance": 733
+        },
+        {
+          "osm": "node/10053327618",
+          "name": "Bar Trattoria L'Insieme",
+          "kind": "restaurant",
+          "cuisine": "italian, regional",
+          "lat": 45.444449,
+          "lng": 9.263745,
+          "distance": 753
+        },
+        {
+          "osm": "node/3373394937",
+          "name": "Turkish Kebab",
+          "kind": "fast_food",
+          "cuisine": "kebab",
+          "lat": 45.445712,
+          "lng": 9.247694,
+          "distance": 761
+        },
+        {
+          "osm": "node/11893616078",
+          "name": "Touro Churrascaria",
+          "kind": "restaurant",
+          "cuisine": "brazilian",
+          "lat": 45.44932,
+          "lng": 9.253374,
+          "distance": 899
+        },
+        {
+          "osm": "node/2123107460",
+          "name": "Bella Alice",
+          "kind": "restaurant",
+          "cuisine": "pizza, kebab",
+          "lat": 45.449371,
+          "lng": 9.253281,
+          "distance": 906
+        },
+        {
+          "osm": "node/4261701382",
+          "name": "Al vecchio ponte",
+          "kind": "restaurant",
+          "cuisine": "italian",
+          "lat": 45.444272,
+          "lng": 9.266311,
+          "distance": 928
+        }
+      ],
+      "hotels": [
+        {
+          "osm": "node/13617255715",
+          "name": "B&B Quercia Residence",
+          "kind": "hotel",
+          "lat": 45.444631,
+          "lng": 9.261428,
+          "distance": 610
+        },
+        {
+          "osm": "way/172978260",
+          "name": "Novotel Milano Linate Aeroporto",
+          "kind": "hotel",
+          "lat": 45.448261,
+          "lng": 9.257484,
+          "distance": 791
+        }
+      ]
+    },
+    "palau-sant-jordi": {
+      "fetchedAt": "2026-10-24",
+      "radius": 1000,
+      "food": [
+        {
+          "osm": "node/6241175831",
+          "name": "OVAL",
+          "kind": "cafe",
+          "lat": 41.367921,
+          "lng": 2.153625,
+          "distance": 503
+        },
+        {
+          "osm": "way/353892871",
+          "name": "Restaurant Petit Hípica",
+          "kind": "restaurant",
+          "cuisine": "grill",
+          "lat": 41.367531,
+          "lng": 2.148195,
+          "distance": 581
+        },
+        {
+          "osm": "node/6241175620",
+          "name": "ABSIS",
+          "kind": "restaurant",
+          "lat": 41.368799,
+          "lng": 2.153414,
+          "distance": 597
+        },
+        {
+          "osm": "way/136306783",
+          "name": "La Font del Gat",
+          "kind": "restaurant",
+          "lat": 41.367807,
+          "lng": 2.157603,
+          "distance": 640
+        },
+        {
+          "osm": "node/3450072353",
+          "name": "Tablao de Carmen",
+          "kind": "restaurant",
+          "cuisine": "regional, catalan",
+          "lat": 41.368882,
+          "lng": 2.148864,
+          "distance": 677
+        },
+        {
+          "osm": "node/1600068981",
+          "name": "Tip-Top",
+          "kind": "restaurant",
+          "cuisine": "spanish",
+          "lat": 41.368582,
+          "lng": 2.147595,
+          "distance": 704
+        },
+        {
+          "osm": "node/11222905969",
+          "name": "Casa Massana",
+          "kind": "restaurant",
+          "cuisine": "local, regional",
+          "lat": 41.368974,
+          "lng": 2.147605,
+          "distance": 739
+        },
+        {
+          "osm": "way/217140891",
+          "name": "Farm to Table",
+          "kind": "restaurant",
+          "cuisine": "pizza, regional",
+          "lat": 41.370001,
+          "lng": 2.159117,
+          "distance": 909
+        }
+      ],
+      "hotels": []
+    },
+    "accor-arena": {
+      "fetchedAt": "2026-10-24",
+      "radius": 1000,
+      "food": [
+        {
+          "osm": "node/11931289995",
+          "name": "L'Ami Coq",
+          "kind": "restaurant",
+          "cuisine": "french",
+          "lat": 48.839096,
+          "lng": 2.379915,
+          "distance": 94
+        },
+        {
+          "osm": "node/473827207",
+          "name": "Anco",
+          "kind": "restaurant",
+          "cuisine": "french",
+          "lat": 48.839321,
+          "lng": 2.380635,
+          "distance": 153
+        },
+        {
+          "osm": "node/4870366124",
+          "name": "Terrasse Bercy",
+          "kind": "restaurant",
+          "cuisine": "french, pizza",
+          "lat": 48.839115,
+          "lng": 2.380897,
+          "distance": 162
+        },
+        {
+          "osm": "node/2229130616",
+          "name": "Talya",
+          "kind": "restaurant",
+          "cuisine": "lebanese",
+          "lat": 48.838778,
+          "lng": 2.381307,
+          "distance": 186
+        },
+        {
+          "osm": "node/4647410494",
+          "name": "Cap Bercy",
+          "kind": "restaurant",
+          "cuisine": "italian",
+          "lat": 48.839528,
+          "lng": 2.381293,
+          "distance": 206
+        },
+        {
+          "osm": "node/4870366125",
+          "name": "Valentine",
+          "kind": "fast_food",
+          "cuisine": "sandwich",
+          "lat": 48.839382,
+          "lng": 2.381428,
+          "distance": 209
+        },
+        {
+          "osm": "node/473827193",
+          "name": "Belle Napoli",
+          "kind": "restaurant",
+          "cuisine": "italian",
+          "lat": 48.840045,
+          "lng": 2.380814,
+          "distance": 211
+        },
+        {
+          "osm": "node/3122635929",
+          "name": "Venezia",
+          "kind": "restaurant",
+          "cuisine": "pizza, italian",
+          "lat": 48.838896,
+          "lng": 2.381634,
+          "distance": 211
+        }
+      ],
+      "hotels": [
+        {
+          "osm": "node/473827217",
+          "name": "Novotel Paris Bercy",
+          "kind": "hotel",
+          "lat": 48.838801,
+          "lng": 2.380457,
+          "distance": 124
+        },
+        {
+          "osm": "node/473827219",
+          "name": "Hôtel Ibis Styles Paris-Bercy",
+          "kind": "hotel",
+          "lat": 48.838402,
+          "lng": 2.381133,
+          "distance": 176
+        },
+        {
+          "osm": "way/78158774",
+          "name": "Hôtel Claret",
+          "kind": "hotel",
+          "lat": 48.839841,
+          "lng": 2.381516,
+          "distance": 237
+        },
+        {
+          "osm": "way/78534890",
+          "name": "Hôtel Mercure",
+          "kind": "hotel",
+          "lat": 48.837466,
+          "lng": 2.372852,
+          "distance": 454
+        },
+        {
+          "osm": "node/6535961840",
+          "name": "Residhome Paris Gare de Lyon - Jacqueline De Romilly",
+          "kind": "hotel",
+          "lat": 48.842081,
+          "lng": 2.384005,
+          "distance": 536
+        }
+      ]
+    },
+    "la-defense-arena": {
+      "fetchedAt": "2026-10-24",
+      "radius": 1000,
+      "food": [
+        {
+          "osm": "node/1768798727",
+          "name": "Hako",
+          "kind": "restaurant",
+          "cuisine": "ramen",
+          "lat": 48.894766,
+          "lng": 2.226844,
+          "distance": 229
+        },
+        {
+          "osm": "node/1506812685",
+          "name": "Mister Garden",
+          "kind": "fast_food",
+          "cuisine": "salad",
+          "lat": 48.89584,
+          "lng": 2.226298,
+          "distance": 246
+        },
+        {
+          "osm": "node/7731682623",
+          "name": "Da Giovanni",
+          "kind": "restaurant",
+          "cuisine": "italian",
+          "lat": 48.896451,
+          "lng": 2.224481,
+          "distance": 388
+        },
+        {
+          "osm": "node/3577154863",
+          "name": "DeBrussels",
+          "kind": "fast_food",
+          "cuisine": "burger",
+          "lat": 48.894978,
+          "lng": 2.224368,
+          "distance": 394
+        },
+        {
+          "osm": "node/3577152103",
+          "name": "Pizzeria Venizia",
+          "kind": "restaurant",
+          "cuisine": "pizza",
+          "lat": 48.895006,
+          "lng": 2.224283,
+          "distance": 400
+        },
+        {
+          "osm": "node/5268212073",
+          "name": "Yummy",
+          "kind": "restaurant",
+          "cuisine": "japanese",
+          "lat": 48.895342,
+          "lng": 2.224113,
+          "distance": 407
+        },
+        {
+          "osm": "node/1988202693",
+          "name": "Grill Dehliz",
+          "kind": "fast_food",
+          "cuisine": "kebab",
+          "lat": 48.896461,
+          "lng": 2.235278,
+          "distance": 420
+        },
+        {
+          "osm": "node/4341202906",
+          "name": "Le Monte Cassino",
+          "kind": "restaurant",
+          "cuisine": "italian",
+          "lat": 48.898585,
+          "lng": 2.234453,
+          "distance": 477
+        }
+      ],
+      "hotels": [
+        {
+          "osm": "way/1280250384",
+          "name": "OKKO Hotels Paris La Défense",
+          "kind": "hotel",
+          "lat": 48.896859,
+          "lng": 2.230581,
+          "distance": 148
+        },
+        {
+          "osm": "way/355710829",
+          "name": "Hôtel CitizenM",
+          "kind": "hotel",
+          "lat": 48.893961,
+          "lng": 2.229992,
+          "distance": 192
+        },
+        {
+          "osm": "node/13428469867",
+          "name": "aparthotel Adagio Access",
+          "kind": "hotel",
+          "lat": 48.896869,
+          "lng": 2.234674,
+          "distance": 390
+        },
+        {
+          "osm": "way/68851427",
+          "name": "Hôtel Renaissance Paris La Defense",
+          "kind": "hotel",
+          "lat": 48.892598,
+          "lng": 2.232845,
+          "distance": 414
+        },
+        {
+          "osm": "node/181290564",
+          "name": "Mercure",
+          "kind": "hotel",
+          "lat": 48.895248,
+          "lng": 2.223544,
+          "distance": 449
+        }
+      ]
+    },
+    "jakarta-international-stadium": {
+      "fetchedAt": "2026-10-24",
+      "radius": 1000,
+      "food": [
+        {
+          "osm": "node/11289453146",
+          "name": "Ombak Laut",
+          "kind": "restaurant",
+          "cuisine": "indonesian",
+          "lat": -6.116948,
+          "lng": 106.856699,
+          "distance": 983
+        }
+      ],
+      "hotels": [
+        {
+          "osm": "node/5078323622",
+          "name": "Hotel Sunter Paradise",
+          "kind": "hotel",
+          "lat": -6.131537,
+          "lng": 106.863664,
+          "distance": 814
+        },
+        {
+          "osm": "node/5105271641",
+          "name": "d'ARCICI Hotel Sunter",
+          "kind": "hotel",
+          "lat": -6.131808,
+          "lng": 106.863776,
+          "distance": 847
+        }
+      ]
+    },
+    "spark-arena": {
+      "fetchedAt": "2026-10-24",
+      "radius": 1000,
+      "food": [
+        {
+          "osm": "node/12046660869",
+          "name": "Saffron",
+          "kind": "restaurant",
+          "cuisine": "indian",
+          "lat": -36.848271,
+          "lng": 174.776245,
+          "distance": 137
+        },
+        {
+          "osm": "node/2672440975",
+          "name": "Donburi",
+          "kind": "restaurant",
+          "cuisine": "japanese",
+          "lat": -36.84683,
+          "lng": 174.774451,
+          "distance": 228
+        },
+        {
+          "osm": "node/2672440982",
+          "name": "Roll Sushi",
+          "kind": "restaurant",
+          "cuisine": "japanese, sushi",
+          "lat": -36.846491,
+          "lng": 174.773882,
+          "distance": 286
+        },
+        {
+          "osm": "node/458653179",
+          "name": "Pizza Hut",
+          "kind": "restaurant",
+          "cuisine": "pizza",
+          "lat": -36.847636,
+          "lng": 174.780289,
+          "distance": 299
+        },
+        {
+          "osm": "node/2672440984",
+          "name": "Saigonz",
+          "kind": "restaurant",
+          "cuisine": "vietnamese",
+          "lat": -36.846548,
+          "lng": 174.773399,
+          "distance": 326
+        },
+        {
+          "osm": "node/9632312787",
+          "name": "Guo's Tasty King Noodles",
+          "kind": "fast_food",
+          "cuisine": "noodle",
+          "lat": -36.847716,
+          "lng": 174.78059,
+          "distance": 327
+        },
+        {
+          "osm": "node/2672440976",
+          "name": "Gloria Jean's",
+          "kind": "cafe",
+          "cuisine": "coffee shop",
+          "lat": -36.846339,
+          "lng": 174.773377,
+          "distance": 334
+        },
+        {
+          "osm": "node/11221854162",
+          "name": "온기;Ongi",
+          "nameEn": "Ongi",
+          "kind": "restaurant",
+          "cuisine": "korean",
+          "lat": -36.848264,
+          "lng": 174.767384,
+          "distance": 862
+        }
+      ],
+      "hotels": [
+        {
+          "osm": "node/12967141156",
+          "name": "Adina Apartment Hotel Auckland Britomart",
+          "kind": "hotel",
+          "lat": -36.846626,
+          "lng": 174.774589,
+          "distance": 221
+        },
+        {
+          "osm": "node/14003526005",
+          "name": "Beach Road Hostel",
+          "kind": "hotel",
+          "lat": -36.84828,
+          "lng": 174.773947,
+          "distance": 296
+        },
+        {
+          "osm": "way/47710057",
+          "name": "OAKS.",
+          "kind": "hotel",
+          "lat": -36.846787,
+          "lng": 174.773607,
+          "distance": 303
+        },
+        {
+          "osm": "way/147113581",
+          "name": "Te Tirohanga o te Tōangaroa",
+          "kind": "hotel",
+          "lat": -36.849068,
+          "lng": 174.774018,
+          "distance": 337
+        },
+        {
+          "osm": "way/147113583",
+          "name": "UniLodge Beach",
+          "kind": "hotel",
+          "lat": -36.849272,
+          "lng": 174.774224,
+          "distance": 338
+        }
+      ]
+    },
+    "asiaworld-arena": {
+      "fetchedAt": "2026-10-24",
+      "radius": 1000,
+      "food": [
+        {
+          "osm": "node/13886272852",
+          "name": "譚仔三哥 TamJai SamGor",
+          "nameEn": "TamJai SamGor",
+          "kind": "restaurant",
+          "cuisine": "noodle",
+          "lat": 22.316864,
+          "lng": 113.939278,
+          "distance": 618
+        },
+        {
+          "osm": "node/13886272857",
+          "name": "快樂蜂 Jollibee",
+          "nameEn": "Jollibee",
+          "kind": "fast_food",
+          "cuisine": "burger",
+          "lat": 22.316841,
+          "lng": 113.939171,
+          "distance": 627
+        },
+        {
+          "osm": "node/13886272856",
+          "name": "牛奶冰室 MilkCafe",
+          "nameEn": "MilkCafe",
+          "kind": "fast_food",
+          "cuisine": "cantonese",
+          "lat": 22.316623,
+          "lng": 113.939411,
+          "distance": 631
+        },
+        {
+          "osm": "node/13887230082",
+          "name": "再睡5分鐘 NAP TEA",
+          "nameEn": "NAP TEA",
+          "kind": "cafe",
+          "cuisine": "bubble tea",
+          "lat": 22.316705,
+          "lng": 113.939278,
+          "distance": 632
+        },
+        {
+          "osm": "node/13886272851",
+          "name": "麥當勞 McDonald's",
+          "nameEn": "McDonald's",
+          "kind": "fast_food",
+          "cuisine": "burger",
+          "lat": 22.316571,
+          "lng": 113.939233,
+          "distance": 647
+        },
+        {
+          "osm": "node/13898823012",
+          "name": "瑞幸咖啡",
+          "nameEn": "Luckin Coffee",
+          "kind": "cafe",
+          "cuisine": "coffee shop",
+          "lat": 22.316707,
+          "lng": 113.936699,
+          "distance": 819
+        },
+        {
+          "osm": "node/13898823016",
+          "name": "好飯好餸 Ho Fan Ho Sung",
+          "nameEn": "Ho Fan Ho Sung",
+          "kind": "restaurant",
+          "cuisine": "chinese",
+          "lat": 22.315825,
+          "lng": 113.937029,
+          "distance": 859
+        },
+        {
+          "osm": "node/13898823014",
+          "name": "唐記包點 Tong Kee Bao Dim",
+          "nameEn": "Tong Kee Bao Dim",
+          "kind": "fast_food",
+          "cuisine": "chinese",
+          "lat": 22.315733,
+          "lng": 113.937062,
+          "distance": 863
+        }
+      ],
+      "hotels": [
+        {
+          "osm": "way/1527214579",
+          "name": "香港天際萬豪酒店 Hong Kong SkyCity Marriott Hotel",
+          "nameEn": "Hong Kong SkyCity Marriott Hotel",
+          "kind": "hotel",
+          "lat": 22.319118,
+          "lng": 113.943598,
+          "distance": 246
+        },
+        {
+          "osm": "way/728815242",
+          "name": "麗豪航天城酒店 Regala Skycity Hotel",
+          "nameEn": "Regala Skycity Hotel",
+          "kind": "hotel",
+          "lat": 22.319094,
+          "lng": 113.942065,
+          "distance": 257
+        },
+        {
+          "osm": "way/1323151628",
+          "name": "富豪機場酒店 Regal Airport Hotel",
+          "nameEn": "Regal Airport Hotel",
+          "kind": "hotel",
+          "lat": 22.318826,
+          "lng": 113.934261,
+          "distance": 935
+        }
+      ]
     }
   }
 }

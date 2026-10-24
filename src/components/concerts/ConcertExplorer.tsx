@@ -190,12 +190,12 @@ export default function ConcertExplorer({ concerts }: Props) {
         />
 
         {/* Region shortcuts */}
-        <div className="absolute left-2 top-2 z-[700] flex gap-1.5 md:left-4 md:top-4">
+        <div className="absolute inset-x-2 top-2 z-[700] flex gap-1 overflow-x-auto md:inset-x-auto md:left-4 md:top-4 md:gap-1.5">
           {REGIONS.map((r) => (
             <button
               key={r.id}
               onClick={() => setRegion(r.id)}
-              className={`rounded-full px-3 py-1.5 text-sm font-medium shadow-sm ring-1 transition-colors ${
+              className={`shrink-0 rounded-full px-2.5 py-1.5 text-[13px] font-medium shadow-sm ring-1 transition-colors md:px-3 md:text-sm ${
                 region === r.id
                   ? "bg-[#E8436F] text-white ring-[#E8436F]"
                   : "bg-white/95 text-[#3D2F48] ring-[#F0E6EE] hover:text-[#E8436F]"

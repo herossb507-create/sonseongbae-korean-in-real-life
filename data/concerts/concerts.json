@@ -181,14 +181,19 @@
     "ticketLinks": [],
     "sourceRefs": [
       {
+        "source": "official",
+        "url": "https://tixcraft.com/activity",
+        "fetchedAt": "2026-10-24"
+      },
+      {
         "source": "news",
         "url": "https://www.bandwagon.asia/articles/tws-announce-24-7-for-you-asia-tour-hitting-macau-bangkok-singapore-kaohsiung-more",
         "fetchedAt": "2026-10-19"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-24",
+    "lastSeenAt": "2026-10-24"
   },
   {
     "id": "nct-127-belluna-dome-2026-10-25",
@@ -209,6 +214,26 @@
     "verification": "verified",
     "updatedAt": "2026-10-21",
     "lastSeenAt": "2026-10-21"
+  },
+  {
+    "id": "le-sserafim-uber-arena-2026-10-26",
+    "artistId": "le-sserafim",
+    "tour": "PUREFLOW Tour",
+    "date": "2026-10-26",
+    "time": "19:30",
+    "venueId": "uber-arena",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://www.uber-arena.de/en/events-tickets",
+        "fetchedAt": "2026-10-24"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-10-24",
+    "lastSeenAt": "2026-10-24"
   },
   {
     "id": "bts-morumbis-2026-10-28",
@@ -605,14 +630,19 @@
     "ticketLinks": [],
     "sourceRefs": [
       {
+        "source": "official",
+        "url": "https://tixcraft.com/activity",
+        "fetchedAt": "2026-10-24"
+      },
+      {
         "source": "news",
         "url": "https://news.tvbs.com.tw/entertainment/jk-pop/3210587",
         "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-21",
-    "lastSeenAt": "2026-10-21"
+    "verification": "verified",
+    "updatedAt": "2026-10-24",
+    "lastSeenAt": "2026-10-24"
   },
   {
     "id": "txt-kspo-dome-2026-11-14",
@@ -671,14 +701,19 @@
     "ticketLinks": [],
     "sourceRefs": [
       {
+        "source": "official",
+        "url": "https://tixcraft.com/activity",
+        "fetchedAt": "2026-10-24"
+      },
+      {
         "source": "news",
         "url": "https://news.tvbs.com.tw/entertainment/jk-pop/3210587",
         "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-21",
-    "lastSeenAt": "2026-10-21"
+    "verification": "verified",
+    "updatedAt": "2026-10-24",
+    "lastSeenAt": "2026-10-24"
   },
   {
     "id": "txt-kspo-dome-2026-11-15",
@@ -787,6 +822,25 @@
     "lastSeenAt": "2026-10-21"
   },
   {
+    "id": "babymonster-taipei-arena-2026-11-21",
+    "artistId": "babymonster",
+    "tour": "CHOOM World Tour",
+    "date": "2026-11-21",
+    "venueId": "taipei-arena",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "news",
+        "url": "https://www.gvm.com.tw/article/133093",
+        "fetchedAt": "2026-10-24"
+      }
+    ],
+    "verification": "unverified",
+    "updatedAt": "2026-10-24",
+    "lastSeenAt": "2026-10-24"
+  },
+  {
     "id": "bts-kaohsiung-national-stadium-2026-11-21",
     "artistId": "bts",
     "tour": "ARIRANG World Tour",
@@ -804,6 +858,25 @@
     "verification": "verified",
     "updatedAt": "2026-10-21",
     "lastSeenAt": "2026-10-21"
+  },
+  {
+    "id": "monsta-x-inspire-arena-2026-11-21",
+    "artistId": "monsta-x",
+    "tour": "THE X : NEXUS World Tour – Encore",
+    "date": "2026-11-21",
+    "venueId": "inspire-arena",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "news",
+        "url": "https://en.edaily.co.kr/news/eda202609095337",
+        "fetchedAt": "2026-10-24"
+      }
+    ],
+    "verification": "unverified",
+    "updatedAt": "2026-10-24",
+    "lastSeenAt": "2026-10-24"
   },
   {
     "id": "txt-galaxy-arena-2026-11-21",
@@ -826,6 +899,25 @@
     "lastSeenAt": "2026-10-21"
   },
   {
+    "id": "babymonster-taipei-arena-2026-11-22",
+    "artistId": "babymonster",
+    "tour": "CHOOM World Tour",
+    "date": "2026-11-22",
+    "venueId": "taipei-arena",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "news",
+        "url": "https://www.gvm.com.tw/article/133093",
+        "fetchedAt": "2026-10-24"
+      }
+    ],
+    "verification": "unverified",
+    "updatedAt": "2026-10-24",
+    "lastSeenAt": "2026-10-24"
+  },
+  {
     "id": "bts-kaohsiung-national-stadium-2026-11-22",
     "artistId": "bts",
     "tour": "ARIRANG World Tour",
@@ -843,6 +935,25 @@
     "verification": "verified",
     "updatedAt": "2026-10-21",
     "lastSeenAt": "2026-10-21"
+  },
+  {
+    "id": "monsta-x-inspire-arena-2026-11-22",
+    "artistId": "monsta-x",
+    "tour": "THE X : NEXUS World Tour – Encore",
+    "date": "2026-11-22",
+    "venueId": "inspire-arena",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "news",
+        "url": "https://en.edaily.co.kr/news/eda202609095337",
+        "fetchedAt": "2026-10-24"
+      }
+    ],
+    "verification": "unverified",
+    "updatedAt": "2026-10-24",
+    "lastSeenAt": "2026-10-24"
   },
   {
     "id": "txt-galaxy-arena-2026-11-22",
@@ -893,14 +1004,20 @@
     "ticketLinks": [],
     "sourceRefs": [
       {
+        "source": "official",
+        "url": "https://nol.yanolja.com/ticket/products/26013946",
+        "fetchedAt": "2026-10-24"
+      },
+      {
         "source": "news",
         "url": "https://www.koreajoongangdaily.com/entertainment/nmixx-to-cap-off-world-tour-with-threenight-incheon-encore/12828113",
         "fetchedAt": "2026-10-19"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-24",
+    "lastSeenAt": "2026-10-24",
+    "time": "19:00"
   },
   {
     "id": "babymonster-sg-indoor-2026-11-28",
@@ -953,14 +1070,40 @@
     "ticketLinks": [],
     "sourceRefs": [
       {
+        "source": "official",
+        "url": "https://nol.yanolja.com/ticket/products/26013946",
+        "fetchedAt": "2026-10-24"
+      },
+      {
         "source": "news",
         "url": "https://www.koreajoongangdaily.com/entertainment/nmixx-to-cap-off-world-tour-with-threenight-incheon-encore/12828113",
         "fetchedAt": "2026-10-19"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-24",
+    "lastSeenAt": "2026-10-24",
+    "time": "17:00"
+  },
+  {
+    "id": "babymonster-sg-indoor-2026-11-29",
+    "artistId": "babymonster",
+    "tour": "CHOOM World Tour",
+    "date": "2026-11-29",
+    "venueId": "sg-indoor",
+    "status": "announced",
+    "notes": "Resale tickets are not honoured at the venue (promoter notice)",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://www.thekallang.com.sg/en/things-to-do/events.html",
+        "fetchedAt": "2026-10-24"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-10-24",
+    "lastSeenAt": "2026-10-24"
   },
   {
     "id": "nmixx-inspire-arena-2026-11-29",
@@ -972,14 +1115,20 @@
     "ticketLinks": [],
     "sourceRefs": [
       {
+        "source": "official",
+        "url": "https://nol.yanolja.com/ticket/products/26013946",
+        "fetchedAt": "2026-10-24"
+      },
+      {
         "source": "news",
         "url": "https://www.koreajoongangdaily.com/entertainment/nmixx-to-cap-off-world-tour-with-threenight-incheon-encore/12828113",
         "fetchedAt": "2026-10-19"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-19",
-    "lastSeenAt": "2026-10-19"
+    "verification": "verified",
+    "updatedAt": "2026-10-24",
+    "lastSeenAt": "2026-10-24",
+    "time": "16:00"
   },
   {
     "id": "enhypen-tokyo-dome-2026-12-01",
@@ -1137,6 +1286,26 @@
     "lastSeenAt": "2026-10-21"
   },
   {
+    "id": "babymonster-spark-arena-2026-12-08",
+    "artistId": "babymonster",
+    "tour": "CHOOM World Tour",
+    "date": "2026-12-08",
+    "time": "19:00",
+    "venueId": "spark-arena",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "news",
+        "url": "https://au.rollingstone.com/music/music-news/babymonster-announce-debut-new-zealand-show-tickets-97007/",
+        "fetchedAt": "2026-10-24"
+      }
+    ],
+    "verification": "unverified",
+    "updatedAt": "2026-10-24",
+    "lastSeenAt": "2026-10-24"
+  },
+  {
     "id": "babymonster-rod-laver-arena-2026-12-11",
     "artistId": "babymonster",
     "tour": "CHOOM World Tour",
@@ -1204,14 +1373,19 @@
     "ticketLinks": [],
     "sourceRefs": [
       {
+        "source": "official",
+        "url": "https://tixcraft.com/activity",
+        "fetchedAt": "2026-10-24"
+      },
+      {
         "source": "news",
         "url": "https://news.tvbs.com.tw/entertainment/jk-pop/3243512",
         "fetchedAt": "2026-10-21"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-21",
-    "lastSeenAt": "2026-10-21"
+    "verification": "verified",
+    "updatedAt": "2026-10-24",
+    "lastSeenAt": "2026-10-24"
   },
   {
     "id": "babymonster-afterpay-arena-2026-12-13",
@@ -1465,6 +1639,25 @@
     "lastSeenAt": "2026-10-19"
   },
   {
+    "id": "boynextdoor-unifi-arena-2026-12-26",
+    "artistId": "boynextdoor",
+    "tour": "KNOCK ON Vol.2 Tour",
+    "date": "2026-12-26",
+    "venueId": "unifi-arena",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "news",
+        "url": "https://www.businesstoday.com.my/2026/05/14/boynextdoors-first-malaysia-concert-is-officially-happening/",
+        "fetchedAt": "2026-10-24"
+      }
+    ],
+    "verification": "unverified",
+    "updatedAt": "2026-10-24",
+    "lastSeenAt": "2026-10-24"
+  },
+  {
     "id": "bts-gbk-main-stadium-2026-12-26",
     "artistId": "bts",
     "tour": "ARIRANG World Tour",
@@ -1641,6 +1834,26 @@
     "lastSeenAt": "2026-10-19"
   },
   {
+    "id": "boynextdoor-ntsu-arena-2027-01-08",
+    "artistId": "boynextdoor",
+    "tour": "KNOCK ON Vol.2 Tour",
+    "date": "2027-01-08",
+    "time": "19:00",
+    "venueId": "ntsu-arena",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://tixcraft.com/activity/detail/27_bnd",
+        "fetchedAt": "2026-10-24"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-10-24",
+    "lastSeenAt": "2026-10-24"
+  },
+  {
     "id": "txt-tokyo-dome-2027-01-08",
     "artistId": "txt",
     "tour": "STEAL THE WIND World Tour",
@@ -1659,6 +1872,255 @@
     "verification": "verified",
     "updatedAt": "2026-10-19",
     "lastSeenAt": "2026-10-19"
+  },
+  {
+    "id": "boynextdoor-ntsu-arena-2027-01-09",
+    "artistId": "boynextdoor",
+    "tour": "KNOCK ON Vol.2 Tour",
+    "date": "2027-01-09",
+    "time": "18:00",
+    "venueId": "ntsu-arena",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://tixcraft.com/activity/detail/27_bnd",
+        "fetchedAt": "2026-10-24"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-10-24",
+    "lastSeenAt": "2026-10-24"
+  },
+  {
+    "id": "nct-127-unifi-arena-2027-01-09",
+    "artistId": "nct-127",
+    "tour": "NEO CITY – THE REDLINE",
+    "date": "2027-01-09",
+    "venueId": "unifi-arena",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "news",
+        "url": "https://says.com/my/entertainment/nct-127-adds-kuala-lumpur-to-their-world-tour-in-january-2027",
+        "fetchedAt": "2026-10-24"
+      }
+    ],
+    "verification": "unverified",
+    "updatedAt": "2026-10-24",
+    "lastSeenAt": "2026-10-24"
+  },
+  {
+    "id": "boynextdoor-ntsu-arena-2027-01-10",
+    "artistId": "boynextdoor",
+    "tour": "KNOCK ON Vol.2 Tour",
+    "date": "2027-01-10",
+    "time": "17:00",
+    "venueId": "ntsu-arena",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://tixcraft.com/activity/detail/27_bnd",
+        "fetchedAt": "2026-10-24"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-10-24",
+    "lastSeenAt": "2026-10-24"
+  },
+  {
+    "id": "aespa-ao-arena-2027-01-14",
+    "artistId": "aespa",
+    "tour": "SYNK : COMPLæXITY Live Tour",
+    "date": "2027-01-14",
+    "venueId": "ao-arena",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://news.livenationentertainment.com/news/global-k-pop-force-aespa-unveils-details-of-upcoming-world-tour-2026-27-aespa-live-tour-synk-complaexity",
+        "fetchedAt": "2026-10-24"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-10-24",
+    "lastSeenAt": "2026-10-24"
+  },
+  {
+    "id": "aespa-the-o2-2027-01-16",
+    "artistId": "aespa",
+    "tour": "SYNK : COMPLæXITY Live Tour",
+    "date": "2027-01-16",
+    "venueId": "the-o2",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://news.livenationentertainment.com/news/global-k-pop-force-aespa-unveils-details-of-upcoming-world-tour-2026-27-aespa-live-tour-synk-complaexity",
+        "fetchedAt": "2026-10-24"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-10-24",
+    "lastSeenAt": "2026-10-24"
+  },
+  {
+    "id": "boynextdoor-asiaworld-arena-2027-01-16",
+    "artistId": "boynextdoor",
+    "tour": "KNOCK ON Vol.2 Tour",
+    "date": "2027-01-16",
+    "venueId": "asiaworld-arena",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://www.asiaworld-expo.com/en-us/whats-on/upcoming-events/events/2027-boynextdoor-concert-in-hong-kong/",
+        "fetchedAt": "2026-10-24"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-10-24",
+    "lastSeenAt": "2026-10-24"
+  },
+  {
+    "id": "boynextdoor-asiaworld-arena-2027-01-17",
+    "artistId": "boynextdoor",
+    "tour": "KNOCK ON Vol.2 Tour",
+    "date": "2027-01-17",
+    "venueId": "asiaworld-arena",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://www.asiaworld-expo.com/en-us/whats-on/upcoming-events/events/2027-boynextdoor-concert-in-hong-kong/",
+        "fetchedAt": "2026-10-24"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-10-24",
+    "lastSeenAt": "2026-10-24"
+  },
+  {
+    "id": "aespa-ziggo-dome-2027-01-19",
+    "artistId": "aespa",
+    "tour": "SYNK : COMPLæXITY Live Tour",
+    "date": "2027-01-19",
+    "venueId": "ziggo-dome",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://news.livenationentertainment.com/news/global-k-pop-force-aespa-unveils-details-of-upcoming-world-tour-2026-27-aespa-live-tour-synk-complaexity",
+        "fetchedAt": "2026-10-24"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-10-24",
+    "lastSeenAt": "2026-10-24"
+  },
+  {
+    "id": "aespa-avicii-arena-2027-01-22",
+    "artistId": "aespa",
+    "tour": "SYNK : COMPLæXITY Live Tour",
+    "date": "2027-01-22",
+    "venueId": "avicii-arena",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://news.livenationentertainment.com/news/global-k-pop-force-aespa-unveils-details-of-upcoming-world-tour-2026-27-aespa-live-tour-synk-complaexity",
+        "fetchedAt": "2026-10-24"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-10-24",
+    "lastSeenAt": "2026-10-24"
+  },
+  {
+    "id": "enhypen-jakarta-international-stadium-2027-01-23",
+    "artistId": "enhypen",
+    "tour": "BLOOD SAGA World Tour",
+    "date": "2027-01-23",
+    "venueId": "jakarta-international-stadium",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "news",
+        "url": "https://www.indonesia.travel/gb/en/events/event-detail/enhypen-jakarta",
+        "fetchedAt": "2026-10-24"
+      }
+    ],
+    "verification": "unverified",
+    "updatedAt": "2026-10-24",
+    "lastSeenAt": "2026-10-24"
+  },
+  {
+    "id": "aespa-royal-arena-2027-01-24",
+    "artistId": "aespa",
+    "tour": "SYNK : COMPLæXITY Live Tour",
+    "date": "2027-01-24",
+    "venueId": "royal-arena",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://news.livenationentertainment.com/news/global-k-pop-force-aespa-unveils-details-of-upcoming-world-tour-2026-27-aespa-live-tour-synk-complaexity",
+        "fetchedAt": "2026-10-24"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-10-24",
+    "lastSeenAt": "2026-10-24"
+  },
+  {
+    "id": "aespa-uber-arena-2027-01-26",
+    "artistId": "aespa",
+    "tour": "SYNK : COMPLæXITY Live Tour",
+    "date": "2027-01-26",
+    "venueId": "uber-arena",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://news.livenationentertainment.com/news/global-k-pop-force-aespa-unveils-details-of-upcoming-world-tour-2026-27-aespa-live-tour-synk-complaexity",
+        "fetchedAt": "2026-10-24"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-10-24",
+    "lastSeenAt": "2026-10-24"
+  },
+  {
+    "id": "aespa-unipol-dome-2027-01-29",
+    "artistId": "aespa",
+    "tour": "SYNK : COMPLæXITY Live Tour",
+    "date": "2027-01-29",
+    "venueId": "unipol-dome",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://news.livenationentertainment.com/news/global-k-pop-force-aespa-unveils-details-of-upcoming-world-tour-2026-27-aespa-live-tour-synk-complaexity",
+        "fetchedAt": "2026-10-24"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-10-24",
+    "lastSeenAt": "2026-10-24"
   },
   {
     "id": "txt-kyocera-dome-2027-01-30",
@@ -1681,6 +2143,25 @@
     "lastSeenAt": "2026-10-19"
   },
   {
+    "id": "aespa-palau-sant-jordi-2027-01-31",
+    "artistId": "aespa",
+    "tour": "SYNK : COMPLæXITY Live Tour",
+    "date": "2027-01-31",
+    "venueId": "palau-sant-jordi",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://news.livenationentertainment.com/news/global-k-pop-force-aespa-unveils-details-of-upcoming-world-tour-2026-27-aespa-live-tour-synk-complaexity",
+        "fetchedAt": "2026-10-24"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-10-24",
+    "lastSeenAt": "2026-10-24"
+  },
+  {
     "id": "txt-kyocera-dome-2027-01-31",
     "artistId": "txt",
     "tour": "STEAL THE WIND World Tour",
@@ -1699,6 +2180,25 @@
     "verification": "verified",
     "updatedAt": "2026-10-19",
     "lastSeenAt": "2026-10-19"
+  },
+  {
+    "id": "aespa-accor-arena-2027-02-02",
+    "artistId": "aespa",
+    "tour": "SYNK : COMPLæXITY Live Tour",
+    "date": "2027-02-02",
+    "venueId": "accor-arena",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://news.livenationentertainment.com/news/global-k-pop-force-aespa-unveils-details-of-upcoming-world-tour-2026-27-aespa-live-tour-synk-complaexity",
+        "fetchedAt": "2026-10-24"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-10-24",
+    "lastSeenAt": "2026-10-24"
   },
   {
     "id": "enhypen-paypay-dome-2027-02-06",
@@ -1917,6 +2417,63 @@
     "lastSeenAt": "2026-10-19"
   },
   {
+    "id": "enhypen-unipol-dome-2027-02-24",
+    "artistId": "enhypen",
+    "tour": "BLOOD SAGA World Tour",
+    "date": "2027-02-24",
+    "venueId": "unipol-dome",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "news",
+        "url": "https://www.nme.com/news/music/enhypen-announce-details-of-blood-saga-world-tour-for-2026-and-2027-3940808",
+        "fetchedAt": "2026-10-24"
+      }
+    ],
+    "verification": "unverified",
+    "updatedAt": "2026-10-24",
+    "lastSeenAt": "2026-10-24"
+  },
+  {
+    "id": "enhypen-la-defense-arena-2027-02-27",
+    "artistId": "enhypen",
+    "tour": "BLOOD SAGA World Tour",
+    "date": "2027-02-27",
+    "venueId": "la-defense-arena",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "news",
+        "url": "https://www.nme.com/news/music/enhypen-announce-details-of-blood-saga-world-tour-for-2026-and-2027-3940808",
+        "fetchedAt": "2026-10-24"
+      }
+    ],
+    "verification": "unverified",
+    "updatedAt": "2026-10-24",
+    "lastSeenAt": "2026-10-24"
+  },
+  {
+    "id": "enhypen-ziggo-dome-2027-03-02",
+    "artistId": "enhypen",
+    "tour": "BLOOD SAGA World Tour",
+    "date": "2027-03-02",
+    "venueId": "ziggo-dome",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "news",
+        "url": "https://www.nme.com/news/music/enhypen-announce-details-of-blood-saga-world-tour-for-2026-and-2027-3940808",
+        "fetchedAt": "2026-10-24"
+      }
+    ],
+    "verification": "unverified",
+    "updatedAt": "2026-10-24",
+    "lastSeenAt": "2026-10-24"
+  },
+  {
     "id": "bts-kai-tak-stadium-2027-03-04",
     "artistId": "bts",
     "tour": "ARIRANG World Tour",
@@ -1935,6 +2492,25 @@
     "verification": "verified",
     "updatedAt": "2026-10-21",
     "lastSeenAt": "2026-10-21"
+  },
+  {
+    "id": "enhypen-uber-arena-2027-03-05",
+    "artistId": "enhypen",
+    "tour": "BLOOD SAGA World Tour",
+    "date": "2027-03-05",
+    "venueId": "uber-arena",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "news",
+        "url": "https://www.nme.com/news/music/enhypen-announce-details-of-blood-saga-world-tour-for-2026-and-2027-3940808",
+        "fetchedAt": "2026-10-24"
+      }
+    ],
+    "verification": "unverified",
+    "updatedAt": "2026-10-24",
+    "lastSeenAt": "2026-10-24"
   },
   {
     "id": "bts-kai-tak-stadium-2027-03-06",
@@ -2017,6 +2593,25 @@
     "lastSeenAt": "2026-10-21"
   },
   {
+    "id": "enhypen-the-o2-2027-03-09",
+    "artistId": "enhypen",
+    "tour": "BLOOD SAGA World Tour",
+    "date": "2027-03-09",
+    "venueId": "the-o2",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "news",
+        "url": "https://www.nme.com/news/music/enhypen-announce-details-of-blood-saga-world-tour-for-2026-and-2027-3940808",
+        "fetchedAt": "2026-10-24"
+      }
+    ],
+    "verification": "unverified",
+    "updatedAt": "2026-10-24",
+    "lastSeenAt": "2026-10-24"
+  },
+  {
     "id": "bts-philippine-sports-stadium-2027-03-13",
     "artistId": "bts",
     "tour": "ARIRANG World Tour",
@@ -2053,6 +2648,26 @@
     "verification": "verified",
     "updatedAt": "2026-10-21",
     "lastSeenAt": "2026-10-21"
+  },
+  {
+    "id": "enhypen-singapore-national-stadium-2027-03-14",
+    "artistId": "enhypen",
+    "tour": "BLOOD SAGA World Tour",
+    "date": "2027-03-14",
+    "time": "19:00",
+    "venueId": "singapore-national-stadium",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://www.thekallang.com.sg/en/things-to-do/events/2027-enhypen-world-tour-blood-saga-in-singapore.html",
+        "fetchedAt": "2026-10-24"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-10-24",
+    "lastSeenAt": "2026-10-24"
   },
   {
     "id": "bts-philippine-sports-stadium-2027-03-16",

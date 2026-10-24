@@ -873,5 +873,259 @@
         "lng": 139.4205084
       }
     }
+  },
+  {
+    "id": "uber-arena",
+    "name": "Uber Arena",
+    "city": "Berlin",
+    "country": "Germany",
+    "countryCode": "DE",
+    "lat": 52.506369,
+    "lng": 13.443765,
+    "timezone": "Europe/Berlin",
+    "externalIds": {
+      "agoda": {
+        "poi": "237737"
+      },
+      "tripcom": {
+        "cityId": 193
+      }
+    }
+  },
+  {
+    "id": "ao-arena",
+    "name": "AO Arena",
+    "city": "Manchester",
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "lat": 53.488087,
+    "lng": -2.244172,
+    "timezone": "Europe/London",
+    "externalIds": {
+      "agoda": {
+        "poi": "1884719"
+      },
+      "tripcom": {
+        "cityId": 722
+      }
+    }
+  },
+  {
+    "id": "the-o2",
+    "name": "The O2",
+    "city": "London",
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "lat": 51.502932,
+    "lng": 0.003184,
+    "timezone": "Europe/London",
+    "externalIds": {
+      "agoda": {
+        "city": "233"
+      },
+      "tripcom": {
+        "cityId": 338,
+        "landmarkId": 7756456,
+        "name": "The O2",
+        "lat": 51.503038,
+        "lng": 0.0031543
+      }
+    }
+  },
+  {
+    "id": "ziggo-dome",
+    "name": "Ziggo Dome",
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "countryCode": "NL",
+    "lat": 52.313407,
+    "lng": 4.937123,
+    "timezone": "Europe/Amsterdam",
+    "externalIds": {
+      "agoda": {
+        "poi": "219767"
+      },
+      "tripcom": {
+        "cityId": 176,
+        "landmarkId": 6729599,
+        "name": "Ziggo Dome",
+        "lat": 52.3135914,
+        "lng": 4.9371203
+      }
+    }
+  },
+  {
+    "id": "avicii-arena",
+    "name": "Avicii Arena",
+    "city": "Stockholm",
+    "country": "Sweden",
+    "countryCode": "SE",
+    "lat": 59.29362,
+    "lng": 18.083213,
+    "timezone": "Europe/Stockholm",
+    "externalIds": {
+      "agoda": {
+        "poi": "216969"
+      },
+      "tripcom": {
+        "cityId": 39523,
+        "landmarkId": 6740835,
+        "name": "Ericsson Globe",
+        "lat": 59.2937302,
+        "lng": 18.0831719
+      }
+    }
+  },
+  {
+    "id": "royal-arena",
+    "name": "Royal Arena",
+    "city": "Copenhagen",
+    "country": "Denmark",
+    "countryCode": "DK",
+    "lat": 55.625415,
+    "lng": 12.573654,
+    "timezone": "Europe/Copenhagen",
+    "externalIds": {
+      "agoda": {
+        "poi": "1944072"
+      },
+      "tripcom": {
+        "cityId": 260,
+        "landmarkId": 8772131,
+        "name": "Royal Arena",
+        "lat": 55.6254401,
+        "lng": 12.5737102
+      }
+    }
+  },
+  {
+    "id": "unipol-dome",
+    "name": "Unipol Dome",
+    "city": "Milan",
+    "country": "Italy",
+    "countryCode": "IT",
+    "lat": 45.441332,
+    "lng": 9.255183,
+    "timezone": "Europe/Rome",
+    "externalIds": {
+      "agoda": {
+        "city": "16585"
+      },
+      "tripcom": {
+        "cityId": 361
+      }
+    }
+  },
+  {
+    "id": "palau-sant-jordi",
+    "name": "Palau Sant Jordi",
+    "city": "Barcelona",
+    "country": "Spain",
+    "countryCode": "ES",
+    "lat": 41.363467,
+    "lng": 2.152568,
+    "timezone": "Europe/Madrid",
+    "externalIds": {
+      "agoda": {
+        "poi": "8063"
+      },
+      "tripcom": {
+        "cityId": 40795
+      }
+    }
+  },
+  {
+    "id": "accor-arena",
+    "name": "Accor Arena",
+    "city": "Paris",
+    "country": "France",
+    "countryCode": "FR",
+    "lat": 48.838709,
+    "lng": 2.378767,
+    "timezone": "Europe/Paris",
+    "externalIds": {
+      "agoda": {
+        "poi": "1501697"
+      },
+      "tripcom": {
+        "cityId": 192
+      }
+    }
+  },
+  {
+    "id": "la-defense-arena",
+    "name": "Paris La Défense Arena",
+    "city": "Paris",
+    "country": "France",
+    "countryCode": "FR",
+    "lat": 48.895677,
+    "lng": 2.229658,
+    "timezone": "Europe/Paris",
+    "externalIds": {
+      "agoda": {
+        "city": "15470"
+      },
+      "tripcom": {
+        "cityId": 192
+      }
+    }
+  },
+  {
+    "id": "jakarta-international-stadium",
+    "name": "Jakarta International Stadium",
+    "city": "Jakarta",
+    "country": "Indonesia",
+    "countryCode": "ID",
+    "lat": -6.125075,
+    "lng": 106.860201,
+    "timezone": "Asia/Jakarta",
+    "externalIds": {
+      "agoda": {
+        "poi": "27617"
+      },
+      "tripcom": {
+        "cityId": 131596,
+        "landmarkId": 40371915,
+        "name": "Jakarta International Stadium (JIS)",
+        "lat": -6.125139,
+        "lng": 106.8603414
+      }
+    }
+  },
+  {
+    "id": "spark-arena",
+    "name": "Spark Arena",
+    "city": "Auckland",
+    "country": "New Zealand",
+    "countryCode": "NZ",
+    "lat": -36.847183,
+    "lng": 174.776979,
+    "timezone": "Pacific/Auckland",
+    "externalIds": {
+      "agoda": {
+        "poi": "28228"
+      },
+      "tripcom": {
+        "cityId": 678
+      }
+    }
+  },
+  {
+    "id": "asiaworld-arena",
+    "name": "AsiaWorld-Arena",
+    "city": "Hong Kong",
+    "country": "Hong Kong",
+    "countryCode": "HK",
+    "lat": 22.321251,
+    "lng": 113.942968,
+    "timezone": "Asia/Hong_Kong",
+    "externalIds": {
+      "agoda": {
+        "city": "16808"
+      },
+      "tripcom": {
+        "cityId": 58
+      }
+    }
   }
 ]
