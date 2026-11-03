@@ -220,9 +220,10 @@ export default function LandingPage() {
               </a>
             </p>
           </div>
-          <div className="grid gap-5 md:grid-cols-3 mb-8">
+          <div className="grid gap-5 md:grid-cols-2 mb-8">
             <BookCard book={BOOKS["kirl-1"]} />
             <BookCard book={BOOKS["kirl-2"]} />
+            <BookCard book={BOOKS["korean-on-campus"]} />
             <BookCard book={BOOKS["korea-unlocked"]} />
           </div>
           <FreePdfBanner />

@@ -6,9 +6,9 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta({
-  title: "Korean in Real Life Books & Korea Unlocked Travel Guide",
+  title: "Korean in Real Life Books, Korean on Campus & Korea Unlocked",
   description:
-    "Korean in Real Life Volumes 1 & 2 for beginners and Korea Unlocked, the insider's travel guide to South Korea — plus free Korean phrase PDFs.",
+    "Korean in Real Life Volumes 1 & 2 for beginners, Korean on Campus for natural student Korean, and Korea Unlocked, the insider's travel guide to South Korea — plus free Korean phrase PDFs.",
   path: "/books",
 });
 
@@ -48,9 +48,10 @@ export default function BooksPage() {
         </div>
 
         <h2 className="text-xs font-semibold uppercase tracking-wider text-[#6B5F7A] mb-3">Learn Korean</h2>
-        <div className="grid gap-5 md:grid-cols-2 mb-10">
+        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3 mb-10">
           <BookCard book={BOOKS["kirl-1"]} />
           <BookCard book={BOOKS["kirl-2"]} />
+          <BookCard book={BOOKS["korean-on-campus"]} />
         </div>
 
         <h2 className="text-xs font-semibold uppercase tracking-wider text-[#6B5F7A] mb-3">Visit Korea</h2>
@@ -60,7 +61,7 @@ export default function BooksPage() {
             <p className="font-semibold text-[#1E1225] mb-1">Not sure where to start?</p>
             <p>
               New to Korean → <strong>Volume 1</strong>. Already ordering food in Korean → <strong>Volume 2</strong>.
-              Planning a trip or a K-pop concert in Seoul → <strong>Korea Unlocked</strong>.
+              Can read Hangul but sound like a textbook → <strong>Korean on Campus</strong>. Planning a trip or a K-pop concert in Seoul → <strong>Korea Unlocked</strong>.
             </p>
           </div>
         </div>

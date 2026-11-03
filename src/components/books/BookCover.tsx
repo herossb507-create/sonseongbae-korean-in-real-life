@@ -29,7 +29,7 @@ export function BookCover({
         aria-hidden
         className={`${className} aspect-[2/3] shrink-0 rounded-md bg-gradient-to-br ${book.coverGradient} flex items-center justify-center text-center text-[10px] font-black leading-tight text-white shadow-[0_4px_12px_rgba(30,18,37,0.18)]`}
       >
-        {book.series ? `Vol. ${book.series.match(/\d/)?.[0]}` : "Korea"}
+        {book.coverLabel ?? (book.series ? `Vol. ${book.series.match(/\d/)?.[0]}` : "Korea")}
       </div>
     );
   }

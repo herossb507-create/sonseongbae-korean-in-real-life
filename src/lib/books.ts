@@ -1,7 +1,7 @@
 // The author's books and free lead magnet. Links are plain Amazon product URLs
 // (resolved from the a.co share links); add an Associates tag here if you join.
 
-export type BookId = "kirl-1" | "kirl-2" | "korea-unlocked";
+export type BookId = "kirl-1" | "kirl-2" | "korean-on-campus" | "korea-unlocked";
 
 export interface Book {
   id: BookId;
@@ -13,6 +13,8 @@ export interface Book {
   pages: number;
   pitch: string;
   highlights: string[];
+  /** Short label on the small cover thumbnail; defaults to "Vol. N" for the series, else "Korea". */
+  coverLabel?: string;
   /** Optional cover image in /public, e.g. "/books/kirl-1.jpg". A styled placeholder is shown without it. */
   cover?: string;
   coverGradient: string;
@@ -50,6 +52,24 @@ export const BOOKS: Record<BookId, Book> = {
       "Verb conjugation guide and a 30-day study plan",
     ],
     coverGradient: "from-[#9B7FE8] to-[#B099FF]",
+  },
+  "korean-on-campus": {
+    id: "korean-on-campus",
+    title: "Korean on Campus",
+    subtitle: "A Korean course told as a campus drama",
+    series: "Season 1",
+    url: "https://www.amazon.com/dp/B0HQ6VPYWV",
+    formats: "Kindle · TOPIK 1–4",
+    pages: 317,
+    pitch:
+      "Your Korean is correct, so why does everyone laugh? Follow one semester at a Korean university and learn the Korean textbooks skip.",
+    highlights: [
+      "반말 vs 존댓말 made clear: every line said too politely, too casually and just right",
+      "Real student Korean: slang, contractions and group-chat talk (단톡, 읽씹, ㅋㅋ)",
+      "18 lessons with a Core layer (TOPIK 1–2) and a Level Up layer (TOPIK 3–4), plus free companion Shorts",
+    ],
+    coverLabel: "Campus",
+    coverGradient: "from-[#2F6FE4] to-[#5FA8F5]",
   },
   "korea-unlocked": {
     id: "korea-unlocked",
