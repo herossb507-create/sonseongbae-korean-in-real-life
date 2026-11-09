@@ -1127,5 +1127,67 @@
         "cityId": 58
       }
     }
+  },
+  {
+    "id": "ice-bsd",
+    "name": "ICE BSD City (Hall 5-6)",
+    "city": "Tangerang",
+    "country": "Indonesia",
+    "countryCode": "ID",
+    "lat": -6.300681,
+    "lng": 106.636572,
+    "timezone": "Asia/Jakarta",
+    "externalIds": {
+      "agoda": {
+        "city": "102488"
+      },
+      "tripcom": {
+        "cityId": 153458,
+        "landmarkId": 13143942,
+        "name": "Indonesia Convention Exhibition (ICE) BSD City",
+        "lat": -6.3004202,
+        "lng": 106.6364517
+      }
+    }
+  },
+  {
+    "id": "yoyogi-national-gymnasium",
+    "name": "Yoyogi National Gymnasium",
+    "city": "Tokyo",
+    "country": "Japan",
+    "countryCode": "JP",
+    "lat": 35.667058,
+    "lng": 139.699779,
+    "timezone": "Asia/Tokyo",
+    "externalIds": {
+      "agoda": {
+        "poi": "25216"
+      },
+      "tripcom": {
+        "cityId": 228,
+        "landmarkId": 13155772,
+        "name": "Yoyogi National Stadium 1st Gymnasium",
+        "lat": 35.6676472,
+        "lng": 139.7001458
+      }
+    }
+  },
+  {
+    "id": "glion-arena-kobe",
+    "name": "GLION ARENA KOBE",
+    "city": "Kobe",
+    "country": "Japan",
+    "countryCode": "JP",
+    "lat": 34.681661,
+    "lng": 135.196072,
+    "timezone": "Asia/Tokyo",
+    "externalIds": {
+      "agoda": {
+        "poi": "3187800"
+      },
+      "tripcom": {
+        "cityId": 423
+      }
+    }
   }
 ]

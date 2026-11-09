@@ -5613,6 +5613,389 @@
           "distance": 935
         }
       ]
+    },
+    "ice-bsd": {
+      "fetchedAt": "2026-11-09",
+      "radius": 1000,
+      "food": [
+        {
+          "osm": "node/13236595738",
+          "name": "Salt by ICE",
+          "kind": "restaurant",
+          "cuisine": "international",
+          "lat": -6.300049,
+          "lng": 106.636367,
+          "distance": 74
+        },
+        {
+          "osm": "node/13289913560",
+          "name": "Kopi Nako",
+          "kind": "cafe",
+          "cuisine": "coffee shop",
+          "lat": -6.30225,
+          "lng": 106.639106,
+          "distance": 330
+        },
+        {
+          "osm": "way/784518207",
+          "name": "McDonald's",
+          "nameEn": "McDonalds",
+          "kind": "fast_food",
+          "cuisine": "burger",
+          "lat": -6.300007,
+          "lng": 106.640878,
+          "distance": 482
+        },
+        {
+          "osm": "node/12705056630",
+          "name": "Calibrew",
+          "kind": "cafe",
+          "cuisine": "coffee shop",
+          "lat": -6.300652,
+          "lng": 106.641162,
+          "distance": 507
+        },
+        {
+          "osm": "node/12705056631",
+          "name": "Subshack",
+          "kind": "fast_food",
+          "cuisine": "sandwich",
+          "lat": -6.300772,
+          "lng": 106.641206,
+          "distance": 512
+        },
+        {
+          "osm": "way/784518200",
+          "name": "Dunkin'",
+          "kind": "fast_food",
+          "cuisine": "donut, coffee shop",
+          "lat": -6.300892,
+          "lng": 106.641243,
+          "distance": 517
+        },
+        {
+          "osm": "way/838533225",
+          "name": "Hygge Cafe",
+          "kind": "cafe",
+          "cuisine": "international",
+          "lat": -6.298103,
+          "lng": 106.640544,
+          "distance": 524
+        },
+        {
+          "osm": "node/11993128328",
+          "name": "Menya Sakura",
+          "kind": "restaurant",
+          "cuisine": "ramen",
+          "lat": -6.304741,
+          "lng": 106.642651,
+          "distance": 809
+        }
+      ],
+      "hotels": [
+        {
+          "osm": "way/605911145",
+          "name": "Hotel Santika Premiere",
+          "kind": "hotel",
+          "lat": -6.298749,
+          "lng": 106.636391,
+          "distance": 216
+        },
+        {
+          "osm": "way/1063780715",
+          "name": "Joylive",
+          "kind": "hotel",
+          "lat": -6.303192,
+          "lng": 106.638246,
+          "distance": 335
+        },
+        {
+          "osm": "way/605912936",
+          "name": "Maxley Suites",
+          "kind": "hotel",
+          "lat": -6.302711,
+          "lng": 106.63885,
+          "distance": 338
+        },
+        {
+          "osm": "way/722995829",
+          "name": "Mercure Hotel",
+          "kind": "hotel",
+          "lat": -6.302235,
+          "lng": 106.645167,
+          "distance": 966
+        },
+        {
+          "osm": "way/1307396911",
+          "name": "Novotel",
+          "kind": "hotel",
+          "lat": -6.300639,
+          "lng": 106.645352,
+          "distance": 970
+        }
+      ]
+    },
+    "yoyogi-national-gymnasium": {
+      "fetchedAt": "2026-11-09",
+      "radius": 1000,
+      "food": [
+        {
+          "osm": "node/4679512992",
+          "name": "Cinnabon",
+          "nameEn": "CINNABON",
+          "kind": "fast_food",
+          "cuisine": "dessert",
+          "lat": 35.66619,
+          "lng": 139.7035,
+          "distance": 350
+        },
+        {
+          "osm": "node/3606411359",
+          "name": "Kenyan 紅茶の店",
+          "nameEn": "Kenyan Tea House",
+          "kind": "cafe",
+          "cuisine": "teahouse",
+          "lat": 35.663808,
+          "lng": 139.699919,
+          "distance": 362
+        },
+        {
+          "osm": "node/4553395539",
+          "name": "バーミヤン",
+          "nameEn": "Bamiyan",
+          "kind": "restaurant",
+          "cuisine": "chinese",
+          "lat": 35.665288,
+          "lng": 139.703239,
+          "distance": 369
+        },
+        {
+          "osm": "node/3424152089",
+          "name": "南国酒家 迎賓館",
+          "nameEn": "Nangoku Restaurant Geihinkan",
+          "kind": "restaurant",
+          "cuisine": "chinese",
+          "lat": 35.669321,
+          "lng": 139.702888,
+          "distance": 377
+        },
+        {
+          "osm": "node/1673403933",
+          "name": "フレッシュネスバーガー",
+          "nameEn": "Freshness Burger",
+          "kind": "fast_food",
+          "cuisine": "burger",
+          "lat": 35.66368,
+          "lng": 139.699301,
+          "distance": 378
+        },
+        {
+          "osm": "node/2371489796",
+          "name": "はなまるうどん",
+          "nameEn": "Hanamarūdon",
+          "kind": "restaurant",
+          "cuisine": "japanese, udon",
+          "lat": 35.663581,
+          "lng": 139.698865,
+          "distance": 395
+        },
+        {
+          "osm": "node/8191155518",
+          "name": "ライスバーガー専門店 おこめどき",
+          "nameEn": "Okomedoki Rice Burger",
+          "kind": "fast_food",
+          "cuisine": "burger",
+          "lat": 35.664377,
+          "lng": 139.703129,
+          "distance": 425
+        },
+        {
+          "osm": "node/6681521384",
+          "name": "九州じゃんがら",
+          "nameEn": "Kyushu Jangara Ramen",
+          "kind": "restaurant",
+          "cuisine": "ramen",
+          "lat": 35.669606,
+          "lng": 139.703462,
+          "distance": 437
+        }
+      ],
+      "hotels": [
+        {
+          "osm": "node/597692326",
+          "name": "渋谷東武ホテル (Tobu Hotel)",
+          "nameEn": "Tobu Hotel",
+          "kind": "hotel",
+          "lat": 35.663186,
+          "lng": 139.698986,
+          "distance": 436
+        },
+        {
+          "osm": "node/13612875960",
+          "name": "The Millennials 渋谷 (ザ・ミレニアルズ渋谷）",
+          "nameEn": "The Millennials Shibuya",
+          "kind": "hotel",
+          "lat": 35.662236,
+          "lng": 139.699795,
+          "distance": 536
+        },
+        {
+          "osm": "node/1681422026",
+          "name": "渋谷東急REIホテル",
+          "nameEn": "Shibuya Tokyu REI Hotel",
+          "kind": "hotel",
+          "lat": 35.660113,
+          "lng": 139.702121,
+          "distance": 801
+        },
+        {
+          "osm": "node/14283166301",
+          "name": "エンホテル渋谷",
+          "nameEn": "En Hotel Shibuya",
+          "kind": "hotel",
+          "lat": 35.659833,
+          "lng": 139.695436,
+          "distance": 894
+        },
+        {
+          "osm": "way/136570578",
+          "name": "渋谷シティホテル",
+          "nameEn": "Shibuya City hotel",
+          "kind": "hotel",
+          "lat": 35.659838,
+          "lng": 139.695402,
+          "distance": 895
+        }
+      ]
+    },
+    "glion-arena-kobe": {
+      "fetchedAt": "2026-11-09",
+      "radius": 1000,
+      "food": [
+        {
+          "osm": "node/9204501716",
+          "name": "サンタモニカの風",
+          "kind": "restaurant",
+          "cuisine": "buffet",
+          "lat": 34.679428,
+          "lng": 135.189049,
+          "distance": 688
+        },
+        {
+          "osm": "node/4977182923",
+          "name": "スターバックス",
+          "nameEn": "Starbucks",
+          "kind": "cafe",
+          "cuisine": "coffee shop",
+          "lat": 34.681622,
+          "lng": 135.188503,
+          "distance": 692
+        },
+        {
+          "osm": "node/6401742389",
+          "name": "Blue Bottle Coffee",
+          "kind": "cafe",
+          "cuisine": "coffee shop",
+          "lat": 34.687209,
+          "lng": 135.190296,
+          "distance": 812
+        },
+        {
+          "osm": "node/10781275921",
+          "name": "Coffee Temple",
+          "kind": "cafe",
+          "cuisine": "coffee shop",
+          "lat": 34.689366,
+          "lng": 135.197028,
+          "distance": 861
+        },
+        {
+          "osm": "node/6325451999",
+          "name": "カフェラ 大丸神戸店",
+          "nameEn": "CAFFERA",
+          "kind": "cafe",
+          "cuisine": "coffee shop, cake",
+          "lat": 34.688807,
+          "lng": 135.190903,
+          "distance": 925
+        },
+        {
+          "osm": "node/9585530861",
+          "name": "エクセルシオール カフェ",
+          "nameEn": "EXCELSIOR CAFE",
+          "kind": "cafe",
+          "cuisine": "coffee shop",
+          "lat": 34.688243,
+          "lng": 135.189461,
+          "distance": 949
+        },
+        {
+          "osm": "node/10600458521",
+          "name": "青龍",
+          "kind": "restaurant",
+          "cuisine": "chinese",
+          "lat": 34.688203,
+          "lng": 135.189164,
+          "distance": 963
+        },
+        {
+          "osm": "node/12270509568",
+          "name": "カラス",
+          "nameEn": "Indian Restaurant",
+          "kind": "restaurant",
+          "cuisine": "indian",
+          "lat": 34.689706,
+          "lng": 135.191909,
+          "distance": 972
+        }
+      ],
+      "hotels": [
+        {
+          "osm": "node/9250177172",
+          "name": "神戸みなと温泉 蓮",
+          "nameEn": "Kobe Minato Onsen Ren",
+          "kind": "hotel",
+          "lat": 34.681705,
+          "lng": 135.193527,
+          "distance": 233
+        },
+        {
+          "osm": "node/5164285758",
+          "name": "神戸メリケンパークオリエンタルホテル",
+          "nameEn": "KOBE MERIKEN PARK ORIENTAL HOTEL",
+          "kind": "hotel",
+          "lat": 34.679655,
+          "lng": 135.188884,
+          "distance": 694
+        },
+        {
+          "osm": "node/8952779967",
+          "name": "オリエンタルホテル",
+          "nameEn": "Kobe Meriken Park Oriental Hotel",
+          "kind": "hotel",
+          "lat": 34.6877,
+          "lng": 135.192984,
+          "distance": 728
+        },
+        {
+          "osm": "way/99456499",
+          "name": "ホテルオークラ神戸",
+          "nameEn": "Hotel Okura Kobe",
+          "kind": "hotel",
+          "lat": 34.683738,
+          "lng": 135.188218,
+          "distance": 754
+        },
+        {
+          "osm": "way/248805271",
+          "name": "ホテルヴィアマーレ神戸",
+          "nameEn": "Hotel Via Mare Kobe",
+          "kind": "hotel",
+          "lat": 34.688215,
+          "lng": 135.193134,
+          "distance": 777
+        }
+      ]
     }
   }
 }

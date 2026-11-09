@@ -869,14 +869,20 @@
     "ticketLinks": [],
     "sourceRefs": [
       {
+        "source": "official",
+        "url": "https://nol.yanolja.com/ticket/products/26013132",
+        "fetchedAt": "2026-11-09"
+      },
+      {
         "source": "news",
         "url": "https://en.edaily.co.kr/news/eda202609095337",
         "fetchedAt": "2026-10-24"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-24",
-    "lastSeenAt": "2026-10-24"
+    "verification": "verified",
+    "updatedAt": "2026-11-09",
+    "lastSeenAt": "2026-11-09",
+    "time": "18:00"
   },
   {
     "id": "txt-galaxy-arena-2026-11-21",
@@ -946,14 +952,20 @@
     "ticketLinks": [],
     "sourceRefs": [
       {
+        "source": "official",
+        "url": "https://nol.yanolja.com/ticket/products/26013132",
+        "fetchedAt": "2026-11-09"
+      },
+      {
         "source": "news",
         "url": "https://en.edaily.co.kr/news/eda202609095337",
         "fetchedAt": "2026-10-24"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-24",
-    "lastSeenAt": "2026-10-24"
+    "verification": "verified",
+    "updatedAt": "2026-11-09",
+    "lastSeenAt": "2026-11-09",
+    "time": "16:00"
   },
   {
     "id": "txt-galaxy-arena-2026-11-22",
@@ -1190,6 +1202,26 @@
     "lastSeenAt": "2026-10-21"
   },
   {
+    "id": "boynextdoor-ice-bsd-2026-12-05",
+    "artistId": "boynextdoor",
+    "tour": "KNOCK ON Vol.2 Tour",
+    "date": "2026-12-05",
+    "time": "19:00",
+    "venueId": "ice-bsd",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://ice-indonesia.com/en/event/event_list/boynextdoor-tour-knock-on-vol-2-in-jakarta",
+        "fetchedAt": "2026-11-09"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-11-09",
+    "lastSeenAt": "2026-11-09"
+  },
+  {
     "id": "bts-rajamangala-stadium-2026-12-05",
     "artistId": "bts",
     "tour": "ARIRANG World Tour",
@@ -1296,14 +1328,19 @@
     "ticketLinks": [],
     "sourceRefs": [
       {
+        "source": "official",
+        "url": "https://www.livenation.co.nz/babymonster-tickets-adp1479014",
+        "fetchedAt": "2026-11-09"
+      },
+      {
         "source": "news",
         "url": "https://au.rollingstone.com/music/music-news/babymonster-announce-debut-new-zealand-show-tickets-97007/",
         "fetchedAt": "2026-10-24"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-24",
-    "lastSeenAt": "2026-10-24"
+    "verification": "verified",
+    "updatedAt": "2026-11-09",
+    "lastSeenAt": "2026-11-09"
   },
   {
     "id": "babymonster-rod-laver-arena-2026-12-11",
@@ -1874,6 +1911,25 @@
     "lastSeenAt": "2026-10-19"
   },
   {
+    "id": "babymonster-asiaworld-arena-2027-01-09",
+    "artistId": "babymonster",
+    "tour": "CHOOM World Tour",
+    "date": "2027-01-09",
+    "venueId": "asiaworld-arena",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "news",
+        "url": "https://global.hk01.com/众乐迷/60348695/babymonster演唱会2027香港-门票优先公售攻略-购票连结-座位表",
+        "fetchedAt": "2026-11-09"
+      }
+    ],
+    "verification": "unverified",
+    "updatedAt": "2026-11-09",
+    "lastSeenAt": "2026-11-09"
+  },
+  {
     "id": "boynextdoor-ntsu-arena-2027-01-09",
     "artistId": "boynextdoor",
     "tour": "KNOCK ON Vol.2 Tour",
@@ -2047,6 +2103,64 @@
     "lastSeenAt": "2026-10-24"
   },
   {
+    "id": "ateez-inspire-arena-2027-01-22",
+    "artistId": "ateez",
+    "tour": "ZERO TO ALL World Tour",
+    "date": "2027-01-22",
+    "venueId": "inspire-arena",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://world.nol.com/en/content/articles/a2652aa1-a40e-4cc5-9016-5e2daaf8e175",
+        "fetchedAt": "2026-11-09"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-11-09",
+    "lastSeenAt": "2026-11-09"
+  },
+  {
+    "id": "ateez-inspire-arena-2027-01-23",
+    "artistId": "ateez",
+    "tour": "ZERO TO ALL World Tour",
+    "date": "2027-01-23",
+    "venueId": "inspire-arena",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://world.nol.com/en/content/articles/a2652aa1-a40e-4cc5-9016-5e2daaf8e175",
+        "fetchedAt": "2026-11-09"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-11-09",
+    "lastSeenAt": "2026-11-09"
+  },
+  {
+    "id": "boynextdoor-sg-indoor-2027-01-23",
+    "artistId": "boynextdoor",
+    "tour": "KNOCK ON Vol.2 Tour",
+    "date": "2027-01-23",
+    "time": "17:00",
+    "venueId": "sg-indoor",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://www.thekallang.com.sg/en/things-to-do/events/BOYNEXTDOOR-TOUR--KNOCK-ON-VOL-2-IN-SINGAPORE.html",
+        "fetchedAt": "2026-11-09"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-11-09",
+    "lastSeenAt": "2026-11-09"
+  },
+  {
     "id": "enhypen-jakarta-international-stadium-2027-01-23",
     "artistId": "enhypen",
     "tour": "BLOOD SAGA World Tour",
@@ -2083,6 +2197,25 @@
     "verification": "verified",
     "updatedAt": "2026-10-24",
     "lastSeenAt": "2026-10-24"
+  },
+  {
+    "id": "ateez-inspire-arena-2027-01-24",
+    "artistId": "ateez",
+    "tour": "ZERO TO ALL World Tour",
+    "date": "2027-01-24",
+    "venueId": "inspire-arena",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://world.nol.com/en/content/articles/a2652aa1-a40e-4cc5-9016-5e2daaf8e175",
+        "fetchedAt": "2026-11-09"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-11-09",
+    "lastSeenAt": "2026-11-09"
   },
   {
     "id": "aespa-uber-arena-2027-01-26",
@@ -2201,6 +2334,44 @@
     "lastSeenAt": "2026-10-24"
   },
   {
+    "id": "ateez-yoyogi-national-gymnasium-2027-02-02",
+    "artistId": "ateez",
+    "tour": "ZERO TO ALL World Tour",
+    "date": "2027-02-02",
+    "venueId": "yoyogi-national-gymnasium",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "news",
+        "url": "https://global.topstarnews.net/en/articleView.html?idxno=16271079",
+        "fetchedAt": "2026-11-09"
+      }
+    ],
+    "verification": "unverified",
+    "updatedAt": "2026-11-09",
+    "lastSeenAt": "2026-11-09"
+  },
+  {
+    "id": "ateez-yoyogi-national-gymnasium-2027-02-03",
+    "artistId": "ateez",
+    "tour": "ZERO TO ALL World Tour",
+    "date": "2027-02-03",
+    "venueId": "yoyogi-national-gymnasium",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "news",
+        "url": "https://global.topstarnews.net/en/articleView.html?idxno=16271079",
+        "fetchedAt": "2026-11-09"
+      }
+    ],
+    "verification": "unverified",
+    "updatedAt": "2026-11-09",
+    "lastSeenAt": "2026-11-09"
+  },
+  {
     "id": "enhypen-paypay-dome-2027-02-06",
     "artistId": "enhypen",
     "tour": "BLOOD SAGA World Tour",
@@ -2280,6 +2451,25 @@
     "lastSeenAt": "2026-10-19"
   },
   {
+    "id": "ateez-glion-arena-kobe-2027-02-13",
+    "artistId": "ateez",
+    "tour": "ZERO TO ALL World Tour",
+    "date": "2027-02-13",
+    "venueId": "glion-arena-kobe",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "news",
+        "url": "https://global.topstarnews.net/en/articleView.html?idxno=16271079",
+        "fetchedAt": "2026-11-09"
+      }
+    ],
+    "verification": "unverified",
+    "updatedAt": "2026-11-09",
+    "lastSeenAt": "2026-11-09"
+  },
+  {
     "id": "bts-marvel-stadium-2027-02-13",
     "artistId": "bts",
     "tour": "ARIRANG World Tour",
@@ -2297,6 +2487,25 @@
     "verification": "verified",
     "updatedAt": "2026-10-19",
     "lastSeenAt": "2026-10-19"
+  },
+  {
+    "id": "ateez-glion-arena-kobe-2027-02-14",
+    "artistId": "ateez",
+    "tour": "ZERO TO ALL World Tour",
+    "date": "2027-02-14",
+    "venueId": "glion-arena-kobe",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "news",
+        "url": "https://global.topstarnews.net/en/articleView.html?idxno=16271079",
+        "fetchedAt": "2026-11-09"
+      }
+    ],
+    "verification": "unverified",
+    "updatedAt": "2026-11-09",
+    "lastSeenAt": "2026-11-09"
   },
   {
     "id": "enhypen-kyocera-dome-2027-02-19",
@@ -2602,14 +2811,19 @@
     "ticketLinks": [],
     "sourceRefs": [
       {
+        "source": "official",
+        "url": "https://aegeurope.com/press-centre/enhypen-world-tour-blood-saga-is-headed-to-the-o2/",
+        "fetchedAt": "2026-11-09"
+      },
+      {
         "source": "news",
         "url": "https://www.nme.com/news/music/enhypen-announce-details-of-blood-saga-world-tour-for-2026-and-2027-3940808",
         "fetchedAt": "2026-10-24"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-24",
-    "lastSeenAt": "2026-10-24"
+    "verification": "verified",
+    "updatedAt": "2026-11-09",
+    "lastSeenAt": "2026-11-09"
   },
   {
     "id": "bts-philippine-sports-stadium-2027-03-13",
