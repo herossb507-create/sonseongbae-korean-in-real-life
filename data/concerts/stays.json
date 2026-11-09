@@ -1,0 +1,1611 @@
+{
+  "venues": {
+    "kspo-dome": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "Sofitel Ambassador Seoul Hotel & Serviced Residences",
+          "lat": 37.513725,
+          "lng": 127.106137,
+          "distance": 1980,
+          "agodaId": "26209307",
+          "tripId": "73711899"
+        }
+      ]
+    },
+    "tokyo-dome": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "Tokyo Dome Hotel",
+          "lat": 35.703667,
+          "lng": 139.753393,
+          "distance": 249,
+          "agodaId": "43321",
+          "tripId": "704030"
+        },
+        {
+          "name": "Suidobashi Grand Hotel",
+          "localName": "水道橋グランドホテル",
+          "lat": 35.705809,
+          "lng": 139.755262,
+          "distance": 295,
+          "tripId": "1678606"
+        },
+        {
+          "name": "Koraku Garden Hotel Tokyo",
+          "localName": "後楽ガーデンホテル",
+          "lat": 35.704045,
+          "lng": 139.748211,
+          "distance": 383,
+          "agodaId": "1622509",
+          "tripId": "6272221"
+        },
+        {
+          "name": "ナインアワーズ水道橋",
+          "localName": "ナインアワーズ",
+          "lat": 35.701722,
+          "lng": 139.750985,
+          "distance": 441,
+          "tripId": "48639022"
+        },
+        {
+          "name": "Hotel Metropolitan Edmont Tokyo",
+          "localName": "ホテルメトロポリタン エドモント EAST WING",
+          "lat": 35.700791,
+          "lng": 139.749708,
+          "distance": 573,
+          "agodaId": "73053",
+          "tripId": "688422"
+        }
+      ]
+    },
+    "morumbis": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "Menara 304 - Apt a 150m do Hospital Albert Einstein e Morumbis, 2 Banheiros, Piscina, Sauna e Vaga",
+          "lat": -23.601424,
+          "lng": -46.71654,
+          "distance": 391,
+          "tripId": "10649309"
+        }
+      ]
+    },
+    "kaohsiung-national-stadium": {
+      "fetchedAt": "2026-11-09",
+      "hotels": []
+    },
+    "gbk-main-stadium": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "Artotel Gelora Senayan Jakarta",
+          "localName": "ARTOTEL Gelora Senayan Jakarta",
+          "lat": -6.223257,
+          "lng": 106.802849,
+          "distance": 519,
+          "agodaId": "52338954",
+          "tripId": "118296736"
+        },
+        {
+          "name": "Fairmont Jakarta",
+          "lat": -6.222089,
+          "lng": 106.798869,
+          "distance": 566,
+          "agodaId": "781922",
+          "tripId": "1876303"
+        },
+        {
+          "name": "Harris Suites fx Sudirman",
+          "localName": "Harris Hotels",
+          "lat": -6.224654,
+          "lng": 106.803869,
+          "distance": 688,
+          "agodaId": "254012",
+          "tripId": "689767"
+        },
+        {
+          "name": "Hotel Mulia Senayan, Jakarta",
+          "localName": "Hotel Mulia Senayan",
+          "lat": -6.215174,
+          "lng": 106.796993,
+          "distance": 728,
+          "agodaId": "85271222",
+          "tripId": "993997"
+        }
+      ]
+    },
+    "estadio-unico-la-plata": {
+      "fetchedAt": "2026-11-09",
+      "hotels": []
+    },
+    "kaohsiung-arena": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "Hotel R14",
+          "localName": "巨蛋旅店",
+          "lat": 22.665004,
+          "lng": 120.30226,
+          "distance": 402,
+          "agodaId": "1194354",
+          "tripId": "5209228"
+        },
+        {
+          "name": "高雄世奇商旅",
+          "localName": "世奇商旅",
+          "lat": 22.665857,
+          "lng": 120.30475,
+          "distance": 423,
+          "tripId": "1115077"
+        },
+        {
+          "name": "H2O Hotel",
+          "lat": 22.662815,
+          "lng": 120.30225,
+          "distance": 644,
+          "agodaId": "2615226",
+          "tripId": "8194467"
+        },
+        {
+          "name": "Kaohsiung Marriott Hotel",
+          "lat": 22.654565,
+          "lng": 120.306288,
+          "distance": 1624,
+          "agodaId": "23388991",
+          "tripId": "73271952"
+        }
+      ]
+    },
+    "taipei-dome": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "InterContinental Taipei",
+          "localName": "台北洲際酒店",
+          "lat": 25.042723,
+          "lng": 121.561452,
+          "distance": 190,
+          "tripId": "135431024"
+        },
+        {
+          "name": "United Hotel",
+          "localName": "國聯大飯店",
+          "lat": 25.042176,
+          "lng": 121.557332,
+          "distance": 230,
+          "agodaId": "3769",
+          "tripId": "700965"
+        },
+        {
+          "name": "eslite hotel",
+          "localName": "誠品行旅",
+          "lat": 25.044643,
+          "lng": 121.561879,
+          "distance": 339,
+          "agodaId": "548616",
+          "tripId": "1547931"
+        },
+        {
+          "name": "Hanns House",
+          "localName": "瀚寓酒店",
+          "lat": 25.039841,
+          "lng": 121.563227,
+          "distance": 463,
+          "agodaId": "8812246",
+          "tripId": "55916404"
+        },
+        {
+          "name": "Just Inn Taipei (Xin Yi)",
+          "localName": "正旅館 信義館",
+          "lat": 25.04226,
+          "lng": 121.564779,
+          "distance": 522,
+          "agodaId": "3578530",
+          "tripId": "19832282"
+        }
+      ]
+    },
+    "taipei-arena": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "Capella Taipei",
+          "lat": 25.053229,
+          "lng": 121.549915,
+          "distance": 282,
+          "agodaId": "64327822",
+          "tripId": "126215467"
+        },
+        {
+          "name": "ILLUME TAIPEI",
+          "localName": "茹曦酒店",
+          "lat": 25.052699,
+          "lng": 121.548123,
+          "distance": 298,
+          "agodaId": "60423",
+          "tripId": "701066"
+        },
+        {
+          "name": "arTree Hotel",
+          "localName": "阿樹國際旅店",
+          "lat": 25.047914,
+          "lng": 121.552761,
+          "distance": 410,
+          "agodaId": "2602081",
+          "tripId": "15879485"
+        },
+        {
+          "name": "Brother Hotel",
+          "localName": "兄弟飯店",
+          "lat": 25.052201,
+          "lng": 121.544586,
+          "distance": 580,
+          "agodaId": "60413",
+          "tripId": "926923"
+        },
+        {
+          "name": "Urtrip Hotel",
+          "localName": "悠趣旅店",
+          "lat": 25.048488,
+          "lng": 121.544819,
+          "distance": 586,
+          "tripId": "1925722"
+        }
+      ]
+    },
+    "ntsu-arena": {
+      "fetchedAt": "2026-11-09",
+      "hotels": []
+    },
+    "rajamangala-stadium": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "Bangkok Inter Place",
+          "lat": 13.753607,
+          "lng": 100.622216,
+          "distance": 199,
+          "agodaId": "148842",
+          "tripId": "700961"
+        },
+        {
+          "name": "Hive28",
+          "lat": 13.750635,
+          "lng": 100.618073,
+          "distance": 692,
+          "tripId": "1698162"
+        }
+      ]
+    },
+    "thammasat-stadium": {
+      "fetchedAt": "2026-11-09",
+      "hotels": []
+    },
+    "singapore-national-stadium": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "K Hotel 12",
+          "localName": "Oxley Hotel",
+          "lat": 1.310012,
+          "lng": 103.876521,
+          "distance": 661,
+          "agodaId": "6377406",
+          "tripId": "28761806"
+        },
+        {
+          "name": "The Room Capsule Hotel",
+          "lat": 1.310764,
+          "lng": 103.872938,
+          "distance": 713,
+          "agodaId": "43385687",
+          "tripId": "110906893"
+        }
+      ]
+    },
+    "sg-indoor": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "Andaz Singapore, by Hyatt",
+          "lat": 1.299265,
+          "lng": 103.85817,
+          "distance": 1813,
+          "agodaId": "2651609",
+          "tripId": "11491662"
+        }
+      ]
+    },
+    "apex-expo": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "Park Avenue Changi",
+          "lat": 1.335848,
+          "lng": 103.963086,
+          "distance": 361,
+          "agodaId": "410039",
+          "tripId": "996036"
+        },
+        {
+          "name": "Dorsett Changi City Singapore",
+          "lat": 1.334041,
+          "lng": 103.963629,
+          "distance": 434,
+          "agodaId": "335555",
+          "tripId": "687683"
+        }
+      ]
+    },
+    "unifi-arena": {
+      "fetchedAt": "2026-11-09",
+      "hotels": []
+    },
+    "moa-arena": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "Golden Phoenix Hotel Manila",
+          "localName": "Golden Phoenix Hotel",
+          "lat": 14.532412,
+          "lng": 120.986141,
+          "distance": 264,
+          "agodaId": "869954",
+          "tripId": "2076433"
+        },
+        {
+          "name": "Conrad Manila",
+          "lat": 14.531926,
+          "lng": 120.98049,
+          "distance": 347,
+          "agodaId": "1157822",
+          "tripId": "5160240"
+        },
+        {
+          "name": "Microtel by Wyndham Mall of Asia",
+          "lat": 14.530477,
+          "lng": 120.980257,
+          "distance": 417,
+          "agodaId": "178561",
+          "tripId": "992821"
+        },
+        {
+          "name": "Citadines Bay City Manila",
+          "lat": 14.532421,
+          "lng": 120.988308,
+          "distance": 497,
+          "agodaId": "5925337",
+          "tripId": "25342601"
+        },
+        {
+          "name": "Lanson Place Mall of Asia Manila",
+          "lat": 14.538083,
+          "lng": 120.979888,
+          "distance": 772,
+          "agodaId": "36163043",
+          "tripId": "107611735"
+        }
+      ]
+    },
+    "kai-tak-stadium": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "Dorsett Kai Tak",
+          "localName": "香港啟德帝盛酒店 Dorsett Kai Tak",
+          "lat": 22.322715,
+          "lng": 114.195804,
+          "distance": 174,
+          "agodaId": "56079045",
+          "tripId": "109970597"
+        },
+        {
+          "name": "Harbour Plaza 8 Degrees",
+          "localName": "8度海逸酒店 Harbour Plaza 8 Degrees",
+          "lat": 22.322929,
+          "lng": 114.190694,
+          "distance": 695,
+          "agodaId": "161614",
+          "tripId": "436498"
+        },
+        {
+          "name": "Camlux Hotel",
+          "localName": "君立酒店 Camlux Hotel",
+          "lat": 22.323772,
+          "lng": 114.205757,
+          "distance": 877,
+          "agodaId": "1991485",
+          "tripId": "7114825"
+        }
+      ]
+    },
+    "galaxy-arena": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "Andaz Macau",
+          "localName": "澳門安達仕酒店",
+          "lat": 22.14527,
+          "lng": 113.556922,
+          "distance": 152,
+          "agodaId": "47266943",
+          "tripId": "112024240"
+        },
+        {
+          "name": "JW Marriott Hotel Macau",
+          "localName": "澳門JW萬豪酒店 Hotel JW Marriott Macau",
+          "lat": 22.146726,
+          "lng": 113.555538,
+          "distance": 344,
+          "agodaId": "908344",
+          "tripId": "2005951"
+        },
+        {
+          "name": "Paiza Lofts at Parisian",
+          "localName": "御匾峰 Estúdios Paiza",
+          "lat": 22.143053,
+          "lng": 113.560382,
+          "distance": 371,
+          "agodaId": "82420900",
+          "tripId": "131305203"
+        },
+        {
+          "name": "The Ritz-Carlton, Macau",
+          "localName": "澳門麗思卡爾頓酒店 The Ritz-Carlton Macau",
+          "lat": 22.146406,
+          "lng": 113.554444,
+          "distance": 376,
+          "agodaId": "86102106",
+          "tripId": "2010726"
+        },
+        {
+          "name": "The Parisian Macao",
+          "localName": "澳門巴黎人酒店 O Parisiense Macau  Hotel",
+          "lat": 22.143691,
+          "lng": 113.560736,
+          "distance": 396,
+          "agodaId": "1269921",
+          "tripId": "5772619"
+        }
+      ]
+    },
+    "inspire-arena": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "INSPIRE Entertainment Resort",
+          "lat": 37.469965,
+          "lng": 126.382529,
+          "distance": 794,
+          "agodaId": "74232024",
+          "tripId": "113752459"
+        }
+      ]
+    },
+    "lala-arena-tokyo-bay": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "Hotel Ichimatsu",
+          "localName": "市松",
+          "lat": 35.691938,
+          "lng": 139.991272,
+          "distance": 916,
+          "agodaId": "15527537",
+          "tripId": "8379685"
+        }
+      ]
+    },
+    "vantelin-dome-nagoya": {
+      "fetchedAt": "2026-11-09",
+      "hotels": []
+    },
+    "kyocera-dome": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "Hotel Sobial Osaka Dome",
+          "localName": "ホテルソビアル 大阪ドーム前",
+          "lat": 34.665349,
+          "lng": 135.47953,
+          "distance": 540,
+          "agodaId": "1192440",
+          "tripId": "7083598"
+        }
+      ]
+    },
+    "paypay-dome": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "Hilton Fukuoka Sea Hawk",
+          "lat": 33.594486,
+          "lng": 130.359797,
+          "distance": 232,
+          "agodaId": "43253",
+          "tripId": "1861358"
+        },
+        {
+          "name": "Lily House",
+          "localName": "LILY HOUSE",
+          "lat": 33.594951,
+          "lng": 130.369086,
+          "distance": 648,
+          "agodaId": "7491080"
+        },
+        {
+          "name": "Seaside Hotel Twins Momochi",
+          "localName": "Twins Momochi",
+          "lat": 33.592093,
+          "lng": 130.355548,
+          "distance": 704,
+          "agodaId": "408507",
+          "tripId": "1498416"
+        },
+        {
+          "name": "Hotel Port Hills Fukuoka",
+          "localName": "ホテルポートヒルズ福岡",
+          "lat": 33.599109,
+          "lng": 130.371734,
+          "distance": 988,
+          "agodaId": "9078187",
+          "tripId": "23207123"
+        }
+      ]
+    },
+    "marvel-stadium": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "Peppers Southern Cross Melbourne",
+          "localName": "Peppers Docklands",
+          "lat": -37.814628,
+          "lng": 144.947075,
+          "distance": 211,
+          "agodaId": "1159631",
+          "tripId": "5421467"
+        },
+        {
+          "name": "Quest Docklands",
+          "localName": "Quest Docklands Apartment Hotel",
+          "lat": -37.81847,
+          "lng": 144.947824,
+          "distance": 221,
+          "agodaId": "8637795",
+          "tripId": "6152120"
+        },
+        {
+          "name": "Travelodge Hotel Melbourne Docklands",
+          "localName": "Travelodge",
+          "lat": -37.819063,
+          "lng": 144.950281,
+          "distance": 375,
+          "agodaId": "178345",
+          "tripId": "2197402"
+        },
+        {
+          "name": "The Ritz-Carlton, Melbourne",
+          "localName": "The Ritz-Carlton",
+          "lat": -37.814626,
+          "lng": 144.952669,
+          "distance": 500,
+          "agodaId": "37729992",
+          "tripId": "102227205"
+        },
+        {
+          "name": "Atlantis Hotel Melbourne",
+          "localName": "Atlantis Hotel",
+          "lat": -37.813627,
+          "lng": 144.952012,
+          "distance": 509,
+          "agodaId": "69438",
+          "tripId": "735149"
+        }
+      ]
+    },
+    "rod-laver-arena": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "Mantra on Jolimont",
+          "lat": -37.817985,
+          "lng": 144.978259,
+          "distance": 403,
+          "agodaId": "45345",
+          "tripId": "735358"
+        },
+        {
+          "name": "Pullman East Melbourne",
+          "localName": "Pullman Melbourne on the Park",
+          "lat": -37.815814,
+          "lng": 144.983496,
+          "distance": 774,
+          "agodaId": "3505",
+          "tripId": "1868315"
+        },
+        {
+          "name": "Mercure Melbourne Treasury Gardens",
+          "lat": -37.814772,
+          "lng": 144.974243,
+          "distance": 850,
+          "agodaId": "70114405"
+        },
+        {
+          "name": "Punthill Manhattan",
+          "lat": -37.814934,
+          "lng": 144.972592,
+          "distance": 910,
+          "agodaId": "70864",
+          "tripId": "735086"
+        },
+        {
+          "name": "The Langham Melbourne",
+          "lat": -37.820673,
+          "lng": 144.965674,
+          "distance": 1140,
+          "agodaId": "2664",
+          "tripId": "1170800"
+        }
+      ]
+    },
+    "accor-stadium": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "Ibis Budget Sydney Olympic Park",
+          "localName": "Ibis Budget",
+          "lat": -33.849939,
+          "lng": 151.062169,
+          "distance": 336,
+          "agodaId": "181930",
+          "tripId": "2219231"
+        },
+        {
+          "name": "Quest at Sydney Olympic Park",
+          "localName": "Quest Sydney Olympic Park",
+          "lat": -33.850633,
+          "lng": 151.062482,
+          "distance": 402,
+          "agodaId": "401013",
+          "tripId": "737090"
+        },
+        {
+          "name": "Pullman at Sydney Olympic Park",
+          "localName": "Hotel Pullman at Sydney Olympic Park",
+          "lat": -33.84878,
+          "lng": 151.068052,
+          "distance": 468,
+          "agodaId": "108212",
+          "tripId": "2196303"
+        }
+      ]
+    },
+    "afterpay-arena": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "Ibis Budget Sydney Olympic Park",
+          "localName": "Ibis Budget",
+          "lat": -33.849939,
+          "lng": 151.062169,
+          "distance": 627,
+          "agodaId": "181930",
+          "tripId": "2219231"
+        },
+        {
+          "name": "Quest at Sydney Olympic Park",
+          "localName": "Quest Sydney Olympic Park",
+          "lat": -33.850633,
+          "lng": 151.062482,
+          "distance": 705,
+          "agodaId": "401013",
+          "tripId": "737090"
+        },
+        {
+          "name": "Pullman at Sydney Olympic Park",
+          "localName": "Hotel Pullman at Sydney Olympic Park",
+          "lat": -33.84878,
+          "lng": 151.068052,
+          "distance": 735,
+          "agodaId": "108212",
+          "tripId": "2196303"
+        }
+      ]
+    },
+    "kia-forum": {
+      "fetchedAt": "2026-11-09",
+      "hotels": []
+    },
+    "peacock-theater": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "The Ritz-Carlton, Los Angeles",
+          "localName": "The Ritz-Carlton",
+          "lat": 34.045303,
+          "lng": -118.266964,
+          "distance": 90,
+          "agodaId": "2455834",
+          "tripId": "2192890"
+        }
+      ]
+    },
+    "bill-graham-civic": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "BEI San Francisco, Trademark Collection by Wyndham",
+          "localName": "BEI Hotel San Francisco",
+          "lat": 37.777608,
+          "lng": -122.414234,
+          "distance": 275,
+          "agodaId": "23387989",
+          "tripId": "2196739"
+        },
+        {
+          "name": "Motel 6 San Francisco, CA – Civic Center",
+          "localName": "Htl 587 Ascend Hotel Collection",
+          "lat": 37.783223,
+          "lng": -122.417288,
+          "distance": 570,
+          "tripId": "2198190"
+        }
+      ]
+    },
+    "warfield": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "Timbri Hotel San Francisco, Curio Collection by Hilton",
+          "localName": "The Line",
+          "lat": 37.783049,
+          "lng": -122.409887,
+          "distance": 62,
+          "agodaId": "51924846",
+          "tripId": "108848835"
+        },
+        {
+          "name": "Warfield Hotel",
+          "localName": "Hotel Warfield",
+          "lat": 37.783481,
+          "lng": -122.410545,
+          "distance": 100,
+          "agodaId": "2020085",
+          "tripId": "7034355"
+        },
+        {
+          "name": "Motel 6 San Francisco, CA – Civic Center",
+          "localName": "Htl 587 Ascend Hotel Collection",
+          "lat": 37.783223,
+          "lng": -122.417288,
+          "distance": 618,
+          "tripId": "2198190"
+        },
+        {
+          "name": "Four Seasons Hotel San Francisco",
+          "lat": 37.786589,
+          "lng": -122.404388,
+          "distance": 683,
+          "agodaId": "194233",
+          "tripId": "1570300"
+        },
+        {
+          "name": "Grand Hyatt San Francisco Union Square",
+          "lat": 37.789141,
+          "lng": -122.407216,
+          "distance": 776,
+          "tripId": "2193606"
+        }
+      ]
+    },
+    "wamu-theater": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "Silver Cloud Hotel - Seattle Stadium",
+          "localName": "Silver Cloud Hotel",
+          "lat": 47.592716,
+          "lng": -122.333697,
+          "distance": 80,
+          "agodaId": "2456038",
+          "tripId": "8139233"
+        },
+        {
+          "name": "Embassy Suites by Hilton Seattle Downtown Pioneer Square",
+          "localName": "Embassy Suites - Seattle Downtown Pioneer Square",
+          "lat": 47.597868,
+          "lng": -122.330946,
+          "distance": 539,
+          "agodaId": "4897933",
+          "tripId": "13660926"
+        },
+        {
+          "name": "Populus Seattle",
+          "lat": 47.598417,
+          "lng": -122.333824,
+          "distance": 584,
+          "agodaId": "71908526",
+          "tripId": "126861005"
+        },
+        {
+          "name": "Best Western Plus Pioneer Square Hotel Downtown",
+          "localName": "Best Western Pioneer Square Hotel",
+          "lat": 47.601616,
+          "lng": -122.335257,
+          "distance": 952,
+          "agodaId": "202498",
+          "tripId": "2281263"
+        },
+        {
+          "name": "Lotte Hotel Seattle",
+          "lat": 47.605371,
+          "lng": -122.33096,
+          "distance": 1361,
+          "agodaId": "16569901",
+          "tripId": "68196423"
+        }
+      ]
+    },
+    "showbox-sodo": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "Silver Cloud Hotel - Seattle Stadium",
+          "localName": "Silver Cloud Hotel",
+          "lat": 47.592716,
+          "lng": -122.333697,
+          "distance": 525,
+          "agodaId": "2456038",
+          "tripId": "8139233"
+        },
+        {
+          "name": "Lotte Hotel Seattle",
+          "lat": 47.605371,
+          "lng": -122.33096,
+          "distance": 1944,
+          "agodaId": "16569901",
+          "tripId": "68196423"
+        }
+      ]
+    },
+    "bomb-factory": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "Kimpton PITTMAN HOTEL by IHG",
+          "localName": "The Pittman",
+          "lat": 32.784473,
+          "lng": -96.787391,
+          "distance": 415,
+          "agodaId": "14498710",
+          "tripId": "58071059"
+        },
+        {
+          "name": "Home2 Suites by Hilton Dallas Downtown at Baylor Scott & White",
+          "lat": 32.790002,
+          "lng": -96.782138,
+          "distance": 858,
+          "agodaId": "3632491",
+          "tripId": "10819835"
+        },
+        {
+          "name": "Hotel Indigo DALLAS DOWNTOWN by IHG",
+          "localName": "Hotel Indigo Dallas Downtown",
+          "lat": 32.781899,
+          "lng": -96.794455,
+          "distance": 1007,
+          "agodaId": "62965",
+          "tripId": "2338643"
+        },
+        {
+          "name": "The Statler Dallas, Curio Collection by Hilton",
+          "localName": "Statler Hotel",
+          "lat": 32.780422,
+          "lng": -96.794645,
+          "distance": 1047,
+          "agodaId": "4125665",
+          "tripId": "9147870"
+        }
+      ]
+    },
+    "salt-shed": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "Hyatt Place Chicago/Wicker Park",
+          "localName": "Hyatt Place Chicago / Wicker Park",
+          "lat": 41.910398,
+          "lng": -87.667308,
+          "distance": 787,
+          "agodaId": "10616745",
+          "tripId": "51591488"
+        }
+      ]
+    },
+    "pompano-beach-amphitheater": {
+      "fetchedAt": "2026-11-09",
+      "hotels": []
+    },
+    "msg-infosys": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "Midtown West Hotel",
+          "lat": 40.749951,
+          "lng": -73.99565,
+          "distance": 191,
+          "agodaId": "6950562",
+          "tripId": "2560483"
+        },
+        {
+          "name": "Fairfield Inn & Suites New York Midtown Manhattan/Penn Station",
+          "lat": 40.752271,
+          "lng": -73.995108,
+          "distance": 239,
+          "tripId": "2198136"
+        },
+        {
+          "name": "Renaissance New York Midtown Hotel",
+          "localName": "Renaissance",
+          "lat": 40.751732,
+          "lng": -73.991065,
+          "distance": 247,
+          "agodaId": "2465074",
+          "tripId": "3928416"
+        },
+        {
+          "name": "The New Yorker Hotel by Lotte Hotels",
+          "localName": "New Yorker by Lotte Hotels",
+          "lat": 40.752745,
+          "lng": -73.993669,
+          "distance": 250,
+          "agodaId": "45090",
+          "tripId": "737139"
+        },
+        {
+          "name": "Baccarat Hotel New York",
+          "lat": 40.760901,
+          "lng": -73.977375,
+          "distance": 1784,
+          "tripId": "3106305"
+        }
+      ]
+    },
+    "qe-theatre-toronto": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "Hotel X Toronto, a Destination by Hyatt Hotel",
+          "localName": "Hotel X Toronto",
+          "lat": 43.633188,
+          "lng": -79.412189,
+          "distance": 743,
+          "agodaId": "6950155",
+          "tripId": "9118375"
+        }
+      ]
+    },
+    "qe-theatre-vancouver": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "Sandman Hotel Vancouver Downtown",
+          "localName": "Sandman Hotel Vancouver City Centre",
+          "lat": 49.279027,
+          "lng": -123.113405,
+          "distance": 142,
+          "tripId": "2562253"
+        },
+        {
+          "name": "Hotel Willo",
+          "localName": "YWCA Hotel / Residence / Hotel Willo",
+          "lat": 49.27837,
+          "lng": -123.1131,
+          "distance": 215,
+          "agodaId": "6950067",
+          "tripId": "1910410"
+        },
+        {
+          "name": "Victorian Hotel",
+          "lat": 49.282406,
+          "lng": -123.112137,
+          "distance": 247,
+          "agodaId": "6950671",
+          "tripId": "2545333"
+        },
+        {
+          "name": "Hotel Blu",
+          "localName": "Blu Hotel",
+          "lat": 49.278161,
+          "lng": -123.114459,
+          "distance": 255,
+          "agodaId": "2461129",
+          "tripId": "2219095"
+        },
+        {
+          "name": "Rosewood Hotel Georgia",
+          "lat": 49.283465,
+          "lng": -123.119031,
+          "distance": 550,
+          "agodaId": "6949999",
+          "tripId": "2020878"
+        }
+      ]
+    },
+    "arena-cdmx": {
+      "fetchedAt": "2026-11-09",
+      "hotels": []
+    },
+    "tm-stadium-nasional": {
+      "fetchedAt": "2026-11-09",
+      "hotels": []
+    },
+    "philippine-sports-stadium": {
+      "fetchedAt": "2026-11-09",
+      "hotels": []
+    },
+    "belluna-dome": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "Kikusuitei",
+          "lat": 35.769295,
+          "lng": 139.439296,
+          "distance": 1698,
+          "tripId": "4969996"
+        }
+      ]
+    },
+    "uber-arena": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "Holiday Inn Berlin City East Side",
+          "localName": "Holiday Inn Berlin - City East Side",
+          "lat": 52.504849,
+          "lng": 13.444605,
+          "distance": 178,
+          "tripId": "2560084"
+        },
+        {
+          "name": "Hampton by Hilton Berlin City East Side Gallery",
+          "lat": 52.505083,
+          "lng": 13.441257,
+          "distance": 222,
+          "agodaId": "5986803",
+          "tripId": "25550862"
+        },
+        {
+          "name": "Michelberger Hotel",
+          "lat": 52.504618,
+          "lng": 13.447962,
+          "distance": 344,
+          "agodaId": "3281229",
+          "tripId": "731990"
+        }
+      ]
+    },
+    "ao-arena": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "Hotel Indigo MANCHESTER - VICTORIA STATION by IHG",
+          "localName": "Hotel Indigo",
+          "lat": 53.486082,
+          "lng": -2.241699,
+          "distance": 276,
+          "agodaId": "6405041",
+          "tripId": "21890352"
+        },
+        {
+          "name": "Travelodge Manchester Central Arena",
+          "localName": "Travelodge - Manchester Central",
+          "lat": 53.490149,
+          "lng": -2.246544,
+          "distance": 278,
+          "agodaId": "3755619",
+          "tripId": "17501323"
+        },
+        {
+          "name": "Radisson Hotel Manchester City Centre, A Verified Net Zero Hotel",
+          "localName": "Park Inn by Radisson Manchester City Centre",
+          "lat": 53.490037,
+          "lng": -2.241098,
+          "distance": 297,
+          "agodaId": "163185",
+          "tripId": "2171743"
+        },
+        {
+          "name": "CitySuites 2 Aparthotel",
+          "localName": "Citysuites Manchester",
+          "lat": 53.485491,
+          "lng": -2.247229,
+          "distance": 352,
+          "tripId": "82329660"
+        },
+        {
+          "name": "The Lowry Hotel Manchester",
+          "lat": 53.483147,
+          "lng": -2.25072,
+          "distance": 700,
+          "agodaId": "13836560",
+          "tripId": "717662"
+        }
+      ]
+    },
+    "the-o2": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "InterContinental Hotels LONDON - THE O2 by IHG",
+          "lat": 51.503018,
+          "lng": -0.000183,
+          "distance": 233,
+          "tripId": "5815732"
+        },
+        {
+          "name": "Radisson Blu Hotel, London Canary Wharf East",
+          "localName": "Radisson Blu Canary Wharf East",
+          "lat": 51.506865,
+          "lng": -0.004176,
+          "distance": 671,
+          "agodaId": "96962",
+          "tripId": "717965"
+        },
+        {
+          "name": "Ibis London Docklands Canary Wharf",
+          "localName": "Ibis London Docklands",
+          "lat": 51.507074,
+          "lng": -0.007031,
+          "distance": 844,
+          "agodaId": "77854",
+          "tripId": "2173589"
+        },
+        {
+          "name": "Travelodge London Docklands",
+          "localName": "Travelodge London Docklands Central",
+          "lat": 51.511425,
+          "lng": -0.000319,
+          "distance": 975,
+          "agodaId": "74539857",
+          "tripId": "21907236"
+        },
+        {
+          "name": "Radisson Red London Greenwich the O2",
+          "lat": 51.492004,
+          "lng": 0.008201,
+          "distance": 1264,
+          "agodaId": "16519167",
+          "tripId": "66753988"
+        }
+      ]
+    },
+    "ziggo-dome": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "Jaz in The City Amsterdam",
+          "localName": "Jaz in the City",
+          "lat": 52.314354,
+          "lng": 4.938723,
+          "distance": 151,
+          "agodaId": "1031019",
+          "tripId": "3045271"
+        },
+        {
+          "name": "easyHotel Amsterdam Arena Boulevard",
+          "lat": 52.313178,
+          "lng": 4.944876,
+          "distance": 528,
+          "agodaId": "1608102",
+          "tripId": "8839830"
+        },
+        {
+          "name": "Holiday Inn Express Amsterdam Arena Towers",
+          "lat": 52.309482,
+          "lng": 4.941995,
+          "distance": 548,
+          "agodaId": "6987535",
+          "tripId": "5128464"
+        },
+        {
+          "name": "Hampton by Hilton Amsterdam Arena Boulevard",
+          "localName": "Hampton by Hilton Amsterdam / Arena Boulevard",
+          "lat": 52.312993,
+          "lng": 4.947748,
+          "distance": 724,
+          "agodaId": "487205",
+          "tripId": "2225982"
+        },
+        {
+          "name": "Courtyard by Marriott Amsterdam Arena Atlas",
+          "localName": "Courtyard Amsterdam Arena Atlas",
+          "lat": 52.309783,
+          "lng": 4.946434,
+          "distance": 750,
+          "tripId": "2972374"
+        }
+      ]
+    },
+    "avicii-arena": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "Quality Hotel Globe",
+          "lat": 59.29273,
+          "lng": 18.083929,
+          "distance": 107,
+          "agodaId": "470004",
+          "tripId": "2564980"
+        }
+      ]
+    },
+    "royal-arena": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "Copenhagen modern, fully equipped 2 bedrooms apartment",
+          "lat": 55.623724,
+          "lng": 12.575546,
+          "distance": 222,
+          "agodaId": "87604553",
+          "tripId": "133327526"
+        },
+        {
+          "name": "Four Points Flex by Sheraton Copenhagen Arena",
+          "lat": 55.625586,
+          "lng": 12.577203,
+          "distance": 224,
+          "agodaId": "12440839",
+          "tripId": "56470963"
+        },
+        {
+          "name": "Crowne Plaza COPENHAGEN TOWERS by IHG",
+          "localName": "Crowne Plaza Copenhagen Towers",
+          "lat": 55.626945,
+          "lng": 12.577179,
+          "distance": 279,
+          "agodaId": "168513",
+          "tripId": "2196151"
+        },
+        {
+          "name": "Cabinn Apartments",
+          "lat": 55.630861,
+          "lng": 12.573804,
+          "distance": 606,
+          "agodaId": "6720934",
+          "tripId": "31486574"
+        },
+        {
+          "name": "Cabinn Metro Hotel",
+          "localName": "Cabinn Metro",
+          "lat": 55.631083,
+          "lng": 12.572906,
+          "distance": 632,
+          "agodaId": "8947743",
+          "tripId": "2134936"
+        }
+      ]
+    },
+    "unipol-dome": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "B&B Quercia Residence",
+          "lat": 45.444631,
+          "lng": 9.261428,
+          "distance": 610,
+          "agodaId": "862260"
+        },
+        {
+          "name": "Novotel Milano Linate Aeroporto",
+          "lat": 45.448261,
+          "lng": 9.257484,
+          "distance": 791,
+          "agodaId": "78204",
+          "tripId": "2196486"
+        }
+      ]
+    },
+    "palau-sant-jordi": {
+      "fetchedAt": "2026-11-09",
+      "hotels": []
+    },
+    "accor-arena": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "Novotel Paris Centre Bercy",
+          "localName": "Novotel Paris Bercy",
+          "lat": 48.838801,
+          "lng": 2.380457,
+          "distance": 124,
+          "agodaId": "78200",
+          "tripId": "1565582"
+        },
+        {
+          "name": "Ibis Styles Paris Bercy",
+          "localName": "Hôtel Ibis Styles Paris-Bercy",
+          "lat": 48.838402,
+          "lng": 2.381133,
+          "distance": 176,
+          "agodaId": "42992",
+          "tripId": "1565568"
+        },
+        {
+          "name": "Hôtel Claret Bercy",
+          "localName": "Hôtel Claret",
+          "lat": 48.839841,
+          "lng": 2.381516,
+          "distance": 237,
+          "agodaId": "3665076",
+          "tripId": "2381999"
+        },
+        {
+          "name": "Residhome Paris Gare de Lyon - Jacqueline de Romilly",
+          "localName": "Residhome Paris Gare de Lyon - Jacqueline De Romilly",
+          "lat": 48.842081,
+          "lng": 2.384005,
+          "distance": 536,
+          "agodaId": "2273662",
+          "tripId": "10577844"
+        }
+      ]
+    },
+    "la-defense-arena": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "OKKO HOTELS Paris la Défense",
+          "localName": "OKKO Hotels Paris La Défense",
+          "lat": 48.896859,
+          "lng": 2.230581,
+          "distance": 148,
+          "agodaId": "56089631",
+          "tripId": "92777758"
+        },
+        {
+          "name": "citizenM Paris la Défense",
+          "localName": "Hôtel CitizenM",
+          "lat": 48.893961,
+          "lng": 2.229992,
+          "distance": 192,
+          "agodaId": "80962867",
+          "tripId": "9148719"
+        },
+        {
+          "name": "Renaissance Paris la Defense Hotel",
+          "localName": "Hôtel Renaissance Paris La Defense",
+          "lat": 48.892598,
+          "lng": 2.232845,
+          "distance": 414,
+          "agodaId": "114738",
+          "tripId": "1490108"
+        }
+      ]
+    },
+    "jakarta-international-stadium": {
+      "fetchedAt": "2026-11-09",
+      "hotels": []
+    },
+    "spark-arena": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "The Hotel Britomart Auckland",
+          "localName": "Adina Apartment Hotel Auckland Britomart",
+          "lat": -36.846626,
+          "lng": 174.774589,
+          "distance": 221,
+          "agodaId": "10681769",
+          "tripId": "53229524"
+        },
+        {
+          "name": "Imagine Beach Road",
+          "localName": "Beach Road Hostel",
+          "lat": -36.84828,
+          "lng": 174.773947,
+          "distance": 296,
+          "agodaId": "41452194",
+          "tripId": "77205594"
+        },
+        {
+          "name": "Oaks Auckland Hotel",
+          "localName": "OAKS.",
+          "lat": -36.846787,
+          "lng": 174.773607,
+          "distance": 303,
+          "agodaId": "178161",
+          "tripId": "2195436"
+        },
+        {
+          "name": "Pullman Auckland Hotel & Apartments",
+          "lat": -36.848019,
+          "lng": 174.77049,
+          "distance": 585,
+          "agodaId": "6982",
+          "tripId": "2196264"
+        },
+        {
+          "name": "SO/ Auckland",
+          "lat": -36.845503,
+          "lng": 174.768593,
+          "distance": 769,
+          "agodaId": "5030511",
+          "tripId": "21907682"
+        }
+      ]
+    },
+    "asiaworld-arena": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "Hong Kong SkyCity Marriott Hotel",
+          "lat": 22.319329,
+          "lng": 113.94364,
+          "distance": 225,
+          "agodaId": "148821",
+          "tripId": "344959"
+        },
+        {
+          "name": "Regala Skycity Hotel by Regal Hotels",
+          "localName": "麗豪航天城酒店 Regala Skycity Hotel",
+          "lat": 22.319094,
+          "lng": 113.942065,
+          "distance": 257,
+          "agodaId": "32199969",
+          "tripId": "92764015"
+        },
+        {
+          "name": "Regal Airport Hotel",
+          "lat": 22.31869,
+          "lng": 113.934322,
+          "distance": 934,
+          "agodaId": "5282",
+          "tripId": "436519"
+        }
+      ]
+    },
+    "ice-bsd": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "Hotel Santika Premiere Ice - BSD City",
+          "localName": "Hotel Santika Premiere",
+          "lat": -6.298749,
+          "lng": 106.636391,
+          "distance": 216,
+          "agodaId": "1145644",
+          "tripId": "5944837"
+        },
+        {
+          "name": "Joylive BSD City",
+          "localName": "Joylive",
+          "lat": -6.303192,
+          "lng": 106.638246,
+          "distance": 335,
+          "agodaId": "28035440",
+          "tripId": "81294785"
+        },
+        {
+          "name": "Maxley Suites Dormitory C1",
+          "localName": "Maxley Suites",
+          "lat": -6.302711,
+          "lng": 106.63885,
+          "distance": 338,
+          "agodaId": "50755987",
+          "tripId": "129693653"
+        },
+        {
+          "name": "Mercure Tangerang BSD City",
+          "localName": "Mercure Hotel",
+          "lat": -6.302235,
+          "lng": 106.645167,
+          "distance": 966,
+          "agodaId": "12515800",
+          "tripId": "54612694"
+        },
+        {
+          "name": "Novotel Tangerang BSD City",
+          "localName": "Novotel",
+          "lat": -6.300639,
+          "lng": 106.645352,
+          "distance": 970,
+          "agodaId": "83294648",
+          "tripId": "133060720"
+        }
+      ]
+    },
+    "yoyogi-national-gymnasium": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "Shibuya Tobu Hotel",
+          "localName": "渋谷東武ホテル (Tobu Hotel)",
+          "lat": 35.663186,
+          "lng": 139.698986,
+          "distance": 436,
+          "agodaId": "59215",
+          "tripId": "686310"
+        },
+        {
+          "name": "The Millennials Shibuya",
+          "localName": "The Millennials 渋谷 (ザ・ミレニアルズ渋谷）",
+          "lat": 35.662236,
+          "lng": 139.699795,
+          "distance": 536,
+          "agodaId": "4128776",
+          "tripId": "15221939"
+        },
+        {
+          "name": "Shibuya Tokyu Rei Hotel",
+          "localName": "渋谷東急REIホテル",
+          "lat": 35.660113,
+          "lng": 139.702121,
+          "distance": 801,
+          "agodaId": "2312",
+          "tripId": "759797"
+        },
+        {
+          "name": "EN HOTEL Shibuya",
+          "localName": "エンホテル渋谷",
+          "lat": 35.659833,
+          "lng": 139.695436,
+          "distance": 894,
+          "agodaId": "390255",
+          "tripId": "688139"
+        }
+      ]
+    },
+    "glion-arena-kobe": {
+      "fetchedAt": "2026-11-09",
+      "hotels": [
+        {
+          "name": "Kobe Minato Onsen Ren",
+          "localName": "神戸みなと温泉 蓮",
+          "lat": 34.681705,
+          "lng": 135.193527,
+          "distance": 233,
+          "tripId": "4396489"
+        },
+        {
+          "name": "Kobe Meriken Park Oriental Hotel",
+          "localName": "神戸メリケンパークオリエンタルホテル",
+          "lat": 34.679655,
+          "lng": 135.188884,
+          "distance": 694,
+          "agodaId": "59169",
+          "tripId": "1465318"
+        },
+        {
+          "name": "THE ORIENT",
+          "localName": "オリエンタルホテル",
+          "lat": 34.6877,
+          "lng": 135.192984,
+          "distance": 728,
+          "agodaId": "246290",
+          "tripId": "705902"
+        },
+        {
+          "name": "Hotel Okura Kobe",
+          "localName": "ホテルオークラ神戸",
+          "lat": 34.683738,
+          "lng": 135.188218,
+          "distance": 754,
+          "agodaId": "194627",
+          "tripId": "704990"
+        },
+        {
+          "name": "Hotel La Suite Kobe Harborland",
+          "lat": 34.682643,
+          "lng": 135.184085,
+          "distance": 1101,
+          "agodaId": "271648",
+          "tripId": "1490135"
+        }
+      ]
+    }
+  }
+}

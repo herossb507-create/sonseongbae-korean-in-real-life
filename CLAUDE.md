@@ -595,6 +595,7 @@ export function speakKorean(text: string, options?: { rate?: number; pitch?: num
 **숙소·식당 (2026-10-21)**: 공연 상세의 "Traveling to this show?" (`TravelSection.tsx`, `src/lib/concerts/hotels.ts`).
 - 숙소: Booking.com(공연장명 검색), Agoda(`poi=` 또는 `city=`), Trip.com(랜드마크 `optionId` 또는 `cityId`) — 공연일 체크인, 다음날 체크아웃. ID는 `venues.json`의 `externalIds.agoda/tripcom`, `npm run concerts:hotels`로 채움(새 공연장 추가 시 실행, 잘못된 매칭은 스크립트의 `OVERRIDES`).
 - 제휴: `NEXT_PUBLIC_AFFILIATE_{BOOKING,AGODA,TRIPCOM}_PARAMS`에 쿼리 파라미터("aid=…", "cid=…", "Allianceid=…&SID=…"). 설정 시 `rel="sponsored"` + 고지 문구.
+- 숙소별 예약 버튼: 공연장 2km 안 호텔(OSM) 중 Agoda·Trip.com에 있는 가까운 5곳 → `data/concerts/stays.json` (`npm run concerts:stays`, 새 공연장 추가 시 실행). Agoda는 `partners/partnersearch.aspx?hid=`, Trip.com은 `hotels/detail/?hotelId=` 링크. 스크립트 공용 모듈: `booking-sites.mts`(두 사이트 자동완성), `osm.mts`(Overpass).
 - 주변 식당·카페·숙소: OpenStreetMap Overpass → `data/concerts/nearby.json` (`npm run concerts:nearby`, 반경 1km). 평점 없음, Google 지도 검색 링크. ODbL 출처 표기 필수.
 
 ---

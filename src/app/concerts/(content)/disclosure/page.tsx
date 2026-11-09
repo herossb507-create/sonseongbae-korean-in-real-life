@@ -35,8 +35,9 @@ export default function DisclosurePage() {
       <h2 className="pt-2 text-lg font-semibold text-[#1E1225]">Hotels and places to eat</h2>
       <p>
         The &quot;Traveling to this show?&quot; box on each concert page links to hotel searches near the venue on
-        Booking.com, Agoda and Trip.com, with the show date filled in. These can be affiliate links. We show the same
-        three sites for every show and don&apos;t rank individual hotels.
+        Booking.com, Agoda and Trip.com, with the show date filled in, and to the hotels closest to the venue on Agoda
+        and Trip.com. These can be affiliate links. Hotels are listed by distance from the venue only; nobody pays to
+        be listed and we don&apos;t rank them.
       </p>
       <p>
         The lists of nearby restaurants, cafés and hotels come from OpenStreetMap, sorted by distance. Nobody pays to be

@@ -14,7 +14,8 @@
     "concerts:extract": "node scripts/concerts/extract.mts",
     "concerts:apply": "node scripts/concerts/apply.mts",
     "concerts:hotels": "node scripts/concerts/hotels.mts",
-    "concerts:nearby": "node scripts/concerts/nearby.mts"
+    "concerts:nearby": "node scripts/concerts/nearby.mts",
+    "concerts:stays": "node scripts/concerts/stays.mts"
   },
   "dependencies": {
     "@ai-sdk/openai": "^3.0.41",

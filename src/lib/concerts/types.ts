@@ -98,3 +98,18 @@ export interface NearbyFile {
   attribution: string;
   venues: Record<string, { fetchedAt: string; radius: number; food: NearbyPlace[]; hotels: NearbyPlace[] }>;
 }
+
+// data/concerts/stays.json — hotels near each venue with their Agoda / Trip.com IDs (scripts/concerts/stays.mts)
+export interface StayHotel {
+  name: string; // English name where known
+  localName?: string;
+  lat: number;
+  lng: number;
+  distance: number; // metres from the venue
+  agodaId?: string;
+  tripId?: string;
+}
+
+export interface StaysFile {
+  venues: Record<string, { fetchedAt: string; hotels: StayHotel[] }>;
+}

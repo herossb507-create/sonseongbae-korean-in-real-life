@@ -80,3 +80,23 @@ export function hotelLinks(venue: Venue, date: string): HotelLink[] {
 
   return links;
 }
+
+// ── One hotel ────────────────────────────────────────────────────────────────
+
+/** Booking links for one hotel near the venue (from stays.json), for the night of the show. */
+export function stayLinks(hotel: { agodaId?: string; tripId?: string }, date: string): HotelLink[] {
+  const checkout = nextDay(date);
+  const links: HotelLink[] = [];
+  if (hotel.agodaId) {
+    // Agoda's partner deep link: opens the search with this hotel pinned on top.
+    const url = new URL("https://www.agoda.com/partners/partnersearch.aspx");
+    url.search = new URLSearchParams({ pcs: "1", hid: hotel.agodaId, checkin: date, checkout, adults: "2", rooms: "1" }).toString();
+    links.push(link("Agoda", url, AFFILIATE.agoda, "venue"));
+  }
+  if (hotel.tripId) {
+    const url = new URL("https://www.trip.com/hotels/detail/");
+    url.search = new URLSearchParams({ hotelId: hotel.tripId, checkIn: date, checkOut: checkout, adult: "2", crn: "1" }).toString();
+    links.push(link("Trip.com", url, AFFILIATE.tripcom, "venue"));
+  }
+  return links;
+}
