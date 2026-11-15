@@ -2046,6 +2046,30 @@
     "lastSeenAt": "2026-10-24"
   },
   {
+    "id": "stray-kids-impact-arena-2027-01-16",
+    "artistId": "stray-kids",
+    "tour": "RUN IT World Tour",
+    "date": "2027-01-16",
+    "venueId": "impact-arena",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "news",
+        "url": "https://consequence.net/2026/11/stray-kids-2027-world-tour/",
+        "fetchedAt": "2026-11-15"
+      },
+      {
+        "source": "news",
+        "url": "https://www.bandwagon.asia/articles/stray-kids-to-hit-singapore-bangkok-hong-kong-tokyo-seoul-more-as-part-of-run-it-world-tour",
+        "fetchedAt": "2026-11-15"
+      }
+    ],
+    "verification": "unverified",
+    "updatedAt": "2026-11-15",
+    "lastSeenAt": "2026-11-15"
+  },
+  {
     "id": "boynextdoor-asiaworld-arena-2027-01-17",
     "artistId": "boynextdoor",
     "tour": "KNOCK ON Vol.2 Tour",
@@ -2063,6 +2087,30 @@
     "verification": "verified",
     "updatedAt": "2026-10-24",
     "lastSeenAt": "2026-10-24"
+  },
+  {
+    "id": "stray-kids-impact-arena-2027-01-17",
+    "artistId": "stray-kids",
+    "tour": "RUN IT World Tour",
+    "date": "2027-01-17",
+    "venueId": "impact-arena",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "news",
+        "url": "https://consequence.net/2026/11/stray-kids-2027-world-tour/",
+        "fetchedAt": "2026-11-15"
+      },
+      {
+        "source": "news",
+        "url": "https://www.bandwagon.asia/articles/stray-kids-to-hit-singapore-bangkok-hong-kong-tokyo-seoul-more-as-part-of-run-it-world-tour",
+        "fetchedAt": "2026-11-15"
+      }
+    ],
+    "verification": "unverified",
+    "updatedAt": "2026-11-15",
+    "lastSeenAt": "2026-11-15"
   },
   {
     "id": "aespa-ziggo-dome-2027-01-19",
@@ -2901,5 +2949,494 @@
     "verification": "verified",
     "updatedAt": "2026-10-21",
     "lastSeenAt": "2026-10-21"
+  },
+  {
+    "id": "stray-kids-nissan-stadium-2027-04-24",
+    "artistId": "stray-kids",
+    "tour": "RUN IT World Tour",
+    "date": "2027-04-24",
+    "time": "17:30",
+    "venueId": "nissan-stadium",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://www.sonymusic.co.jp/artist/StrayKids/info/588400",
+        "fetchedAt": "2026-11-15"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-11-15",
+    "lastSeenAt": "2026-11-15"
+  },
+  {
+    "id": "stray-kids-nissan-stadium-2027-04-25",
+    "artistId": "stray-kids",
+    "tour": "RUN IT World Tour",
+    "date": "2027-04-25",
+    "time": "17:00",
+    "venueId": "nissan-stadium",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://www.sonymusic.co.jp/artist/StrayKids/info/588400",
+        "fetchedAt": "2026-11-15"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-11-15",
+    "lastSeenAt": "2026-11-15"
+  },
+  {
+    "id": "stray-kids-yanmar-stadium-nagai-2027-05-04",
+    "artistId": "stray-kids",
+    "tour": "RUN IT World Tour",
+    "date": "2027-05-04",
+    "time": "17:00",
+    "venueId": "yanmar-stadium-nagai",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://www.sonymusic.co.jp/artist/StrayKids/info/588400",
+        "fetchedAt": "2026-11-15"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-11-15",
+    "lastSeenAt": "2026-11-15"
+  },
+  {
+    "id": "stray-kids-yanmar-stadium-nagai-2027-05-05",
+    "artistId": "stray-kids",
+    "tour": "RUN IT World Tour",
+    "date": "2027-05-05",
+    "time": "16:30",
+    "venueId": "yanmar-stadium-nagai",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://www.sonymusic.co.jp/artist/StrayKids/info/588400",
+        "fetchedAt": "2026-11-15"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-11-15",
+    "lastSeenAt": "2026-11-15"
+  },
+  {
+    "id": "stray-kids-lumen-field-2027-05-16",
+    "artistId": "stray-kids",
+    "tour": "RUN IT World Tour",
+    "date": "2027-05-16",
+    "venueId": "lumen-field",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://blog.ticketmaster.com/stray-kids-2027-tour-dates/",
+        "fetchedAt": "2026-11-15"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-11-15",
+    "lastSeenAt": "2026-11-15"
+  },
+  {
+    "id": "stray-kids-bc-place-2027-05-19",
+    "artistId": "stray-kids",
+    "tour": "RUN IT World Tour",
+    "date": "2027-05-19",
+    "venueId": "bc-place",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://blog.ticketmaster.com/stray-kids-2027-tour-dates/",
+        "fetchedAt": "2026-11-15"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-11-15",
+    "lastSeenAt": "2026-11-15"
+  },
+  {
+    "id": "stray-kids-levis-stadium-2027-05-22",
+    "artistId": "stray-kids",
+    "tour": "RUN IT World Tour",
+    "date": "2027-05-22",
+    "venueId": "levis-stadium",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://blog.ticketmaster.com/stray-kids-2027-tour-dates/",
+        "fetchedAt": "2026-11-15"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-11-15",
+    "lastSeenAt": "2026-11-15"
+  },
+  {
+    "id": "stray-kids-petco-park-2027-05-25",
+    "artistId": "stray-kids",
+    "tour": "RUN IT World Tour",
+    "date": "2027-05-25",
+    "venueId": "petco-park",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://blog.ticketmaster.com/stray-kids-2027-tour-dates/",
+        "fetchedAt": "2026-11-15"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-11-15",
+    "lastSeenAt": "2026-11-15"
+  },
+  {
+    "id": "stray-kids-sofi-stadium-2027-05-29",
+    "artistId": "stray-kids",
+    "tour": "RUN IT World Tour",
+    "date": "2027-05-29",
+    "venueId": "sofi-stadium",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://blog.ticketmaster.com/stray-kids-2027-tour-dates/",
+        "fetchedAt": "2026-11-15"
+      },
+      {
+        "source": "official",
+        "url": "https://www.sofistadium.com/news/detail/stray-kids-announce-2027-world-tour-run-it-across-north-america-europe-and-the-uk-tour-stops-at-sofi-stadium-on-saturday-may-29",
+        "fetchedAt": "2026-11-15"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-11-15",
+    "lastSeenAt": "2026-11-15"
+  },
+  {
+    "id": "stray-kids-att-stadium-2027-06-03",
+    "artistId": "stray-kids",
+    "tour": "RUN IT World Tour",
+    "date": "2027-06-03",
+    "venueId": "att-stadium",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://blog.ticketmaster.com/stray-kids-2027-tour-dates/",
+        "fetchedAt": "2026-11-15"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-11-15",
+    "lastSeenAt": "2026-11-15"
+  },
+  {
+    "id": "stray-kids-reliant-stadium-2027-06-05",
+    "artistId": "stray-kids",
+    "tour": "RUN IT World Tour",
+    "date": "2027-06-05",
+    "venueId": "reliant-stadium",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://blog.ticketmaster.com/stray-kids-2027-tour-dates/",
+        "fetchedAt": "2026-11-15"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-11-15",
+    "lastSeenAt": "2026-11-15"
+  },
+  {
+    "id": "stray-kids-mercedes-benz-stadium-2027-06-08",
+    "artistId": "stray-kids",
+    "tour": "RUN IT World Tour",
+    "date": "2027-06-08",
+    "venueId": "mercedes-benz-stadium",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://blog.ticketmaster.com/stray-kids-2027-tour-dates/",
+        "fetchedAt": "2026-11-15"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-11-15",
+    "lastSeenAt": "2026-11-15"
+  },
+  {
+    "id": "stray-kids-hard-rock-stadium-2027-06-11",
+    "artistId": "stray-kids",
+    "tour": "RUN IT World Tour",
+    "date": "2027-06-11",
+    "venueId": "hard-rock-stadium",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://blog.ticketmaster.com/stray-kids-2027-tour-dates/",
+        "fetchedAt": "2026-11-15"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-11-15",
+    "lastSeenAt": "2026-11-15"
+  },
+  {
+    "id": "stray-kids-camping-world-stadium-2027-06-14",
+    "artistId": "stray-kids",
+    "tour": "RUN IT World Tour",
+    "date": "2027-06-14",
+    "venueId": "camping-world-stadium",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://blog.ticketmaster.com/stray-kids-2027-tour-dates/",
+        "fetchedAt": "2026-11-15"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-11-15",
+    "lastSeenAt": "2026-11-15"
+  },
+  {
+    "id": "stray-kids-soldier-field-2027-06-18",
+    "artistId": "stray-kids",
+    "tour": "RUN IT World Tour",
+    "date": "2027-06-18",
+    "venueId": "soldier-field",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://blog.ticketmaster.com/stray-kids-2027-tour-dates/",
+        "fetchedAt": "2026-11-15"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-11-15",
+    "lastSeenAt": "2026-11-15"
+  },
+  {
+    "id": "stray-kids-mt-bank-stadium-2027-06-22",
+    "artistId": "stray-kids",
+    "tour": "RUN IT World Tour",
+    "date": "2027-06-22",
+    "venueId": "mt-bank-stadium",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://blog.ticketmaster.com/stray-kids-2027-tour-dates/",
+        "fetchedAt": "2026-11-15"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-11-15",
+    "lastSeenAt": "2026-11-15"
+  },
+  {
+    "id": "stray-kids-rogers-stadium-2027-06-25",
+    "artistId": "stray-kids",
+    "tour": "RUN IT World Tour",
+    "date": "2027-06-25",
+    "venueId": "rogers-stadium",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://blog.ticketmaster.com/stray-kids-2027-tour-dates/",
+        "fetchedAt": "2026-11-15"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-11-15",
+    "lastSeenAt": "2026-11-15"
+  },
+  {
+    "id": "stray-kids-metlife-stadium-2027-06-29",
+    "artistId": "stray-kids",
+    "tour": "RUN IT World Tour",
+    "date": "2027-06-29",
+    "venueId": "metlife-stadium",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://blog.ticketmaster.com/stray-kids-2027-tour-dates/",
+        "fetchedAt": "2026-11-15"
+      },
+      {
+        "source": "official",
+        "url": "https://www.metlifestadium.com/news/detail/stray-kids-announce-2027-world-tour-run-it-at-metlife-stadium-on-june-29-2027",
+        "fetchedAt": "2026-11-15"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-11-15",
+    "lastSeenAt": "2026-11-15"
+  },
+  {
+    "id": "stray-kids-la-defense-arena-2027-07-09",
+    "artistId": "stray-kids",
+    "tour": "RUN IT World Tour",
+    "date": "2027-07-09",
+    "venueId": "la-defense-arena",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://blog.ticketmaster.com/stray-kids-2027-tour-dates/",
+        "fetchedAt": "2026-11-15"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-11-15",
+    "lastSeenAt": "2026-11-15"
+  },
+  {
+    "id": "stray-kids-tottenham-hotspur-stadium-2027-07-13",
+    "artistId": "stray-kids",
+    "tour": "RUN IT World Tour",
+    "date": "2027-07-13",
+    "venueId": "tottenham-hotspur-stadium",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://blog.ticketmaster.com/stray-kids-2027-tour-dates/",
+        "fetchedAt": "2026-11-15"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-11-15",
+    "lastSeenAt": "2026-11-15"
+  },
+  {
+    "id": "stray-kids-allianz-arena-2027-07-17",
+    "artistId": "stray-kids",
+    "tour": "RUN IT World Tour",
+    "date": "2027-07-17",
+    "venueId": "allianz-arena",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://blog.ticketmaster.com/stray-kids-2027-tour-dates/",
+        "fetchedAt": "2026-11-15"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-11-15",
+    "lastSeenAt": "2026-11-15"
+  },
+  {
+    "id": "stray-kids-ernst-happel-stadion-2027-07-21",
+    "artistId": "stray-kids",
+    "tour": "RUN IT World Tour",
+    "date": "2027-07-21",
+    "venueId": "ernst-happel-stadion",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://blog.ticketmaster.com/stray-kids-2027-tour-dates/",
+        "fetchedAt": "2026-11-15"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-11-15",
+    "lastSeenAt": "2026-11-15"
+  },
+  {
+    "id": "stray-kids-estadi-olimpic-barcelona-2027-07-24",
+    "artistId": "stray-kids",
+    "tour": "RUN IT World Tour",
+    "date": "2027-07-24",
+    "venueId": "estadi-olimpic-barcelona",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://blog.ticketmaster.com/stray-kids-2027-tour-dates/",
+        "fetchedAt": "2026-11-15"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-11-15",
+    "lastSeenAt": "2026-11-15"
+  },
+  {
+    "id": "stray-kids-gelredome-2027-07-27",
+    "artistId": "stray-kids",
+    "tour": "RUN IT World Tour",
+    "date": "2027-07-27",
+    "venueId": "gelredome",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://blog.ticketmaster.com/stray-kids-2027-tour-dates/",
+        "fetchedAt": "2026-11-15"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-11-15",
+    "lastSeenAt": "2026-11-15"
+  },
+  {
+    "id": "stray-kids-san-siro-2027-07-31",
+    "artistId": "stray-kids",
+    "tour": "RUN IT World Tour",
+    "date": "2027-07-31",
+    "venueId": "san-siro",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://blog.ticketmaster.com/stray-kids-2027-tour-dates/",
+        "fetchedAt": "2026-11-15"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-11-15",
+    "lastSeenAt": "2026-11-15"
   }
 ]

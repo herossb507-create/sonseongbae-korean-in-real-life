@@ -1606,6 +1606,602 @@
           "tripId": "1490135"
         }
       ]
+    },
+    "nissan-stadium": {
+      "fetchedAt": "2026-11-15",
+      "hotels": [
+        {
+          "name": "Lagunasuite Shinyokohama",
+          "localName": "ラグナスイート ホテル＆ウェディング",
+          "lat": 35.508425,
+          "lng": 139.613971,
+          "distance": 707,
+          "tripId": "6447877"
+        },
+        {
+          "name": "HOTEL LiVEMAX",
+          "localName": "ホテルリブマックス新横浜",
+          "lat": 35.510114,
+          "lng": 139.614296,
+          "distance": 715,
+          "tripId": "62612762"
+        },
+        {
+          "name": "Shinyokohama SK Hotel",
+          "localName": "Sin-yokohama SK hotel",
+          "lat": 35.50719,
+          "lng": 139.613549,
+          "distance": 719,
+          "agodaId": "17243823",
+          "tripId": "31486754"
+        }
+      ]
+    },
+    "yanmar-stadium-nagai": {
+      "fetchedAt": "2026-11-15",
+      "hotels": [
+        {
+          "name": "大阪市立長居ユースホステル",
+          "localName": "ユースホステル",
+          "lat": 34.614568,
+          "lng": 135.519541,
+          "distance": 109,
+          "tripId": "1689341"
+        },
+        {
+          "name": "R HOTEL RE. OSAKA NAGAI PARK",
+          "localName": "長居パークホテル",
+          "lat": 34.612127,
+          "lng": 135.512915,
+          "distance": 556,
+          "agodaId": "79781962",
+          "tripId": "133769148"
+        }
+      ]
+    },
+    "impact-arena": {
+      "fetchedAt": "2026-11-15",
+      "hotels": [
+        {
+          "name": "Novotel Bangkok Impact",
+          "localName": "Novotel Impact",
+          "lat": 13.915534,
+          "lng": 100.548395,
+          "distance": 437,
+          "agodaId": "255165",
+          "tripId": "1497044"
+        },
+        {
+          "name": "Ibis Bangkok Impact",
+          "lat": 13.916152,
+          "lng": 100.552119,
+          "distance": 646,
+          "agodaId": "1639466",
+          "tripId": "7631211"
+        }
+      ]
+    },
+    "lumen-field": {
+      "fetchedAt": "2026-11-15",
+      "hotels": [
+        {
+          "name": "Embassy Suites by Hilton Seattle Downtown Pioneer Square",
+          "localName": "Embassy Suites - Seattle Downtown Pioneer Square",
+          "lat": 47.597868,
+          "lng": -122.330946,
+          "distance": 290,
+          "agodaId": "4897933",
+          "tripId": "13660926"
+        },
+        {
+          "name": "Silver Cloud Hotel - Seattle Stadium",
+          "localName": "Silver Cloud Hotel",
+          "lat": 47.592716,
+          "lng": -122.333697,
+          "distance": 328,
+          "agodaId": "2456038",
+          "tripId": "8139233"
+        },
+        {
+          "name": "Populus Seattle",
+          "lat": 47.598417,
+          "lng": -122.333824,
+          "distance": 385,
+          "agodaId": "71908526",
+          "tripId": "126861005"
+        },
+        {
+          "name": "Best Western Plus Pioneer Square Hotel Downtown",
+          "localName": "Best Western Pioneer Square Hotel",
+          "lat": 47.601616,
+          "lng": -122.335257,
+          "distance": 754,
+          "agodaId": "202498",
+          "tripId": "2281263"
+        },
+        {
+          "name": "Lotte Hotel Seattle",
+          "lat": 47.605371,
+          "lng": -122.33096,
+          "distance": 1121,
+          "agodaId": "16569901",
+          "tripId": "68196423"
+        }
+      ]
+    },
+    "bc-place": {
+      "fetchedAt": "2026-11-15",
+      "hotels": [
+        {
+          "name": "JW Marriott Parq Vancouver",
+          "lat": 49.27539,
+          "lng": -123.112766,
+          "distance": 156,
+          "agodaId": "4593916",
+          "tripId": "10888912"
+        },
+        {
+          "name": "the DOUGLAS, Autograph Collection",
+          "localName": "The Douglas, Autograph Collection",
+          "lat": 49.275714,
+          "lng": -123.113942,
+          "distance": 179,
+          "agodaId": "4594056",
+          "tripId": "10889267"
+        },
+        {
+          "name": "Georgian Court Hotel, WorldHotels Elite",
+          "localName": "Georgian Court Hotel",
+          "lat": 49.278081,
+          "lng": -123.113659,
+          "distance": 195,
+          "agodaId": "2314801",
+          "tripId": "2223070"
+        },
+        {
+          "name": "Rosewood Hotel Georgia",
+          "lat": 49.283465,
+          "lng": -123.119031,
+          "distance": 909,
+          "agodaId": "6949999",
+          "tripId": "2020878"
+        },
+        {
+          "name": "Wedgewood Hotel & Spa - Relais & Chateaux",
+          "lat": 49.282234,
+          "lng": -123.122663,
+          "distance": 988,
+          "tripId": "2195205"
+        }
+      ]
+    },
+    "levis-stadium": {
+      "fetchedAt": "2026-11-15",
+      "hotels": [
+        {
+          "name": "Hilton Santa Clara",
+          "lat": 37.402526,
+          "lng": -121.976699,
+          "distance": 629,
+          "agodaId": "79849",
+          "tripId": "2193251"
+        },
+        {
+          "name": "Hyatt Regency Santa Clara",
+          "lat": 37.405062,
+          "lng": -121.976429,
+          "distance": 645,
+          "agodaId": "2459014",
+          "tripId": "4627927"
+        }
+      ]
+    },
+    "petco-park": {
+      "fetchedAt": "2026-11-15",
+      "hotels": [
+        {
+          "name": "Omni San Diego Hotel",
+          "lat": 32.706864,
+          "lng": -117.158767,
+          "distance": 179,
+          "tripId": "2564036"
+        },
+        {
+          "name": "San Diego Marriott Gaslamp Quarter",
+          "lat": 32.708591,
+          "lng": -117.15873,
+          "distance": 231,
+          "agodaId": "2455005",
+          "tripId": "2216357"
+        },
+        {
+          "name": "Hard Rock Hotel San Diego",
+          "lat": 32.707855,
+          "lng": -117.159568,
+          "distance": 260,
+          "agodaId": "2449172",
+          "tripId": "2948088"
+        },
+        {
+          "name": "Pendry San Diego",
+          "localName": "Residence Inn San Diego Downtown/Gaslamp Quarter",
+          "lat": 32.709078,
+          "lng": -117.159493,
+          "distance": 320,
+          "agodaId": "6950094",
+          "tripId": "9106105"
+        },
+        {
+          "name": "Margaritaville Hotel San Diego Gaslamp Quarter",
+          "lat": 32.709743,
+          "lng": -117.158746,
+          "distance": 331,
+          "agodaId": "441617",
+          "tripId": "2845520"
+        }
+      ]
+    },
+    "sofi-stadium": {
+      "fetchedAt": "2026-11-15",
+      "hotels": [
+        {
+          "name": "The Anthem Los Angeles Stadium District, Tapestry by Hilton",
+          "localName": "Lüm Hotel",
+          "lat": 33.944934,
+          "lng": -118.342033,
+          "distance": 982,
+          "agodaId": "61049002",
+          "tripId": "83368988"
+        },
+        {
+          "name": "Holly Crest Hotel - Los Angeles, LAX Airport",
+          "localName": "Holly Crest Hotel",
+          "lat": 33.945795,
+          "lng": -118.344986,
+          "distance": 1010,
+          "agodaId": "31449872",
+          "tripId": "15942333"
+        }
+      ]
+    },
+    "att-stadium": {
+      "fetchedAt": "2026-11-15",
+      "hotels": [
+        {
+          "name": "Motel 6 Arlington, TX  Entertainment District",
+          "localName": "Motel 6 Arlington TX Entertainment District",
+          "lat": 32.748788,
+          "lng": -97.097941,
+          "distance": 491,
+          "agodaId": "67663395",
+          "tripId": "3040760"
+        },
+        {
+          "name": "Live! by Loews - Arlington, TX",
+          "lat": 32.7495,
+          "lng": -97.0857,
+          "distance": 687,
+          "agodaId": "23693436",
+          "tripId": "34068342"
+        },
+        {
+          "name": "Loews Arlington Hotel",
+          "localName": "Loews Arlington Hotel and Convention Center",
+          "lat": 32.750846,
+          "lng": -97.085194,
+          "distance": 783,
+          "agodaId": "37772634",
+          "tripId": "115927347"
+        }
+      ]
+    },
+    "reliant-stadium": {
+      "fetchedAt": "2026-11-15",
+      "hotels": [
+        {
+          "name": "Wingate Houston Near NRG Park/Medical Center",
+          "lat": 29.680901,
+          "lng": -95.412806,
+          "distance": 485,
+          "agodaId": "79046537",
+          "tripId": "73565773"
+        },
+        {
+          "name": "Extended Stay America Suites - Houston - Med Ctr - NRG Park - Kirby",
+          "localName": "Extended Stay America - Houston - Med. Ctr. - NRG Park - Kirby",
+          "lat": 29.691161,
+          "lng": -95.411704,
+          "distance": 702,
+          "agodaId": "2453099",
+          "tripId": "3726865"
+        },
+        {
+          "name": "Wyndham Houston Near NRG Park/Medical Center",
+          "localName": "Wyndham",
+          "lat": 29.678806,
+          "lng": -95.413433,
+          "distance": 724,
+          "agodaId": "23228591",
+          "tripId": "2196658"
+        },
+        {
+          "name": "3 BR Condo near Reliant/NRG Stadium",
+          "lat": 29.680305,
+          "lng": -95.41812,
+          "distance": 872,
+          "tripId": "136337933"
+        }
+      ]
+    },
+    "mercedes-benz-stadium": {
+      "fetchedAt": "2026-11-15",
+      "hotels": [
+        {
+          "name": "Hotel Phoenix Atlanta",
+          "localName": "Hotel Phoenix",
+          "lat": 33.755096,
+          "lng": -84.397956,
+          "distance": 265,
+          "agodaId": "75627554",
+          "tripId": "127010168"
+        },
+        {
+          "name": "Reverb by Hard Rock Downtown Atlanta",
+          "localName": "REVERB by Hard Rock Downtown Atlanta",
+          "lat": 33.753171,
+          "lng": -84.399322,
+          "distance": 283,
+          "agodaId": "37708721",
+          "tripId": "61777629"
+        },
+        {
+          "name": "Signia by Hilton Atlanta Georgia World Congress Center",
+          "lat": 33.758857,
+          "lng": -84.401166,
+          "distance": 386,
+          "agodaId": "47843547",
+          "tripId": "92026771"
+        },
+        {
+          "name": "Omni Atlanta Hotel at Centennial Park",
+          "lat": 33.758783,
+          "lng": -84.394789,
+          "distance": 671,
+          "agodaId": "2411232",
+          "tripId": "2917419"
+        },
+        {
+          "name": "Glenn Hotel, Autograph Collection",
+          "lat": 33.757015,
+          "lng": -84.392996,
+          "distance": 743,
+          "agodaId": "2449092",
+          "tripId": "2220667"
+        }
+      ]
+    },
+    "hard-rock-stadium": {
+      "fetchedAt": "2026-11-15",
+      "hotels": []
+    },
+    "camping-world-stadium": {
+      "fetchedAt": "2026-11-15",
+      "hotels": [
+        {
+          "name": "Vacation Lodge",
+          "localName": "Vacation Lodge Hotel",
+          "lat": 28.534251,
+          "lng": -81.398131,
+          "distance": 698,
+          "agodaId": "2451939"
+        }
+      ]
+    },
+    "soldier-field": {
+      "fetchedAt": "2026-11-15",
+      "hotels": [
+        {
+          "name": "Hotel BnB",
+          "lat": 41.865226,
+          "lng": -87.624345,
+          "distance": 702,
+          "agodaId": "26963616"
+        },
+        {
+          "name": "The Wheeler Mansion",
+          "localName": "Wheeler Mansion",
+          "lat": 41.854905,
+          "lng": -87.619407,
+          "distance": 874,
+          "agodaId": "76128942",
+          "tripId": "4388962"
+        },
+        {
+          "name": "Best Western Grant Park Hotel",
+          "lat": 41.869103,
+          "lng": -87.62469,
+          "distance": 988,
+          "agodaId": "45899",
+          "tripId": "1645859"
+        },
+        {
+          "name": "Marriott Marquis Chicago",
+          "localName": "Marriott Marquis",
+          "lat": 41.853678,
+          "lng": -87.620226,
+          "distance": 1024,
+          "agodaId": "4593973",
+          "tripId": "10163780"
+        }
+      ]
+    },
+    "mt-bank-stadium": {
+      "fetchedAt": "2026-11-15",
+      "hotels": [
+        {
+          "name": "Holiday Inn Express BALTIMORE AT THE STADIUMS by IHG",
+          "localName": "Holiday Inn Express Baltimore at the Stadiums, an IHG Hotel",
+          "lat": 39.272919,
+          "lng": -76.628472,
+          "distance": 752,
+          "agodaId": "2467089",
+          "tripId": "2196575"
+        },
+        {
+          "name": "Hampton Inn Baltimore-Downtown-Convention Center",
+          "localName": "Hampton Inn",
+          "lat": 39.28548,
+          "lng": -76.623187,
+          "distance": 833,
+          "agodaId": "2731024",
+          "tripId": "2239650"
+        },
+        {
+          "name": "Hilton Baltimore Inner Harbor",
+          "localName": "Hilton Baltimore",
+          "lat": 39.285687,
+          "lng": -76.620879,
+          "distance": 869,
+          "agodaId": "2731352",
+          "tripId": "2239638"
+        },
+        {
+          "name": "The Royal Sonesta Harbor Court Baltimore",
+          "lat": 39.282722,
+          "lng": -76.613947,
+          "distance": 918,
+          "agodaId": "2450329",
+          "tripId": "2565244"
+        },
+        {
+          "name": "Sheraton Inner Harbor",
+          "localName": "Sheraton Inner Harbor Hotel",
+          "lat": 39.284599,
+          "lng": -76.615401,
+          "distance": 966,
+          "agodaId": "94403279"
+        }
+      ]
+    },
+    "rogers-stadium": {
+      "fetchedAt": "2026-11-15",
+      "hotels": []
+    },
+    "metlife-stadium": {
+      "fetchedAt": "2026-11-15",
+      "hotels": [
+        {
+          "name": "Extended Stay America Suites - Meadowlands - East Rutherford",
+          "localName": "Extended Stay America",
+          "lat": 40.805369,
+          "lng": -74.075795,
+          "distance": 913,
+          "agodaId": "2465518",
+          "tripId": "2887606"
+        },
+        {
+          "name": "World of Blue",
+          "lat": 40.805136,
+          "lng": -74.078508,
+          "distance": 995,
+          "agodaId": "746764",
+          "tripId": "136053858"
+        },
+        {
+          "name": "Hampton Inn Carlstadt at The Meadowlands",
+          "localName": "Hampton Inn Carlstadt-At The Meadowlands",
+          "lat": 40.82166,
+          "lng": -74.068924,
+          "distance": 1014,
+          "tripId": "2259151"
+        }
+      ]
+    },
+    "tottenham-hotspur-stadium": {
+      "fetchedAt": "2026-11-15",
+      "hotels": []
+    },
+    "allianz-arena": {
+      "fetchedAt": "2026-11-15",
+      "hotels": []
+    },
+    "ernst-happel-stadion": {
+      "fetchedAt": "2026-11-15",
+      "hotels": [
+        {
+          "name": "Hilton Vienna Waterfront",
+          "lat": 48.214082,
+          "lng": 16.421736,
+          "distance": 768,
+          "agodaId": "6397",
+          "tripId": "2193019"
+        },
+        {
+          "name": "Courtyard by Marriott Vienna Prater/Messe",
+          "localName": "Courtyard by Marriott Wien Messe",
+          "lat": 48.21302,
+          "lng": 16.413431,
+          "distance": 851,
+          "agodaId": "871230",
+          "tripId": "2193257"
+        }
+      ]
+    },
+    "estadi-olimpic-barcelona": {
+      "fetchedAt": "2026-11-15",
+      "hotels": [
+        {
+          "name": "La França Travellers Adults Only",
+          "localName": "La França Travellers",
+          "lat": 41.372218,
+          "lng": 2.157558,
+          "distance": 852,
+          "agodaId": "15486605",
+          "tripId": "9264306"
+        },
+        {
+          "name": "InterContinental Barcelona",
+          "lat": 41.372579,
+          "lng": 2.154833,
+          "distance": 878,
+          "tripId": "2199048"
+        }
+      ]
+    },
+    "gelredome": {
+      "fetchedAt": "2026-11-15",
+      "hotels": []
+    },
+    "san-siro": {
+      "fetchedAt": "2026-11-15",
+      "hotels": [
+        {
+          "name": "B&B Hotel Milano San Siro",
+          "lat": 45.480368,
+          "lng": 9.123634,
+          "distance": 243,
+          "agodaId": "894808",
+          "tripId": "2803971"
+        },
+        {
+          "name": "Luci A San Siro",
+          "localName": "B&B Luci a San Siro",
+          "lat": 45.475114,
+          "lng": 9.127489,
+          "distance": 438,
+          "agodaId": "959755",
+          "tripId": "5620145"
+        },
+        {
+          "name": "Bed & Breakfast A San Siro 75",
+          "localName": "B&B A San Siro 75",
+          "lat": 45.473623,
+          "lng": 9.126036,
+          "distance": 533,
+          "agodaId": "69962243",
+          "tripId": "9433666"
+        }
+      ]
     }
   }
 }

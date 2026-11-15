@@ -5996,6 +5996,2129 @@
           "distance": 777
         }
       ]
+    },
+    "nissan-stadium": {
+      "fetchedAt": "2026-11-15",
+      "radius": 1000,
+      "food": [
+        {
+          "osm": "node/1986924857",
+          "name": "すき家",
+          "nameEn": "Sukiya",
+          "kind": "fast_food",
+          "cuisine": "beef bowl",
+          "lat": 35.508062,
+          "lng": 139.599943,
+          "distance": 623
+        },
+        {
+          "osm": "node/3494258457",
+          "name": "星乃珈琲店",
+          "nameEn": "Hoshino Coffee",
+          "kind": "cafe",
+          "cuisine": "coffee shop",
+          "lat": 35.509134,
+          "lng": 139.614211,
+          "distance": 713
+        },
+        {
+          "osm": "way/340909657",
+          "name": "しゃぶ葉",
+          "nameEn": "Syabuyo",
+          "kind": "restaurant",
+          "cuisine": "buffet",
+          "lat": 35.503501,
+          "lng": 139.606234,
+          "distance": 723
+        },
+        {
+          "osm": "node/2755634331",
+          "name": "タリーズコーヒー",
+          "nameEn": "Tully's Coffee",
+          "kind": "cafe",
+          "cuisine": "coffee shop",
+          "lat": 35.508813,
+          "lng": 139.614647,
+          "distance": 758
+        },
+        {
+          "osm": "node/10929278926",
+          "name": "松屋",
+          "nameEn": "Matsuya",
+          "kind": "fast_food",
+          "cuisine": "beef bowl",
+          "lat": 35.507822,
+          "lng": 139.614383,
+          "distance": 762
+        },
+        {
+          "osm": "node/10703828903",
+          "name": "フレッシュネスバーガー",
+          "nameEn": "Freshness Burger",
+          "kind": "fast_food",
+          "cuisine": "burger",
+          "lat": 35.509731,
+          "lng": 139.614863,
+          "distance": 767
+        },
+        {
+          "osm": "node/1912322373",
+          "name": "スターバックス",
+          "nameEn": "Starbucks",
+          "kind": "cafe",
+          "cuisine": "coffee shop",
+          "lat": 35.508776,
+          "lng": 139.615158,
+          "distance": 804
+        },
+        {
+          "osm": "node/10980593855",
+          "name": "大戸屋",
+          "nameEn": "Ootoya",
+          "kind": "restaurant",
+          "cuisine": "japanese",
+          "lat": 35.508519,
+          "lng": 139.615351,
+          "distance": 827
+        }
+      ],
+      "hotels": [
+        {
+          "osm": "node/13525782419",
+          "name": "ラグナスイート ホテル＆ウェディング",
+          "nameEn": "Laguna Suite Hotel & Wedding",
+          "kind": "hotel",
+          "lat": 35.508425,
+          "lng": 139.613971,
+          "distance": 707
+        },
+        {
+          "osm": "node/10151497669",
+          "name": "ホテルリブマックス新横浜",
+          "nameEn": "HOTEL LiVEMAX",
+          "kind": "hotel",
+          "lat": 35.510114,
+          "lng": 139.614296,
+          "distance": 715
+        },
+        {
+          "osm": "node/8806691796",
+          "name": "Sin-yokohama SK hotel",
+          "kind": "hotel",
+          "lat": 35.50719,
+          "lng": 139.613549,
+          "distance": 719
+        },
+        {
+          "osm": "node/11340510673",
+          "name": "スーパーホテル",
+          "nameEn": "Super Hotel",
+          "kind": "hotel",
+          "lat": 35.508342,
+          "lng": 139.614526,
+          "distance": 758
+        },
+        {
+          "osm": "node/4525507464",
+          "name": "東横イン",
+          "nameEn": "Toyoko Inn",
+          "kind": "hotel",
+          "lat": 35.506891,
+          "lng": 139.61402,
+          "distance": 772
+        }
+      ]
+    },
+    "yanmar-stadium-nagai": {
+      "fetchedAt": "2026-11-15",
+      "radius": 1000,
+      "food": [
+        {
+          "osm": "way/317312115",
+          "name": "くら寿司",
+          "nameEn": "Kura Sushi",
+          "kind": "fast_food",
+          "cuisine": "sushi",
+          "lat": 34.616036,
+          "lng": 135.514173,
+          "distance": 451
+        },
+        {
+          "osm": "node/5307656372",
+          "name": "CoCo壱番屋",
+          "nameEn": "CoCo ICHIBANYA",
+          "kind": "fast_food",
+          "cuisine": "curry, japanese",
+          "lat": 34.611971,
+          "lng": 135.513799,
+          "distance": 491
+        },
+        {
+          "osm": "node/5380216937",
+          "name": "やよい軒",
+          "nameEn": "Yayoiken",
+          "kind": "restaurant",
+          "cuisine": "japanese",
+          "lat": 34.611914,
+          "lng": 135.513775,
+          "distance": 496
+        },
+        {
+          "osm": "node/3235478152",
+          "name": "ケンタッキーフライドチキン",
+          "nameEn": "KFC",
+          "kind": "fast_food",
+          "cuisine": "chicken",
+          "lat": 34.611774,
+          "lng": 135.513712,
+          "distance": 509
+        },
+        {
+          "osm": "node/3923133563",
+          "name": "吉野家",
+          "nameEn": "Yoshinoya",
+          "kind": "fast_food",
+          "cuisine": "beef bowl",
+          "lat": 34.611374,
+          "lng": 135.513697,
+          "distance": 534
+        },
+        {
+          "osm": "way/172355192",
+          "name": "デニーズ",
+          "nameEn": "Denny's",
+          "kind": "restaurant",
+          "cuisine": "western, japanese",
+          "lat": 34.609141,
+          "lng": 135.517579,
+          "distance": 558
+        },
+        {
+          "osm": "node/13994801076",
+          "name": "大衆 焼肉ホルモン",
+          "nameEn": "Daimatsu Yakiniku",
+          "kind": "restaurant",
+          "cuisine": "barbecue",
+          "lat": 34.611048,
+          "lng": 135.513633,
+          "distance": 560
+        },
+        {
+          "osm": "way/317312625",
+          "name": "マクドナルド",
+          "nameEn": "McDonald's",
+          "kind": "fast_food",
+          "cuisine": "burger",
+          "lat": 34.609076,
+          "lng": 135.519614,
+          "distance": 568
+        }
+      ],
+      "hotels": [
+        {
+          "osm": "node/5374262037",
+          "name": "ユースホステル",
+          "kind": "hotel",
+          "lat": 34.614568,
+          "lng": 135.519541,
+          "distance": 109
+        },
+        {
+          "osm": "way/553403755",
+          "name": "FOR  LEAVES INN",
+          "kind": "hotel",
+          "lat": 34.617281,
+          "lng": 135.515009,
+          "distance": 477
+        },
+        {
+          "osm": "way/545159766",
+          "name": "長居パークホテル",
+          "kind": "hotel",
+          "lat": 34.612127,
+          "lng": 135.512915,
+          "distance": 556
+        }
+      ]
+    },
+    "impact-arena": {
+      "fetchedAt": "2026-11-15",
+      "radius": 1000,
+      "food": [
+        {
+          "osm": "node/3431296276",
+          "name": "Starbucks",
+          "nameEn": "Starbucks Coffee",
+          "kind": "cafe",
+          "cuisine": "coffee shop",
+          "lat": 13.913186,
+          "lng": 100.54934,
+          "distance": 203
+        },
+        {
+          "osm": "node/8067698598",
+          "name": "Dairy Queen",
+          "kind": "fast_food",
+          "cuisine": "ice cream, burger",
+          "lat": 13.912451,
+          "lng": 100.552011,
+          "distance": 401
+        },
+        {
+          "osm": "node/8067698608",
+          "name": "ShinkanZen",
+          "kind": "restaurant",
+          "cuisine": "sushi",
+          "lat": 13.912933,
+          "lng": 100.552279,
+          "distance": 444
+        },
+        {
+          "osm": "node/8067698603",
+          "name": "KFC",
+          "kind": "fast_food",
+          "cuisine": "chicken",
+          "lat": 13.913209,
+          "lng": 100.552234,
+          "distance": 451
+        },
+        {
+          "osm": "node/8067698610",
+          "name": "Yayoi",
+          "kind": "restaurant",
+          "cuisine": "japanese",
+          "lat": 13.912897,
+          "lng": 100.552401,
+          "distance": 455
+        },
+        {
+          "osm": "node/8067698606",
+          "name": "ฮะจิบัง ราเมน",
+          "nameEn": "Hachiban Ramen",
+          "kind": "restaurant",
+          "cuisine": "ramen",
+          "lat": 13.913163,
+          "lng": 100.552365,
+          "distance": 462
+        },
+        {
+          "osm": "node/2448242718",
+          "name": "Ahnnyung",
+          "nameEn": "Ahhnyung Korean Restaurant",
+          "kind": "restaurant",
+          "cuisine": "korean",
+          "lat": 13.912819,
+          "lng": 100.539946,
+          "distance": 922
+        },
+        {
+          "osm": "node/2448242748",
+          "name": "ซุน ฮวด บะกุ๊ดเต๋",
+          "nameEn": "Soon Huat Bak Kut Teh",
+          "kind": "restaurant",
+          "cuisine": "bak kut teh",
+          "lat": 13.912838,
+          "lng": 100.539756,
+          "distance": 943
+        }
+      ],
+      "hotels": [
+        {
+          "osm": "way/151982337",
+          "name": "Novotel Impact",
+          "kind": "hotel",
+          "lat": 13.915534,
+          "lng": 100.548395,
+          "distance": 437
+        },
+        {
+          "osm": "node/5808180053",
+          "name": "หอพักT8",
+          "kind": "hotel",
+          "lat": 13.910622,
+          "lng": 100.554109,
+          "distance": 626
+        },
+        {
+          "osm": "way/780662652",
+          "name": "Ibis Bangkok Impact",
+          "kind": "hotel",
+          "lat": 13.916152,
+          "lng": 100.552119,
+          "distance": 646
+        }
+      ]
+    },
+    "lumen-field": {
+      "fetchedAt": "2026-11-15",
+      "radius": 1000,
+      "food": [
+        {
+          "osm": "node/5759106821",
+          "name": "Great State Burger - Lumen Field",
+          "kind": "fast_food",
+          "cuisine": "burger",
+          "lat": 47.594873,
+          "lng": -122.332396,
+          "distance": 76
+        },
+        {
+          "osm": "node/3336970592",
+          "name": "Matsu",
+          "kind": "restaurant",
+          "cuisine": "sushi",
+          "lat": 47.598071,
+          "lng": -122.331851,
+          "distance": 309
+        },
+        {
+          "osm": "node/5109525722",
+          "name": "13 Coins",
+          "kind": "restaurant",
+          "cuisine": "american",
+          "lat": 47.598112,
+          "lng": -122.331207,
+          "distance": 314
+        },
+        {
+          "osm": "node/13641561802",
+          "name": "Café Three03",
+          "kind": "cafe",
+          "cuisine": "coffee shop",
+          "lat": 47.598229,
+          "lng": -122.330076,
+          "distance": 345
+        },
+        {
+          "osm": "node/2351726173",
+          "name": "Super Kim",
+          "kind": "restaurant",
+          "cuisine": "seafood, thai",
+          "lat": 47.598428,
+          "lng": -122.331904,
+          "distance": 349
+        },
+        {
+          "osm": "way/360439953",
+          "name": "Boiling Point",
+          "kind": "restaurant",
+          "cuisine": "asian",
+          "lat": 47.596793,
+          "lng": -122.327452,
+          "distance": 353
+        },
+        {
+          "osm": "way/360439963",
+          "name": "Samurai Noodle",
+          "kind": "restaurant",
+          "cuisine": "japanese",
+          "lat": 47.597181,
+          "lng": -122.327512,
+          "distance": 371
+        },
+        {
+          "osm": "node/13768625386",
+          "name": "Mio Oh Mio",
+          "kind": "restaurant",
+          "cuisine": "italian",
+          "lat": 47.598445,
+          "lng": -122.33339,
+          "distance": 375
+        }
+      ],
+      "hotels": [
+        {
+          "osm": "way/817347762",
+          "name": "Embassy Suites - Seattle Downtown Pioneer Square",
+          "kind": "hotel",
+          "lat": 47.597868,
+          "lng": -122.330946,
+          "distance": 290
+        },
+        {
+          "osm": "way/103052783",
+          "name": "Silver Cloud Hotel",
+          "kind": "hotel",
+          "lat": 47.592716,
+          "lng": -122.333697,
+          "distance": 328
+        },
+        {
+          "osm": "node/13458644701",
+          "name": "Populus Seattle",
+          "kind": "hotel",
+          "lat": 47.598417,
+          "lng": -122.333824,
+          "distance": 385
+        },
+        {
+          "osm": "node/1730800434",
+          "name": "HI-Seattle at American Hotels",
+          "kind": "hotel",
+          "lat": 47.598462,
+          "lng": -122.326729,
+          "distance": 507
+        },
+        {
+          "osm": "node/1836745861",
+          "name": "Best Western Pioneer Square Hotel",
+          "kind": "hotel",
+          "lat": 47.601616,
+          "lng": -122.335257,
+          "distance": 754
+        }
+      ]
+    },
+    "bc-place": {
+      "fetchedAt": "2026-11-15",
+      "radius": 1000,
+      "food": [
+        {
+          "osm": "node/11742781269",
+          "name": "Dawson's Hot Dogs",
+          "kind": "restaurant",
+          "cuisine": "hot dog",
+          "lat": 49.277322,
+          "lng": -123.111067,
+          "distance": 97
+        },
+        {
+          "osm": "way/250247081",
+          "name": "Boston Pizza",
+          "kind": "restaurant",
+          "cuisine": "pizza",
+          "lat": 49.277173,
+          "lng": -123.11412,
+          "distance": 163
+        },
+        {
+          "osm": "node/4844898122",
+          "name": "Frankie’s Italian Kitchen & Bar",
+          "kind": "restaurant",
+          "cuisine": "italian",
+          "lat": 49.278197,
+          "lng": -123.113353,
+          "distance": 193
+        },
+        {
+          "osm": "node/11740528769",
+          "name": "Carve/Catch",
+          "kind": "fast_food",
+          "cuisine": "seafood, burger",
+          "lat": 49.277646,
+          "lng": -123.109676,
+          "distance": 199
+        },
+        {
+          "osm": "node/11740540069",
+          "name": "Steamers",
+          "kind": "fast_food",
+          "cuisine": "hot dog",
+          "lat": 49.277624,
+          "lng": -123.109457,
+          "distance": 211
+        },
+        {
+          "osm": "node/5049976085",
+          "name": "Fresh Sushi",
+          "kind": "restaurant",
+          "cuisine": "japanese",
+          "lat": 49.275736,
+          "lng": -123.115156,
+          "distance": 253
+        },
+        {
+          "osm": "node/11740546370",
+          "name": "Triple Os",
+          "nameEn": "Triple O's",
+          "kind": "fast_food",
+          "cuisine": "burger",
+          "lat": 49.277526,
+          "lng": -123.108737,
+          "distance": 254
+        },
+        {
+          "osm": "node/3714732950",
+          "name": "JINMI",
+          "kind": "restaurant",
+          "cuisine": "korean",
+          "lat": 49.278444,
+          "lng": -123.114328,
+          "distance": 257
+        }
+      ],
+      "hotels": [
+        {
+          "osm": "node/5304513656",
+          "name": "JW Marriott Parq Vancouver",
+          "kind": "hotel",
+          "lat": 49.27539,
+          "lng": -123.112766,
+          "distance": 156
+        },
+        {
+          "osm": "node/5304513657",
+          "name": "The Douglas, Autograph Collection",
+          "kind": "hotel",
+          "lat": 49.275714,
+          "lng": -123.113942,
+          "distance": 179
+        },
+        {
+          "osm": "node/638750751",
+          "name": "Georgian Court Hotel",
+          "kind": "hotel",
+          "lat": 49.278081,
+          "lng": -123.113659,
+          "distance": 195
+        },
+        {
+          "osm": "node/638751995",
+          "name": "Hampton Inn & Suites by Hilton Vancouver-Downtown",
+          "kind": "hotel",
+          "lat": 49.277907,
+          "lng": -123.113987,
+          "distance": 197
+        },
+        {
+          "osm": "node/638750750",
+          "name": "YWCA Hotel / Residence / Hotel Willo",
+          "kind": "hotel",
+          "lat": 49.27837,
+          "lng": -123.1131,
+          "distance": 202
+        }
+      ]
+    },
+    "levis-stadium": {
+      "fetchedAt": "2026-11-15",
+      "radius": 1000,
+      "food": [
+        {
+          "osm": "node/9980637958",
+          "name": "Vegan Dogs",
+          "kind": "fast_food",
+          "cuisine": "hot dog",
+          "lat": 37.40349,
+          "lng": -121.971035,
+          "distance": 138
+        },
+        {
+          "osm": "node/3257678728",
+          "name": "Bourbon Steak & Pub",
+          "kind": "restaurant",
+          "cuisine": "steak house, pub",
+          "lat": 37.404358,
+          "lng": -121.969473,
+          "distance": 151
+        },
+        {
+          "osm": "node/4124718294",
+          "name": "Pizza Orleans",
+          "kind": "fast_food",
+          "cuisine": "pizza",
+          "lat": 37.397997,
+          "lng": -121.97253,
+          "distance": 614
+        },
+        {
+          "osm": "node/3257634847",
+          "name": "Little Caesars",
+          "kind": "fast_food",
+          "cuisine": "pizza",
+          "lat": 37.400891,
+          "lng": -121.962382,
+          "distance": 679
+        },
+        {
+          "osm": "way/413376052",
+          "name": "American Café",
+          "kind": "fast_food",
+          "cuisine": "american",
+          "lat": 37.3971,
+          "lng": -121.972773,
+          "distance": 713
+        },
+        {
+          "osm": "way/1041840149",
+          "name": "Pier 76 Cafe",
+          "kind": "restaurant",
+          "cuisine": "american",
+          "lat": 37.396517,
+          "lng": -121.971274,
+          "distance": 736
+        },
+        {
+          "osm": "way/319355784",
+          "name": "Clara's Junction",
+          "kind": "fast_food",
+          "cuisine": "burger",
+          "lat": 37.407875,
+          "lng": -121.963832,
+          "distance": 744
+        },
+        {
+          "osm": "way/413556021",
+          "name": "South Bay Cantina",
+          "kind": "fast_food",
+          "cuisine": "mexican",
+          "lat": 37.396408,
+          "lng": -121.971993,
+          "distance": 763
+        }
+      ],
+      "hotels": [
+        {
+          "osm": "way/33513417",
+          "name": "Hilton Santa Clara",
+          "kind": "hotel",
+          "lat": 37.402526,
+          "lng": -121.976699,
+          "distance": 629
+        },
+        {
+          "osm": "way/41946667",
+          "name": "Hyatt Regency Santa Clara",
+          "kind": "hotel",
+          "lat": 37.405062,
+          "lng": -121.976429,
+          "distance": 645
+        }
+      ]
+    },
+    "sofi-stadium": {
+      "fetchedAt": "2026-11-15",
+      "radius": 1000,
+      "food": [
+        {
+          "osm": "way/442360011",
+          "name": "Sizzler",
+          "kind": "restaurant",
+          "cuisine": "steak house",
+          "lat": 33.960015,
+          "lng": -118.34427,
+          "distance": 882
+        },
+        {
+          "osm": "way/1093722080",
+          "name": "Starbucks",
+          "kind": "cafe",
+          "cuisine": "coffee shop",
+          "lat": 33.959948,
+          "lng": -118.345166,
+          "distance": 924
+        },
+        {
+          "osm": "node/11749459360",
+          "name": "Subway",
+          "kind": "fast_food",
+          "cuisine": "sandwich",
+          "lat": 33.945824,
+          "lng": -118.333619,
+          "distance": 978
+        },
+        {
+          "osm": "node/11749459355",
+          "name": "Chipotle",
+          "kind": "fast_food",
+          "cuisine": "mexican",
+          "lat": 33.946566,
+          "lng": -118.332175,
+          "distance": 987
+        },
+        {
+          "osm": "node/5652148805",
+          "name": "McDonald's",
+          "kind": "fast_food",
+          "cuisine": "burger",
+          "lat": 33.945829,
+          "lng": -118.344665,
+          "distance": 991
+        },
+        {
+          "osm": "way/443435735",
+          "name": "Pollo Campero",
+          "kind": "fast_food",
+          "cuisine": "chicken",
+          "lat": 33.945191,
+          "lng": -118.334746,
+          "distance": 994
+        }
+      ],
+      "hotels": [
+        {
+          "osm": "way/1223106657",
+          "name": "Lüm Hotel",
+          "kind": "hotel",
+          "lat": 33.944934,
+          "lng": -118.342033,
+          "distance": 982
+        },
+        {
+          "osm": "way/442358341",
+          "name": "Holly Crest Hotel",
+          "kind": "hotel",
+          "lat": 33.945795,
+          "lng": -118.344986,
+          "distance": 1010
+        }
+      ]
+    },
+    "att-stadium": {
+      "fetchedAt": "2026-11-15",
+      "radius": 1000,
+      "food": [
+        {
+          "osm": "node/6594885881",
+          "name": "Cicis",
+          "kind": "restaurant",
+          "cuisine": "pizza, buffet",
+          "lat": 32.747841,
+          "lng": -97.097716,
+          "distance": 460
+        },
+        {
+          "osm": "way/96988537",
+          "name": "Taco Bell",
+          "kind": "fast_food",
+          "cuisine": "tex-mex",
+          "lat": 32.751925,
+          "lng": -97.096754,
+          "distance": 581
+        },
+        {
+          "osm": "way/640502444",
+          "name": "Arby's",
+          "kind": "fast_food",
+          "cuisine": "sandwich",
+          "lat": 32.751807,
+          "lng": -97.09778,
+          "distance": 637
+        },
+        {
+          "osm": "node/6703552541",
+          "name": "Troy's",
+          "kind": "restaurant",
+          "cuisine": "american",
+          "lat": 32.749533,
+          "lng": -97.085353,
+          "distance": 720
+        },
+        {
+          "osm": "way/620709726",
+          "name": "Wendy's",
+          "kind": "fast_food",
+          "cuisine": "burger",
+          "lat": 32.754831,
+          "lng": -97.096877,
+          "distance": 860
+        },
+        {
+          "osm": "way/641980401",
+          "name": "Bodacious Bar-B-Q",
+          "kind": "restaurant",
+          "cuisine": "barbecue",
+          "lat": 32.740007,
+          "lng": -97.091752,
+          "distance": 883
+        },
+        {
+          "osm": "way/641969882",
+          "name": "Raising Cane's",
+          "kind": "fast_food",
+          "cuisine": "chicken",
+          "lat": 32.755349,
+          "lng": -97.097637,
+          "distance": 944
+        },
+        {
+          "osm": "node/5847238524",
+          "name": "Suzuchi Sushi & Grill",
+          "kind": "restaurant",
+          "cuisine": "sushi",
+          "lat": 32.756309,
+          "lng": -97.09637,
+          "distance": 993
+        }
+      ],
+      "hotels": [
+        {
+          "osm": "way/641970458",
+          "name": "Motel 6 Arlington TX Entertainment District",
+          "kind": "hotel",
+          "lat": 32.748788,
+          "lng": -97.097941,
+          "distance": 491
+        },
+        {
+          "osm": "way/1303806681",
+          "name": "Loews Arlington Hotel and Convention Center",
+          "kind": "hotel",
+          "lat": 32.750846,
+          "lng": -97.085194,
+          "distance": 783
+        }
+      ]
+    },
+    "mercedes-benz-stadium": {
+      "fetchedAt": "2026-11-15",
+      "radius": 1000,
+      "food": [
+        {
+          "osm": "node/13469107846",
+          "name": "Restaurant Ten Bar And Grill",
+          "kind": "restaurant",
+          "cuisine": "american",
+          "lat": 33.753941,
+          "lng": -84.402795,
+          "distance": 246
+        },
+        {
+          "osm": "way/270884150",
+          "name": "Rosie's Coffee Café",
+          "kind": "restaurant",
+          "cuisine": "breakfast",
+          "lat": 33.753585,
+          "lng": -84.402471,
+          "distance": 254
+        },
+        {
+          "osm": "node/11759057853",
+          "name": "Subway",
+          "kind": "fast_food",
+          "cuisine": "sandwich",
+          "lat": 33.752475,
+          "lng": -84.402456,
+          "distance": 359
+        },
+        {
+          "osm": "node/12029129915",
+          "name": "Capolinea",
+          "kind": "restaurant",
+          "cuisine": "american, italian",
+          "lat": 33.758664,
+          "lng": -84.400401,
+          "distance": 365
+        },
+        {
+          "osm": "node/12778473546",
+          "name": "Homespun",
+          "kind": "restaurant",
+          "cuisine": "breakfast",
+          "lat": 33.758885,
+          "lng": -84.400958,
+          "distance": 388
+        },
+        {
+          "osm": "node/861902895",
+          "name": "Starbucks",
+          "kind": "cafe",
+          "cuisine": "coffee shop",
+          "lat": 33.758453,
+          "lng": -84.39708,
+          "distance": 483
+        },
+        {
+          "osm": "node/11711442297",
+          "name": "Bottle Rocket",
+          "kind": "restaurant",
+          "cuisine": "sushi, japanese",
+          "lat": 33.750051,
+          "lng": -84.40089,
+          "distance": 595
+        },
+        {
+          "osm": "node/10777981206",
+          "name": "Adios Cafe",
+          "kind": "restaurant",
+          "cuisine": "breakfast, mexican",
+          "lat": 33.749891,
+          "lng": -84.401024,
+          "distance": 613
+        }
+      ],
+      "hotels": [
+        {
+          "osm": "node/13372833090",
+          "name": "Hotel Phoenix",
+          "kind": "hotel",
+          "lat": 33.755096,
+          "lng": -84.397956,
+          "distance": 265
+        },
+        {
+          "osm": "way/853099018",
+          "name": "REVERB by Hard Rock Downtown Atlanta",
+          "kind": "hotel",
+          "lat": 33.753171,
+          "lng": -84.399322,
+          "distance": 283
+        },
+        {
+          "osm": "node/12050955822",
+          "name": "Signia by Hilton Atlanta Georgia World Congress Center",
+          "kind": "hotel",
+          "lat": 33.758857,
+          "lng": -84.401166,
+          "distance": 386
+        },
+        {
+          "osm": "way/40741532",
+          "name": "Omni Atlanta Hotel at Centennial Park",
+          "kind": "hotel",
+          "lat": 33.758783,
+          "lng": -84.394789,
+          "distance": 671
+        },
+        {
+          "osm": "way/680241799",
+          "name": "Glenn Hotel, Autograph Collection",
+          "kind": "hotel",
+          "lat": 33.757015,
+          "lng": -84.392996,
+          "distance": 743
+        }
+      ]
+    },
+    "hard-rock-stadium": {
+      "fetchedAt": "2026-11-15",
+      "radius": 1000,
+      "food": [
+        {
+          "osm": "node/5062485542",
+          "name": "Sonic",
+          "kind": "fast_food",
+          "cuisine": "burger",
+          "lat": 25.9551,
+          "lng": -80.244787,
+          "distance": 675
+        },
+        {
+          "osm": "node/5062485543",
+          "name": "Dunkin'",
+          "kind": "fast_food",
+          "cuisine": "donut, coffee shop",
+          "lat": 25.955147,
+          "lng": -80.245385,
+          "distance": 726
+        },
+        {
+          "osm": "node/5062484145",
+          "name": "Denny's",
+          "kind": "restaurant",
+          "cuisine": "american",
+          "lat": 25.95359,
+          "lng": -80.246397,
+          "distance": 898
+        },
+        {
+          "osm": "node/5062484144",
+          "name": "Pollo Tropical",
+          "kind": "fast_food",
+          "cuisine": "chicken",
+          "lat": 25.953179,
+          "lng": -80.246384,
+          "distance": 922
+        }
+      ],
+      "hotels": []
+    },
+    "camping-world-stadium": {
+      "fetchedAt": "2026-11-15",
+      "radius": 1000,
+      "food": [
+        {
+          "osm": "way/313780404",
+          "name": "Snappers Fish & Chicken",
+          "kind": "restaurant",
+          "lat": 28.540806,
+          "lng": -81.397685,
+          "distance": 538
+        },
+        {
+          "osm": "way/313780403",
+          "name": "Church's Chicken",
+          "kind": "fast_food",
+          "cuisine": "chicken",
+          "lat": 28.539805,
+          "lng": -81.396914,
+          "distance": 582
+        },
+        {
+          "osm": "node/11006933770",
+          "name": "Artisan's Table",
+          "kind": "restaurant",
+          "cuisine": "american",
+          "lat": 28.540572,
+          "lng": -81.396809,
+          "distance": 611
+        },
+        {
+          "osm": "way/322955834",
+          "name": "Popeyes",
+          "kind": "fast_food",
+          "cuisine": "chicken",
+          "lat": 28.543664,
+          "lng": -81.396994,
+          "distance": 769
+        },
+        {
+          "osm": "node/923905565",
+          "name": "McDonald's",
+          "kind": "fast_food",
+          "cuisine": "burger",
+          "lat": 28.531853,
+          "lng": -81.397695,
+          "distance": 938
+        }
+      ],
+      "hotels": [
+        {
+          "osm": "way/313780396",
+          "name": "Vacation Lodge Hotel",
+          "kind": "hotel",
+          "lat": 28.534251,
+          "lng": -81.398131,
+          "distance": 698
+        }
+      ]
+    },
+    "soldier-field": {
+      "fetchedAt": "2026-11-15",
+      "radius": 1000,
+      "food": [
+        {
+          "osm": "way/445721198",
+          "name": "Museum Campus Cafe",
+          "kind": "fast_food",
+          "cuisine": "sandwich",
+          "lat": 41.866505,
+          "lng": -87.614659,
+          "distance": 476
+        },
+        {
+          "osm": "node/11051937305",
+          "name": "Kim and Carlo‘s Chicago Style Hot Dog Store",
+          "kind": "fast_food",
+          "cuisine": "american, hot dog",
+          "lat": 41.867571,
+          "lng": -87.615935,
+          "distance": 567
+        },
+        {
+          "osm": "node/13430992576",
+          "name": "Overflow Coffee",
+          "kind": "cafe",
+          "cuisine": "coffee shop",
+          "lat": 41.862652,
+          "lng": -87.623814,
+          "distance": 589
+        },
+        {
+          "osm": "way/210542387",
+          "name": "Uncle Joe’s Rum Bar & Grill",
+          "kind": "fast_food",
+          "cuisine": "chicken",
+          "lat": 41.862592,
+          "lng": -87.624431,
+          "distance": 640
+        },
+        {
+          "osm": "node/13293612474",
+          "name": "Mikami",
+          "kind": "restaurant",
+          "cuisine": "japanese",
+          "lat": 41.863816,
+          "lng": -87.624282,
+          "distance": 645
+        },
+        {
+          "osm": "node/8092911417",
+          "name": "Giordano's Pizzeria",
+          "kind": "restaurant",
+          "cuisine": "pizza",
+          "lat": 41.864567,
+          "lng": -87.624372,
+          "distance": 676
+        },
+        {
+          "osm": "node/13290160975",
+          "name": "Sumi Japanese Restaurant",
+          "kind": "restaurant",
+          "cuisine": "sushi",
+          "lat": 41.865625,
+          "lng": -87.623914,
+          "distance": 691
+        },
+        {
+          "osm": "node/13290160976",
+          "name": "Nepal House",
+          "kind": "restaurant",
+          "cuisine": "indian",
+          "lat": 41.865687,
+          "lng": -87.623915,
+          "distance": 695
+        }
+      ],
+      "hotels": [
+        {
+          "osm": "way/210542047",
+          "name": "Hotel BnB",
+          "kind": "hotel",
+          "lat": 41.865226,
+          "lng": -87.624345,
+          "distance": 702
+        },
+        {
+          "osm": "way/210965683",
+          "name": "Wheeler Mansion",
+          "kind": "hotel",
+          "lat": 41.854905,
+          "lng": -87.619407,
+          "distance": 874
+        },
+        {
+          "osm": "way/147217807",
+          "name": "Best Western Grant Park Hotel",
+          "kind": "hotel",
+          "lat": 41.869103,
+          "lng": -87.62469,
+          "distance": 988
+        },
+        {
+          "osm": "way/313782023",
+          "name": "Marriott Marquis",
+          "kind": "hotel",
+          "lat": 41.853678,
+          "lng": -87.620226,
+          "distance": 1024
+        }
+      ]
+    },
+    "mt-bank-stadium": {
+      "fetchedAt": "2026-11-15",
+      "radius": 1000,
+      "food": [
+        {
+          "osm": "node/6069711243",
+          "name": "Tony’s Grill",
+          "kind": "restaurant",
+          "cuisine": "american",
+          "lat": 39.283096,
+          "lng": -76.62672,
+          "distance": 664
+        },
+        {
+          "osm": "node/2480514977",
+          "name": "Sobo Cafe",
+          "kind": "restaurant",
+          "cuisine": "contemporary, comfort food",
+          "lat": 39.27684,
+          "lng": -76.614905,
+          "distance": 683
+        },
+        {
+          "osm": "node/10795757487",
+          "name": "Starbucks",
+          "kind": "cafe",
+          "cuisine": "coffee shop",
+          "lat": 39.276726,
+          "lng": -76.614499,
+          "distance": 720
+        },
+        {
+          "osm": "node/10796165860",
+          "name": "Afters",
+          "kind": "cafe",
+          "cuisine": "coffe, ice cream",
+          "lat": 39.27805,
+          "lng": -76.614309,
+          "distance": 722
+        },
+        {
+          "osm": "node/10796165861",
+          "name": "Zaatar Mediterranean Cuisine",
+          "kind": "restaurant",
+          "cuisine": "mediterranean",
+          "lat": 39.27774,
+          "lng": -76.614287,
+          "distance": 725
+        },
+        {
+          "osm": "node/10795757477",
+          "name": "BRD",
+          "kind": "fast_food",
+          "cuisine": "chicken",
+          "lat": 39.276536,
+          "lng": -76.61448,
+          "distance": 726
+        },
+        {
+          "osm": "node/10795761707",
+          "name": "Brothers Sushi",
+          "kind": "restaurant",
+          "cuisine": "sushi",
+          "lat": 39.277388,
+          "lng": -76.614272,
+          "distance": 729
+        },
+        {
+          "osm": "way/239096358",
+          "name": "Sunny Chinese Food",
+          "kind": "restaurant",
+          "cuisine": "chinese",
+          "lat": 39.283229,
+          "lng": -76.627828,
+          "distance": 730
+        }
+      ],
+      "hotels": [
+        {
+          "osm": "way/196489161",
+          "name": "Holiday Inn Express Baltimore at the Stadiums, an IHG Hotel",
+          "kind": "hotel",
+          "lat": 39.272919,
+          "lng": -76.628472,
+          "distance": 752
+        },
+        {
+          "osm": "way/337088570",
+          "name": "Hampton Inn",
+          "kind": "hotel",
+          "lat": 39.28548,
+          "lng": -76.623187,
+          "distance": 833
+        },
+        {
+          "osm": "relation/7021530",
+          "name": "Hilton Baltimore",
+          "kind": "hotel",
+          "lat": 39.285687,
+          "lng": -76.620879,
+          "distance": 869
+        },
+        {
+          "osm": "relation/4767064",
+          "name": "The Royal Sonesta Harbor Court Baltimore",
+          "kind": "hotel",
+          "lat": 39.282722,
+          "lng": -76.613947,
+          "distance": 918
+        },
+        {
+          "osm": "way/337088571",
+          "name": "Sheraton Inner Harbor Hotel",
+          "kind": "hotel",
+          "lat": 39.284599,
+          "lng": -76.615401,
+          "distance": 966
+        }
+      ]
+    },
+    "rogers-stadium": {
+      "fetchedAt": "2026-11-15",
+      "radius": 1000,
+      "food": [],
+      "hotels": []
+    },
+    "metlife-stadium": {
+      "fetchedAt": "2026-11-15",
+      "radius": 1000,
+      "food": [
+        {
+          "osm": "node/6928939058",
+          "name": "Jamba",
+          "kind": "fast_food",
+          "cuisine": "juice",
+          "lat": 40.808743,
+          "lng": -74.071987,
+          "distance": 564
+        },
+        {
+          "osm": "node/13790901901",
+          "name": "Daily Seoul",
+          "kind": "restaurant",
+          "cuisine": "korean",
+          "lat": 40.808962,
+          "lng": -74.071136,
+          "distance": 571
+        },
+        {
+          "osm": "node/6928939045",
+          "name": "Chipotle",
+          "kind": "fast_food",
+          "cuisine": "mexican",
+          "lat": 40.808241,
+          "lng": -74.071964,
+          "distance": 617
+        },
+        {
+          "osm": "node/8122002832",
+          "name": "Cinnabon",
+          "kind": "fast_food",
+          "cuisine": "dessert",
+          "lat": 40.808307,
+          "lng": -74.07099,
+          "distance": 641
+        },
+        {
+          "osm": "node/8122002831",
+          "name": "Dunkin'",
+          "kind": "fast_food",
+          "cuisine": "donut, coffee shop",
+          "lat": 40.808232,
+          "lng": -74.070832,
+          "distance": 654
+        },
+        {
+          "osm": "node/10260876785",
+          "name": "MrBeast Burger",
+          "kind": "fast_food",
+          "cuisine": "burger",
+          "lat": 40.808732,
+          "lng": -74.069639,
+          "distance": 660
+        },
+        {
+          "osm": "node/8122002836",
+          "name": "Wetzel's Pretzels",
+          "kind": "fast_food",
+          "cuisine": "pretzel",
+          "lat": 40.808283,
+          "lng": -74.069342,
+          "distance": 715
+        },
+        {
+          "osm": "node/10977614892",
+          "name": "Five Guys",
+          "kind": "fast_food",
+          "cuisine": "burger",
+          "lat": 40.807676,
+          "lng": -74.070078,
+          "distance": 739
+        }
+      ],
+      "hotels": [
+        {
+          "osm": "way/257502400",
+          "name": "Extended Stay America",
+          "kind": "hotel",
+          "lat": 40.805369,
+          "lng": -74.075795,
+          "distance": 913
+        },
+        {
+          "osm": "way/257502397",
+          "name": "World of Blue",
+          "kind": "hotel",
+          "lat": 40.805136,
+          "lng": -74.078508,
+          "distance": 995
+        },
+        {
+          "osm": "way/962021770",
+          "name": "Hampton Inn Carlstadt-At The Meadowlands",
+          "kind": "hotel",
+          "lat": 40.82166,
+          "lng": -74.068924,
+          "distance": 1014
+        }
+      ]
+    },
+    "tottenham-hotspur-stadium": {
+      "fetchedAt": "2026-11-15",
+      "radius": 1000,
+      "food": [
+        {
+          "osm": "node/520913702",
+          "name": "Pavro Ocakbasi",
+          "kind": "fast_food",
+          "cuisine": "kebab",
+          "lat": 51.604293,
+          "lng": -0.068199,
+          "distance": 132
+        },
+        {
+          "osm": "node/11584454466",
+          "name": "Chips Town",
+          "kind": "fast_food",
+          "cuisine": "fish and chips",
+          "lat": 51.604383,
+          "lng": -0.068213,
+          "distance": 134
+        },
+        {
+          "osm": "node/6404494189",
+          "name": "Chick King",
+          "kind": "fast_food",
+          "cuisine": "fried chicken",
+          "lat": 51.604473,
+          "lng": -0.068223,
+          "distance": 136
+        },
+        {
+          "osm": "way/1531262927",
+          "name": "White Rose",
+          "kind": "restaurant",
+          "cuisine": "turkish",
+          "lat": 51.607616,
+          "lng": -0.067512,
+          "distance": 389
+        },
+        {
+          "osm": "node/10263469469",
+          "name": "Uptown Cuisine",
+          "kind": "fast_food",
+          "cuisine": "caribbean",
+          "lat": 51.602541,
+          "lng": -0.060468,
+          "distance": 443
+        },
+        {
+          "osm": "node/10263469470",
+          "name": "Halal Fried Chicken",
+          "kind": "fast_food",
+          "cuisine": "chicken",
+          "lat": 51.602325,
+          "lng": -0.058909,
+          "distance": 551
+        },
+        {
+          "osm": "node/529116451",
+          "name": "Adana Sofrasi",
+          "kind": "restaurant",
+          "cuisine": "turkish",
+          "lat": 51.597271,
+          "lng": -0.066723,
+          "distance": 771
+        },
+        {
+          "osm": "node/13718629811",
+          "name": "Pret A Manger",
+          "kind": "fast_food",
+          "cuisine": "sandwich",
+          "lat": 51.603272,
+          "lng": -0.055021,
+          "distance": 786
+        }
+      ],
+      "hotels": []
+    },
+    "ernst-happel-stadion": {
+      "fetchedAt": "2026-11-15",
+      "radius": 1000,
+      "food": [
+        {
+          "osm": "way/29222661",
+          "name": "Würstelstand Stadion",
+          "kind": "fast_food",
+          "cuisine": "sausage",
+          "lat": 48.208921,
+          "lng": 16.419702,
+          "distance": 211
+        },
+        {
+          "osm": "node/13968631659",
+          "name": "Billa Marktküche",
+          "kind": "restaurant",
+          "cuisine": "regional",
+          "lat": 48.209039,
+          "lng": 16.423193,
+          "distance": 266
+        },
+        {
+          "osm": "node/13968631660",
+          "name": "Rakki Sushi",
+          "kind": "restaurant",
+          "cuisine": "sushi",
+          "lat": 48.209396,
+          "lng": 16.423655,
+          "distance": 318
+        },
+        {
+          "osm": "node/13968631664",
+          "name": "Sajado",
+          "kind": "restaurant",
+          "cuisine": "japanese",
+          "lat": 48.210044,
+          "lng": 16.421795,
+          "distance": 323
+        },
+        {
+          "osm": "node/14281307865",
+          "name": "PROBOWL. - DASGYM.",
+          "kind": "cafe",
+          "cuisine": "coffee shop",
+          "lat": 48.208702,
+          "lng": 16.427699,
+          "distance": 531
+        },
+        {
+          "osm": "node/12001365069",
+          "name": "l'arte",
+          "kind": "restaurant",
+          "cuisine": "italian, italian pizza",
+          "lat": 48.206366,
+          "lng": 16.429875,
+          "distance": 671
+        },
+        {
+          "osm": "node/2951940369",
+          "name": "Fat Monk",
+          "kind": "restaurant",
+          "cuisine": "bowls",
+          "lat": 48.213091,
+          "lng": 16.415982,
+          "distance": 750
+        },
+        {
+          "osm": "node/14148198101",
+          "name": "Oma Küche",
+          "kind": "restaurant",
+          "cuisine": "asian",
+          "lat": 48.213007,
+          "lng": 16.415507,
+          "distance": 759
+        }
+      ],
+      "hotels": [
+        {
+          "osm": "way/28785499",
+          "name": "Hilton Vienna Waterfront",
+          "kind": "hotel",
+          "lat": 48.214082,
+          "lng": 16.421736,
+          "distance": 768
+        },
+        {
+          "osm": "way/44744773",
+          "name": "Courtyard by Marriott Wien Messe",
+          "kind": "hotel",
+          "lat": 48.21302,
+          "lng": 16.413431,
+          "distance": 851
+        }
+      ]
+    },
+    "estadi-olimpic-barcelona": {
+      "fetchedAt": "2026-11-15",
+      "radius": 1000,
+      "food": [
+        {
+          "osm": "way/217140891",
+          "name": "Farm to Table",
+          "kind": "restaurant",
+          "cuisine": "pizza, regional",
+          "lat": 41.370001,
+          "lng": 2.159117,
+          "distance": 658
+        },
+        {
+          "osm": "way/353892871",
+          "name": "Restaurant Petit Hípica",
+          "kind": "restaurant",
+          "cuisine": "grill",
+          "lat": 41.367531,
+          "lng": 2.148195,
+          "distance": 693
+        },
+        {
+          "osm": "node/3450072353",
+          "name": "Tablao de Carmen",
+          "kind": "restaurant",
+          "cuisine": "regional, catalan",
+          "lat": 41.368882,
+          "lng": 2.148864,
+          "distance": 730
+        },
+        {
+          "osm": "node/1600068981",
+          "name": "Tip-Top",
+          "kind": "restaurant",
+          "cuisine": "spanish",
+          "lat": 41.368582,
+          "lng": 2.147595,
+          "distance": 795
+        },
+        {
+          "osm": "node/11222905969",
+          "name": "Casa Massana",
+          "kind": "restaurant",
+          "cuisine": "local, regional",
+          "lat": 41.368974,
+          "lng": 2.147605,
+          "distance": 819
+        },
+        {
+          "osm": "node/5463379023",
+          "name": "Taqueria El Changarrito",
+          "kind": "fast_food",
+          "cuisine": "mexican",
+          "lat": 41.372222,
+          "lng": 2.155814,
+          "distance": 837
+        },
+        {
+          "osm": "node/6641461184",
+          "name": "Il Golfo di Napli",
+          "kind": "restaurant",
+          "cuisine": "italian",
+          "lat": 41.372401,
+          "lng": 2.155323,
+          "distance": 857
+        },
+        {
+          "osm": "node/11181038724",
+          "name": "Veganashi",
+          "kind": "restaurant",
+          "cuisine": "japanese",
+          "lat": 41.372465,
+          "lng": 2.155564,
+          "distance": 863
+        }
+      ],
+      "hotels": [
+        {
+          "osm": "node/6169154773",
+          "name": "La França Travellers",
+          "kind": "hotel",
+          "lat": 41.372218,
+          "lng": 2.157558,
+          "distance": 852
+        },
+        {
+          "osm": "way/1196779775",
+          "name": "InterContinental Barcelona",
+          "kind": "hotel",
+          "lat": 41.372579,
+          "lng": 2.154833,
+          "distance": 878
+        }
+      ]
+    },
+    "gelredome": {
+      "fetchedAt": "2026-11-15",
+      "radius": 1000,
+      "food": [
+        {
+          "osm": "node/2725787685",
+          "name": "La Place",
+          "kind": "restaurant",
+          "lat": 51.959267,
+          "lng": 5.895101,
+          "distance": 413
+        },
+        {
+          "osm": "node/2725787497",
+          "name": "McDonald's",
+          "kind": "fast_food",
+          "cuisine": "burger",
+          "lat": 51.959257,
+          "lng": 5.895325,
+          "distance": 420
+        },
+        {
+          "osm": "node/2725787595",
+          "name": "Lunchroom Bonheur",
+          "kind": "restaurant",
+          "lat": 51.959051,
+          "lng": 5.895481,
+          "distance": 445
+        },
+        {
+          "osm": "node/2725794029",
+          "name": "Sushi Daily",
+          "kind": "restaurant",
+          "cuisine": "sushi",
+          "lat": 51.959352,
+          "lng": 5.896906,
+          "distance": 467
+        },
+        {
+          "osm": "node/2725789103",
+          "name": "Subway",
+          "kind": "fast_food",
+          "cuisine": "sandwich",
+          "lat": 51.958581,
+          "lng": 5.898397,
+          "distance": 597
+        },
+        {
+          "osm": "node/2725792718",
+          "name": "Daolicious Sushi & Snacks",
+          "kind": "restaurant",
+          "cuisine": "japanese",
+          "lat": 51.958642,
+          "lng": 5.898514,
+          "distance": 597
+        },
+        {
+          "osm": "node/2725787373",
+          "name": "Dönor Master Kronenburg",
+          "kind": "fast_food",
+          "cuisine": "turkish",
+          "lat": 51.958593,
+          "lng": 5.89847,
+          "distance": 600
+        },
+        {
+          "osm": "node/2725789145",
+          "name": "Wong's Paradise",
+          "kind": "restaurant",
+          "cuisine": "chinese",
+          "lat": 51.958159,
+          "lng": 5.898021,
+          "distance": 619
+        }
+      ],
+      "hotels": [
+        {
+          "osm": "node/4929363221",
+          "name": "Nasrin",
+          "kind": "hotel",
+          "lat": 51.966533,
+          "lng": 5.904987,
+          "distance": 937
+        }
+      ]
+    },
+    "san-siro": {
+      "fetchedAt": "2026-11-15",
+      "radius": 1000,
+      "food": [
+        {
+          "osm": "node/3629320003",
+          "name": "America Graffiti",
+          "kind": "restaurant",
+          "cuisine": "american",
+          "lat": 45.480229,
+          "lng": 9.123731,
+          "distance": 227
+        },
+        {
+          "osm": "node/4189284340",
+          "name": "Canter",
+          "kind": "restaurant",
+          "lat": 45.481851,
+          "lng": 9.125937,
+          "distance": 433
+        },
+        {
+          "osm": "way/167497903",
+          "name": "EG Group - Milano Palatino",
+          "kind": "cafe",
+          "lat": 45.476321,
+          "lng": 9.131182,
+          "distance": 598
+        },
+        {
+          "osm": "node/5136288776",
+          "name": "Jiahe",
+          "kind": "restaurant",
+          "cuisine": "chinese, japanese",
+          "lat": 45.473115,
+          "lng": 9.118299,
+          "distance": 719
+        },
+        {
+          "osm": "node/2943628440",
+          "name": "McDonald's",
+          "kind": "fast_food",
+          "cuisine": "burger",
+          "lat": 45.471228,
+          "lng": 9.120635,
+          "distance": 818
+        },
+        {
+          "osm": "node/651860101",
+          "name": "l'Arca",
+          "kind": "restaurant",
+          "cuisine": "pizza",
+          "lat": 45.486374,
+          "lng": 9.128811,
+          "distance": 983
+        },
+        {
+          "osm": "node/668213550",
+          "name": "Antica Trattoria Lampugnano",
+          "kind": "restaurant",
+          "lat": 45.486811,
+          "lng": 9.127547,
+          "distance": 997
+        }
+      ],
+      "hotels": [
+        {
+          "osm": "way/493275097",
+          "name": "B&B Hotel Milano San Siro",
+          "kind": "hotel",
+          "lat": 45.480368,
+          "lng": 9.123634,
+          "distance": 243
+        },
+        {
+          "osm": "node/6827969799",
+          "name": "B&B Luci a San Siro",
+          "kind": "hotel",
+          "lat": 45.475114,
+          "lng": 9.127489,
+          "distance": 438
+        },
+        {
+          "osm": "node/6477293295",
+          "name": "B&B A San Siro 75",
+          "kind": "hotel",
+          "lat": 45.473623,
+          "lng": 9.126036,
+          "distance": 533
+        }
+      ]
+    },
+    "petco-park": {
+      "fetchedAt": "2026-11-15",
+      "radius": 1000,
+      "food": [
+        {
+          "osm": "node/14307754934",
+          "name": "Puesto",
+          "kind": "restaurant",
+          "cuisine": "mexican",
+          "lat": 32.707131,
+          "lng": -117.156171,
+          "distance": 69
+        },
+        {
+          "osm": "node/14307754936",
+          "name": "Seaside Market At Petco Park",
+          "kind": "restaurant",
+          "cuisine": "mexican, american",
+          "lat": 32.706686,
+          "lng": -117.156293,
+          "distance": 81
+        },
+        {
+          "osm": "node/14307754935",
+          "name": "Grand Ole BBQ",
+          "kind": "restaurant",
+          "cuisine": "barbecue",
+          "lat": 32.706939,
+          "lng": -117.156066,
+          "distance": 83
+        },
+        {
+          "osm": "node/14307754933",
+          "name": "Blue Water Seafood Market & Grill",
+          "kind": "restaurant",
+          "cuisine": "seafood",
+          "lat": 32.707057,
+          "lng": -117.155894,
+          "distance": 95
+        },
+        {
+          "osm": "node/14307773708",
+          "name": "CoCo Ichibanya",
+          "kind": "restaurant",
+          "cuisine": "curry, japanese",
+          "lat": 32.706364,
+          "lng": -117.157458,
+          "distance": 107
+        },
+        {
+          "osm": "node/14307773707",
+          "name": "Hodad’s Petco Park",
+          "kind": "fast_food",
+          "cuisine": "burger",
+          "lat": 32.706424,
+          "lng": -117.157587,
+          "distance": 108
+        },
+        {
+          "osm": "node/14307754932",
+          "name": "Jack in the Box",
+          "kind": "fast_food",
+          "cuisine": "burger",
+          "lat": 32.707145,
+          "lng": -117.155724,
+          "distance": 110
+        },
+        {
+          "osm": "node/9339501289",
+          "name": "Achilles Coffee",
+          "kind": "cafe",
+          "cuisine": "coffee shop",
+          "lat": 32.706643,
+          "lng": -117.155431,
+          "distance": 151
+        }
+      ],
+      "hotels": [
+        {
+          "osm": "way/30929815",
+          "name": "Omni San Diego Hotel",
+          "kind": "hotel",
+          "lat": 32.706864,
+          "lng": -117.158767,
+          "distance": 179
+        },
+        {
+          "osm": "way/32502455",
+          "name": "San Diego Marriott Gaslamp Quarter",
+          "kind": "hotel",
+          "lat": 32.708591,
+          "lng": -117.15873,
+          "distance": 231
+        },
+        {
+          "osm": "way/498782087",
+          "name": "Hard Rock Hotel San Diego",
+          "kind": "hotel",
+          "lat": 32.707855,
+          "lng": -117.159568,
+          "distance": 260
+        },
+        {
+          "osm": "way/377358714",
+          "name": "Residence Inn San Diego Downtown/Gaslamp Quarter",
+          "kind": "hotel",
+          "lat": 32.709078,
+          "lng": -117.159493,
+          "distance": 320
+        },
+        {
+          "osm": "way/32502468",
+          "name": "Margaritaville Hotel San Diego Gaslamp Quarter",
+          "kind": "hotel",
+          "lat": 32.709743,
+          "lng": -117.158746,
+          "distance": 331
+        }
+      ]
+    },
+    "reliant-stadium": {
+      "fetchedAt": "2026-11-15",
+      "radius": 1000,
+      "food": [
+        {
+          "osm": "node/5604621755",
+          "name": "Asahi Sushi",
+          "kind": "restaurant",
+          "cuisine": "asian, japanese",
+          "lat": 29.688694,
+          "lng": -95.413152,
+          "distance": 479
+        },
+        {
+          "osm": "node/5604621754",
+          "name": "Subway",
+          "kind": "fast_food",
+          "cuisine": "sandwich",
+          "lat": 29.688839,
+          "lng": -95.413156,
+          "distance": 494
+        },
+        {
+          "osm": "node/5604621753",
+          "name": "Russo's New York Pizza",
+          "kind": "restaurant",
+          "cuisine": "pizza",
+          "lat": 29.688978,
+          "lng": -95.413112,
+          "distance": 505
+        },
+        {
+          "osm": "node/4227206589",
+          "name": "Dimassi's Mediterranean Buffet",
+          "kind": "restaurant",
+          "cuisine": "mediterranean, buffet",
+          "lat": 29.689168,
+          "lng": -95.412968,
+          "distance": 519
+        },
+        {
+          "osm": "way/218802093",
+          "name": "Catfish Station",
+          "kind": "restaurant",
+          "cuisine": "fried food",
+          "lat": 29.690578,
+          "lng": -95.413688,
+          "distance": 690
+        },
+        {
+          "osm": "node/4432731829",
+          "name": "Angelo'z",
+          "kind": "fast_food",
+          "cuisine": "sandwich",
+          "lat": 29.691596,
+          "lng": -95.412093,
+          "distance": 755
+        },
+        {
+          "osm": "node/5604621752",
+          "name": "Akashi Asian Sushi Cuisine & Wine Bar",
+          "kind": "restaurant",
+          "cuisine": "asian, japanese",
+          "lat": 29.691579,
+          "lng": -95.41313,
+          "distance": 776
+        },
+        {
+          "osm": "node/5604621750",
+          "name": "Pizza Hut",
+          "kind": "restaurant",
+          "cuisine": "pizza",
+          "lat": 29.691903,
+          "lng": -95.41223,
+          "distance": 791
+        }
+      ],
+      "hotels": [
+        {
+          "osm": "relation/18217490",
+          "name": "Wingate",
+          "kind": "hotel",
+          "lat": 29.680814,
+          "lng": -95.413406,
+          "distance": 519
+        },
+        {
+          "osm": "way/219056348",
+          "name": "Holiday Inn Houston - NRG/Medical Center Area",
+          "kind": "hotel",
+          "lat": 29.690292,
+          "lng": -95.411481,
+          "distance": 603
+        },
+        {
+          "osm": "way/312888729",
+          "name": "Extended Stay America - Houston - Med. Ctr. - NRG Park - Kirby",
+          "kind": "hotel",
+          "lat": 29.691161,
+          "lng": -95.411704,
+          "distance": 702
+        },
+        {
+          "osm": "way/1328655037",
+          "name": "Quality Inn",
+          "kind": "hotel",
+          "lat": 29.679394,
+          "lng": -95.414554,
+          "distance": 712
+        },
+        {
+          "osm": "way/119430790",
+          "name": "Wyndham",
+          "kind": "hotel",
+          "lat": 29.678806,
+          "lng": -95.413433,
+          "distance": 724
+        }
+      ]
+    },
+    "allianz-arena": {
+      "fetchedAt": "2026-11-15",
+      "radius": 1000,
+      "food": [],
+      "hotels": []
     }
   }
 }
