@@ -179,6 +179,23 @@ export default function ConcertPage({ params }: Props) {
         </Link>
       </div>
 
+      <a
+        href={BOOKS["shy-girl-1"].url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-4 flex items-center gap-4 rounded-3xl border border-[#F0E6EE] bg-white p-5 transition-shadow hover:shadow-md"
+      >
+        <BookCover book={BOOKS["shy-girl-1"]} className="w-12" small />
+        <div className="min-w-0 flex-1">
+          <p className="font-semibold">Love K-pop? Read a K-pop romance in Korean.</p>
+          <p className="mt-1 text-sm text-[#6B5F7A]">
+            Shy Girl, Center Stage follows a shy country girl to the festival stage, with every line of dialogue in
+            natural Korean and an English translation under it. For intermediate learners.
+          </p>
+        </div>
+        <span className="shrink-0 text-sm font-semibold text-[#E8436F]">Amazon ↗</span>
+      </a>
+
       {c.venue.countryCode === "KR" && (
         <a
           href={BOOKS["korea-unlocked"].url}

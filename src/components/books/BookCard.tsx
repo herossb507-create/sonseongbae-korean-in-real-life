@@ -11,7 +11,8 @@ export function BookCard({ book }: { book: Book }) {
           <h3 className="mt-0.5 text-lg font-bold leading-snug text-[#1E1225]">{book.title}</h3>
           <p className="text-sm font-medium text-[#E8436F]">{book.subtitle}</p>
           <p className="mt-2 text-xs text-[#B0A8BB]">
-            {book.formats} · {book.pages} pages
+            {book.formats}
+            {book.pages && <> · {book.pages} pages</>}
           </p>
         </div>
       </div>

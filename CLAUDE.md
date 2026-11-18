@@ -602,15 +602,15 @@ export function speakKorean(text: string, options?: { rate?: number; pitch?: num
 
 ## 📚 전자책 판매 연계 (2026-10-20)
 
-`src/lib/books.ts`에 책 4권(Korean in Real Life Vol.1·2, Korean on Campus, Korea Unlocked)의 Amazon 링크와 무료 PDF(MailerLite 구독 페이지)를 한곳에 모아둠. 링크·문구는 이 파일만 고치면 됨.
+`src/lib/books.ts`에 책 5권(Korean in Real Life Vol.1·2, Korean on Campus, Shy Girl Center Stage Book 1, Korea Unlocked)의 Amazon 링크와 무료 PDF(MailerLite 구독 페이지)를 한곳에 모아둠. 링크·문구는 이 파일만 고치면 됨.
 
 | 위치 | 내용 |
 |------|------|
-| `/books` | 4권 카드(학습 3 + 여행 1) + 무료 PDF 배너 (사이드바 📚 Books) |
+| `/books` | 5권 카드(학습 4 + 여행 1) + 무료 PDF 배너 (사이드바 📚 Books) |
 | 랜딩 | 커리큘럼 아래 "The books behind the course" 섹션, 상단 nav·푸터 링크 |
 | 챕터 읽기 하단 | 해당 챕터를 다루는 권 추천 (ch01–08·14 → Vol.1, 나머지 → Vol.2) |
 | Home | 무료 PDF 배너 + Books 바로가기 |
-| 한국 공연 상세 | Korea Unlocked 카드 (공연장이 KR일 때만) |
+| 공연 상세 | Shy Girl, Center Stage 카드(모든 공연) + Korea Unlocked 카드(공연장이 KR일 때만) |
 
 표지 이미지는 `public/books/*.jpg`에 넣고 `cover` 필드를 채우면 자동으로 대체됨(없으면 그라디언트 표지).
 

@@ -18,8 +18,8 @@ export function BookCover({
         src={book.cover}
         alt={`${book.title} — ${book.subtitle}`}
         width={240}
-        height={360}
-        className={`${className} aspect-[2/3] rounded-lg object-cover shadow-[0_8px_24px_rgba(30,18,37,0.18)]`}
+        height={384}
+        className={`${className} h-auto shrink-0 self-start rounded-lg shadow-[0_8px_24px_rgba(30,18,37,0.18)]`}
       />
     );
   }

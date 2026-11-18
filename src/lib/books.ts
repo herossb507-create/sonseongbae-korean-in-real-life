@@ -1,7 +1,7 @@
 // The author's books and free lead magnet. Links are plain Amazon product URLs
 // (resolved from the a.co share links); add an Associates tag here if you join.
 
-export type BookId = "kirl-1" | "kirl-2" | "korean-on-campus" | "korea-unlocked";
+export type BookId = "kirl-1" | "kirl-2" | "korean-on-campus" | "shy-girl-1" | "korea-unlocked";
 
 export interface Book {
   id: BookId;
@@ -10,7 +10,8 @@ export interface Book {
   series?: string;
   url: string;
   formats: string;
-  pages: number;
+  /** Print length; leave out until Amazon shows it. */
+  pages?: number;
   pitch: string;
   highlights: string[];
   /** Short label on the small cover thumbnail; defaults to "Vol. N" for the series, else "Korea". */
@@ -70,6 +71,24 @@ export const BOOKS: Record<BookId, Book> = {
     ],
     coverLabel: "Campus",
     coverGradient: "from-[#2F6FE4] to-[#5FA8F5]",
+  },
+  "shy-girl-1": {
+    id: "shy-girl-1",
+    title: "Shy Girl, Center Stage",
+    subtitle: "From the Greenhouse to the Stage",
+    series: "Book 1",
+    url: "https://www.amazon.com/dp/B0HS2S2FG8",
+    formats: "Kindle · TOPIK 3–5",
+    pitch:
+      "A K-pop romance to learn intermediate Korean: a shy girl from a strawberry farm sings only when no one is listening, until one school festival changes everything.",
+    highlights: [
+      "English narration with every line of dialogue in natural Korean, and a translation under each line",
+      "20 grammar patterns and 150 key expressions with real pronunciation",
+      "K-culture notes on 선배 and 후배, fan-cams, trainee contracts and Arirang, plus a quiz in every chapter",
+    ],
+    coverLabel: "K-pop",
+    cover: "/books/shy-girl-1.jpg",
+    coverGradient: "from-[#F472B6] to-[#F59E0B]",
   },
   "korea-unlocked": {
     id: "korea-unlocked",
