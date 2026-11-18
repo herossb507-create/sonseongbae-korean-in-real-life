@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import ConcertList from "@/components/concerts/ConcertList";
 import { getArtist, getConcertsByArtist, getListedArtists } from "@/lib/concerts/data";
 import { pageMeta } from "@/lib/seo";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { breadcrumbs, eventList, graph } from "@/lib/concerts/schema";
 
 interface Props {
   params: { slug: string };
@@ -35,6 +37,16 @@ export default function ArtistPage({ params }: Props) {
 
   return (
     <>
+      <JsonLd
+        data={graph(
+          eventList(`${artist.name} tour dates`, shows),
+          breadcrumbs([
+            { name: "K-pop Concerts", path: "/concerts" },
+            { name: "Artists", path: "/concerts/artists" },
+            { name: artist.name, path: `/concerts/artists/${artist.id}` },
+          ]),
+        )}
+      />
       <h1 className="text-3xl font-bold">
         {artist.name}
         {artist.nameKo && <span className="ml-3 font-noto-kr text-lg font-normal text-[#B0A8BB]">{artist.nameKo}</span>}

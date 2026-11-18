@@ -5,10 +5,10 @@ import StatusBadge, { UnconfirmedBadge } from "@/components/concerts/StatusBadge
 import TicketLinks from "@/components/concerts/TicketLinks";
 import TravelSection from "@/components/concerts/TravelSection";
 import type { ConcertWithRefs } from "@/lib/concerts/types";
-import { ticketLinksFor } from "@/lib/concerts/affiliate";
-import { getConcert, getConcerts, startDateTime } from "@/lib/concerts/data";
+import { getConcert, getConcerts } from "@/lib/concerts/data";
+import { breadcrumbs, graph, musicEvent } from "@/lib/concerts/schema";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { citySlug, flag, formatDate, sourceLabel } from "@/lib/concerts/format";
-import { SITE_URL } from "@/lib/concerts/site";
 import { pageMeta } from "@/lib/seo";
 import { BookCover } from "@/components/books/BookCover";
 import { BOOKS } from "@/lib/books";
@@ -36,52 +36,21 @@ export function generateMetadata({ params }: Props): Metadata {
   });
 }
 
-const EVENT_STATUS = {
-  announced: "https://schema.org/EventScheduled",
-  onsale: "https://schema.org/EventScheduled",
-  soldout: "https://schema.org/EventScheduled",
-  cancelled: "https://schema.org/EventCancelled",
-};
-
-// schema.org MusicEvent, so search engines can show the date and ticket link.
-function jsonLd(c: ConcertWithRefs) {
-  const primary = ticketLinksFor(c).find((l) => l.kind === "primary");
-  return {
-    "@context": "https://schema.org",
-    "@type": "MusicEvent",
-    name: `${c.artist.name} — ${c.tour}`,
-    startDate: startDateTime(c),
-    eventStatus: EVENT_STATUS[c.status],
-    eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-    url: `${SITE_URL}/concerts/${c.id}`,
-    location: {
-      "@type": "Place",
-      name: c.venue.name,
-      address: { "@type": "PostalAddress", addressLocality: c.venue.city, addressCountry: c.venue.countryCode },
-      geo: { "@type": "GeoCoordinates", latitude: c.venue.lat, longitude: c.venue.lng },
-    },
-    performer: { "@type": "MusicGroup", name: c.artist.name, url: `${SITE_URL}/concerts/artists/${c.artist.id}` },
-    ...(primary && {
-      offers: {
-        "@type": "Offer",
-        url: primary.href,
-        availability: c.status === "soldout" ? "https://schema.org/SoldOut" : "https://schema.org/InStock",
-        ...(c.ticketOpen && { validFrom: c.ticketOpen }),
-      },
-    }),
-  };
-}
-
 export default function ConcertPage({ params }: Props) {
   const c = getConcert(params.slug);
   if (!c) notFound();
 
   return (
     <article>
-      <script
-        type="application/ld+json"
-        // JSON.stringify output is safe apart from "<", which could close the script tag.
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd(c)).replace(/</g, "\\u003c") }}
+      <JsonLd
+        data={graph(
+          musicEvent(c),
+          breadcrumbs([
+            { name: "K-pop Concerts", path: "/concerts" },
+            { name: c.artist.name, path: `/concerts/artists/${c.artist.id}` },
+            { name: title(c), path: `/concerts/${c.id}` },
+          ]),
+        )}
       />
       <p className="text-sm font-semibold text-[#E8436F]">
         <Link href={`/concerts/artists/${c.artist.id}`} className="hover:underline">

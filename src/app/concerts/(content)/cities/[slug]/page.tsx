@@ -4,6 +4,8 @@ import ConcertList from "@/components/concerts/ConcertList";
 import { getCities, getConcertsByCity } from "@/lib/concerts/data";
 import { flag } from "@/lib/concerts/format";
 import { pageMeta } from "@/lib/seo";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { breadcrumbs, eventList, graph } from "@/lib/concerts/schema";
 
 interface Props {
   params: { slug: string };
@@ -21,10 +23,13 @@ function findCity(slug: string) {
 export function generateMetadata({ params }: Props): Metadata {
   const city = findCity(params.slug);
   if (!city) return {};
-  const artists = [...new Set(getConcertsByCity(params.slug).map((c) => c.artist.name))];
+  const shows = getConcertsByCity(params.slug);
+  const artists = [...new Set(shows.map((c) => c.artist.name))];
+  const venues = [...new Set(shows.map((c) => c.venue.name))];
+  const years = [...new Set(shows.map((c) => c.date.slice(0, 4)))].sort().join("–");
   return pageMeta({
-    title: `K-pop concerts in ${city.name}`,
-    description: `Upcoming K-pop concerts in ${city.name}, ${city.country}: ${artists.slice(0, 6).join(", ")}. Dates, venues and tickets.`,
+    title: `K-pop Concerts in ${city.name} ${years}: Dates, Venues & Tickets`,
+    description: `${shows.length} K-pop concert${shows.length > 1 ? "s" : ""} in ${city.name}, ${city.country}: ${artists.slice(0, 6).join(", ")} at ${venues.slice(0, 3).join(", ")}. Dates, tickets and hotels near the venue.`,
     path: `/concerts/cities/${params.slug}`,
   });
 }
@@ -32,14 +37,25 @@ export function generateMetadata({ params }: Props): Metadata {
 export default function CityPage({ params }: Props) {
   const city = findCity(params.slug);
   if (!city) notFound();
+  const shows = getConcertsByCity(params.slug);
   return (
     <>
+      <JsonLd
+        data={graph(
+          eventList(`K-pop concerts in ${city.name}`, shows),
+          breadcrumbs([
+            { name: "K-pop Concerts", path: "/concerts" },
+            { name: "Cities", path: "/concerts/cities" },
+            { name: city.name, path: `/concerts/cities/${city.slug}` },
+          ]),
+        )}
+      />
       <h1 className="text-3xl font-bold">
         {flag(city.countryCode)} K-pop concerts in {city.name}
       </h1>
       <p className="mt-1 text-[#6B5F7A]">{city.country}</p>
       <div className="mt-8">
-        <ConcertList concerts={getConcertsByCity(params.slug)} show="artist" />
+        <ConcertList concerts={shows} show="artist" />
       </div>
     </>
   );

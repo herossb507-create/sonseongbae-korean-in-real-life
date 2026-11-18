@@ -4,6 +4,8 @@ import { ReaderControls } from "@/components/reader/ReaderControls";
 import { CHAPTER_CONTENT } from "@/lib/chapter-content";
 import { ChapterBookCTA } from "@/components/books/ChapterBookCTA";
 import { chapterSummary, pageMeta } from "@/lib/seo";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { SITE_URL } from "@/lib/concerts/site";
 
 interface Props {
   params: { chapterId: string };
@@ -35,6 +37,32 @@ export default function ChapterPage({ params }: Props) {
 
   return (
     <div className="min-h-screen bg-[#FFF5F8]">
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "LearningResource",
+              name: `Korean Lesson ${chapter.num}: ${chapter.title}`,
+              description: chapterSummary(chapterId),
+              url: `${SITE_URL}/learn/${chapterId}`,
+              inLanguage: "en",
+              learningResourceType: "Lesson",
+              educationalLevel: "Beginner",
+              teaches: "Korean language",
+              isAccessibleForFree: true,
+              isPartOf: { "@type": "Course", name: "Korean in Real Life", url: `${SITE_URL}/learn` },
+            },
+            {
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Learn Korean", item: `${SITE_URL}/learn` },
+                { "@type": "ListItem", position: 2, name: chapter.title, item: `${SITE_URL}/learn/${chapterId}` },
+              ],
+            },
+          ],
+        }}
+      />
       {/* ── Sticky top nav ── */}
       <nav className="sticky top-0 z-10 bg-white/95 backdrop-blur-md border-b border-[#F0E6EE] px-4 sm:px-6 py-3 flex items-center justify-between">
         <Link

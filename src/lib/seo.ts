@@ -3,13 +3,18 @@ import { CHAPTER_CONTENT } from "@/lib/chapter-content";
 
 export const SITE_NAME = "Korean in Real Life";
 
-// 1200×630 share image in /public (generated once from the brand colours).
-const OG_IMAGE = {
-  url: "/og-image.png",
-  width: 1200,
-  height: 630,
-  alt: "Korean in Real Life — learn practical Korean free, plus a K-pop concert map",
+// 1200×630 share images in /public (generated once from the brand colours and book covers).
+const OG_IMAGES = {
+  default: { url: "/og-image.png", alt: "Korean in Real Life — learn practical Korean free, plus a K-pop concert map" },
+  concerts: { url: "/og-concerts.png", alt: "K-pop Concert Map — tour dates worldwide, official tickets, hotels near the venue" },
+  books: { url: "/og-books.jpg", alt: "Korean in Real Life books for learning Korean and visiting Korea" },
 };
+
+/** The concert and book sections get their own share image; everything else the site's. */
+function ogImage(path: string) {
+  const img = path.startsWith("/concerts") ? OG_IMAGES.concerts : path.startsWith("/books") ? OG_IMAGES.books : OG_IMAGES.default;
+  return { ...img, width: 1200, height: 630 };
+}
 
 /**
  * Title, description, canonical URL and social-share tags for one page.
@@ -28,6 +33,7 @@ export function pageMeta({
   noindex?: boolean;
 }): Metadata {
   const fullTitle = title === SITE_NAME ? title : `${title} | ${SITE_NAME}`;
+  const image = ogImage(path);
   return {
     title: fullTitle,
     description,
@@ -39,9 +45,9 @@ export function pageMeta({
       siteName: SITE_NAME,
       type: "website",
       locale: "en_US",
-      images: [OG_IMAGE],
+      images: [image],
     },
-    twitter: { card: "summary_large_image", title: fullTitle, description, images: [OG_IMAGE.url] },
+    twitter: { card: "summary_large_image", title: fullTitle, description, images: [image.url] },
     ...(noindex && { robots: { index: false, follow: true } }),
   };
 }

@@ -626,5 +626,7 @@ export function speakKorean(text: string, options?: { rate?: number; pitch?: num
 
 - 페이지 메타데이터는 `src/lib/seo.ts`의 `pageMeta({ title, description, path, noindex? })`로 통일 — 제목 뒤 "| Korean in Real Life", canonical, Open Graph·Twitter, 공유 이미지(`public/og-image.png`)를 한 번에 넣음. 새 페이지도 이걸 쓸 것(제목 중복 금지).
 - 검색 제외(noindex): 브라우저 저장 진도 페이지(home·dashboard·settings), 퀴즈·게임 개별 페이지, voice-test.
-- 구조화 데이터: 랜딩 WebSite, `/learn` Course, `/books` Book, 공연 상세 MusicEvent (`src/components/seo/JsonLd.tsx`).
+- 구조화 데이터: 랜딩 WebSite, `/learn` Course, 챕터 LearningResource+Breadcrumb, `/books` Book, 공연 상세 MusicEvent+Breadcrumb, 아티스트·도시 ItemList+Breadcrumb (`src/lib/concerts/schema.ts`, `src/components/seo/JsonLd.tsx`).
+- 공유 이미지: 경로로 자동 선택 — `/concerts*` → `public/og-concerts.png`, `/books` → `public/og-books.jpg`(표지 5권), 나머지 `og-image.png`. 표지가 바뀌면 이미지도 다시 만들 것.
+- IndexNow: 키 파일 `public/ceda3804eb0f5319f5430ae2b94d3193.txt`. 배포 후 `npm run concerts:indexnow`(오늘 바뀐 공연 페이지를 Bing 등에 알림, `--since 날짜`/`--all`). 주간 자동 업데이트가 푸시 후 실행.
 - `NEXT_PUBLIC_APP_URL`이 canonical·sitemap 주소의 기준. 도메인 바꾸면 이 값 바꾸고 재배포.

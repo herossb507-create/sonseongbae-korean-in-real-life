@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { CHAPTER_CONTENT } from "@/lib/chapter-content";
 import { DIALOGUE_SCENARIOS } from "@/lib/dialogue-data";
 import { CHAPTER_VOCAB } from "@/lib/vocab-data";
-import { getCities, getConcerts, getListedArtists } from "@/lib/concerts/data";
+import { getCities, getConcerts, getConcertsByCity, getListedArtists } from "@/lib/concerts/data";
 import { SITE_URL } from "@/lib/concerts/site";
 
 // Public, indexable pages. Progress pages (home, stats, settings) are per-browser and left out.
@@ -35,6 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     ...getCities().map((city) => ({
       url: `${SITE_URL}/concerts/cities/${city.slug}`,
+      lastModified: latest(getConcertsByCity(city.slug)),
       changeFrequency: "daily" as const,
     })),
     ...concerts.map((c) => ({
