@@ -36,6 +36,7 @@ export const BOOKS: Record<BookId, Book> = {
       "Greetings, numbers, transport, food, shopping, texting slang, K-pop & K-drama Korean",
       "Quick Reference Cards and free Listen & Repeat videos",
     ],
+    cover: "/books/kirl-1.jpg",
     coverGradient: "from-[#E8436F] to-[#F06B8A]",
   },
   "kirl-2": {
@@ -52,6 +53,7 @@ export const BOOKS: Record<BookId, Book> = {
       "Honorifics made clear, emotions, holidays and dining & drinking etiquette",
       "Verb conjugation guide and a 30-day study plan",
     ],
+    cover: "/books/kirl-2.jpg",
     coverGradient: "from-[#9B7FE8] to-[#B099FF]",
   },
   "korean-on-campus": {
@@ -70,6 +72,7 @@ export const BOOKS: Record<BookId, Book> = {
       "18 lessons with a Core layer (TOPIK 1–2) and a Level Up layer (TOPIK 3–4), plus free companion Shorts",
     ],
     coverLabel: "Campus",
+    cover: "/books/korean-on-campus.jpg",
     coverGradient: "from-[#2F6FE4] to-[#5FA8F5]",
   },
   "shy-girl-1": {
@@ -103,6 +106,7 @@ export const BOOKS: Record<BookId, Book> = {
       "K-pop spots, K-drama locations and K-beauty shopping done right",
       "6 ready-made itineraries and 120+ Local's Notes",
     ],
+    cover: "/books/korea-unlocked.jpg",
     coverGradient: "from-[#1E1225] to-[#4A3560]",
   },
 };
