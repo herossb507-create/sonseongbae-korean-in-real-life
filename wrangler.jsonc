@@ -13,7 +13,10 @@
     "html_handling": "auto-trailing-slash",
     // Unknown paths get out/404.html with a 404 status
     "not_found_handling": "404-page",
-    // Google Search Console verification file (must not be redirected)
-    "run_worker_first": ["/google76f349ea99c14637.html"]
-  }
+    // Google Search Console verification file (must not be redirected),
+    // and tracked promo links (/go/kirl1?src=ig&post=1114, see docs/PROMO-LINKS.md)
+    "run_worker_first": ["/google76f349ea99c14637.html", "/go/*"]
+  },
+  // Click log for /go links (Workers Analytics Engine; the dataset is created on first write)
+  "analytics_engine_datasets": [{ "binding": "CLICKS", "dataset": "promo_clicks" }]
 }
