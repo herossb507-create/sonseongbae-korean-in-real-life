@@ -16,8 +16,8 @@
     // Google Search Console verification file (must not be redirected),
     // and tracked promo links (/go/kirl1?src=ig&post=1114, see docs/PROMO-LINKS.md)
     "run_worker_first": ["/google76f349ea99c14637.html", "/go/*"]
-  }
-  // Click log for /go links: add back once Workers Analytics Engine is enabled on the
-  // account (the first deploy with it failed), see docs/PROMO-LINKS.md.
-  // "analytics_engine_datasets": [{ "binding": "CLICKS", "dataset": "promo_clicks" }]
+  },
+  // Click log for /go links (Workers Analytics Engine; the dataset is created on first write).
+  // Analytics Engine must be enabled once per account in the dashboard, or deploy fails with code 10089.
+  "analytics_engine_datasets": [{ "binding": "CLICKS", "dataset": "promo_clicks" }]
 }
