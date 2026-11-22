@@ -1871,6 +1871,26 @@
     "lastSeenAt": "2026-10-19"
   },
   {
+    "id": "babymonster-asiaworld-arena-2027-01-08",
+    "artistId": "babymonster",
+    "tour": "CHOOM World Tour",
+    "date": "2027-01-08",
+    "time": "20:00",
+    "venueId": "asiaworld-arena",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://www.asiaworld-expo.com/en-us/whats-on/upcoming-events/events/2027-babymonster-tour-in-hong-kong/",
+        "fetchedAt": "2026-11-22"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-11-22",
+    "lastSeenAt": "2026-11-22"
+  },
+  {
     "id": "boynextdoor-ntsu-arena-2027-01-08",
     "artistId": "boynextdoor",
     "tour": "KNOCK ON Vol.2 Tour",
@@ -1915,19 +1935,25 @@
     "artistId": "babymonster",
     "tour": "CHOOM World Tour",
     "date": "2027-01-09",
+    "time": "18:00",
     "venueId": "asiaworld-arena",
     "status": "announced",
     "ticketLinks": [],
     "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://www.asiaworld-expo.com/en-us/whats-on/upcoming-events/events/2027-babymonster-tour-in-hong-kong/",
+        "fetchedAt": "2026-11-22"
+      },
       {
         "source": "news",
         "url": "https://global.hk01.com/众乐迷/60348695/babymonster演唱会2027香港-门票优先公售攻略-购票连结-座位表",
         "fetchedAt": "2026-11-09"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-11-09",
-    "lastSeenAt": "2026-11-09"
+    "verification": "verified",
+    "updatedAt": "2026-11-22",
+    "lastSeenAt": "2026-11-22"
   },
   {
     "id": "boynextdoor-ntsu-arena-2027-01-09",
@@ -1962,11 +1988,36 @@
         "source": "news",
         "url": "https://says.com/my/entertainment/nct-127-adds-kuala-lumpur-to-their-world-tour-in-january-2027",
         "fetchedAt": "2026-10-24"
+      },
+      {
+        "source": "news",
+        "url": "https://www.thestar.com.my/lifestyle/entertainment/2026/11/13/k-pop-boy-group-nct-127-to-hold-concert-in-kl-on-jan-9",
+        "fetchedAt": "2026-11-22"
       }
     ],
     "verification": "unverified",
     "updatedAt": "2026-10-24",
-    "lastSeenAt": "2026-10-24"
+    "lastSeenAt": "2026-11-22"
+  },
+  {
+    "id": "babymonster-asiaworld-arena-2027-01-10",
+    "artistId": "babymonster",
+    "tour": "CHOOM World Tour",
+    "date": "2027-01-10",
+    "time": "18:00",
+    "venueId": "asiaworld-arena",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://www.asiaworld-expo.com/en-us/whats-on/upcoming-events/events/2027-babymonster-tour-in-hong-kong/",
+        "fetchedAt": "2026-11-22"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-11-22",
+    "lastSeenAt": "2026-11-22"
   },
   {
     "id": "boynextdoor-ntsu-arena-2027-01-10",
@@ -2031,6 +2082,7 @@
     "artistId": "boynextdoor",
     "tour": "KNOCK ON Vol.2 Tour",
     "date": "2027-01-16",
+    "time": "18:00",
     "venueId": "asiaworld-arena",
     "status": "announced",
     "ticketLinks": [],
@@ -2038,12 +2090,12 @@
       {
         "source": "official",
         "url": "https://www.asiaworld-expo.com/en-us/whats-on/upcoming-events/events/2027-boynextdoor-concert-in-hong-kong/",
-        "fetchedAt": "2026-10-24"
+        "fetchedAt": "2026-11-22"
       }
     ],
     "verification": "verified",
-    "updatedAt": "2026-10-24",
-    "lastSeenAt": "2026-10-24"
+    "updatedAt": "2026-11-22",
+    "lastSeenAt": "2026-11-22"
   },
   {
     "id": "stray-kids-impact-arena-2027-01-16",
@@ -2051,9 +2103,20 @@
     "tour": "RUN IT World Tour",
     "date": "2027-01-16",
     "venueId": "impact-arena",
-    "status": "announced",
-    "ticketLinks": [],
+    "status": "soldout",
+    "ticketLinks": [
+      {
+        "label": "Live Nation Thailand",
+        "url": "https://www.livenationtero.co.th/en/stray-kids-tickets-adp1182958",
+        "kind": "primary"
+      }
+    ],
     "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://www.livenationtero.co.th/en/stray-kids-tickets-adp1182958",
+        "fetchedAt": "2026-11-22"
+      },
       {
         "source": "news",
         "url": "https://consequence.net/2026/11/stray-kids-2027-world-tour/",
@@ -2065,15 +2128,16 @@
         "fetchedAt": "2026-11-15"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-11-15",
-    "lastSeenAt": "2026-11-15"
+    "verification": "verified",
+    "updatedAt": "2026-11-22",
+    "lastSeenAt": "2026-11-22"
   },
   {
     "id": "boynextdoor-asiaworld-arena-2027-01-17",
     "artistId": "boynextdoor",
     "tour": "KNOCK ON Vol.2 Tour",
     "date": "2027-01-17",
+    "time": "17:00",
     "venueId": "asiaworld-arena",
     "status": "announced",
     "ticketLinks": [],
@@ -2081,12 +2145,12 @@
       {
         "source": "official",
         "url": "https://www.asiaworld-expo.com/en-us/whats-on/upcoming-events/events/2027-boynextdoor-concert-in-hong-kong/",
-        "fetchedAt": "2026-10-24"
+        "fetchedAt": "2026-11-22"
       }
     ],
     "verification": "verified",
-    "updatedAt": "2026-10-24",
-    "lastSeenAt": "2026-10-24"
+    "updatedAt": "2026-11-22",
+    "lastSeenAt": "2026-11-22"
   },
   {
     "id": "stray-kids-impact-arena-2027-01-17",
@@ -2094,9 +2158,20 @@
     "tour": "RUN IT World Tour",
     "date": "2027-01-17",
     "venueId": "impact-arena",
-    "status": "announced",
-    "ticketLinks": [],
+    "status": "soldout",
+    "ticketLinks": [
+      {
+        "label": "Live Nation Thailand",
+        "url": "https://www.livenationtero.co.th/en/stray-kids-tickets-adp1182958",
+        "kind": "primary"
+      }
+    ],
     "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://www.livenationtero.co.th/en/stray-kids-tickets-adp1182958",
+        "fetchedAt": "2026-11-22"
+      },
       {
         "source": "news",
         "url": "https://consequence.net/2026/11/stray-kids-2027-world-tour/",
@@ -2108,9 +2183,9 @@
         "fetchedAt": "2026-11-15"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-11-15",
-    "lastSeenAt": "2026-11-15"
+    "verification": "verified",
+    "updatedAt": "2026-11-22",
+    "lastSeenAt": "2026-11-22"
   },
   {
     "id": "aespa-ziggo-dome-2027-01-19",
@@ -2680,17 +2755,28 @@
     "date": "2027-02-24",
     "venueId": "unipol-dome",
     "status": "announced",
-    "ticketLinks": [],
+    "ticketLinks": [
+      {
+        "label": "TicketOne",
+        "url": "https://www.ticketone.it/event/enhypen-unipol-dome-arena-milano-21553738/",
+        "kind": "primary"
+      }
+    ],
     "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://www.ticketone.it/event/enhypen-unipol-dome-arena-milano-21553738/",
+        "fetchedAt": "2026-11-22"
+      },
       {
         "source": "news",
         "url": "https://www.nme.com/news/music/enhypen-announce-details-of-blood-saga-world-tour-for-2026-and-2027-3940808",
         "fetchedAt": "2026-10-24"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-24",
-    "lastSeenAt": "2026-10-24"
+    "verification": "verified",
+    "updatedAt": "2026-11-22",
+    "lastSeenAt": "2026-11-22"
   },
   {
     "id": "enhypen-la-defense-arena-2027-02-27",
@@ -2702,14 +2788,19 @@
     "ticketLinks": [],
     "sourceRefs": [
       {
+        "source": "official",
+        "url": "https://www.plenitudearena.com/en/event/enhypen-paris-concert-vip-offer/",
+        "fetchedAt": "2026-11-22"
+      },
+      {
         "source": "news",
         "url": "https://www.nme.com/news/music/enhypen-announce-details-of-blood-saga-world-tour-for-2026-and-2027-3940808",
         "fetchedAt": "2026-10-24"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-24",
-    "lastSeenAt": "2026-10-24"
+    "verification": "verified",
+    "updatedAt": "2026-11-22",
+    "lastSeenAt": "2026-11-22"
   },
   {
     "id": "enhypen-ziggo-dome-2027-03-02",
@@ -2755,19 +2846,25 @@
     "artistId": "enhypen",
     "tour": "BLOOD SAGA World Tour",
     "date": "2027-03-05",
+    "time": "19:30",
     "venueId": "uber-arena",
     "status": "announced",
     "ticketLinks": [],
     "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://www.uber-arena.de/en/events/detail/enhypen-berlin/",
+        "fetchedAt": "2026-11-22"
+      },
       {
         "source": "news",
         "url": "https://www.nme.com/news/music/enhypen-announce-details-of-blood-saga-world-tour-for-2026-and-2027-3940808",
         "fetchedAt": "2026-10-24"
       }
     ],
-    "verification": "unverified",
-    "updatedAt": "2026-10-24",
-    "lastSeenAt": "2026-10-24"
+    "verification": "verified",
+    "updatedAt": "2026-11-22",
+    "lastSeenAt": "2026-11-22"
   },
   {
     "id": "bts-kai-tak-stadium-2027-03-06",
@@ -2788,6 +2885,26 @@
     "verification": "verified",
     "updatedAt": "2026-10-21",
     "lastSeenAt": "2026-10-21"
+  },
+  {
+    "id": "enhypen-uber-arena-2027-03-06",
+    "artistId": "enhypen",
+    "tour": "BLOOD SAGA World Tour",
+    "date": "2027-03-06",
+    "time": "19:30",
+    "venueId": "uber-arena",
+    "status": "announced",
+    "ticketLinks": [],
+    "sourceRefs": [
+      {
+        "source": "official",
+        "url": "https://www.uber-arena.de/en/events/detail/enhypen-berlin/",
+        "fetchedAt": "2026-11-22"
+      }
+    ],
+    "verification": "verified",
+    "updatedAt": "2026-11-22",
+    "lastSeenAt": "2026-11-22"
   },
   {
     "id": "stray-kids-sg-indoor-2027-03-06",
