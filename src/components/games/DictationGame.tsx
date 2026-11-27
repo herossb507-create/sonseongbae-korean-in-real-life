@@ -182,7 +182,7 @@ export default function DictationGame({
       <div className="flex items-center justify-center py-20">
         <div className="text-center space-y-3">
           <div className="text-4xl animate-pulse">🎧</div>
-          <p style={{ color: "#6B5F7A" }}>Preparing dictation…</p>
+          <p style={{ color: "#5A5475" }}>Preparing dictation…</p>
         </div>
       </div>
     );
@@ -203,10 +203,10 @@ export default function DictationGame({
         <div className="text-6xl">
           {pct === 100 ? "🏆" : passed ? "🎉" : "📚"}
         </div>
-        <h2 className="text-4xl font-black" style={{ color: "#1E1225" }}>
+        <h2 className="text-4xl font-black" style={{ color: "#140F2D" }}>
           {score} / {total}
         </h2>
-        <p style={{ color: "#6B5F7A" }}>
+        <p style={{ color: "#5A5475" }}>
           {pct === 100
             ? "Perfect dictation! Your Korean is sharp!"
             : passed
@@ -226,7 +226,7 @@ export default function DictationGame({
             <div className="text-2xl font-bold" style={{ color: "#10B981" }}>
               {pct}%
             </div>
-            <div className="text-xs mt-1" style={{ color: "#6B5F7A" }}>
+            <div className="text-xs mt-1" style={{ color: "#5A5475" }}>
               Accuracy
             </div>
           </div>
@@ -234,15 +234,15 @@ export default function DictationGame({
             <div className="text-2xl font-bold" style={{ color: "#F4A261" }}>
               {xpEarned}
             </div>
-            <div className="text-xs mt-1" style={{ color: "#6B5F7A" }}>
+            <div className="text-xs mt-1" style={{ color: "#5A5475" }}>
               XP earned
             </div>
           </div>
           <div className="text-center">
-            <div className="text-2xl font-bold" style={{ color: "#9B7FE8" }}>
+            <div className="text-2xl font-bold" style={{ color: "#7C5CFF" }}>
               {totalHintsUsed}
             </div>
-            <div className="text-xs mt-1" style={{ color: "#6B5F7A" }}>
+            <div className="text-xs mt-1" style={{ color: "#5A5475" }}>
               Hints used
             </div>
           </div>
@@ -268,16 +268,16 @@ export default function DictationGame({
                 <li key={i} className="text-sm">
                   <span
                     className="font-bold font-noto-kr mr-2"
-                    style={{ color: "#1E1225" }}
+                    style={{ color: "#140F2D" }}
                   >
                     {w.korean}
                   </span>
                   {w.romanization && (
-                    <span className="mr-2" style={{ color: "#6B5F7A" }}>
+                    <span className="mr-2" style={{ color: "#5A5475" }}>
                       [{w.romanization}]
                     </span>
                   )}
-                  <span style={{ color: "#6B5F7A" }}>{w.english}</span>
+                  <span style={{ color: "#5A5475" }}>{w.english}</span>
                 </li>
               ))}
             </ul>
@@ -290,9 +290,9 @@ export default function DictationGame({
             href={`/games/dictation/${chapterId}`}
             className="px-6 py-2.5 rounded-xl text-sm font-medium transition-colors"
             style={{
-              background: "rgba(155,127,232,0.10)",
-              border: "1px solid rgba(155,127,232,0.25)",
-              color: "#9B7FE8",
+              background: "rgba(124,92,255,0.10)",
+              border: "1px solid rgba(124,92,255,0.25)",
+              color: "#7C5CFF",
             }}
           >
             Try again
@@ -301,9 +301,9 @@ export default function DictationGame({
             href={`/vocab/${chapterId}`}
             className="px-6 py-2.5 rounded-xl text-sm font-medium transition-colors"
             style={{
-              background: "rgba(155,127,232,0.15)",
-              border: "1px solid rgba(155,127,232,0.25)",
-              color: "#9B7FE8",
+              background: "rgba(124,92,255,0.15)",
+              border: "1px solid rgba(124,92,255,0.25)",
+              color: "#7C5CFF",
             }}
           >
             Study vocab
@@ -312,7 +312,7 @@ export default function DictationGame({
             href="/games"
             className="px-6 py-2.5 rounded-xl text-sm font-semibold transition-opacity hover:opacity-90"
             style={{
-              background: "linear-gradient(to right, #E8436F, #F06B8A)",
+              background: "linear-gradient(to right, #FF3D8B, #FF6FB1)",
               color: "white",
             }}
           >
@@ -347,7 +347,7 @@ export default function DictationGame({
       <div className="space-y-1.5">
         <div
           className="flex justify-between text-xs"
-          style={{ color: "#6B5F7A" }}
+          style={{ color: "#5A5475" }}
         >
           <span>
             Question {currentIndex + 1} of {total}
@@ -360,8 +360,8 @@ export default function DictationGame({
             <span
               className="px-2 py-0.5 rounded-full text-xs"
               style={{
-                background: "rgba(155,127,232,0.12)",
-                color: "#9B7FE8",
+                background: "rgba(124,92,255,0.12)",
+                color: "#7C5CFF",
               }}
             >
               {mode === "word" ? "Word Mode" : "Sentence Mode"}
@@ -375,7 +375,7 @@ export default function DictationGame({
           <motion.div
             className="h-full rounded-full"
             style={{
-              background: "linear-gradient(to right, #9B7FE8, #E8436F)",
+              background: "linear-gradient(to right, #7C5CFF, #FF3D8B)",
             }}
             animate={{ width: `${(currentIndex / total) * 100}%` }}
             transition={{ duration: 0.5 }}
@@ -393,7 +393,7 @@ export default function DictationGame({
           transition={{ duration: 0.25 }}
           className="rounded-3xl p-6 flex flex-col items-center gap-5"
           style={{
-            background: "linear-gradient(135deg, #FFF0F5 0%, #FFF5F8 100%)",
+            background: "linear-gradient(135deg, #F2ECFF 0%, #F8F5FF 100%)",
             border: "1px solid rgba(240,230,238,1)",
           }}
         >
@@ -401,13 +401,13 @@ export default function DictationGame({
           <div className="text-center">
             <p
               className="text-xs uppercase tracking-widest font-medium mb-1"
-              style={{ color: "#B0A8BB" }}
+              style={{ color: "#9E98B8" }}
             >
               English meaning
             </p>
             <p
               className="text-xl font-semibold"
-              style={{ color: "#1E1225" }}
+              style={{ color: "#140F2D" }}
             >
               &ldquo;{current.hint}&rdquo;
             </p>
@@ -423,9 +423,9 @@ export default function DictationGame({
                 ? {
                     scale: [1, 1.08, 1],
                     boxShadow: [
-                      "0 4px 24px rgba(155,127,232,0.35)",
-                      "0 4px 48px rgba(155,127,232,0.65)",
-                      "0 4px 24px rgba(155,127,232,0.35)",
+                      "0 4px 24px rgba(124,92,255,0.35)",
+                      "0 4px 48px rgba(124,92,255,0.65)",
+                      "0 4px 24px rgba(124,92,255,0.35)",
                     ],
                   }
                 : {}
@@ -438,8 +438,8 @@ export default function DictationGame({
             className="w-24 h-24 rounded-full flex items-center justify-center text-4xl"
             style={{
               background:
-                "linear-gradient(135deg, #9B7FE8 0%, #B099FF 100%)",
-              boxShadow: "0 4px 24px rgba(155,127,232,0.40)",
+                "linear-gradient(135deg, #7C5CFF 0%, #A78BFF 100%)",
+              boxShadow: "0 4px 24px rgba(124,92,255,0.40)",
               cursor: "pointer",
               border: "none",
             }}
@@ -448,7 +448,7 @@ export default function DictationGame({
             🔊
           </motion.button>
 
-          <p className="text-xs" style={{ color: "#B0A8BB" }}>
+          <p className="text-xs" style={{ color: "#9E98B8" }}>
             {isSpeaking ? "Playing…" : "Tap to hear again"}
           </p>
         </motion.div>
@@ -470,7 +470,7 @@ export default function DictationGame({
           style={{
             background: inputBg,
             border: `2px solid ${inputBorder}`,
-            color: "#1E1225",
+            color: "#140F2D",
             boxShadow:
               feedback === "correct"
                 ? "0 0 16px rgba(16,185,129,0.15)"
@@ -495,9 +495,9 @@ export default function DictationGame({
           className="w-full rounded-xl py-3.5 text-sm font-bold transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100"
           style={{
             background:
-              "linear-gradient(to right, #9B7FE8, #B099FF)",
+              "linear-gradient(to right, #7C5CFF, #A78BFF)",
             color: "white",
-            boxShadow: "0 4px 16px rgba(155,127,232,0.30)",
+            boxShadow: "0 4px 16px rgba(124,92,255,0.30)",
           }}
         >
           ✓ Check Answer
@@ -532,12 +532,12 @@ export default function DictationGame({
                   ✅ Correct!
                 </p>
                 {hintUsed && (
-                  <p className="text-xs mt-1" style={{ color: "#6B5F7A" }}>
+                  <p className="text-xs mt-1" style={{ color: "#5A5475" }}>
                     +3 XP (hint used)
                   </p>
                 )}
                 {!hintUsed && (
-                  <p className="text-xs mt-1" style={{ color: "#6B5F7A" }}>
+                  <p className="text-xs mt-1" style={{ color: "#5A5475" }}>
                     +8 XP
                   </p>
                 )}
@@ -550,18 +550,18 @@ export default function DictationGame({
                 >
                   ✗ Not quite
                 </p>
-                <p className="text-sm" style={{ color: "#1E1225" }}>
+                <p className="text-sm" style={{ color: "#140F2D" }}>
                   Answer:{" "}
                   <span
                     className="font-bold font-noto-kr"
-                    style={{ color: "#1E1225" }}
+                    style={{ color: "#140F2D" }}
                   >
                     {correctAnswer}
                   </span>
                   {correctRomanization && (
                     <span
                       className="ml-2 text-xs"
-                      style={{ color: "#6B5F7A" }}
+                      style={{ color: "#5A5475" }}
                     >
                       [{correctRomanization}]
                     </span>
@@ -587,9 +587,9 @@ export default function DictationGame({
                 disabled={!current.romanization}
                 className="text-xs px-4 py-2 rounded-full transition-all duration-200 hover:scale-105 disabled:opacity-30 disabled:cursor-not-allowed"
                 style={{
-                  background: "rgba(155,127,232,0.10)",
-                  border: "1px solid rgba(155,127,232,0.22)",
-                  color: "#9B7FE8",
+                  background: "rgba(124,92,255,0.10)",
+                  border: "1px solid rgba(124,92,255,0.22)",
+                  color: "#7C5CFF",
                 }}
               >
                 Show romanization hint (−5 XP)
@@ -601,11 +601,11 @@ export default function DictationGame({
                 animate={{ opacity: 1, y: 0 }}
                 className="px-4 py-2 rounded-full inline-block"
                 style={{
-                  background: "rgba(155,127,232,0.08)",
-                  border: "1px solid rgba(155,127,232,0.18)",
+                  background: "rgba(124,92,255,0.08)",
+                  border: "1px solid rgba(124,92,255,0.18)",
                 }}
               >
-                <p className="text-sm" style={{ color: "#9B7FE8" }}>
+                <p className="text-sm" style={{ color: "#7C5CFF" }}>
                   {current.romanization}
                 </p>
               </motion.div>

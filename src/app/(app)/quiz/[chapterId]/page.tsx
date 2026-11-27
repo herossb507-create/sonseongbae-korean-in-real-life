@@ -32,12 +32,12 @@ export default function QuizPage({ params }: Props) {
 
   if (vocab.length < 4) {
     return (
-      <main className="min-h-screen bg-[#FFF5F8] flex items-center justify-center">
+      <main className="min-h-screen bg-[#F8F5FF] flex items-center justify-center">
         <div className="text-center space-y-4">
-          <p className="text-[#6B5F7A]">Not enough vocabulary to generate a quiz.</p>
+          <p className="text-[#5A5475]">Not enough vocabulary to generate a quiz.</p>
           <Link
             href={`/learn/${chapterId}`}
-            className="text-[#9B7FE8] hover:underline text-sm"
+            className="text-[#7C5CFF] hover:underline text-sm"
           >
             ← Back to chapter
           </Link>
@@ -50,33 +50,33 @@ export default function QuizPage({ params }: Props) {
   const allVocab = Object.values(CHAPTER_VOCAB).flat();
 
   return (
-    <main className="min-h-screen bg-[#FFF5F8]">
+    <main className="min-h-screen bg-[#F8F5FF]">
       {/* Nav */}
-      <nav className="sticky top-0 z-10 bg-white/95 backdrop-blur-md border-b border-[#F0E6EE] px-4 sm:px-6 py-3 flex items-center justify-between">
+      <nav className="sticky top-0 z-10 bg-white/95 backdrop-blur-md border-b border-[#EAE4F7] px-4 sm:px-6 py-3 flex items-center justify-between">
         <Link
           href={`/learn/${chapterId}`}
-          className="flex items-center gap-1.5 text-[#6B5F7A] hover:text-[#1E1225] text-sm font-medium transition-colors"
+          className="flex items-center gap-1.5 text-[#5A5475] hover:text-[#140F2D] text-sm font-medium transition-colors"
         >
           <span className="text-base">←</span>
           <span>Back to chapter</span>
         </Link>
-        <span className="text-xs text-[#B0A8BB] font-medium">Chapter {chapter.num} Quiz</span>
+        <span className="text-xs text-[#9E98B8] font-medium">Chapter {chapter.num} Quiz</span>
         <Link
           href={`/vocab/${vocabKey}`}
-          className="text-xs bg-[#9B7FE8]/20 text-[#9B7FE8] px-3 py-1.5 rounded-full font-medium hover:bg-[#9B7FE8]/30 transition-colors border border-[#9B7FE8]/30"
+          className="text-xs bg-[#7C5CFF]/20 text-[#7C5CFF] px-3 py-1.5 rounded-full font-medium hover:bg-[#7C5CFF]/30 transition-colors border border-[#7C5CFF]/30"
         >
           Vocab
         </Link>
       </nav>
 
       {/* Hero */}
-      <div className="bg-gradient-to-br from-[#FFF0F5] via-[#FFFFFF] to-[#FFF5F8] border-b border-[#F0E6EE]">
+      <div className="bg-gradient-to-br from-[#F2ECFF] via-[#FFFFFF] to-[#F8F5FF] border-b border-[#EAE4F7]">
         <div className="max-w-lg mx-auto px-6 py-8 text-center">
-          <span className="inline-flex items-center gap-1.5 bg-[#E8436F]/20 text-[#E8436F] text-xs font-bold px-3 py-1 rounded-full border border-[#E8436F]/30 mb-3">
+          <span className="inline-flex items-center gap-1.5 bg-[#FF3D8B]/20 text-[#FF3D8B] text-xs font-bold px-3 py-1 rounded-full border border-[#FF3D8B]/30 mb-3">
             🧠 Quiz
           </span>
-          <h1 className="text-2xl font-bold text-[#1E1225] mb-1">{chapter.title}</h1>
-          <p className="text-[#6B5F7A] text-sm">
+          <h1 className="text-2xl font-bold text-[#140F2D] mb-1">{chapter.title}</h1>
+          <p className="text-[#5A5475] text-sm">
             {Math.min(10, vocab.length)} questions · 4-choice
           </p>
         </div>

@@ -28,20 +28,20 @@ export default async function ListeningQuizPage({ params }: PageProps) {
     return (
       <div
         className="min-h-screen flex items-center justify-center p-8"
-        style={{ background: "#FFF5F8" }}
+        style={{ background: "#F8F5FF" }}
       >
         <div
           className="rounded-2xl p-8 text-center max-w-md shadow-sm"
           style={{
             background: "#FFFFFF",
-            border: "1px solid rgba(232,67,111,0.10)",
+            border: "1px solid rgba(255,61,139,0.10)",
           }}
         >
           <div className="text-4xl mb-4">🔊</div>
-          <h1 className="text-xl font-bold mb-2" style={{ color: "#1E1225" }}>
+          <h1 className="text-xl font-bold mb-2" style={{ color: "#140F2D" }}>
             Not Enough Vocabulary
           </h1>
-          <p className="text-sm mb-6" style={{ color: "#6B5F7A" }}>
+          <p className="text-sm mb-6" style={{ color: "#5A5475" }}>
             This chapter needs at least 4 vocabulary words to play the
             Listening Quiz.
           </p>
@@ -49,7 +49,7 @@ export default async function ListeningQuizPage({ params }: PageProps) {
             href="/games"
             className="inline-block rounded-xl px-6 py-3 font-semibold transition-all duration-200"
             style={{
-              background: "linear-gradient(to right, #E8436F, #F06B8A)",
+              background: "linear-gradient(to right, #FF3D8B, #FF6FB1)",
               color: "white",
             }}
           >
@@ -64,7 +64,7 @@ export default async function ListeningQuizPage({ params }: PageProps) {
   const allVocab = Object.values(CHAPTER_VOCAB).flat();
 
   return (
-    <main className="min-h-screen" style={{ background: "#FFF5F8" }}>
+    <main className="min-h-screen" style={{ background: "#F8F5FF" }}>
       {/* Nav */}
       <nav
         className="sticky top-0 z-10 px-4 sm:px-6 py-3 flex items-center justify-between"
@@ -77,21 +77,21 @@ export default async function ListeningQuizPage({ params }: PageProps) {
         <Link
           href="/games"
           className="flex items-center gap-1.5 text-sm font-medium transition-colors"
-          style={{ color: "#6B5F7A" }}
+          style={{ color: "#5A5475" }}
         >
           <span>←</span>
           <span>Games</span>
         </Link>
-        <span className="text-xs font-medium" style={{ color: "#B0A8BB" }}>
+        <span className="text-xs font-medium" style={{ color: "#9E98B8" }}>
           Chapter {chapter.num} · Listening Quiz
         </span>
         <Link
           href={`/vocab/${chapterId}`}
           className="text-xs px-3 py-1.5 rounded-full font-medium transition-colors"
           style={{
-            background: "rgba(155,127,232,0.15)",
-            color: "#9B7FE8",
-            border: "1px solid rgba(155,127,232,0.3)",
+            background: "rgba(124,92,255,0.15)",
+            color: "#7C5CFF",
+            border: "1px solid rgba(124,92,255,0.3)",
           }}
         >
           Vocab
@@ -102,7 +102,7 @@ export default async function ListeningQuizPage({ params }: PageProps) {
       <div
         style={{
           background:
-            "linear-gradient(135deg, #FFF0F5 0%, #FFFFFF 60%, #FFF5F8 100%)",
+            "linear-gradient(135deg, #F2ECFF 0%, #FFFFFF 60%, #F8F5FF 100%)",
           borderBottom: "1px solid rgba(240,230,238,1)",
         }}
       >
@@ -110,17 +110,17 @@ export default async function ListeningQuizPage({ params }: PageProps) {
           <span
             className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1 rounded-full mb-3"
             style={{
-              background: "rgba(232,67,111,0.15)",
-              color: "#E8436F",
-              border: "1px solid rgba(232,67,111,0.3)",
+              background: "rgba(255,61,139,0.15)",
+              color: "#FF3D8B",
+              border: "1px solid rgba(255,61,139,0.3)",
             }}
           >
             🔊 Listening Quiz
           </span>
-          <h1 className="text-2xl font-bold mb-1" style={{ color: "#1E1225" }}>
+          <h1 className="text-2xl font-bold mb-1" style={{ color: "#140F2D" }}>
             {chapter.title}
           </h1>
-          <p className="text-sm" style={{ color: "#6B5F7A" }}>
+          <p className="text-sm" style={{ color: "#5A5475" }}>
             {Math.min(10, vocab.length)} questions · Listen &amp; choose
           </p>
         </div>

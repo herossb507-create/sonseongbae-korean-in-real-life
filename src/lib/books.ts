@@ -37,7 +37,7 @@ export const BOOKS: Record<BookId, Book> = {
       "Quick Reference Cards and free Listen & Repeat videos",
     ],
     cover: "/books/kirl-1.jpg",
-    coverGradient: "from-[#E8436F] to-[#F06B8A]",
+    coverGradient: "from-[#FF3D8B] to-[#FF6FB1]",
   },
   "kirl-2": {
     id: "kirl-2",
@@ -54,7 +54,7 @@ export const BOOKS: Record<BookId, Book> = {
       "Verb conjugation guide and a 30-day study plan",
     ],
     cover: "/books/kirl-2.jpg",
-    coverGradient: "from-[#9B7FE8] to-[#B099FF]",
+    coverGradient: "from-[#7C5CFF] to-[#A78BFF]",
   },
   "korean-on-campus": {
     id: "korean-on-campus",
@@ -107,7 +107,7 @@ export const BOOKS: Record<BookId, Book> = {
       "6 ready-made itineraries and 120+ Local's Notes",
     ],
     cover: "/books/korea-unlocked.jpg",
-    coverGradient: "from-[#1E1225] to-[#4A3560]",
+    coverGradient: "from-[#140F2D] to-[#4A3560]",
   },
 };
 

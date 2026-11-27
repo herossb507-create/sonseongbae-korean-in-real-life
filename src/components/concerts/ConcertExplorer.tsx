@@ -8,12 +8,13 @@ import { STATUS_LABEL, flag, formatDate, groupByVenue, sourceLabel } from "@/lib
 import { useToday } from "@/lib/concerts/useToday";
 import StatusBadge, { UnconfirmedBadge } from "./StatusBadge";
 import TicketLinks from "./TicketLinks";
+import DDayBadge from "./DDayBadge";
 import { hotelLinks } from "@/lib/concerts/hotels";
 import { REGIONS, type Region } from "@/lib/concerts/regions";
 
 const ConcertMap = dynamic(() => import("./ConcertMap"), {
   ssr: false,
-  loading: () => <div className="grid h-full place-items-center text-sm text-[#B0A8BB]">Loading map…</div>,
+  loading: () => <div className="grid h-full place-items-center text-sm text-[#9E98B8]">Loading map…</div>,
 });
 
 interface Props {
@@ -22,7 +23,7 @@ interface Props {
 
 // 16px text on phones: iOS Safari zooms the whole page into smaller inputs on focus.
 const selectCls =
-  "w-full rounded-xl border border-[#F0E6EE] bg-white px-3 py-2 text-base md:text-sm text-[#1E1225] focus:border-[#E8436F] focus:outline-none focus:ring-2 focus:ring-[#E8436F]/20";
+  "w-full rounded-xl border border-[#EAE4F7] bg-white px-3 py-2 text-base md:text-sm text-[#140F2D] focus:border-[#FF3D8B] focus:outline-none focus:ring-2 focus:ring-[#FF3D8B]/20";
 
 export default function ConcertExplorer({ concerts }: Props) {
   const today = useToday();
@@ -85,15 +86,15 @@ export default function ConcertExplorer({ concerts }: Props) {
   return (
     // Phones: the page scrolls as a whole (map, then filters and list). Desktop: fixed-height
     // sidebar + map, each scrolling on its own.
-    <div className="flex flex-col bg-[#FFF5F8] text-[#1E1225] md:min-h-0 md:flex-1 md:flex-row">
+    <div className="flex flex-col bg-[#F8F5FF] text-[#140F2D] md:min-h-0 md:flex-1 md:flex-row">
       {/* Sidebar */}
-      <aside className="order-2 flex flex-col border-[#F0E6EE] bg-white md:order-1 md:min-h-0 md:w-96 md:flex-none md:border-r">
-        <div className="hidden border-b border-[#F0E6EE] px-5 py-4 md:block">
+      <aside className="order-2 flex flex-col border-[#EAE4F7] bg-white md:order-1 md:min-h-0 md:w-96 md:flex-none md:border-r">
+        <div className="hidden border-b border-[#EAE4F7] px-5 py-4 md:block">
           <h1 className="text-lg font-bold tracking-tight">K-pop concerts worldwide</h1>
-          <p className="mt-0.5 text-xs text-[#6B5F7A]">Tour dates from official announcements, on one map</p>
+          <p className="mt-0.5 text-xs text-[#5A5475]">Tour dates from official announcements, on one map</p>
         </div>
 
-        <div className="space-y-2 border-b border-[#F0E6EE] p-4">
+        <div className="space-y-2 border-b border-[#EAE4F7] p-4">
           <input
             type="search"
             value={query}
@@ -130,46 +131,47 @@ export default function ConcertExplorer({ concerts }: Props) {
               ))}
             </select>
           </div>
-          <div className="flex items-center justify-between text-sm text-[#6B5F7A] md:text-xs">
+          <div className="flex items-center justify-between text-sm text-[#5A5475] md:text-xs">
             <label className="flex items-center gap-2">
-              <input type="checkbox" checked={showPast} onChange={(e) => setShowPast(e.target.checked)} className="accent-[#E8436F]" />
+              <input type="checkbox" checked={showPast} onChange={(e) => setShowPast(e.target.checked)} className="accent-[#FF3D8B]" />
               Include past shows
             </label>
             {hasFilters && (
-              <button onClick={resetFilters} className="text-[#E8436F] hover:underline">
+              <button onClick={resetFilters} className="text-[#FF3D8B] hover:underline">
                 Reset
               </button>
             )}
           </div>
         </div>
 
-        <p className="px-4 pt-3 text-sm text-[#6B5F7A] md:text-xs md:text-[#B0A8BB]">
+        <p className="px-4 pt-3 text-sm text-[#5A5475] md:text-xs md:text-[#9E98B8]">
           {filtered.length} shows · {groups.length} venues · {countryCount} countries
         </p>
 
         <ul className="p-2 pb-8 md:min-h-0 md:flex-1 md:overflow-y-auto md:pb-2">
-          {filtered.length === 0 && <li className="p-6 text-center text-sm text-[#B0A8BB]">No shows match these filters.</li>}
+          {filtered.length === 0 && <li className="p-6 text-center text-sm text-[#9E98B8]">No shows match these filters.</li>}
           {filtered.map((c) => {
             const active = c.venue.id === selectedVenueId;
             return (
               <li key={c.id}>
                 <button
                   onClick={() => selectVenue(c.venue.id, c.id)}
-                  className={`flex w-full items-center gap-3 rounded-xl px-3 py-3 text-left md:py-2.5 transition hover:bg-[#FFF5F8] ${
-                    active ? "bg-[#FFF0F5] ring-1 ring-[#E8436F]/30" : ""
+                  className={`flex w-full items-center gap-3 rounded-xl px-3 py-3 text-left md:py-2.5 transition hover:bg-[#F8F5FF] ${
+                    active ? "bg-[#F2ECFF] ring-1 ring-[#FF3D8B]/30" : ""
                   }`}
                 >
                   <div className="w-11 shrink-0 text-center leading-tight">
-                    <div className="text-[10px] font-semibold uppercase text-[#E8436F]">{formatDate(c.date, { weekday: undefined, day: undefined, year: undefined })}</div>
+                    <div className="text-[10px] font-semibold uppercase text-[#FF3D8B]">{formatDate(c.date, { weekday: undefined, day: undefined, year: undefined })}</div>
                     <div className="text-lg font-semibold">{Number(c.date.slice(8))}</div>
                   </div>
                   <div className="min-w-0 flex-1">
                     <div className="truncate text-base font-semibold md:text-sm">{c.artist.name}</div>
-                    <div className="line-clamp-2 text-sm leading-snug text-[#6B5F7A] md:truncate md:text-xs">
+                    <div className="line-clamp-2 text-sm leading-snug text-[#5A5475] md:truncate md:text-xs">
                       {flag(c.venue.countryCode)} {c.venue.city} · {c.venue.name}
                     </div>
                   </div>
                   <div className="flex shrink-0 flex-col items-end gap-1">
+                    <DDayBadge date={c.date} />
                     {c.verification === "unverified" && <UnconfirmedBadge />}
                     <StatusBadge status={c.status} />
                   </div>
@@ -197,8 +199,8 @@ export default function ConcertExplorer({ concerts }: Props) {
               onClick={() => setRegion(r.id)}
               className={`shrink-0 rounded-full px-2.5 py-1.5 text-[13px] font-medium shadow-sm ring-1 transition-colors md:px-3 md:text-sm ${
                 region === r.id
-                  ? "bg-[#E8436F] text-white ring-[#E8436F]"
-                  : "bg-white/95 text-[#3D2F48] ring-[#F0E6EE] hover:text-[#E8436F]"
+                  ? "bg-[#FF3D8B] text-white ring-[#FF3D8B]"
+                  : "bg-white/95 text-[#2C2548] ring-[#EAE4F7] hover:text-[#FF3D8B]"
               }`}
             >
               {r.label}
@@ -211,27 +213,27 @@ export default function ConcertExplorer({ concerts }: Props) {
           <button
             aria-label="Close venue details"
             onClick={() => setSelectedVenueId(null)}
-            className="fixed inset-0 z-[1050] bg-[#1E1225]/30 md:hidden"
+            className="fixed inset-0 z-[1050] bg-[#140F2D]/30 md:hidden"
           />
         )}
 
         {/* Detail panel */}
         {selected && (
-          <section className="fixed inset-x-0 bottom-0 z-[1100] max-h-[80svh] overflow-y-auto overscroll-contain rounded-t-3xl border border-[#F0E6EE] bg-white p-5 pt-3 shadow-[0_-8px_32px_rgba(30,18,37,0.18)] md:absolute md:inset-x-auto md:bottom-auto md:right-4 md:top-4 md:z-[600] md:max-h-[calc(100%-2rem)] md:w-[380px] md:rounded-3xl md:bg-white/95 md:pt-5 md:shadow-[0_8px_32px_rgba(30,18,37,0.15)] md:backdrop-blur">
-            <div className="mx-auto mb-3 h-1.5 w-10 rounded-full bg-[#E5DCE6] md:hidden" aria-hidden />
+          <section className="fixed inset-x-0 bottom-0 z-[1100] max-h-[80svh] overflow-y-auto overscroll-contain rounded-t-3xl border border-[#EAE4F7] bg-white p-5 pt-3 shadow-[0_-8px_32px_rgba(20,15,45,0.18)] md:absolute md:inset-x-auto md:bottom-auto md:right-4 md:top-4 md:z-[600] md:max-h-[calc(100%-2rem)] md:w-[380px] md:rounded-3xl md:bg-white/95 md:pt-5 md:shadow-[0_8px_32px_rgba(20,15,45,0.15)] md:backdrop-blur">
+            <div className="mx-auto mb-3 h-1.5 w-10 rounded-full bg-[#E0D9F2] md:hidden" aria-hidden />
             <div className="flex items-start justify-between gap-3">
               <div>
-                <p className="text-xs text-[#6B5F7A]">
+                <p className="text-xs text-[#5A5475]">
                   {flag(selected.venue.countryCode)} {selected.venue.city}, {selected.venue.country}
                 </p>
                 <h2 className="text-xl font-bold">{selected.venue.name}</h2>
                 {selected.venue.capacity && (
-                  <p className="text-xs text-[#B0A8BB]">Capacity ~{selected.venue.capacity.toLocaleString("en-US")}</p>
+                  <p className="text-xs text-[#9E98B8]">Capacity ~{selected.venue.capacity.toLocaleString("en-US")}</p>
                 )}
               </div>
               <button
                 onClick={() => setSelectedVenueId(null)}
-                className="rounded-full p-2 text-lg leading-none text-[#6B5F7A] hover:bg-[#FFF0F5] hover:text-[#1E1225] md:p-1.5 md:text-base md:text-[#B0A8BB]"
+                className="rounded-full p-2 text-lg leading-none text-[#5A5475] hover:bg-[#F2ECFF] hover:text-[#140F2D] md:p-1.5 md:text-base md:text-[#9E98B8]"
                 aria-label="Close"
               >
                 ✕
@@ -242,7 +244,7 @@ export default function ConcertExplorer({ concerts }: Props) {
               {selected.concerts.map((c) => (
                 <li
                   key={c.id}
-                  className={`rounded-2xl bg-[#FFF5F8] p-4 ring-1 ${c.id === highlightId ? "ring-[#E8436F]/50" : "ring-[#F0E6EE]"}`}
+                  className={`rounded-2xl bg-[#F8F5FF] p-4 ring-1 ${c.id === highlightId ? "ring-[#FF3D8B]/50" : "ring-[#EAE4F7]"}`}
                 >
                   <div className="flex items-center justify-between gap-2">
                     <h3 className="font-semibold">
@@ -255,45 +257,45 @@ export default function ConcertExplorer({ concerts }: Props) {
                       <StatusBadge status={c.status} />
                     </div>
                   </div>
-                  <p className="text-sm text-[#E8436F]">{c.tour}</p>
+                  <p className="text-sm text-[#FF3D8B]">{c.tour}</p>
                   <dl className="mt-3 grid grid-cols-[5rem_1fr] gap-y-1 text-sm">
-                    <dt className="text-[#B0A8BB]">Date</dt>
+                    <dt className="text-[#9E98B8]">Date</dt>
                     <dd>
                       {formatDate(c.date)}
-                      {c.time && <span className="text-[#6B5F7A]"> · {c.time} local</span>}
+                      {c.time && <span className="text-[#5A5475]"> · {c.time} local</span>}
                     </dd>
                     {c.priceRange && (
                       <>
-                        <dt className="text-[#B0A8BB]">Price</dt>
+                        <dt className="text-[#9E98B8]">Price</dt>
                         <dd>{c.priceRange}</dd>
                       </>
                     )}
                     {c.ticketOpen && (
                       <>
-                        <dt className="text-[#B0A8BB]">Tickets</dt>
+                        <dt className="text-[#9E98B8]">Tickets</dt>
                         <dd>Opens {formatDate(c.ticketOpen)}</dd>
                       </>
                     )}
                     {c.notes && (
                       <>
-                        <dt className="text-[#B0A8BB]">Note</dt>
+                        <dt className="text-[#9E98B8]">Note</dt>
                         <dd>{c.notes}</dd>
                       </>
                     )}
-                    <dt className="text-[#B0A8BB]">Source</dt>
-                    <dd className="text-[#6B5F7A]">
+                    <dt className="text-[#9E98B8]">Source</dt>
+                    <dd className="text-[#5A5475]">
                       {c.sourceRefs.map((r) => (
                         <a key={r.url} href={r.url} target="_blank" rel="noopener noreferrer" className="block hover:underline">
                           {sourceLabel(r)}
                         </a>
                       ))}
-                      <span className="text-[#B0A8BB]">updated {c.updatedAt}</span>
+                      <span className="text-[#9E98B8]">updated {c.updatedAt}</span>
                     </dd>
                   </dl>
                   <TicketLinks concert={c} />
                   {c.status !== "cancelled" && (
                     <div className="mt-3">
-                      <p className="text-xs text-[#6B5F7A]">Hotels near the venue for this night</p>
+                      <p className="text-xs text-[#5A5475]">Hotels near the venue for this night</p>
                       <div className="mt-1 grid grid-cols-3 gap-1.5">
                         {hotelLinks(c.venue, c.date).map((h) => (
                           <a
@@ -301,7 +303,7 @@ export default function ConcertExplorer({ concerts }: Props) {
                             href={h.href}
                             target="_blank"
                             rel={h.rel}
-                            className="rounded-lg border border-[#F0E6EE] bg-white px-2 py-2 text-center text-sm font-semibold md:py-1.5 md:text-xs hover:border-[#E8436F]/40"
+                            className="rounded-lg border border-[#EAE4F7] bg-white px-2 py-2 text-center text-sm font-semibold md:py-1.5 md:text-xs hover:border-[#FF3D8B]/40"
                           >
                             {h.site}
                           </a>
@@ -311,7 +313,7 @@ export default function ConcertExplorer({ concerts }: Props) {
                   )}
                   <Link
                     href={`/concerts/${c.id}`}
-                    className="mt-3 block py-1 text-center text-sm text-[#6B5F7A] hover:text-[#E8436F] md:text-xs"
+                    className="mt-3 block py-1 text-center text-sm text-[#5A5475] hover:text-[#FF3D8B] md:text-xs"
                   >
                     Full details, places to eat nearby →
                   </Link>

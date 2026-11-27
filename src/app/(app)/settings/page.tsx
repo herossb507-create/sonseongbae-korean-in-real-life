@@ -64,10 +64,10 @@ export default function SettingsPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#FFF5F8]">
+    <div className="min-h-screen bg-[#F8F5FF]">
       <div className="max-w-2xl mx-auto px-6 py-10">
-        <h1 className="text-2xl font-bold text-[#1E1225] mb-2">Settings</h1>
-        <p className="text-sm text-[#6B5F7A] mb-8">
+        <h1 className="text-2xl font-bold text-[#140F2D] mb-2">Settings</h1>
+        <p className="text-sm text-[#5A5475] mb-8">
           No account needed. Your progress is saved in this browser on this device.
         </p>
 
@@ -84,30 +84,30 @@ export default function SettingsPage() {
         )}
 
         {/* Name */}
-        <section className="bg-white border border-[#F0E6EE] rounded-xl p-6 mb-4 shadow-sm">
-          <h2 className="font-semibold text-[#1E1225] mb-4">Your name</h2>
+        <section className="bg-white border border-[#EAE4F7] rounded-xl p-6 mb-4 shadow-sm">
+          <h2 className="font-semibold text-[#140F2D] mb-4">Your name</h2>
           <form onSubmit={saveName} className="flex gap-3">
             <input
               value={name}
               onChange={(e) => setName(e.target.value)}
               maxLength={40}
               placeholder="What should we call you?"
-              className="flex-1 bg-white border border-[#F0E6EE] rounded-lg px-3 py-2 text-sm text-[#1E1225] placeholder:text-[#B0A8BB] shadow-sm focus:outline-none focus:ring-2 focus:ring-[#E8436F]/20 focus:border-[#E8436F] transition-colors"
+              className="flex-1 bg-white border border-[#EAE4F7] rounded-lg px-3 py-2 text-sm text-[#140F2D] placeholder:text-[#9E98B8] shadow-sm focus:outline-none focus:ring-2 focus:ring-[#FF3D8B]/20 focus:border-[#FF3D8B] transition-colors"
             />
             <button
               type="submit"
-              className="text-sm bg-gradient-to-r from-[#9B7FE8] to-[#B099FF] text-white px-4 py-2 rounded-lg hover:opacity-90 transition-opacity"
+              className="text-sm bg-gradient-to-r from-[#7C5CFF] to-[#A78BFF] text-white px-4 py-2 rounded-lg hover:opacity-90 transition-opacity"
             >
               Save
             </button>
           </form>
-          <p className="text-xs text-[#B0A8BB] mt-2">Shown on your Home page. Optional.</p>
+          <p className="text-xs text-[#9E98B8] mt-2">Shown on your Home page. Optional.</p>
         </section>
 
         {/* Backup */}
-        <section className="bg-white border border-[#F0E6EE] rounded-xl p-6 mb-4 shadow-sm">
-          <h2 className="font-semibold text-[#1E1225] mb-1">Back up or move your progress</h2>
-          <p className="text-sm text-[#6B5F7A] mb-4">
+        <section className="bg-white border border-[#EAE4F7] rounded-xl p-6 mb-4 shadow-sm">
+          <h2 className="font-semibold text-[#140F2D] mb-1">Back up or move your progress</h2>
+          <p className="text-sm text-[#5A5475] mb-4">
             {progress.xp} XP · {Object.values(progress.chapters).filter((c) => c.completed).length} chapters completed ·{" "}
             {Object.keys(progress.vocab).length} words known. Download a backup file to keep it safe or to continue on
             another device.
@@ -115,13 +115,13 @@ export default function SettingsPage() {
           <div className="flex flex-wrap gap-3">
             <button
               onClick={exportProgress}
-              className="text-sm bg-[#FFF5F8] border border-[#F0E6EE] text-[#1E1225] px-4 py-2 rounded-lg hover:bg-[#FFF0F5] transition-colors"
+              className="text-sm bg-[#F8F5FF] border border-[#EAE4F7] text-[#140F2D] px-4 py-2 rounded-lg hover:bg-[#F2ECFF] transition-colors"
             >
               ⬇ Download backup
             </button>
             <button
               onClick={() => fileInput.current?.click()}
-              className="text-sm bg-[#FFF5F8] border border-[#F0E6EE] text-[#1E1225] px-4 py-2 rounded-lg hover:bg-[#FFF0F5] transition-colors"
+              className="text-sm bg-[#F8F5FF] border border-[#EAE4F7] text-[#140F2D] px-4 py-2 rounded-lg hover:bg-[#F2ECFF] transition-colors"
             >
               ⬆ Restore from file
             </button>
@@ -140,9 +140,9 @@ export default function SettingsPage() {
         </section>
 
         {/* Reset */}
-        <section className="bg-white border border-[#F0E6EE] rounded-xl p-6 shadow-sm">
-          <h2 className="font-semibold text-[#1E1225] mb-1">Start over</h2>
-          <p className="text-sm text-[#6B5F7A] mb-4">Clears XP, streak, chapter progress and known words in this browser.</p>
+        <section className="bg-white border border-[#EAE4F7] rounded-xl p-6 shadow-sm">
+          <h2 className="font-semibold text-[#140F2D] mb-1">Start over</h2>
+          <p className="text-sm text-[#5A5475] mb-4">Clears XP, streak, chapter progress and known words in this browser.</p>
           <button
             onClick={reset}
             className="text-sm border border-[#EF4444]/30 text-[#EF4444] px-4 py-2 rounded-lg hover:bg-[#EF4444]/10 transition-colors"

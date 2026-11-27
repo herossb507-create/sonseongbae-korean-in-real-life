@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#FFF5F8",
+  themeColor: "#F8F5FF",
 };
 
 export default function RootLayout({
@@ -39,7 +39,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${notoSansKr.variable} font-sans bg-[#FFF5F8] text-[#1E1225]`}>
+      <body className={`${inter.variable} ${notoSansKr.variable} font-sans bg-[#F8F5FF] text-[#140F2D]`}>
         {children}
       </body>
     </html>

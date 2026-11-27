@@ -19,13 +19,13 @@ export default function CitiesPage() {
           <li key={c.slug}>
             <Link
               href={`/concerts/cities/${c.slug}`}
-              className="flex items-center justify-between rounded-2xl border border-[#F0E6EE] bg-white px-4 py-3 transition hover:border-[#E8436F]/30 hover:shadow-sm"
+              className="flex items-center justify-between rounded-2xl border border-[#EAE4F7] bg-white px-4 py-3 transition hover:border-[#FF3D8B]/30 hover:shadow-sm"
             >
               <span>
                 {flag(c.countryCode)} <span className="font-semibold">{c.name}</span>
-                <span className="ml-2 text-sm text-[#B0A8BB]">{c.country}</span>
+                <span className="ml-2 text-sm text-[#9E98B8]">{c.country}</span>
               </span>
-              <span className="text-xs text-[#6B5F7A]">{getConcertsByCity(c.slug).length} shows</span>
+              <span className="text-xs text-[#5A5475]">{getConcertsByCity(c.slug).length} shows</span>
             </Link>
           </li>
         ))}

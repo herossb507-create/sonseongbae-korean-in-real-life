@@ -273,7 +273,7 @@ export default function ListeningQuiz({ chapterId, vocab, allVocab }: Props) {
       <div className="flex items-center justify-center py-20">
         <div className="text-center space-y-3">
           <div className="text-4xl animate-pulse">🔊</div>
-          <p style={{ color: "#6B5F7A" }}>Preparing listening quiz…</p>
+          <p style={{ color: "#5A5475" }}>Preparing listening quiz…</p>
         </div>
       </div>
     );
@@ -291,10 +291,10 @@ export default function ListeningQuiz({ chapterId, vocab, allVocab }: Props) {
         className="text-center space-y-6 py-8 px-4"
       >
         <div className="text-6xl">{pct === 100 ? "🏆" : passed ? "🎉" : "📚"}</div>
-        <h2 className="text-4xl font-black" style={{ color: "#1E1225" }}>
+        <h2 className="text-4xl font-black" style={{ color: "#140F2D" }}>
           {score} / {questions.length}
         </h2>
-        <p style={{ color: "#6B5F7A" }}>
+        <p style={{ color: "#5A5475" }}>
           {pct === 100
             ? "Perfect score! Your ears are sharp!"
             : passed
@@ -310,7 +310,7 @@ export default function ListeningQuiz({ chapterId, vocab, allVocab }: Props) {
             <span className="font-bold text-lg" style={{ color: "#F4A261" }}>
               +{xpEarned} XP
             </span>
-            <span className="text-sm" style={{ color: "#6B5F7A" }}>
+            <span className="text-sm" style={{ color: "#5A5475" }}>
               earned
             </span>
           </div>
@@ -321,16 +321,16 @@ export default function ListeningQuiz({ chapterId, vocab, allVocab }: Props) {
             className="text-left rounded-2xl p-5 max-w-sm mx-auto"
             style={{ background: "white", border: "1px solid rgba(240,230,238,1)" }}
           >
-            <p className="text-sm font-semibold mb-3" style={{ color: "#6B5F7A" }}>
+            <p className="text-sm font-semibold mb-3" style={{ color: "#5A5475" }}>
               Review these:
             </p>
             <ul className="space-y-2">
               {wrongWords.map((w, i) => (
                 <li key={i} className="flex justify-between text-sm gap-3">
-                  <span className="font-medium font-noto-kr" style={{ color: "#1E1225" }}>
+                  <span className="font-medium font-noto-kr" style={{ color: "#140F2D" }}>
                     {w.korean}
                   </span>
-                  <span style={{ color: "#6B5F7A" }} className="text-right">
+                  <span style={{ color: "#5A5475" }} className="text-right">
                     {w.correct}
                   </span>
                 </li>
@@ -343,7 +343,7 @@ export default function ListeningQuiz({ chapterId, vocab, allVocab }: Props) {
           <a
             href={`/games/listening/${chapterId}`}
             className="px-6 py-2.5 rounded-xl text-sm font-medium transition-colors"
-            style={{ background: "white", border: "1px solid rgba(240,230,238,1)", color: "#6B5F7A" }}
+            style={{ background: "white", border: "1px solid rgba(240,230,238,1)", color: "#5A5475" }}
           >
             Try again
           </a>
@@ -351,9 +351,9 @@ export default function ListeningQuiz({ chapterId, vocab, allVocab }: Props) {
             href={`/vocab/${chapterId}`}
             className="px-6 py-2.5 rounded-xl text-sm font-medium"
             style={{
-              background: "rgba(155,127,232,0.15)",
-              border: "1px solid rgba(155,127,232,0.25)",
-              color: "#9B7FE8",
+              background: "rgba(124,92,255,0.15)",
+              border: "1px solid rgba(124,92,255,0.25)",
+              color: "#7C5CFF",
             }}
           >
             Study vocab
@@ -361,7 +361,7 @@ export default function ListeningQuiz({ chapterId, vocab, allVocab }: Props) {
           <a
             href={`/learn/${chapterId}`}
             className="px-6 py-2.5 rounded-xl text-sm font-semibold hover:opacity-90 transition-opacity"
-            style={{ background: "linear-gradient(to right, #E8436F, #F06B8A)", color: "white" }}
+            style={{ background: "linear-gradient(to right, #FF3D8B, #FF6FB1)", color: "white" }}
           >
             Back to chapter
           </a>
@@ -378,7 +378,7 @@ export default function ListeningQuiz({ chapterId, vocab, allVocab }: Props) {
     <div className="space-y-5">
       {/* Progress bar */}
       <div className="space-y-1.5">
-        <div className="flex justify-between text-xs" style={{ color: "#6B5F7A" }}>
+        <div className="flex justify-between text-xs" style={{ color: "#5A5475" }}>
           <span>
             Question {currentIndex + 1} of {total}
           </span>
@@ -387,7 +387,7 @@ export default function ListeningQuiz({ chapterId, vocab, allVocab }: Props) {
         <div className="h-1.5 rounded-full overflow-hidden" style={{ background: "rgba(255,232,240,1)" }}>
           <motion.div
             className="h-full rounded-full"
-            style={{ background: "linear-gradient(to right, #9B7FE8, #E8436F)" }}
+            style={{ background: "linear-gradient(to right, #7C5CFF, #FF3D8B)" }}
             animate={{ width: `${(currentIndex / total) * 100}%` }}
             transition={{ duration: 0.5 }}
           />
@@ -399,9 +399,9 @@ export default function ListeningQuiz({ chapterId, vocab, allVocab }: Props) {
         <span
           className="text-xs font-semibold px-3 py-1 rounded-full"
           style={{
-            background: isSpelling ? "rgba(155,127,232,0.12)" : "rgba(232,67,111,0.10)",
-            color: isSpelling ? "#9B7FE8" : "#E8436F",
-            border: `1px solid ${isSpelling ? "rgba(155,127,232,0.25)" : "rgba(232,67,111,0.20)"}`,
+            background: isSpelling ? "rgba(124,92,255,0.12)" : "rgba(255,61,139,0.10)",
+            color: isSpelling ? "#7C5CFF" : "#FF3D8B",
+            border: `1px solid ${isSpelling ? "rgba(124,92,255,0.25)" : "rgba(255,61,139,0.20)"}`,
           }}
         >
           {isSpelling ? "🇰🇷 Korean Spelling" : "💬 Meaning"}
@@ -419,8 +419,8 @@ export default function ListeningQuiz({ chapterId, vocab, allVocab }: Props) {
           className="flex flex-col items-center gap-5"
           style={{
             background: isSpelling
-              ? "linear-gradient(135deg, #F5F0FF 0%, #FFF5F8 100%)"
-              : "linear-gradient(135deg, #FFF0F5 0%, #FFF5F8 100%)",
+              ? "linear-gradient(135deg, #F5F0FF 0%, #F8F5FF 100%)"
+              : "linear-gradient(135deg, #F2ECFF 0%, #F8F5FF 100%)",
             border: "1px solid rgba(240,230,238,1)",
             borderRadius: "24px",
             padding: "2.5rem 1.5rem",
@@ -428,12 +428,12 @@ export default function ListeningQuiz({ chapterId, vocab, allVocab }: Props) {
         >
           {/* For spelling: show English meaning first */}
           {isSpelling && (
-            <p className="text-base font-semibold text-center" style={{ color: "#1E1225" }}>
+            <p className="text-base font-semibold text-center" style={{ color: "#140F2D" }}>
               &ldquo;{current.vocab.english}&rdquo;
             </p>
           )}
 
-          <p className="text-xs uppercase tracking-widest font-medium" style={{ color: "#B0A8BB" }}>
+          <p className="text-xs uppercase tracking-widest font-medium" style={{ color: "#9E98B8" }}>
             {isSpelling ? "Hear it, then pick the Korean" : "What does this sound mean?"}
           </p>
 
@@ -447,9 +447,9 @@ export default function ListeningQuiz({ chapterId, vocab, allVocab }: Props) {
                 ? {
                     scale: [1, 1.08, 1],
                     boxShadow: [
-                      "0 0 40px rgba(232,67,111,0.35)",
-                      "0 0 70px rgba(232,67,111,0.60)",
-                      "0 0 40px rgba(232,67,111,0.35)",
+                      "0 0 40px rgba(255,61,139,0.35)",
+                      "0 0 70px rgba(255,61,139,0.60)",
+                      "0 0 40px rgba(255,61,139,0.35)",
                     ],
                   }
                 : {}
@@ -458,11 +458,11 @@ export default function ListeningQuiz({ chapterId, vocab, allVocab }: Props) {
             className="w-28 h-28 rounded-full flex items-center justify-center text-4xl"
             style={{
               background: isSpelling
-                ? "linear-gradient(135deg, #9B7FE8 0%, #C084FC 100%)"
-                : "linear-gradient(135deg, #E8436F 0%, #F06B8A 100%)",
+                ? "linear-gradient(135deg, #7C5CFF 0%, #C084FC 100%)"
+                : "linear-gradient(135deg, #FF3D8B 0%, #FF6FB1 100%)",
               boxShadow: isSpelling
-                ? "0 0 60px rgba(155,127,232,0.40)"
-                : "0 0 60px rgba(232,67,111,0.40)",
+                ? "0 0 60px rgba(124,92,255,0.40)"
+                : "0 0 60px rgba(255,61,139,0.40)",
               cursor: "pointer",
               border: "none",
             }}
@@ -471,7 +471,7 @@ export default function ListeningQuiz({ chapterId, vocab, allVocab }: Props) {
             🔊
           </motion.button>
 
-          <p className="text-xs" style={{ color: "#B0A8BB" }}>
+          <p className="text-xs" style={{ color: "#9E98B8" }}>
             {isSpeaking ? "Playing…" : "Tap to hear again"}
           </p>
         </motion.div>
@@ -490,7 +490,7 @@ export default function ListeningQuiz({ chapterId, vocab, allVocab }: Props) {
           {current.options.map((option, idx) => {
             let bg = "white";
             let border = "rgba(240,230,238,1)";
-            let color = "#1E1225";
+            let color = "#140F2D";
             let cursor = "pointer";
 
             if (selectedAnswer !== null) {
@@ -506,7 +506,7 @@ export default function ListeningQuiz({ chapterId, vocab, allVocab }: Props) {
               } else {
                 bg = "rgba(240,230,238,0.4)";
                 border = "rgba(240,230,238,0.8)";
-                color = "#B0A8BB";
+                color = "#9E98B8";
               }
             }
 

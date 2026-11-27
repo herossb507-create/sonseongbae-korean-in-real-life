@@ -21,7 +21,7 @@ export function UnconfirmedBadge() {
   return (
     <span
       title="Reported by news outlets; not yet confirmed on an official page"
-      className="shrink-0 rounded-full bg-white px-2 py-0.5 text-[11px] font-medium text-[#6B5F7A] ring-1 ring-[#E5DCE6]"
+      className="shrink-0 rounded-full bg-white px-2 py-0.5 text-[11px] font-medium text-[#5A5475] ring-1 ring-[#E0D9F2]"
     >
       Unconfirmed
     </span>

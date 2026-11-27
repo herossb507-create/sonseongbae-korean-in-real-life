@@ -5,6 +5,7 @@ import type { ConcertWithRefs } from "@/lib/concerts/types";
 import { flag, formatDate } from "@/lib/concerts/format";
 import { useToday } from "@/lib/concerts/useToday";
 import StatusBadge, { UnconfirmedBadge } from "./StatusBadge";
+import DDayBadge from "./DDayBadge";
 
 interface Props {
   concerts: ConcertWithRefs[];
@@ -16,14 +17,19 @@ function Row({ c, show }: { c: ConcertWithRefs; show: Props["show"] }) {
     <li>
       <Link
         href={`/concerts/${c.id}`}
-        className="flex items-center gap-4 rounded-2xl border border-[#F0E6EE] bg-white px-4 py-3 transition hover:border-[#E8436F]/30 hover:shadow-sm"
+        className="ticket flex items-stretch overflow-hidden rounded-2xl border border-[#EAE4F7] bg-white transition hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgb(124_92_255/0.18)]"
       >
-        <div className="w-24 shrink-0 text-sm text-[#6B5F7A]">{formatDate(c.date, { weekday: undefined })}</div>
+        <div className="flex w-20 shrink-0 flex-col items-center justify-center border-r border-dashed border-[#DCD2F3] bg-gradient-to-b from-[#FF3D8B] to-[#7C5CFF] py-3 text-white">
+          <span className="text-[10px] font-bold tracking-widest">{formatDate(c.date, { weekday: undefined, day: undefined, year: undefined }).toUpperCase()}</span>
+          <span className="text-2xl font-black leading-none">{Number(c.date.slice(8))}</span>
+          <span className="text-[10px] opacity-80">{c.date.slice(0, 4)}</span>
+        </div>
+        <div className="flex min-w-0 flex-1 items-center gap-3 py-3 pl-4 pr-5">
         <div className="min-w-0 flex-1">
-          <div className="truncate font-semibold text-[#1E1225]">
+          <div className="truncate font-semibold text-[#140F2D]">
             {show === "artist" ? c.artist.name : `${c.venue.city}, ${c.venue.country}`}
           </div>
-          <div className="truncate text-sm text-[#6B5F7A]">
+          <div className="truncate text-sm text-[#5A5475]">
             {show === "artist" ? (
               <>
                 {c.tour} · {c.venue.name}
@@ -36,8 +42,10 @@ function Row({ c, show }: { c: ConcertWithRefs; show: Props["show"] }) {
           </div>
         </div>
         <div className="flex shrink-0 flex-col items-end gap-1 sm:flex-row sm:items-center">
+          <DDayBadge date={c.date} />
           {c.verification === "unverified" && <UnconfirmedBadge />}
           <StatusBadge status={c.status} />
+        </div>
         </div>
       </Link>
     </li>
@@ -53,11 +61,11 @@ export default function ConcertList({ concerts, show }: Props) {
   return (
     <div className="space-y-8">
       <section>
-        <h2 className="mb-3 text-xs font-semibold uppercase tracking-wider text-[#6B5F7A]">
+        <h2 className="mb-3 text-xs font-semibold uppercase tracking-wider text-[#5A5475]">
           Upcoming ({upcoming.length})
         </h2>
         {upcoming.length === 0 ? (
-          <p className="text-sm text-[#B0A8BB]">No upcoming shows announced.</p>
+          <p className="text-sm text-[#9E98B8]">No upcoming shows announced.</p>
         ) : (
           <ul className="space-y-2">
             {upcoming.map((c) => (
@@ -68,7 +76,7 @@ export default function ConcertList({ concerts, show }: Props) {
       </section>
       {past.length > 0 && (
         <section>
-          <h2 className="mb-3 text-xs font-semibold uppercase tracking-wider text-[#6B5F7A]">Past ({past.length})</h2>
+          <h2 className="mb-3 text-xs font-semibold uppercase tracking-wider text-[#5A5475]">Past ({past.length})</h2>
           <ul className="space-y-2 opacity-60">
             {past.map((c) => (
               <Row key={c.id} c={c} show={show} />

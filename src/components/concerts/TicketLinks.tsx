@@ -25,8 +25,8 @@ export default function TicketLinks({ concert }: { concert: ConcertWithRefs }) {
           rel={l.rel}
           className={`flex items-center justify-between rounded-xl px-4 py-2 text-sm font-semibold transition-opacity hover:opacity-90 ${
             i === 0 && l.kind !== "resale"
-              ? "bg-gradient-to-r from-[#E8436F] to-[#F06B8A] text-white shadow-[0_4px_16px_rgba(232,67,111,0.25)]"
-              : "border border-[#F0E6EE] bg-white text-[#1E1225]"
+              ? "bg-gradient-to-r from-[#FF3D8B] to-[#FF6FB1] text-white shadow-[0_4px_16px_rgba(255,61,139,0.25)]"
+              : "border border-[#EAE4F7] bg-white text-[#140F2D]"
           }`}
         >
           <span>{l.label} ↗</span>
@@ -34,7 +34,7 @@ export default function TicketLinks({ concert }: { concert: ConcertWithRefs }) {
         </a>
       ))}
       {anySponsored && (
-        <p className="text-[11px] text-[#B0A8BB]">
+        <p className="text-[11px] text-[#9E98B8]">
           Some links are affiliate links.{" "}
           <Link href="/concerts/disclosure" className="underline">
             Learn more

@@ -110,15 +110,15 @@ function MemoryCardTile({ card, onClick }: CardProps) {
           style={{
             backfaceVisibility: "hidden",
             WebkitBackfaceVisibility: "hidden",
-            background: "linear-gradient(135deg, #FFF0F5 0%, #FFF5F8 100%)",
-            border: "1px solid rgba(232,67,111,0.15)",
-            boxShadow: "0 4px 16px rgba(232,67,111,0.08)",
+            background: "linear-gradient(135deg, #F2ECFF 0%, #F8F5FF 100%)",
+            border: "1px solid rgba(255,61,139,0.15)",
+            boxShadow: "0 4px 16px rgba(255,61,139,0.08)",
             minHeight: "120px",
           }}
         >
           <span
             className="font-noto-kr font-black select-none"
-            style={{ fontSize: "2.5rem", color: "rgba(232,67,111,0.15)" }}
+            style={{ fontSize: "2.5rem", color: "rgba(255,61,139,0.15)" }}
           >
             한
           </span>
@@ -134,16 +134,16 @@ function MemoryCardTile({ card, onClick }: CardProps) {
             minHeight: "120px",
             background:
               card.type === "korean"
-                ? "linear-gradient(135deg, #FFF0F5 0%, #FFE8F0 100%)"
+                ? "linear-gradient(135deg, #F2ECFF 0%, #F0E7FF 100%)"
                 : "linear-gradient(135deg, #F5F0FF 0%, #EDE8FF 100%)",
             border: card.isMatched
               ? "2px solid #10B981"
               : card.type === "korean"
-              ? "1px solid rgba(232,67,111,0.35)"
-              : "1px solid rgba(155,127,232,0.35)",
+              ? "1px solid rgba(255,61,139,0.35)"
+              : "1px solid rgba(124,92,255,0.35)",
             boxShadow: card.isMatched
               ? "0 8px 32px rgba(16,185,129,0.15)"
-              : "0 4px 16px rgba(232,67,111,0.06)",
+              : "0 4px 16px rgba(255,61,139,0.06)",
             backgroundColor: card.isMatched ? "rgba(16,185,129,0.08)" : undefined,
           }}
         >
@@ -153,14 +153,14 @@ function MemoryCardTile({ card, onClick }: CardProps) {
                 className="font-noto-kr font-bold text-center leading-tight"
                 style={{
                   fontSize: card.korean.length > 6 ? "1rem" : card.korean.length > 4 ? "1.25rem" : "1.5rem",
-                  color: "#1E1225",
+                  color: "#140F2D",
                 }}
               >
                 {card.korean}
               </span>
               <span
                 className="mt-1 text-center"
-                style={{ fontSize: "0.65rem", color: "#6B5F7A" }}
+                style={{ fontSize: "0.65rem", color: "#5A5475" }}
               >
                 {card.romanization}
               </span>
@@ -170,7 +170,7 @@ function MemoryCardTile({ card, onClick }: CardProps) {
               className="text-center font-medium leading-tight"
               style={{
                 fontSize: card.english.length > 20 ? "0.7rem" : card.english.length > 12 ? "0.85rem" : "1rem",
-                color: "#1E1225",
+                color: "#140F2D",
               }}
             >
               {card.english}
@@ -317,7 +317,7 @@ export default function MemoryMatch({ chapterId, vocab }: MemoryMatchProps) {
   return (
     <div
       className="min-h-screen flex flex-col"
-      style={{ background: "#FFF5F8" }}
+      style={{ background: "#F8F5FF" }}
     >
       {/* HUD */}
       <div
@@ -332,7 +332,7 @@ export default function MemoryMatch({ chapterId, vocab }: MemoryMatchProps) {
           <Link
             href={`/learn/${chapterId}`}
             className="flex items-center gap-1 text-sm transition-colors"
-            style={{ color: "#6B5F7A" }}
+            style={{ color: "#5A5475" }}
           >
             <span>←</span>
             <span>Back</span>
@@ -341,13 +341,13 @@ export default function MemoryMatch({ chapterId, vocab }: MemoryMatchProps) {
           <div className="flex items-center gap-4 text-sm font-medium">
             <div className="flex items-center gap-1.5">
               <span style={{ color: "#10B981" }}>★</span>
-              <span style={{ color: "#1E1225" }}>
+              <span style={{ color: "#140F2D" }}>
                 {matchedCount} / 8 pairs
               </span>
             </div>
             <div className="flex items-center gap-1.5">
-              <span style={{ color: "#9B7FE8" }}>↕</span>
-              <span style={{ color: "#1E1225" }}>{moves} moves</span>
+              <span style={{ color: "#7C5CFF" }}>↕</span>
+              <span style={{ color: "#140F2D" }}>{moves} moves</span>
             </div>
             <div
               className="font-mono font-bold"
@@ -361,10 +361,10 @@ export default function MemoryMatch({ chapterId, vocab }: MemoryMatchProps) {
 
       {/* Title */}
       <div className="text-center pt-6 pb-4 px-4">
-        <h1 className="text-xl font-bold" style={{ color: "#1E1225" }}>
+        <h1 className="text-xl font-bold" style={{ color: "#140F2D" }}>
           Memory Match
         </h1>
-        <p className="text-sm mt-1" style={{ color: "#6B5F7A" }}>
+        <p className="text-sm mt-1" style={{ color: "#5A5475" }}>
           Match each Korean word with its English meaning
         </p>
       </div>
@@ -401,7 +401,7 @@ export default function MemoryMatch({ chapterId, vocab }: MemoryMatchProps) {
               style={{
                 background: "white",
                 border: "1px solid rgba(240,230,238,1)",
-                boxShadow: "0 24px 64px rgba(232,67,111,0.15)",
+                boxShadow: "0 24px 64px rgba(255,61,139,0.15)",
               }}
             >
               {/* Celebration */}
@@ -416,11 +416,11 @@ export default function MemoryMatch({ chapterId, vocab }: MemoryMatchProps) {
                 </motion.div>
                 <h2
                   className="text-2xl font-bold mb-1"
-                  style={{ color: "#1E1225" }}
+                  style={{ color: "#140F2D" }}
                 >
                   완료!
                 </h2>
-                <p style={{ color: "#6B5F7A" }}>Game complete!</p>
+                <p style={{ color: "#5A5475" }}>Game complete!</p>
               </div>
 
               {/* Stars */}
@@ -452,11 +452,11 @@ export default function MemoryMatch({ chapterId, vocab }: MemoryMatchProps) {
                 >
                   <div
                     className="text-lg font-bold"
-                    style={{ color: "#1E1225" }}
+                    style={{ color: "#140F2D" }}
                   >
                     {formatTime(seconds)}
                   </div>
-                  <div className="text-xs mt-1" style={{ color: "#6B5F7A" }}>
+                  <div className="text-xs mt-1" style={{ color: "#5A5475" }}>
                     Time
                   </div>
                 </div>
@@ -469,19 +469,19 @@ export default function MemoryMatch({ chapterId, vocab }: MemoryMatchProps) {
                 >
                   <div
                     className="text-lg font-bold"
-                    style={{ color: "#1E1225" }}
+                    style={{ color: "#140F2D" }}
                   >
                     {moves}
                   </div>
-                  <div className="text-xs mt-1" style={{ color: "#6B5F7A" }}>
+                  <div className="text-xs mt-1" style={{ color: "#5A5475" }}>
                     Moves
                   </div>
                 </div>
                 <div
                   className="rounded-2xl p-4 text-center"
                   style={{
-                    background: "rgba(155,127,232,0.10)",
-                    border: "1px solid rgba(155,127,232,0.25)",
+                    background: "rgba(124,92,255,0.10)",
+                    border: "1px solid rgba(124,92,255,0.25)",
                   }}
                 >
                   <div
@@ -490,7 +490,7 @@ export default function MemoryMatch({ chapterId, vocab }: MemoryMatchProps) {
                   >
                     +{earnedXP || base + bonus}
                   </div>
-                  <div className="text-xs mt-1" style={{ color: "#6B5F7A" }}>
+                  <div className="text-xs mt-1" style={{ color: "#5A5475" }}>
                     XP
                   </div>
                 </div>
@@ -509,9 +509,9 @@ export default function MemoryMatch({ chapterId, vocab }: MemoryMatchProps) {
                   onClick={resetGame}
                   className="w-full rounded-xl py-3 font-semibold transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
                   style={{
-                    background: "linear-gradient(to right, #E8436F, #F06B8A)",
+                    background: "linear-gradient(to right, #FF3D8B, #FF6FB1)",
                     color: "white",
-                    boxShadow: "0 4px 24px rgba(232,67,111,0.35)",
+                    boxShadow: "0 4px 24px rgba(255,61,139,0.35)",
                   }}
                 >
                   다시하기 (Play Again)
@@ -522,7 +522,7 @@ export default function MemoryMatch({ chapterId, vocab }: MemoryMatchProps) {
                   style={{
                     background: "rgba(240,230,238,0.5)",
                     border: "1px solid rgba(240,230,238,1)",
-                    color: "#1E1225",
+                    color: "#140F2D",
                   }}
                 >
                   어휘 학습하기 (Study Vocab)
@@ -530,7 +530,7 @@ export default function MemoryMatch({ chapterId, vocab }: MemoryMatchProps) {
                 <Link
                   href={`/games`}
                   className="w-full rounded-xl py-3 font-semibold text-center transition-all duration-200 hover:opacity-80 block"
-                  style={{ color: "#6B5F7A" }}
+                  style={{ color: "#5A5475" }}
                 >
                   Back to Games
                 </Link>

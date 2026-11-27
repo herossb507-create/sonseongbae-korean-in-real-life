@@ -31,23 +31,23 @@ export default async function DictationPage({ params }: PageProps) {
     return (
       <div
         className="min-h-screen flex items-center justify-center p-8"
-        style={{ background: "#FFF5F8" }}
+        style={{ background: "#F8F5FF" }}
       >
         <div
           className="rounded-2xl p-8 text-center max-w-md shadow-sm"
           style={{
             background: "#FFFFFF",
-            border: "1px solid rgba(232,67,111,0.10)",
+            border: "1px solid rgba(255,61,139,0.10)",
           }}
         >
           <div className="text-4xl mb-4">📚</div>
           <h1
             className="text-xl font-bold mb-2 font-noto-kr"
-            style={{ color: "#1E1225" }}
+            style={{ color: "#140F2D" }}
           >
             이 챕터는 어휘가 부족합니다
           </h1>
-          <p className="text-sm mb-6" style={{ color: "#6B5F7A" }}>
+          <p className="text-sm mb-6" style={{ color: "#5A5475" }}>
             This chapter needs at least 3 vocabulary words to play Dictation.
           </p>
           <a
@@ -74,7 +74,7 @@ export default async function DictationPage({ params }: PageProps) {
   }));
 
   return (
-    <div className="min-h-screen" style={{ background: "#FFF5F8" }}>
+    <div className="min-h-screen" style={{ background: "#F8F5FF" }}>
       <div className="max-w-2xl mx-auto px-4 py-8">
         {/* Page header */}
         <div className="mb-8">
@@ -82,16 +82,16 @@ export default async function DictationPage({ params }: PageProps) {
             <a
               href="/games"
               className="text-sm transition-colors hover:opacity-80"
-              style={{ color: "#6B5F7A" }}
+              style={{ color: "#5A5475" }}
             >
               Games
             </a>
-            <span style={{ color: "#B0A8BB" }}>/</span>
-            <span className="text-sm" style={{ color: "#6B5F7A" }}>
+            <span style={{ color: "#9E98B8" }}>/</span>
+            <span className="text-sm" style={{ color: "#5A5475" }}>
               Dictation
             </span>
-            <span style={{ color: "#B0A8BB" }}>/</span>
-            <span className="text-sm" style={{ color: "#1E1225" }}>
+            <span style={{ color: "#9E98B8" }}>/</span>
+            <span className="text-sm" style={{ color: "#140F2D" }}>
               Ch{String(chapter.num).padStart(2, "0")}
             </span>
           </div>
@@ -103,10 +103,10 @@ export default async function DictationPage({ params }: PageProps) {
               🎧
             </div>
             <div>
-              <h1 className="text-2xl font-black" style={{ color: "#1E1225" }}>
+              <h1 className="text-2xl font-black" style={{ color: "#140F2D" }}>
                 Dictation
               </h1>
-              <p className="text-sm" style={{ color: "#6B5F7A" }}>
+              <p className="text-sm" style={{ color: "#5A5475" }}>
                 {chapter.title}
               </p>
             </div>
@@ -117,8 +117,8 @@ export default async function DictationPage({ params }: PageProps) {
         <div
           className="rounded-2xl p-6 shadow-sm"
           style={{
-            background: "rgba(232,67,111,0.04)",
-            border: "1px solid rgba(232,67,111,0.10)",
+            background: "rgba(255,61,139,0.04)",
+            border: "1px solid rgba(255,61,139,0.10)",
           }}
         >
           <DictationGame

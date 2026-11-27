@@ -115,7 +115,7 @@ export default function SentenceBuilder({
     return (
       <div
         className="min-h-screen flex items-center justify-center p-4"
-        style={{ background: "#FFF5F8" }}
+        style={{ background: "#F8F5FF" }}
       >
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
@@ -128,16 +128,16 @@ export default function SentenceBuilder({
             style={{
               background: "white",
               border: "1px solid rgba(240,230,238,1)",
-              boxShadow: "0 4px 16px rgba(232,67,111,0.08)",
+              boxShadow: "0 4px 16px rgba(255,61,139,0.08)",
             }}
           >
             <div className="text-5xl mb-4">
               {pct >= 80 ? "🎉" : pct >= 50 ? "👍" : "💪"}
             </div>
-            <h1 className="text-2xl font-black mb-1" style={{ color: "#1E1225" }}>
+            <h1 className="text-2xl font-black mb-1" style={{ color: "#140F2D" }}>
               Game Over!
             </h1>
-            <p className="text-sm mb-6" style={{ color: "#6B5F7A" }}>
+            <p className="text-sm mb-6" style={{ color: "#5A5475" }}>
               Sentence Builder — Chapter {chapterId.replace("ch", "")}
             </p>
 
@@ -149,7 +149,7 @@ export default function SentenceBuilder({
                 <div className="text-2xl font-black" style={{ color: "#10B981" }}>
                   {correctCount}
                 </div>
-                <div className="text-xs mt-1" style={{ color: "#6B5F7A" }}>Correct</div>
+                <div className="text-xs mt-1" style={{ color: "#5A5475" }}>Correct</div>
               </div>
               <div
                 className="rounded-2xl p-4"
@@ -158,16 +158,16 @@ export default function SentenceBuilder({
                 <div className="text-2xl font-black" style={{ color: "#EF4444" }}>
                   {incorrectCount}
                 </div>
-                <div className="text-xs mt-1" style={{ color: "#6B5F7A" }}>Incorrect</div>
+                <div className="text-xs mt-1" style={{ color: "#5A5475" }}>Incorrect</div>
               </div>
               <div
                 className="rounded-2xl p-4"
-                style={{ background: "rgba(155,127,232,0.10)", border: "1px solid rgba(155,127,232,0.25)" }}
+                style={{ background: "rgba(124,92,255,0.10)", border: "1px solid rgba(124,92,255,0.25)" }}
               >
-                <div className="text-2xl font-black" style={{ color: "#9B7FE8" }}>
+                <div className="text-2xl font-black" style={{ color: "#7C5CFF" }}>
                   {pct}%
                 </div>
-                <div className="text-xs mt-1" style={{ color: "#6B5F7A" }}>Accuracy</div>
+                <div className="text-xs mt-1" style={{ color: "#5A5475" }}>Accuracy</div>
               </div>
             </div>
 
@@ -199,8 +199,8 @@ export default function SentenceBuilder({
               <div className="flex flex-col gap-3">
                 {wrongQuestions.map((q) => (
                   <div key={q.id} className="text-sm">
-                    <div style={{ color: "#6B5F7A" }}>{q.english}</div>
-                    <div className="font-medium mt-0.5" style={{ color: "#1E1225" }}>
+                    <div style={{ color: "#5A5475" }}>{q.english}</div>
+                    <div className="font-medium mt-0.5" style={{ color: "#140F2D" }}>
                       {q.korean}
                     </div>
                   </div>
@@ -236,9 +236,9 @@ export default function SentenceBuilder({
               href={`/vocab/${chapterId}`}
               className="w-full rounded-xl py-3 font-semibold text-center transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
               style={{
-                background: "linear-gradient(to right, #9B7FE8, #B099FF)",
+                background: "linear-gradient(to right, #7C5CFF, #A78BFF)",
                 color: "white",
-                boxShadow: "0 4px 16px rgba(155,127,232,0.25)",
+                boxShadow: "0 4px 16px rgba(124,92,255,0.25)",
               }}
             >
               Study Vocabulary
@@ -249,7 +249,7 @@ export default function SentenceBuilder({
               style={{
                 background: "white",
                 border: "1px solid rgba(240,230,238,1)",
-                color: "#6B5F7A",
+                color: "#5A5475",
               }}
             >
               Other Games
@@ -266,7 +266,7 @@ export default function SentenceBuilder({
   return (
     <div
       className="min-h-screen flex flex-col"
-      style={{ background: "#FFF5F8" }}
+      style={{ background: "#F8F5FF" }}
     >
       {/* Top bar */}
       <div
@@ -280,7 +280,7 @@ export default function SentenceBuilder({
         <Link
           href="/games"
           className="flex items-center gap-1.5 text-sm transition-colors hover:opacity-80"
-          style={{ color: "#6B5F7A" }}
+          style={{ color: "#5A5475" }}
         >
           <span>←</span>
           <span>Games</span>
@@ -289,7 +289,7 @@ export default function SentenceBuilder({
         <div className="flex items-center gap-3 text-sm font-medium">
           <span style={{ color: "#10B981" }}>✓ {correctCount}</span>
           <span style={{ color: "#EF4444" }}>✗ {incorrectCount}</span>
-          <span style={{ color: "#6B5F7A" }}>
+          <span style={{ color: "#5A5475" }}>
             {currentIndex + 1}/{questions.length}
           </span>
         </div>
@@ -300,7 +300,7 @@ export default function SentenceBuilder({
         <motion.div
           className="h-full"
           style={{
-            background: "linear-gradient(to right, #9B7FE8, #E8436F)",
+            background: "linear-gradient(to right, #7C5CFF, #FF3D8B)",
             borderRadius: "0 4px 4px 0",
           }}
           animate={{ width: `${progress}%` }}
@@ -317,17 +317,17 @@ export default function SentenceBuilder({
           animate={{ opacity: 1, y: 0 }}
           className="w-full rounded-2xl p-5 mb-6"
           style={{
-            background: "rgba(155,127,232,0.06)",
-            border: "1px solid rgba(155,127,232,0.22)",
+            background: "rgba(124,92,255,0.06)",
+            border: "1px solid rgba(124,92,255,0.22)",
           }}
         >
           <div className="flex items-start gap-3">
             <span className="text-xl mt-0.5">💬</span>
             <div>
-              <div className="text-xs font-medium mb-1" style={{ color: "#9B7FE8" }}>
+              <div className="text-xs font-medium mb-1" style={{ color: "#7C5CFF" }}>
                 English
               </div>
-              <p className="font-medium leading-relaxed" style={{ color: "#1E1225" }}>
+              <p className="font-medium leading-relaxed" style={{ color: "#140F2D" }}>
                 {currentQuestion.english}
               </p>
             </div>
@@ -345,7 +345,7 @@ export default function SentenceBuilder({
           transition={{ duration: 0.4 }}
           className="w-full mb-4"
         >
-          <div className="text-xs font-medium mb-2" style={{ color: "#6B5F7A" }}>
+          <div className="text-xs font-medium mb-2" style={{ color: "#5A5475" }}>
             Your answer
           </div>
           <div
@@ -368,7 +368,7 @@ export default function SentenceBuilder({
           >
             <AnimatePresence mode="popLayout">
               {placed.length === 0 ? (
-                <span className="text-sm" style={{ color: "#B0A8BB" }}>
+                <span className="text-sm" style={{ color: "#9E98B8" }}>
                   Click words below to build the sentence...
                 </span>
               ) : (
@@ -392,13 +392,13 @@ export default function SentenceBuilder({
                           ? "rgba(16,185,129,0.15)"
                           : isWrongSlot
                           ? "rgba(239,68,68,0.15)"
-                          : "rgba(155,127,232,0.15)",
+                          : "rgba(124,92,255,0.15)",
                         border: isCorrectSlot
                           ? "1px solid #10B981"
                           : isWrongSlot
                           ? "1px solid #EF4444"
-                          : "1px solid rgba(155,127,232,0.40)",
-                        color: "#1E1225",
+                          : "1px solid rgba(124,92,255,0.40)",
+                        color: "#140F2D",
                         cursor: checkState !== "idle" ? "default" : "pointer",
                       }}
                     >
@@ -413,7 +413,7 @@ export default function SentenceBuilder({
 
         {/* Word bank */}
         <div className="w-full mb-6">
-          <div className="text-xs font-medium mb-2" style={{ color: "#6B5F7A" }}>
+          <div className="text-xs font-medium mb-2" style={{ color: "#5A5475" }}>
             Word bank
           </div>
           <div className="flex flex-wrap gap-2 min-h-[48px]">
@@ -430,7 +430,7 @@ export default function SentenceBuilder({
                   style={{
                     background: "white",
                     border: "1px solid rgba(240,230,238,1)",
-                    color: "#1E1225",
+                    color: "#140F2D",
                     cursor: checkState !== "idle" ? "default" : "pointer",
                   }}
                   whileHover={checkState === "idle" ? { scale: 1.06, background: "rgba(255,240,245,1)" } : {}}
@@ -452,7 +452,7 @@ export default function SentenceBuilder({
             style={{
               background: "white",
               border: "1px solid rgba(240,230,238,1)",
-              color: "#6B5F7A",
+              color: "#5A5475",
             }}
           >
             ↩ Reset

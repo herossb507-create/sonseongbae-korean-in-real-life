@@ -51,58 +51,58 @@ export default function DashboardPage() {
     <div className="max-w-4xl mx-auto px-6 py-10">
       {/* 헤더 */}
       <div className="mb-8">
-        <h1 className="text-2xl font-bold text-[#1E1225]">My Progress</h1>
-        <p className="text-[#6B5F7A] text-sm mt-1">
+        <h1 className="text-2xl font-bold text-[#140F2D]">My Progress</h1>
+        <p className="text-[#5A5475] text-sm mt-1">
           Saved in this browser. Keep up the streak!
         </p>
       </div>
 
       {/* Stats grid */}
       <div className="grid grid-cols-3 gap-4 mb-8">
-        <div className="bg-white border border-[#F0E6EE] rounded-xl p-6 text-center shadow-sm">
-          <div className="text-3xl font-bold text-[#9B7FE8]">
+        <div className="bg-white border border-[#EAE4F7] rounded-xl p-6 text-center shadow-sm">
+          <div className="text-3xl font-bold text-[#7C5CFF]">
             {stats.chaptersCompleted}
-            <span className="text-[#B0A8BB] text-lg">/{stats.totalChapters}</span>
+            <span className="text-[#9E98B8] text-lg">/{stats.totalChapters}</span>
           </div>
-          <div className="text-sm text-[#6B5F7A] mt-1">Chapters read</div>
+          <div className="text-sm text-[#5A5475] mt-1">Chapters read</div>
         </div>
-        <div className="bg-white border border-[#F0E6EE] rounded-xl p-6 text-center shadow-sm">
+        <div className="bg-white border border-[#EAE4F7] rounded-xl p-6 text-center shadow-sm">
           <div className="text-3xl font-bold text-[#34C899]">
             {stats.wordsKnown}
           </div>
-          <div className="text-sm text-[#6B5F7A] mt-1">Words known</div>
+          <div className="text-sm text-[#5A5475] mt-1">Words known</div>
         </div>
-        <div className="bg-white border border-[#F0E6EE] rounded-xl p-6 text-center shadow-sm">
-          <div className="text-3xl font-bold text-[#E8436F]">
+        <div className="bg-white border border-[#EAE4F7] rounded-xl p-6 text-center shadow-sm">
+          <div className="text-3xl font-bold text-[#FF3D8B]">
             {stats.streakDays}
           </div>
-          <div className="text-sm text-[#6B5F7A] mt-1">Day streak 🔥</div>
+          <div className="text-sm text-[#5A5475] mt-1">Day streak 🔥</div>
         </div>
       </div>
 
       {/* 전체 진도 바 */}
-      <div className="bg-white border border-[#F0E6EE] rounded-xl p-6 mb-6 shadow-sm">
+      <div className="bg-white border border-[#EAE4F7] rounded-xl p-6 mb-6 shadow-sm">
         <div className="flex justify-between items-center mb-3">
-          <h2 className="font-semibold text-[#1E1225]">Overall progress</h2>
-          <span className="text-sm text-[#9B7FE8] font-medium">
+          <h2 className="font-semibold text-[#140F2D]">Overall progress</h2>
+          <span className="text-sm text-[#7C5CFF] font-medium">
             {progressPercent}%
           </span>
         </div>
-        <div className="w-full bg-[#FFE8F0] rounded-full h-3 mb-2">
+        <div className="w-full bg-[#F0E7FF] rounded-full h-3 mb-2">
           <div
-            className="bg-gradient-to-r from-[#9B7FE8] to-[#E8436F] h-3 rounded-full transition-all duration-700"
+            className="bg-gradient-to-r from-[#7C5CFF] to-[#FF3D8B] h-3 rounded-full transition-all duration-700"
             style={{ width: `${progressPercent}%` }}
           />
         </div>
-        <p className="text-sm text-[#6B5F7A]">
+        <p className="text-sm text-[#5A5475]">
           {stats.chaptersCompleted} of {stats.totalChapters} chapters completed
         </p>
       </div>
 
       {/* 최근 활동 + 주간 요약 */}
       <div className="grid grid-cols-2 gap-4 mb-8">
-        <div className="bg-white border border-[#F0E6EE] rounded-xl p-5 shadow-sm">
-          <h3 className="text-sm font-semibold text-[#6B5F7A] uppercase tracking-wide mb-3">
+        <div className="bg-white border border-[#EAE4F7] rounded-xl p-5 shadow-sm">
+          <h3 className="text-sm font-semibold text-[#5A5475] uppercase tracking-wide mb-3">
             Last read
           </h3>
           {lastReadChapterInfo ? (
@@ -110,10 +110,10 @@ export default function DashboardPage() {
               href={`/learn/${lastReadChapterInfo.slug}`}
               className="group"
             >
-              <p className="text-[#1E1225] font-medium group-hover:text-[#9B7FE8] transition-colors">
+              <p className="text-[#140F2D] font-medium group-hover:text-[#7C5CFF] transition-colors">
                 Ch{lastReadChapterInfo.num}. {lastReadChapterInfo.title}
               </p>
-              <p className="text-xs text-[#6B5F7A] mt-1">
+              <p className="text-xs text-[#5A5475] mt-1">
                 {new Date(lastRead!.last_read_at).toLocaleDateString("en-US", {
                   month: "short",
                   day: "numeric",
@@ -121,25 +121,25 @@ export default function DashboardPage() {
               </p>
             </Link>
           ) : (
-            <p className="text-[#B0A8BB] text-sm">No chapters read yet</p>
+            <p className="text-[#9E98B8] text-sm">No chapters read yet</p>
           )}
         </div>
-        <div className="bg-white border border-[#F0E6EE] rounded-xl p-5 shadow-sm">
-          <h3 className="text-sm font-semibold text-[#6B5F7A] uppercase tracking-wide mb-3">
+        <div className="bg-white border border-[#EAE4F7] rounded-xl p-5 shadow-sm">
+          <h3 className="text-sm font-semibold text-[#5A5475] uppercase tracking-wide mb-3">
             This week
           </h3>
-          <p className="text-[#1E1225] font-medium">
+          <p className="text-[#140F2D] font-medium">
             <span className="text-2xl text-[#F4A261] font-bold">
               {weeklyCount}
             </span>{" "}
-            <span className="text-[#6B5F7A] text-sm">chapters visited</span>
+            <span className="text-[#5A5475] text-sm">chapters visited</span>
           </p>
         </div>
       </div>
 
       {/* 챕터 진도 맵 */}
-      <div className="bg-white border border-[#F0E6EE] rounded-xl p-6 mb-8 shadow-sm">
-        <h2 className="font-semibold text-[#1E1225] mb-5">Chapter map</h2>
+      <div className="bg-white border border-[#EAE4F7] rounded-xl p-6 mb-8 shadow-sm">
+        <h2 className="font-semibold text-[#140F2D] mb-5">Chapter map</h2>
         <div className="grid grid-cols-4 gap-3">
           {chapterList.map((chapter) => {
             const done = completedIds.has(chapter.slug);
@@ -155,8 +155,8 @@ export default function DashboardPage() {
                   done
                     ? "bg-[#34C899]/20 border-[#34C899]/40 hover:bg-[#34C899]/30"
                     : inProgress
-                    ? "bg-[#9B7FE8]/20 border-[#9B7FE8]/40 hover:bg-[#9B7FE8]/30"
-                    : "bg-[#FFF5F8] border-[#F0E6EE] hover:bg-[#FFF0F5]",
+                    ? "bg-[#7C5CFF]/20 border-[#7C5CFF]/40 hover:bg-[#7C5CFF]/30"
+                    : "bg-[#F8F5FF] border-[#EAE4F7] hover:bg-[#F2ECFF]",
                 ].join(" ")}
               >
                 <div
@@ -165,30 +165,30 @@ export default function DashboardPage() {
                     done
                       ? "text-[#34C899]"
                       : inProgress
-                      ? "text-[#9B7FE8]"
-                      : "text-[#B0A8BB]",
+                      ? "text-[#7C5CFF]"
+                      : "text-[#9E98B8]",
                   ].join(" ")}
                 >
                   {done ? "✓" : `Ch${chapter.num}`}
                 </div>
-                <div className="text-[10px] text-[#6B5F7A] leading-tight line-clamp-2">
+                <div className="text-[10px] text-[#5A5475] leading-tight line-clamp-2">
                   {chapter.title}
                 </div>
               </Link>
             );
           })}
         </div>
-        <div className="flex gap-4 mt-4 text-xs text-[#6B5F7A]">
+        <div className="flex gap-4 mt-4 text-xs text-[#5A5475]">
           <span className="flex items-center gap-1">
             <span className="w-2 h-2 rounded-full bg-[#34C899] inline-block" />
             Completed
           </span>
           <span className="flex items-center gap-1">
-            <span className="w-2 h-2 rounded-full bg-[#9B7FE8] inline-block" />
+            <span className="w-2 h-2 rounded-full bg-[#7C5CFF] inline-block" />
             In progress
           </span>
           <span className="flex items-center gap-1">
-            <span className="w-2 h-2 rounded-full bg-[#F0E6EE] inline-block" />
+            <span className="w-2 h-2 rounded-full bg-[#EAE4F7] inline-block" />
             Not started
           </span>
         </div>
@@ -202,7 +202,7 @@ export default function DashboardPage() {
       {/* CTA */}
       <Link
         href="/learn"
-        className="inline-block bg-gradient-to-r from-[#E8436F] to-[#F06B8A] text-white px-6 py-3 rounded-xl text-sm font-medium hover:opacity-90 transition-opacity shadow-[0_4px_16px_rgba(232,67,111,0.25)]"
+        className="inline-block bg-gradient-to-r from-[#FF3D8B] to-[#FF6FB1] text-white px-6 py-3 rounded-xl text-sm font-medium hover:opacity-90 transition-opacity shadow-[0_4px_16px_rgba(255,61,139,0.25)]"
       >
         Continue learning →
       </Link>

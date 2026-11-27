@@ -14,7 +14,7 @@ export const metadata = pageMeta({
 
 export default function BooksPage() {
   return (
-    <div className="min-h-screen bg-[#FFF5F8]">
+    <div className="min-h-screen bg-[#F8F5FF]">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 py-10">
         <JsonLd
           data={{
@@ -29,8 +29,8 @@ export default function BooksPage() {
           }}
         />
         <div className="mb-8">
-          <h1 className="text-2xl sm:text-3xl font-bold text-[#1E1225]">📚 The books</h1>
-          <p className="text-[#6B5F7A] text-sm mt-1 max-w-2xl">
+          <h1 className="text-2xl sm:text-3xl font-bold text-[#140F2D]">📚 The books</h1>
+          <p className="text-[#5A5475] text-sm mt-1 max-w-2xl">
             This site follows the Korean in Real Life books. Get the full chapters with dialogues, practice exercises,
             answer keys and Listen &amp; Repeat videos — and plan your trip with Korea Unlocked.
           </p>
@@ -40,14 +40,14 @@ export default function BooksPage() {
               href={FREE_PDF.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-semibold text-[#E8436F] underline underline-offset-2"
+              className="font-semibold text-[#FF3D8B] underline underline-offset-2"
             >
               {FREE_PDF.displayUrl}
             </a>
           </p>
         </div>
 
-        <h2 className="text-xs font-semibold uppercase tracking-wider text-[#6B5F7A] mb-3">Learn Korean</h2>
+        <h2 className="text-xs font-semibold uppercase tracking-wider text-[#5A5475] mb-3">Learn Korean</h2>
         <div className="grid gap-5 md:grid-cols-2 mb-10">
           <BookCard book={BOOKS["kirl-1"]} />
           <BookCard book={BOOKS["kirl-2"]} />
@@ -55,11 +55,11 @@ export default function BooksPage() {
           <BookCard book={BOOKS["shy-girl-1"]} />
         </div>
 
-        <h2 className="text-xs font-semibold uppercase tracking-wider text-[#6B5F7A] mb-3">Visit Korea</h2>
+        <h2 className="text-xs font-semibold uppercase tracking-wider text-[#5A5475] mb-3">Visit Korea</h2>
         <div className="grid gap-5 md:grid-cols-2 mb-10">
           <BookCard book={BOOKS["korea-unlocked"]} />
-          <div className="rounded-3xl border border-dashed border-[#E5DCE6] p-6 text-sm text-[#6B5F7A] flex flex-col justify-center">
-            <p className="font-semibold text-[#1E1225] mb-1">Not sure where to start?</p>
+          <div className="rounded-3xl border border-dashed border-[#E0D9F2] p-6 text-sm text-[#5A5475] flex flex-col justify-center">
+            <p className="font-semibold text-[#140F2D] mb-1">Not sure where to start?</p>
             <p>
               New to Korean → <strong>Volume 1</strong>. Already ordering food in Korean → <strong>Volume 2</strong>.
               Can read Hangul but sound like a textbook → <strong>Korean on Campus</strong>. Love K-pop and want to
