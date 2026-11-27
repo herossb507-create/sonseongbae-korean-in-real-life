@@ -4,6 +4,7 @@ import { DIALOGUE_SCENARIOS } from "@/lib/dialogue-data";
 import { CHAPTER_VOCAB } from "@/lib/vocab-data";
 import { getCities, getConcerts, getConcertsByCity, getListedArtists } from "@/lib/concerts/data";
 import { SITE_URL } from "@/lib/concerts/site";
+import { BOOKS } from "@/lib/books";
 
 // Public, indexable pages. Progress pages (home, stats, settings) are per-browser and left out.
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -16,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/learn`, changeFrequency: "monthly", priority: 0.9 },
     ...Object.keys(CHAPTER_CONTENT).map((id) => ({ url: `${SITE_URL}/learn/${id}`, changeFrequency: "monthly" as const })),
     { url: `${SITE_URL}/books`, changeFrequency: "monthly", priority: 0.8 },
+    ...Object.keys(BOOKS).map((id) => ({ url: `${SITE_URL}/books/${id}`, changeFrequency: "monthly" as const, priority: 0.7 })),
     { url: `${SITE_URL}/privacy`, changeFrequency: "yearly", priority: 0.2 },
     { url: `${SITE_URL}/games`, changeFrequency: "monthly" },
     { url: `${SITE_URL}/kdrama`, changeFrequency: "monthly" },

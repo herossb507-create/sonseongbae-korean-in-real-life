@@ -613,6 +613,7 @@ export function speakKorean(text: string, options?: { rate?: number; pitch?: num
 | 위치 | 내용 |
 |------|------|
 | `/books` | 5권 카드(학습 4 + 여행 1) + 무료 PDF 배너 (사이드바 📚 Books) |
+| `/books/<id>` | 책별 상세: 줄거리·대상·목차·등장인물·발췌·책 속 이미지 갤러리(탭하면 크게). 내용은 `src/lib/book-details.ts`, 이미지는 `public/books/<id>/`(원본: marketing-kit/03_images, Korea University/20-images, K-pop/90-kdp/aplus) |
 | 랜딩 | 커리큘럼 아래 "The books behind the course" 섹션, 상단 nav·푸터 링크 |
 | 챕터 읽기 하단 | 해당 챕터를 다루는 권 추천 (ch01–08·14 → Vol.1, 나머지 → Vol.2) |
 | Home | 무료 PDF 배너 + Books 바로가기 |
