@@ -22,16 +22,16 @@ export function SidebarMobile({ navItems }: Props) {
   return (
     <>
       {/* Mobile top bar */}
-      <div className="md:hidden sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-[#F0E6EE] flex items-center justify-between px-4 py-3 shadow-sm">
+      <div className="md:hidden sticky top-0 z-40 bg-[#0E0A1F] text-white border-b border-white/10 flex items-center justify-between px-4 py-3 shadow-[0_4px_20px_rgba(124,92,255,0.25)]">
         <Link href="/home" className="flex items-center gap-2">
-          <span className="text-lg">🌸</span>
-          <span className="text-sm font-bold text-[#1E1225]">
-            Korean <span className="text-[#E8436F]">in Real Life</span>
+          <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-gradient-to-br from-[#FF3D8B] to-[#7C5CFF] text-xs font-bold">한</span>
+          <span className="text-sm font-black">
+            Korean <span className="text-neon">in Real Life</span>
           </span>
         </Link>
         <button
           onClick={() => setOpen(true)}
-          className="p-2 text-[#6B5F7A] hover:text-[#E8436F] transition-colors"
+          className="p-2 text-white/80 hover:text-white transition-colors"
           aria-label="Open menu"
         >
           <Menu className="w-5 h-5" />
@@ -43,28 +43,28 @@ export function SidebarMobile({ navItems }: Props) {
         <>
           {/* Overlay */}
           <div
-            className="fixed inset-0 z-50 bg-[#1E1225]/30 backdrop-blur-sm md:hidden"
+            className="fixed inset-0 z-50 bg-[#140F2D]/30 backdrop-blur-sm md:hidden"
             onClick={() => setOpen(false)}
           />
 
           {/* Drawer */}
-          <div className="fixed left-0 top-0 bottom-0 z-50 w-[260px] bg-white border-r border-[#F0E6EE] flex flex-col md:hidden shadow-xl">
+          <div className="stage-bg fixed left-0 top-0 bottom-0 z-50 w-[260px] text-white flex flex-col md:hidden shadow-xl">
             {/* Header */}
-            <div className="flex items-center justify-between px-5 py-5 border-b border-[#F0E6EE]">
+            <div className="flex items-center justify-between px-5 py-5 border-b border-white/10">
               <Link
                 href="/home"
                 className="flex items-center gap-2"
                 onClick={() => setOpen(false)}
               >
-                <span className="text-xl">🌸</span>
+                <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-br from-[#FF3D8B] to-[#7C5CFF] text-sm font-bold">한</span>
                 <div className="leading-tight">
-                  <div className="text-sm font-bold text-[#1E1225]">Korean</div>
-                  <div className="text-xs text-[#E8436F] font-semibold">in Real Life</div>
+                  <div className="text-sm font-black">Korean</div>
+                  <div className="text-xs text-neon font-bold">in Real Life</div>
                 </div>
               </Link>
               <button
                 onClick={() => setOpen(false)}
-                className="p-1.5 text-[#6B5F7A] hover:text-[#E8436F] transition-colors"
+                className="p-1.5 text-white/70 hover:text-white transition-colors"
                 aria-label="Close menu"
               >
                 <X className="w-5 h-5" />
@@ -83,12 +83,12 @@ export function SidebarMobile({ navItems }: Props) {
                     className={[
                       "flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 border-l-2",
                       active
-                        ? "bg-[#FFF0F5] text-[#E8436F] border-[#E8436F] font-semibold"
-                        : "text-[#6B5F7A] hover:text-[#E8436F] hover:bg-[#FFF5F8] border-transparent",
+                        ? "bg-gradient-to-r from-[#FF3D8B] to-[#7C5CFF] text-white border-transparent font-semibold"
+                        : "text-white/70 hover:text-white hover:bg-white/10 border-transparent",
                     ].join(" ")}
                   >
                     <span className="text-base leading-none">{item.icon}</span>
-                    <span className={item.gold ? "text-[#F4A261] font-semibold" : undefined}>
+                    <span className={item.gold ? "text-[#FFC46B] font-semibold" : undefined}>
                       {item.label}
                     </span>
                   </Link>

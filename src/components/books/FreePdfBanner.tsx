@@ -5,7 +5,7 @@ import { FREE_PDF } from "@/lib/books";
 export function FreePdfBanner({ compact = false }: { compact?: boolean }) {
   return (
     <div
-      className={`flex flex-col gap-4 rounded-3xl border border-[#F4A261]/30 bg-gradient-to-br from-[#FFF8EF] to-[#FFF0F5] sm:flex-row sm:items-center sm:justify-between ${
+      className={`flex flex-col gap-4 rounded-3xl border border-[#F4A261]/30 bg-gradient-to-br from-[#FFF8EF] to-[#F2ECFF] sm:flex-row sm:items-center sm:justify-between ${
         compact ? "p-5" : "p-6 sm:p-8"
       }`}
     >
@@ -15,19 +15,19 @@ export function FreePdfBanner({ compact = false }: { compact?: boolean }) {
         </span>
         <div>
           <p className="text-xs font-semibold uppercase tracking-wider text-[#F4A261]">Free download</p>
-          <p className={`font-bold text-[#1E1225] ${compact ? "text-base" : "text-xl"}`}>
-            {FREE_PDF.title} <span className="font-medium text-[#6B5F7A]">· {FREE_PDF.subtitle}</span>
+          <p className={`font-bold text-[#140F2D] ${compact ? "text-base" : "text-xl"}`}>
+            {FREE_PDF.title} <span className="font-medium text-[#5A5475]">· {FREE_PDF.subtitle}</span>
           </p>
-          {!compact && <p className="mt-1 max-w-xl text-sm text-[#6B5F7A]">{FREE_PDF.description}</p>}
+          {!compact && <p className="mt-1 max-w-xl text-sm text-[#5A5475]">{FREE_PDF.description}</p>}
           <a
             href={FREE_PDF.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-1.5 inline-block break-all text-sm font-semibold text-[#E8436F] underline decoration-[#E8436F]/30 underline-offset-2 hover:decoration-[#E8436F]"
+            className="mt-1.5 inline-block break-all text-sm font-semibold text-[#FF3D8B] underline decoration-[#FF3D8B]/30 underline-offset-2 hover:decoration-[#FF3D8B]"
           >
             👉 {FREE_PDF.displayUrl}
           </a>
-          <p className="mt-1 text-[11px] text-[#B0A8BB]">
+          <p className="mt-1 text-[11px] text-[#9E98B8]">
             Sign-up by email via MailerLite ·{" "}
             <Link href="/privacy" className="underline">
               Privacy

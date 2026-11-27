@@ -31,16 +31,16 @@ export function Sidebar() {
       <SidebarMobile navItems={NAV_ITEMS} />
 
       {/* Desktop sidebar */}
-      <aside className="hidden md:flex flex-col w-[240px] min-h-screen bg-white border-r border-[#F0E6EE] sticky top-0 h-screen overflow-y-auto shrink-0 shadow-[2px_0_12px_rgba(232,67,111,0.06)]">
+      <aside className="stage-bg hidden md:flex flex-col w-[240px] min-h-screen text-white sticky top-0 h-screen overflow-y-auto shrink-0 shadow-[4px_0_24px_rgba(124,92,255,0.25)]">
         {/* Logo */}
-        <div className="px-5 py-5 border-b border-[#F0E6EE]">
+        <div className="px-5 py-5 border-b border-white/10">
           <Link href="/home" className="flex items-center gap-2.5 hover:opacity-80 transition-opacity">
-            <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-[#E8436F] to-[#9B7FE8] flex items-center justify-center text-white text-sm font-bold shadow-md">
+            <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-[#FF3D8B] to-[#7C5CFF] flex items-center justify-center text-white text-sm font-bold glow-pink">
               한
             </div>
             <div className="leading-tight">
-              <div className="text-sm font-bold text-[#1E1225]">Korean</div>
-              <div className="text-xs text-[#E8436F] font-semibold">in Real Life</div>
+              <div className="text-sm font-black text-white">Korean</div>
+              <div className="text-xs text-neon font-bold">in Real Life</div>
             </div>
           </Link>
         </div>
@@ -50,7 +50,7 @@ export function Sidebar() {
           {NAV_ITEMS.map((item) => (
             <SidebarActiveLink key={item.href} href={item.href} exact={item.exact}>
               <span className="text-base leading-none">{item.icon}</span>
-              <span className={item.gold ? "text-[#F4A261] font-semibold" : undefined}>{item.label}</span>
+              <span className={item.gold ? "text-[#FFC46B] font-semibold" : undefined}>{item.label}</span>
             </SidebarActiveLink>
           ))}
         </nav>

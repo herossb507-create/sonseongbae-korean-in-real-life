@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import ConcertList from "@/components/concerts/ConcertList";
+import StageBanner from "@/components/concerts/StageBanner";
 import { getCities, getConcertsByCity } from "@/lib/concerts/data";
 import { flag } from "@/lib/concerts/format";
 import { pageMeta } from "@/lib/seo";
@@ -50,10 +51,17 @@ export default function CityPage({ params }: Props) {
           ]),
         )}
       />
-      <h1 className="text-3xl font-bold">
-        {flag(city.countryCode)} K-pop concerts in {city.name}
-      </h1>
-      <p className="mt-1 text-[#6B5F7A]">{city.country}</p>
+      <StageBanner>
+        <p className="text-xs font-bold uppercase tracking-widest text-[#22D3EE]">
+          {flag(city.countryCode)} {city.country}
+        </p>
+        <h1 className="mt-2 text-4xl font-black tracking-tight md:text-5xl">
+          K-pop concerts in <span className="text-neon">{city.name}</span>
+        </h1>
+        <p className="mt-2 text-white/70">
+          {shows.length} show{shows.length > 1 ? "s" : ""} · {[...new Set(shows.map((c) => c.artist.name))].slice(0, 5).join(", ")}
+        </p>
+      </StageBanner>
       <div className="mt-8">
         <ConcertList concerts={shows} show="artist" />
       </div>

@@ -78,13 +78,13 @@ export default function DialogueViewer({ scenario }: DialogueViewerProps) {
   };
 
   return (
-    <div className="min-h-screen" style={{ background: "#FFF5F8" }}>
+    <div className="min-h-screen" style={{ background: "#F8F5FF" }}>
       <div className="max-w-2xl mx-auto px-4 py-8">
         {/* Back link */}
         <Link
           href="/dialogues"
           className="inline-flex items-center gap-2 text-sm mb-6 transition-colors hover:opacity-80"
-          style={{ color: "#9B7FE8" }}
+          style={{ color: "#7C5CFF" }}
         >
           ← Back to Dialogues
         </Link>
@@ -93,8 +93,8 @@ export default function DialogueViewer({ scenario }: DialogueViewerProps) {
         <div
           className="rounded-2xl p-6 mb-6"
           style={{
-            background: "rgba(155,127,232,0.08)",
-            border: "1px solid rgba(155,127,232,0.20)",
+            background: "rgba(124,92,255,0.08)",
+            border: "1px solid rgba(124,92,255,0.20)",
           }}
         >
           <div className="flex items-start justify-between gap-4">
@@ -103,17 +103,17 @@ export default function DialogueViewer({ scenario }: DialogueViewerProps) {
               <div>
                 <p
                   className="text-xs font-medium mb-0.5 font-noto-kr"
-                  style={{ color: "#6B5F7A" }}
+                  style={{ color: "#5A5475" }}
                 >
                   {scenario.titleKo}
                 </p>
                 <h1
                   className="text-2xl font-black"
-                  style={{ color: "#1E1225" }}
+                  style={{ color: "#140F2D" }}
                 >
                   {scenario.title}
                 </h1>
-                <p className="text-sm mt-1" style={{ color: "#6B5F7A" }}>
+                <p className="text-sm mt-1" style={{ color: "#5A5475" }}>
                   {scenario.setting}
                 </p>
                 <span
@@ -147,9 +147,9 @@ export default function DialogueViewer({ scenario }: DialogueViewerProps) {
                 onClick={playAll}
                 className="flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-200 hover:scale-105 active:scale-95"
                 style={{
-                  background: "linear-gradient(to right, #9B7FE8, #B099FF)",
+                  background: "linear-gradient(to right, #7C5CFF, #A78BFF)",
                   color: "white",
-                  boxShadow: "0 4px 16px rgba(155,127,232,0.30)",
+                  boxShadow: "0 4px 16px rgba(124,92,255,0.30)",
                 }}
               >
                 <span>▶</span>
@@ -164,13 +164,13 @@ export default function DialogueViewer({ scenario }: DialogueViewerProps) {
               style={
                 showRomanization
                   ? {
-                      background: "rgba(155,127,232,0.12)",
-                      color: "#1E1225",
-                      borderColor: "rgba(155,127,232,0.25)",
+                      background: "rgba(124,92,255,0.12)",
+                      color: "#140F2D",
+                      borderColor: "rgba(124,92,255,0.25)",
                     }
                   : {
                       background: "rgba(240,230,238,0.5)",
-                      color: "#6B5F7A",
+                      color: "#5A5475",
                       borderColor: "rgba(240,230,238,1)",
                     }
               }
@@ -180,7 +180,7 @@ export default function DialogueViewer({ scenario }: DialogueViewerProps) {
             </button>
 
             {/* Line count */}
-            <span className="text-xs ml-auto" style={{ color: "#B0A8BB" }}>
+            <span className="text-xs ml-auto" style={{ color: "#9E98B8" }}>
               {scenario.lines.length} lines
             </span>
           </div>
@@ -202,21 +202,21 @@ export default function DialogueViewer({ scenario }: DialogueViewerProps) {
                   style={{
                     ...(isA
                       ? {
-                          background: "rgba(155,127,232,0.10)",
+                          background: "rgba(124,92,255,0.10)",
                           border: isActive
-                            ? "2px solid #E8436F"
-                            : "1px solid rgba(155,127,232,0.22)",
+                            ? "2px solid #FF3D8B"
+                            : "1px solid rgba(124,92,255,0.22)",
                           borderRadius: "16px 16px 16px 4px",
                         }
                       : {
                           background: "rgba(255,255,255,0.9)",
                           border: isActive
-                            ? "2px solid #E8436F"
+                            ? "2px solid #FF3D8B"
                             : "1px solid rgba(240,230,238,1)",
                           borderRadius: "16px 16px 4px 16px",
                         }),
                     boxShadow: isActive
-                      ? "0 0 0 2px rgba(232,67,111,0.25)"
+                      ? "0 0 0 2px rgba(255,61,139,0.25)"
                       : undefined,
                   }}
                 >
@@ -224,7 +224,7 @@ export default function DialogueViewer({ scenario }: DialogueViewerProps) {
                   <div className="flex items-center justify-between gap-2 mb-2">
                     <span
                       className="text-xs font-semibold"
-                      style={{ color: isA ? "#9B7FE8" : "#6B5F7A" }}
+                      style={{ color: isA ? "#7C5CFF" : "#5A5475" }}
                     >
                       {line.speakerName}
                     </span>
@@ -233,9 +233,9 @@ export default function DialogueViewer({ scenario }: DialogueViewerProps) {
                       className="w-6 h-6 rounded-full flex items-center justify-center text-xs transition-all duration-200 hover:scale-110 active:scale-95 flex-shrink-0"
                       style={{
                         background: isActive
-                          ? "#E8436F"
-                          : "rgba(232,67,111,0.10)",
-                        border: "1px solid rgba(232,67,111,0.20)",
+                          ? "#FF3D8B"
+                          : "rgba(255,61,139,0.10)",
+                        border: "1px solid rgba(255,61,139,0.20)",
                       }}
                       title="Play pronunciation"
                     >
@@ -246,20 +246,20 @@ export default function DialogueViewer({ scenario }: DialogueViewerProps) {
                   {/* Korean */}
                   <p
                     className="text-base font-semibold mb-1 font-noto-kr"
-                    style={{ color: "#1E1225" }}
+                    style={{ color: "#140F2D" }}
                   >
                     {line.korean}
                   </p>
 
                   {/* Romanization */}
                   {showRomanization && (
-                    <p className="text-xs mb-1.5" style={{ color: "#6B5F7A" }}>
+                    <p className="text-xs mb-1.5" style={{ color: "#5A5475" }}>
                       {line.romanization}
                     </p>
                   )}
 
                   {/* English */}
-                  <p className="text-sm" style={{ color: "#B0A8BB" }}>
+                  <p className="text-sm" style={{ color: "#9E98B8" }}>
                     {line.english}
                   </p>
                 </div>
@@ -276,10 +276,10 @@ export default function DialogueViewer({ scenario }: DialogueViewerProps) {
             border: "1px solid rgba(244,162,97,0.18)",
           }}
         >
-          <p className="text-xs" style={{ color: "#6B5F7A" }}>
+          <p className="text-xs" style={{ color: "#5A5475" }}>
             <span style={{ color: "#F4A261" }}>💡</span> Tap each bubble&apos;s
             🔊 to hear individual lines, or press{" "}
-            <strong style={{ color: "#1E1225" }}>Play All</strong> to listen to
+            <strong style={{ color: "#140F2D" }}>Play All</strong> to listen to
             the full conversation.
           </p>
         </div>
@@ -290,7 +290,7 @@ export default function DialogueViewer({ scenario }: DialogueViewerProps) {
             href="/dialogues"
             className="inline-flex items-center gap-2 text-sm px-5 py-2.5 rounded-xl border transition-all duration-200 hover:opacity-80"
             style={{
-              color: "#6B5F7A",
+              color: "#5A5475",
               borderColor: "rgba(240,230,238,1)",
               background: "rgba(255,255,255,0.8)",
             }}

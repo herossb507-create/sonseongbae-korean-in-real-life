@@ -21,7 +21,7 @@ const STEP = CELL + GAP;
 const DAY_LABEL_W = 28; // px reserved for day-of-week labels
 
 function getColor(xp: number): string {
-  if (xp === 0) return "bg-[#FFF5F8]";
+  if (xp === 0) return "bg-[#F8F5FF]";
   if (xp <= 20) return "bg-[#4F7FE8]/30";
   if (xp <= 50) return "bg-[#4F7FE8]/60";
   if (xp <= 100) return "bg-[#4F7FE8]";
@@ -110,16 +110,16 @@ export default function ActivityHeatmap({ days = 182 }: Props) {
   };
 
   return (
-    <div className="bg-[#FFF5F8] backdrop-blur-lg border border-[#F0E6EE] rounded-2xl p-6">
+    <div className="bg-[#F8F5FF] backdrop-blur-lg border border-[#EAE4F7] rounded-2xl p-6">
       {/* Header row */}
       <div className="flex items-center justify-between mb-5">
-        <h2 className="text-lg font-bold text-[#1E1225]">Learning Activity</h2>
-        <div className="flex gap-4 text-xs text-[#6B5F7A]">
+        <h2 className="text-lg font-bold text-[#140F2D]">Learning Activity</h2>
+        <div className="flex gap-4 text-xs text-[#5A5475]">
           <span>
-            <span className="text-[#1E1225] font-medium">{activeDays}</span> active days
+            <span className="text-[#140F2D] font-medium">{activeDays}</span> active days
           </span>
           <span>
-            <span className="text-[#1E1225] font-medium">{totalXP.toLocaleString()}</span> total XP
+            <span className="text-[#140F2D] font-medium">{totalXP.toLocaleString()}</span> total XP
           </span>
         </div>
       </div>
@@ -141,7 +141,7 @@ export default function ActivityHeatmap({ days = 182 }: Props) {
                 <div
                   key={colIdx}
                   style={{ width: STEP, flexShrink: 0 }}
-                  className="text-[10px] text-[#6B5F7A]"
+                  className="text-[10px] text-[#5A5475]"
                 >
                   {pos ? pos.label : ""}
                 </div>
@@ -165,7 +165,7 @@ export default function ActivityHeatmap({ days = 182 }: Props) {
                 <div
                   key={i}
                   style={{ height: CELL, lineHeight: `${CELL}px` }}
-                  className="text-[10px] text-[#6B5F7A] text-right pr-2 select-none"
+                  className="text-[10px] text-[#5A5475] text-right pr-2 select-none"
                 >
                   {label}
                 </div>
@@ -246,9 +246,9 @@ export default function ActivityHeatmap({ days = 182 }: Props) {
       </div>
 
       {/* Legend */}
-      <div className="flex items-center gap-1.5 mt-4 text-[10px] text-[#6B5F7A]">
+      <div className="flex items-center gap-1.5 mt-4 text-[10px] text-[#5A5475]">
         <span className="mr-1">Less</span>
-        {["bg-[#FFF5F8]", "bg-[#4F7FE8]/30", "bg-[#4F7FE8]/60", "bg-[#4F7FE8]", "bg-[#FF4757]"].map(
+        {["bg-[#F8F5FF]", "bg-[#4F7FE8]/30", "bg-[#4F7FE8]/60", "bg-[#4F7FE8]", "bg-[#FF4757]"].map(
           (cls) => (
             <div
               key={cls}

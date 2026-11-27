@@ -19,8 +19,8 @@ export function SidebarActiveLink({ href, children, exact = false }: Props) {
       className={[
         "flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 border-l-2",
         isActive
-          ? "bg-[#FFF0F5] text-[#E8436F] border-[#E8436F] pl-3 font-semibold"
-          : "text-[#6B5F7A] hover:text-[#E8436F] hover:bg-[#FFF5F8] border-transparent pl-3",
+          ? "bg-gradient-to-r from-[#FF3D8B] to-[#7C5CFF] text-white border-transparent pl-3 font-semibold shadow-[0_4px_18px_rgba(255,61,139,0.4)]"
+          : "text-white/70 hover:text-white hover:bg-white/10 border-transparent pl-3",
       ].join(" ")}
     >
       {children}

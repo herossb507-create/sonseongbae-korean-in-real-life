@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import ConcertList from "@/components/concerts/ConcertList";
+import StageBanner from "@/components/concerts/StageBanner";
 import { getArtist, getConcertsByArtist, getListedArtists } from "@/lib/concerts/data";
 import { pageMeta } from "@/lib/seo";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -47,20 +48,23 @@ export default function ArtistPage({ params }: Props) {
           ]),
         )}
       />
-      <h1 className="text-3xl font-bold">
+      <StageBanner>
+      <p className="text-xs font-bold uppercase tracking-widest text-[#22D3EE]">Tour dates & tickets</p>
+      <h1 className="mt-2 text-4xl font-black tracking-tight md:text-5xl">
         {artist.name}
-        {artist.nameKo && <span className="ml-3 font-noto-kr text-lg font-normal text-[#B0A8BB]">{artist.nameKo}</span>}
+        {artist.nameKo && <span className="ml-3 font-noto-kr text-xl font-bold text-white/50">{artist.nameKo}</span>}
       </h1>
-      <p className="mt-1 text-[#6B5F7A]">Tour dates and tickets</p>
+      <p className="mt-2 text-neon font-bold">{[...new Set(shows.map((c) => c.tour))].join(" · ")}</p>
       {official.length > 0 && (
         <p className="mt-3 flex flex-wrap gap-3 text-sm">
           {official.map(([k, url]) => (
-            <a key={k} href={url} target="_blank" rel="noopener noreferrer" className="text-[#E8436F] hover:underline">
+            <a key={k} href={url} target="_blank" rel="noopener noreferrer" className="rounded-full bg-white/10 px-3 py-1 text-white/85 hover:bg-white/20">
               {OFFICIAL_LABEL[k]} ↗
             </a>
           ))}
         </p>
       )}
+      </StageBanner>
       <div className="mt-8">
         <ConcertList concerts={shows} show="venue" />
       </div>

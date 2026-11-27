@@ -27,27 +27,27 @@ export default async function MemoryMatchPage({ params }: PageProps) {
     return (
       <div
         className="min-h-screen flex items-center justify-center p-8"
-        style={{ background: "#FFF5F8" }}
+        style={{ background: "#F8F5FF" }}
       >
         <div
           className="rounded-2xl p-8 text-center max-w-md shadow-sm"
           style={{
             background: "#FFFFFF",
-            border: "1px solid rgba(232,67,111,0.10)",
+            border: "1px solid rgba(255,61,139,0.10)",
           }}
         >
           <div className="text-4xl mb-4">📚</div>
-          <h1 className="text-xl font-bold mb-2" style={{ color: "#1E1225" }}>
+          <h1 className="text-xl font-bold mb-2" style={{ color: "#140F2D" }}>
             어휘가 충분하지 않습니다
           </h1>
-          <p className="text-sm mb-6" style={{ color: "#6B5F7A" }}>
+          <p className="text-sm mb-6" style={{ color: "#5A5475" }}>
             This chapter needs at least 8 vocabulary words to play Memory Match.
           </p>
           <a
             href="/games"
             className="inline-block rounded-xl px-6 py-3 font-semibold transition-all duration-200"
             style={{
-              background: "linear-gradient(to right, #E8436F, #F06B8A)",
+              background: "linear-gradient(to right, #FF3D8B, #FF6FB1)",
               color: "white",
             }}
           >

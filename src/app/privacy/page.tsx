@@ -23,21 +23,21 @@ const LOCAL_KEYS = [
 ];
 
 function H2({ children }: { children: React.ReactNode }) {
-  return <h2 className="pt-6 text-lg font-semibold text-[#1E1225]">{children}</h2>;
+  return <h2 className="pt-6 text-lg font-semibold text-[#140F2D]">{children}</h2>;
 }
 
 export default function PrivacyPage() {
   return (
-    <main className="min-h-screen bg-[#FFF5F8]">
-      <nav className="border-b border-[#F0E6EE] bg-white/95 px-6 py-4 shadow-sm">
-        <Link href="/" className="text-xl font-bold text-[#1E1225]">
-          Korean <span className="text-[#E8436F]">in Real Life</span>
+    <main className="min-h-screen bg-[#F8F5FF]">
+      <nav className="border-b border-[#EAE4F7] bg-white/95 px-6 py-4 shadow-sm">
+        <Link href="/" className="text-xl font-bold text-[#140F2D]">
+          Korean <span className="text-[#FF3D8B]">in Real Life</span>
         </Link>
       </nav>
 
-      <article className="mx-auto max-w-3xl space-y-4 px-6 py-12 leading-relaxed text-[#3D2F48]">
-        <h1 className="text-3xl font-bold text-[#1E1225]">Privacy Policy</h1>
-        <p className="text-sm text-[#B0A8BB]">Effective {EFFECTIVE_DATE}</p>
+      <article className="mx-auto max-w-3xl space-y-4 px-6 py-12 leading-relaxed text-[#2C2548]">
+        <h1 className="text-3xl font-bold text-[#140F2D]">Privacy Policy</h1>
+        <p className="text-sm text-[#9E98B8]">Effective {EFFECTIVE_DATE}</p>
 
         <p>
           Korean in Real Life ({SITE_URL.replace(/^https?:\/\//, "")}) is a free Korean-learning site with a map of
@@ -65,13 +65,13 @@ export default function PrivacyPage() {
         <ul className="list-disc space-y-1.5 pl-5 text-sm">
           {LOCAL_KEYS.map((k) => (
             <li key={k.key}>
-              <code className="rounded bg-white px-1 text-[#9B7FE8]">{k.key}</code> — {k.what}
+              <code className="rounded bg-white px-1 text-[#7C5CFF]">{k.key}</code> — {k.what}
             </li>
           ))}
         </ul>
         <p>
           You can download this data or delete it at any time in{" "}
-          <Link href="/settings" className="text-[#E8436F] underline">
+          <Link href="/settings" className="text-[#FF3D8B] underline">
             Settings
           </Link>
           , or by clearing site data in your browser. Anyone using the same browser profile can see this progress.
@@ -105,7 +105,7 @@ export default function PrivacyPage() {
             nearby restaurant links open Google Maps. Those sites have their own privacy policies. Some ticket or hotel
             links may be affiliate links;
             when you click one, the seller or its affiliate network may set cookies to record the referral (see our{" "}
-            <Link href="/concerts/disclosure" className="text-[#E8436F] underline">
+            <Link href="/concerts/disclosure" className="text-[#FF3D8B] underline">
               affiliate disclosure
             </Link>
             ).
@@ -142,13 +142,13 @@ export default function PrivacyPage() {
         <H2>8. Contact</H2>
         <p>
           Questions or requests:{" "}
-          <a href={`mailto:${CONTACT_EMAIL}`} className="text-[#E8436F] underline">
+          <a href={`mailto:${CONTACT_EMAIL}`} className="text-[#FF3D8B] underline">
             {CONTACT_EMAIL}
           </a>
         </p>
 
         <p className="pt-8">
-          <Link href="/" className="text-sm text-[#E8436F] hover:underline">
+          <Link href="/" className="text-sm text-[#FF3D8B] hover:underline">
             ← Back to Korean in Real Life
           </Link>
         </p>

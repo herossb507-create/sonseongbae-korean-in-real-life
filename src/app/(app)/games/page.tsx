@@ -39,17 +39,17 @@ export default function GamesPage() {
   }
 
   return (
-    <div className="min-h-screen" style={{ background: "#FFF5F8" }}>
+    <div className="min-h-screen" style={{ background: "#F8F5FF" }}>
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Page Header */}
         <div className="mb-10">
           <div className="flex items-center gap-3 mb-2">
             <span className="text-4xl">🎮</span>
-            <h1 className="text-3xl font-black" style={{ color: "#1E1225" }}>
+            <h1 className="text-3xl font-black" style={{ color: "#140F2D" }}>
               Games
             </h1>
           </div>
-          <p style={{ color: "#6B5F7A" }}>
+          <p style={{ color: "#5A5475" }}>
             Reinforce your Korean vocabulary through fun, interactive games.
             Pick a chapter and start playing!
           </p>
@@ -62,17 +62,17 @@ export default function GamesPage() {
               emoji: "🃏",
               title: "Memory Match",
               desc: "Flip cards to match Korean words with English meanings.",
-              bg: "linear-gradient(135deg, rgba(155,127,232,0.15) 0%, rgba(232,67,111,0.1) 100%)",
-              border: "rgba(155,127,232,0.3)",
-              iconBg: "rgba(155,127,232,0.2)",
+              bg: "linear-gradient(135deg, rgba(124,92,255,0.15) 0%, rgba(255,61,139,0.1) 100%)",
+              border: "rgba(124,92,255,0.3)",
+              iconBg: "rgba(124,92,255,0.2)",
             },
             {
               emoji: "🔊",
               title: "Listening Quiz",
               desc: "Hear the Korean word and pick the correct English meaning.",
-              bg: "linear-gradient(135deg, rgba(232,67,111,0.15) 0%, rgba(240,107,138,0.1) 100%)",
-              border: "rgba(232,67,111,0.3)",
-              iconBg: "rgba(232,67,111,0.2)",
+              bg: "linear-gradient(135deg, rgba(255,61,139,0.15) 0%, rgba(240,107,138,0.1) 100%)",
+              border: "rgba(255,61,139,0.3)",
+              iconBg: "rgba(255,61,139,0.2)",
             },
             {
               emoji: "⚡",
@@ -111,10 +111,10 @@ export default function GamesPage() {
                 {game.emoji}
               </div>
               <div>
-                <h2 className="font-bold text-sm mb-1" style={{ color: "#1E1225" }}>
+                <h2 className="font-bold text-sm mb-1" style={{ color: "#140F2D" }}>
                   {game.title}
                 </h2>
-                <p className="text-xs leading-relaxed" style={{ color: "#6B5F7A" }}>
+                <p className="text-xs leading-relaxed" style={{ color: "#5A5475" }}>
                   {game.desc}
                 </p>
               </div>
@@ -123,7 +123,7 @@ export default function GamesPage() {
         </div>
 
         {/* Chapter Grid */}
-        <h2 className="text-lg font-bold mb-4" style={{ color: "#1E1225" }}>
+        <h2 className="text-lg font-bold mb-4" style={{ color: "#140F2D" }}>
           Choose a Chapter
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -138,8 +138,8 @@ export default function GamesPage() {
                 key={chapter.slug}
                 className="rounded-2xl overflow-hidden transition-all duration-300"
                 style={{
-                  background: "rgba(232,67,111,0.04)",
-                  border: "1px solid rgba(232,67,111,0.10)",
+                  background: "rgba(255,61,139,0.04)",
+                  border: "1px solid rgba(255,61,139,0.10)",
                   opacity: hasEnoughVocab ? 1 : 0.5,
                 }}
               >
@@ -149,13 +149,13 @@ export default function GamesPage() {
                     <div className="flex-1 min-w-0">
                       <div
                         className="text-xs font-medium mb-0.5"
-                        style={{ color: "#6B5F7A" }}
+                        style={{ color: "#5A5475" }}
                       >
                         Chapter {chapter.num}
                       </div>
                       <h3
                         className="font-bold text-sm leading-tight"
-                        style={{ color: "#1E1225" }}
+                        style={{ color: "#140F2D" }}
                       >
                         {chapter.title}
                       </h3>
@@ -164,7 +164,7 @@ export default function GamesPage() {
 
                   <div
                     className="text-xs mb-4"
-                    style={{ color: "#6B5F7A" }}
+                    style={{ color: "#5A5475" }}
                   >
                     {vocabCount} vocabulary words
                   </div>
@@ -176,9 +176,9 @@ export default function GamesPage() {
                         className="flex items-center justify-center gap-2 w-full rounded-xl py-2.5 text-sm font-semibold transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
                         style={{
                           background:
-                            "linear-gradient(to right, #9B7FE8, #B99BFF)",
+                            "linear-gradient(to right, #7C5CFF, #B99BFF)",
                           color: "white",
-                          boxShadow: "0 4px 16px rgba(155,127,232,0.3)",
+                          boxShadow: "0 4px 16px rgba(124,92,255,0.3)",
                         }}
                       >
                         <span>🃏</span>
@@ -189,9 +189,9 @@ export default function GamesPage() {
                         className="flex items-center justify-center gap-2 w-full rounded-xl py-2.5 text-sm font-semibold transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
                         style={{
                           background:
-                            "linear-gradient(to right, #E8436F, #F06B8A)",
+                            "linear-gradient(to right, #FF3D8B, #FF6FB1)",
                           color: "white",
-                          boxShadow: "0 4px 16px rgba(232,67,111,0.3)",
+                          boxShadow: "0 4px 16px rgba(255,61,139,0.3)",
                         }}
                       >
                         <span>🔊</span>
@@ -203,7 +203,7 @@ export default function GamesPage() {
                         style={{
                           background:
                             "linear-gradient(to right, #F4A261, #F59E0B)",
-                          color: "#1E1225",
+                          color: "#140F2D",
                           boxShadow: "0 4px 16px rgba(244,162,97,0.25)",
                         }}
                       >
@@ -241,8 +241,8 @@ export default function GamesPage() {
                     <div
                       className="flex items-center justify-center gap-2 w-full rounded-xl py-2.5 text-sm font-semibold"
                       style={{
-                        background: "rgba(232,67,111,0.05)",
-                        color: "#B0A8BB",
+                        background: "rgba(255,61,139,0.05)",
+                        color: "#9E98B8",
                         cursor: "not-allowed",
                       }}
                     >
@@ -264,7 +264,7 @@ export default function GamesPage() {
             border: "1px solid rgba(244,162,97,0.15)",
           }}
         >
-          <p className="text-sm" style={{ color: "#6B5F7A" }}>
+          <p className="text-sm" style={{ color: "#5A5475" }}>
             <span style={{ color: "#F4A261" }}>💡 Tip:</span> Complete games to
             earn XP and level up your Korean learning journey!
           </p>

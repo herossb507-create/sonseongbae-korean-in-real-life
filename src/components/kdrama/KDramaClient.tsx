@@ -16,8 +16,8 @@ interface KDramaClientProps {
 }
 
 const CATEGORY_COLORS: Record<string, string> = {
-  romance: "#E8436F",
-  friendship: "#9B7FE8",
+  romance: "#FF3D8B",
+  friendship: "#7C5CFF",
   drama: "#F59E0B",
   motivation: "#10B981",
   daily: "#8B5CF6",
@@ -62,22 +62,22 @@ export default function KDramaClient({ phrases, categories }: KDramaClientProps)
   }
 
   return (
-    <div className="min-h-screen" style={{ background: "#FFF5F8" }}>
+    <div className="min-h-screen" style={{ background: "#F8F5FF" }}>
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Header */}
         <div className="mb-8">
           <div className="flex items-center gap-3 mb-2">
             <span className="text-4xl">🎬</span>
             <div>
-              <h1 className="text-3xl font-black" style={{ color: "#1E1225" }}>
+              <h1 className="text-3xl font-black" style={{ color: "#140F2D" }}>
                 K-Drama Phrases
               </h1>
-              <p className="text-sm font-medium" style={{ color: "#E8436F" }}>
+              <p className="text-sm font-medium" style={{ color: "#FF3D8B" }}>
                 Learn Korean the fun way
               </p>
             </div>
           </div>
-          <p className="mt-2 text-sm" style={{ color: "#6B5F7A" }}>
+          <p className="mt-2 text-sm" style={{ color: "#5A5475" }}>
             Discover expressions you&apos;ll hear in K-Dramas and movies. Click
             the 🔊 button to hear native pronunciation.
           </p>
@@ -94,13 +94,13 @@ export default function KDramaClient({ phrases, categories }: KDramaClientProps)
                 style={
                   selectedCategory === cat.id
                     ? {
-                        background: "#E8436F",
+                        background: "#FF3D8B",
                         color: "white",
-                        borderColor: "#E8436F",
+                        borderColor: "#FF3D8B",
                       }
                     : {
                         background: "rgba(255,255,255,0.8)",
-                        color: "#6B5F7A",
+                        color: "#5A5475",
                         borderColor: "rgba(240,230,238,1)",
                       }
                 }
@@ -124,17 +124,17 @@ export default function KDramaClient({ phrases, categories }: KDramaClientProps)
             placeholder="Search phrases..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full pl-11 pr-4 py-3 rounded-xl text-sm outline-none transition-all duration-200 focus:ring-2 focus:ring-[#E8436F]/20 focus:border-[#E8436F]"
+            className="w-full pl-11 pr-4 py-3 rounded-xl text-sm outline-none transition-all duration-200 focus:ring-2 focus:ring-[#FF3D8B]/20 focus:border-[#FF3D8B]"
             style={{
               background: "white",
               border: "1px solid rgba(240,230,238,1)",
-              color: "#1E1225",
+              color: "#140F2D",
             }}
           />
         </div>
 
         {/* Results count */}
-        <div className="mb-4 text-xs" style={{ color: "#B0A8BB" }}>
+        <div className="mb-4 text-xs" style={{ color: "#9E98B8" }}>
           {filteredPhrases.length} phrase{filteredPhrases.length !== 1 ? "s" : ""}
         </div>
 
@@ -148,12 +148,12 @@ export default function KDramaClient({ phrases, categories }: KDramaClientProps)
             }}
           >
             <p className="text-2xl mb-2">🔍</p>
-            <p style={{ color: "#6B5F7A" }}>No phrases found.</p>
+            <p style={{ color: "#5A5475" }}>No phrases found.</p>
           </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {filteredPhrases.map((phrase) => {
-              const catColor = CATEGORY_COLORS[phrase.category] ?? "#6B5F7A";
+              const catColor = CATEGORY_COLORS[phrase.category] ?? "#5A5475";
               return (
                 <div
                   key={phrase.id}
@@ -162,7 +162,7 @@ export default function KDramaClient({ phrases, categories }: KDramaClientProps)
                     background: "#FFFFFF",
                     backdropFilter: "blur(16px)",
                     border: "1px solid rgba(240,230,238,1)",
-                    boxShadow: "0 4px 16px rgba(232,67,111,0.08)",
+                    boxShadow: "0 4px 16px rgba(255,61,139,0.08)",
                   }}
                 >
                   {/* TTS button — top right */}
@@ -172,9 +172,9 @@ export default function KDramaClient({ phrases, categories }: KDramaClientProps)
                     style={{
                       background:
                         playingId === phrase.id
-                          ? "#E8436F"
-                          : "rgba(232,67,111,0.10)",
-                      border: "1px solid rgba(232,67,111,0.20)",
+                          ? "#FF3D8B"
+                          : "rgba(255,61,139,0.10)",
+                      border: "1px solid rgba(255,61,139,0.20)",
                     }}
                     title="Play pronunciation"
                   >
@@ -184,18 +184,18 @@ export default function KDramaClient({ phrases, categories }: KDramaClientProps)
                   {/* Korean text */}
                   <p
                     className="text-2xl font-bold mb-1 pr-10 font-noto-kr"
-                    style={{ color: "#1E1225" }}
+                    style={{ color: "#140F2D" }}
                   >
                     {phrase.korean}
                   </p>
 
                   {/* Romanization */}
-                  <p className="text-sm mb-1" style={{ color: "#6B5F7A" }}>
+                  <p className="text-sm mb-1" style={{ color: "#5A5475" }}>
                     {phrase.romanization}
                   </p>
 
                   {/* English */}
-                  <p className="text-sm mb-3" style={{ color: "#6B5F7A" }}>
+                  <p className="text-sm mb-3" style={{ color: "#5A5475" }}>
                     &ldquo;{phrase.english}&rdquo;
                   </p>
 
@@ -242,12 +242,12 @@ export default function KDramaClient({ phrases, categories }: KDramaClientProps)
         <div
           className="mt-10 rounded-2xl p-5 text-center"
           style={{
-            background: "rgba(232,67,111,0.05)",
-            border: "1px solid rgba(232,67,111,0.15)",
+            background: "rgba(255,61,139,0.05)",
+            border: "1px solid rgba(255,61,139,0.15)",
           }}
         >
-          <p className="text-sm" style={{ color: "#6B5F7A" }}>
-            <span style={{ color: "#E8436F" }}>💡 Tip:</span> Try using these
+          <p className="text-sm" style={{ color: "#5A5475" }}>
+            <span style={{ color: "#FF3D8B" }}>💡 Tip:</span> Try using these
             phrases while watching K-Dramas to reinforce your memory!
           </p>
         </div>

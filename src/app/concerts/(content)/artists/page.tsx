@@ -18,13 +18,13 @@ export default function ArtistsPage() {
           <li key={a.id}>
             <Link
               href={`/concerts/artists/${a.id}`}
-              className="flex items-center justify-between rounded-2xl border border-[#F0E6EE] bg-white px-4 py-3 transition hover:border-[#E8436F]/30 hover:shadow-sm"
+              className="flex items-center justify-between rounded-2xl border border-[#EAE4F7] bg-white px-4 py-3 transition hover:border-[#FF3D8B]/30 hover:shadow-sm"
             >
               <span>
                 <span className="font-semibold">{a.name}</span>
-                {a.nameKo && <span className="ml-2 font-noto-kr text-sm text-[#B0A8BB]">{a.nameKo}</span>}
+                {a.nameKo && <span className="ml-2 font-noto-kr text-sm text-[#9E98B8]">{a.nameKo}</span>}
               </span>
-              <span className="text-xs text-[#6B5F7A]">{getConcertsByArtist(a.id).length} shows</span>
+              <span className="text-xs text-[#5A5475]">{getConcertsByArtist(a.id).length} shows</span>
             </Link>
           </li>
         ))}

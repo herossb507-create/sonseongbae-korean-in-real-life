@@ -39,6 +39,12 @@
 
 ## 🎨 디자인 시스템 (2026 트렌드 반영)
 
+> **현행 (2026-11-27 개편): K-pop 콘서트 스테이지 테마.** 아래 옛 Dark Glassmorphism 설명보다 이 내용이 우선.
+> - 색: 네온 핑크 `#FF3D8B`(주 CTA, 그라디언트 끝 `#FF6FB1`), 일렉트릭 바이올렛 `#7C5CFF`(보조, 밝은 `#A78BFF`), 응원봉 시안 `#22D3EE`(포인트). 글자 `#140F2D`/`#5A5475`/`#9E98B8`, 테두리 `#EAE4F7`, 배경 `#F8F5FF`/`#F2ECFF`.
+> - 어두운 "무대" 영역(`.stage-bg` + `.stage-beams`, 배경 `#0E0A1F`): 랜딩 히어로·아티스트 띠·다가오는 공연, 사이드바·모바일 상단바, 공연 헤더·푸터, 공연/아티스트/도시 상단 배너(`StageBanner`). 학습 본문은 밝은 배경 유지(가독성).
+> - 공용 클래스(`globals.css`): `.text-neon`(핑크→바이올렛→시안 글자), `.glow-pink`/`.glow-violet`, `.holo`(호버 시 홀로그램 테두리), `.ticket`(티켓 노치), `.marquee`, `.sparkle`.
+> - 팬 요소: D-day 배지(`DDayBadge`, 7일 이내 핑크 발광), 티켓형 공연 목록, 어두운 지도 타일(Esri Dark Gray) + 발광 핀.
+
 ### 핵심 컨셉: **Dark Glassmorphism**
 > 어두운 배경 위에 반투명 유리 패널을 올린 느낌.
 > Duolingo의 친근함 + Notion의 정갈함 + Apple의 세련됨을 조합.

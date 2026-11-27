@@ -11,7 +11,8 @@ const WORDS = [
   { text: "화이팅", x: "45%", y: "85%", delay: 0.4 },
 ];
 
-export function FloatingWords() {
+/** Korean words drifting in the background; `dark` for the stage-coloured hero. */
+export function FloatingWords({ dark = false }: { dark?: boolean }) {
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none select-none">
       {WORDS.map((w, i) => (
@@ -21,11 +22,13 @@ export function FloatingWords() {
           style={{
             left: w.x,
             top: w.y,
-            color: i % 2 === 0 ? "rgba(232,67,111,0.07)" : "rgba(155,127,232,0.07)",
+            color: dark
+              ? i % 2 === 0 ? "#FF6FB1" : "#A78BFF"
+              : i % 2 === 0 ? "rgba(255,61,139,0.07)" : "rgba(124,92,255,0.07)",
           }}
           initial={{ opacity: 0, y: 20 }}
           animate={{
-            opacity: [0, 0.08, 0.05, 0.08],
+            opacity: dark ? [0, 0.22, 0.12, 0.22] : [0, 0.08, 0.05, 0.08],
             y: [20, 0, -8, 0],
           }}
           transition={{

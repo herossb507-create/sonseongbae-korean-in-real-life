@@ -15,7 +15,7 @@ export default function DailyChallengePage() {
   const dailyVocab = getDailyVocab(todayStr, allVocab);
 
   return (
-    <div className="min-h-screen bg-[#FFF5F8] py-10 px-4">
+    <div className="min-h-screen bg-[#F8F5FF] py-10 px-4">
       <div className="max-w-xl mx-auto">
         {/* Page header */}
         <div className="text-center mb-8">
@@ -24,17 +24,17 @@ export default function DailyChallengePage() {
               🔥 Daily Challenge
             </span>
           </div>
-          <h1 className="text-3xl font-bold text-[#1E1225] mb-2">
+          <h1 className="text-3xl font-bold text-[#140F2D] mb-2">
             Today&apos;s Korean Challenge
           </h1>
-          <p className="text-[#6B5F7A] text-sm">
+          <p className="text-[#5A5475] text-sm">
             10 questions · same for every learner · resets at midnight
           </p>
-          <p className="text-[#B0A8BB] text-xs mt-1">{todayStr}</p>
+          <p className="text-[#9E98B8] text-xs mt-1">{todayStr}</p>
         </div>
 
         {/* Quiz card */}
-        <div className="bg-white backdrop-blur-lg border border-[#F0E6EE] rounded-2xl p-6 shadow-[0_4px_16px_rgba(232,67,111,0.12)]">
+        <div className="bg-white backdrop-blur-lg border border-[#EAE4F7] rounded-2xl p-6 shadow-[0_4px_16px_rgba(255,61,139,0.12)]">
           <DailyChallenge
             initialVocab={dailyVocab}
             allVocab={allVocab}

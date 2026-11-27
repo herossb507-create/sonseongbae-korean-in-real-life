@@ -90,7 +90,7 @@ function showTtsHelp(reason: "unsupported" | "no-korean-voice" | "error") {
   box.setAttribute("role", "status");
   box.style.cssText =
     "position:fixed;left:12px;right:12px;bottom:16px;z-index:9999;max-width:480px;margin:0 auto;" +
-    "background:#1E1225;color:#fff;border-radius:14px;padding:12px 40px 12px 14px;font-size:13px;line-height:1.45;" +
+    "background:#140F2D;color:#fff;border-radius:14px;padding:12px 40px 12px 14px;font-size:13px;line-height:1.45;" +
     "box-shadow:0 8px 24px rgba(0,0,0,.25)";
   box.textContent = "🔊 " + message;
   const close = document.createElement("button");

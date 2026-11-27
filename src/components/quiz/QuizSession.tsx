@@ -113,7 +113,7 @@ export function QuizSession({ chapterId, vocab, allVocab }: Props) {
   // Still loading (client-side question generation not yet run)
   if (questions.length === 0) {
     return (
-      <div className="text-center py-20 text-[#6B5F7A]">
+      <div className="text-center py-20 text-[#5A5475]">
         {vocab.length < 4
           ? "Not enough vocabulary for a quiz. Study some words first!"
           : "Loading quiz…"}
@@ -131,10 +131,10 @@ export function QuizSession({ chapterId, vocab, allVocab }: Props) {
         className="text-center space-y-6 py-8"
       >
         <div className="text-6xl">{pct === 100 ? "🏆" : passed ? "🎉" : "📚"}</div>
-        <h2 className="text-3xl font-bold text-[#1E1225]">
+        <h2 className="text-3xl font-bold text-[#140F2D]">
           {score} / {questions.length}
         </h2>
-        <p className="text-[#6B5F7A]">
+        <p className="text-[#5A5475]">
           {pct === 100
             ? "Perfect score! Incredible!"
             : passed
@@ -145,18 +145,18 @@ export function QuizSession({ chapterId, vocab, allVocab }: Props) {
         {xpEarned > 0 && (
           <div className="inline-flex items-center gap-2 bg-[#F4A261]/10 border border-[#F4A261]/25 rounded-full px-4 py-2">
             <span className="text-[#F4A261] font-bold">+{xpEarned} XP</span>
-            <span className="text-[#6B5F7A] text-sm">earned</span>
+            <span className="text-[#5A5475] text-sm">earned</span>
           </div>
         )}
 
         {wrongWords.length > 0 && (
-          <div className="text-left bg-white border border-[#F0E6EE] rounded-2xl p-5 max-w-sm mx-auto shadow-sm">
-            <p className="text-sm font-semibold text-[#6B5F7A] mb-3">Review these words:</p>
+          <div className="text-left bg-white border border-[#EAE4F7] rounded-2xl p-5 max-w-sm mx-auto shadow-sm">
+            <p className="text-sm font-semibold text-[#5A5475] mb-3">Review these words:</p>
             <ul className="space-y-2">
               {wrongWords.map((w, i) => (
                 <li key={i} className="flex justify-between text-sm">
-                  <span className="text-[#1E1225] font-medium">{w.korean}</span>
-                  <span className="text-[#6B5F7A]">{w.correct}</span>
+                  <span className="text-[#140F2D] font-medium">{w.korean}</span>
+                  <span className="text-[#5A5475]">{w.correct}</span>
                 </li>
               ))}
             </ul>
@@ -166,19 +166,19 @@ export function QuizSession({ chapterId, vocab, allVocab }: Props) {
         <div className="flex flex-col sm:flex-row gap-3 justify-center pt-2">
           <a
             href={`/quiz/${chapterId}`}
-            className="px-6 py-2.5 bg-white border border-[#F0E6EE] rounded-xl text-[#6B5F7A] hover:text-[#1E1225] hover:border-[#E8D5E0] transition-colors text-sm font-medium shadow-sm"
+            className="px-6 py-2.5 bg-white border border-[#EAE4F7] rounded-xl text-[#5A5475] hover:text-[#140F2D] hover:border-[#DCD2F3] transition-colors text-sm font-medium shadow-sm"
           >
             Try again
           </a>
           <a
             href={`/vocab/${chapterId}`}
-            className="px-6 py-2.5 bg-[#9B7FE8]/15 border border-[#9B7FE8]/25 rounded-xl text-[#9B7FE8] hover:bg-[#9B7FE8]/25 transition-colors text-sm font-medium"
+            className="px-6 py-2.5 bg-[#7C5CFF]/15 border border-[#7C5CFF]/25 rounded-xl text-[#7C5CFF] hover:bg-[#7C5CFF]/25 transition-colors text-sm font-medium"
           >
             Study vocab
           </a>
           <a
             href="/learn"
-            className="px-6 py-2.5 bg-gradient-to-r from-[#E8436F] to-[#F06B8A] rounded-xl text-white hover:opacity-90 transition-opacity text-sm font-medium"
+            className="px-6 py-2.5 bg-gradient-to-r from-[#FF3D8B] to-[#FF6FB1] rounded-xl text-white hover:opacity-90 transition-opacity text-sm font-medium"
           >
             Next chapter →
           </a>
@@ -194,13 +194,13 @@ export function QuizSession({ chapterId, vocab, allVocab }: Props) {
     <div className="space-y-6">
       {/* Progress */}
       <div className="space-y-1.5">
-        <div className="flex justify-between text-xs text-[#6B5F7A]">
+        <div className="flex justify-between text-xs text-[#5A5475]">
           <span>Question {currentIndex + 1} of {total}</span>
           <span>Score: {score}</span>
         </div>
-        <div className="h-1.5 bg-[#FFE8F0] rounded-full overflow-hidden">
+        <div className="h-1.5 bg-[#F0E7FF] rounded-full overflow-hidden">
           <div
-            className="h-full bg-gradient-to-r from-[#9B7FE8] to-[#E8436F] rounded-full transition-all duration-500"
+            className="h-full bg-gradient-to-r from-[#7C5CFF] to-[#FF3D8B] rounded-full transition-all duration-500"
             style={{ width: `${((currentIndex) / total) * 100}%` }}
           />
         </div>
@@ -214,13 +214,13 @@ export function QuizSession({ chapterId, vocab, allVocab }: Props) {
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -40 }}
           transition={{ duration: 0.25 }}
-          className="bg-gradient-to-br from-[#FFF0F5] to-[#FFF5F8] border border-[#F0E6EE] rounded-3xl p-8 text-center shadow-sm"
+          className="bg-gradient-to-br from-[#F2ECFF] to-[#F8F5FF] border border-[#EAE4F7] rounded-3xl p-8 text-center shadow-sm"
         >
-          <p className="text-xs text-[#B0A8BB] uppercase tracking-widest mb-4">
+          <p className="text-xs text-[#9E98B8] uppercase tracking-widest mb-4">
             What does this mean?
           </p>
           <div className="flex items-center justify-center gap-3">
-            <span className="text-5xl font-bold text-[#1E1225] font-noto-kr">{current.korean}</span>
+            <span className="text-5xl font-bold text-[#140F2D] font-noto-kr">{current.korean}</span>
             <button
               onClick={() => speak(current.korean)}
               className="text-xl opacity-60 hover:opacity-100 transition-opacity"
@@ -229,7 +229,7 @@ export function QuizSession({ chapterId, vocab, allVocab }: Props) {
               🔊
             </button>
           </div>
-          <p className="text-[#B0A8BB] text-sm mt-2">{current.romanization}</p>
+          <p className="text-[#9E98B8] text-sm mt-2">{current.romanization}</p>
         </motion.div>
       </AnimatePresence>
 
@@ -237,14 +237,14 @@ export function QuizSession({ chapterId, vocab, allVocab }: Props) {
       <div className="grid grid-cols-1 gap-3">
         {current.options.map((option) => {
           let style =
-            "bg-white border-[#F0E6EE] text-[#1E1225] hover:bg-[#FFF5F8] hover:border-[#E8D5E0]";
+            "bg-white border-[#EAE4F7] text-[#140F2D] hover:bg-[#F8F5FF] hover:border-[#DCD2F3]";
           if (selectedAnswer !== null) {
             if (option === current.correctAnswer) {
               style = "bg-[#10B981]/15 border-[#10B981]/40 text-[#10B981]";
             } else if (option === selectedAnswer && option !== current.correctAnswer) {
               style = "bg-[#EF4444]/15 border-[#EF4444]/40 text-[#EF4444]";
             } else {
-              style = "bg-[#FFF5F8] border-[#F0E6EE] text-[#B0A8BB]";
+              style = "bg-[#F8F5FF] border-[#EAE4F7] text-[#9E98B8]";
             }
           }
           return (

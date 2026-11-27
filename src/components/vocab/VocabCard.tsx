@@ -68,7 +68,7 @@ export function VocabCard({ id, korean, romanization, english, audioHint }: Prop
             "transition-colors",
             known
               ? "bg-[#10B981]/10 border-[#10B981]/40"
-              : "bg-white border-[#F0E6EE] hover:bg-[#FFF5F8] shadow-sm",
+              : "bg-white border-[#EAE4F7] hover:bg-[#F8F5FF] shadow-sm",
           ].join(" ")}
         >
           {known && (
@@ -76,15 +76,15 @@ export function VocabCard({ id, korean, romanization, english, audioHint }: Prop
               ✓ Known
             </span>
           )}
-          <div className="text-5xl font-bold text-[#1E1225] font-noto-kr">{korean}</div>
+          <div className="text-5xl font-bold text-[#140F2D] font-noto-kr">{korean}</div>
           <div className="flex items-center gap-3 mt-1">
             <button
               onClick={playAudio}
-              className="text-xs border border-[#9B7FE8]/40 text-[#9B7FE8] px-3 py-1.5 rounded-lg hover:bg-[#9B7FE8]/10 transition-colors"
+              className="text-xs border border-[#7C5CFF]/40 text-[#7C5CFF] px-3 py-1.5 rounded-lg hover:bg-[#7C5CFF]/10 transition-colors"
             >
               🔊 Hear it
             </button>
-            <span className="text-[#B0A8BB] text-xs">Tap to reveal</span>
+            <span className="text-[#9E98B8] text-xs">Tap to reveal</span>
           </div>
         </div>
 
@@ -96,15 +96,15 @@ export function VocabCard({ id, korean, romanization, english, audioHint }: Prop
             "flex flex-col items-center justify-center gap-2",
             known
               ? "bg-[#10B981]/10 border-[#10B981]/40"
-              : "bg-[#FFF0F5] border-[#F0E6EE] shadow-sm",
+              : "bg-[#F2ECFF] border-[#EAE4F7] shadow-sm",
           ].join(" ")}
         >
-          <div className="text-3xl font-semibold text-[#1E1225]">{english}</div>
-          <div className="text-[#9B7FE8] text-base">{romanization}</div>
+          <div className="text-3xl font-semibold text-[#140F2D]">{english}</div>
+          <div className="text-[#7C5CFF] text-base">{romanization}</div>
           <div className="flex gap-3 mt-3">
             <button
               onClick={playAudio}
-              className="text-xs border border-[#9B7FE8]/40 text-[#9B7FE8] px-3 py-1.5 rounded-lg hover:bg-[#9B7FE8]/10 transition-colors"
+              className="text-xs border border-[#7C5CFF]/40 text-[#7C5CFF] px-3 py-1.5 rounded-lg hover:bg-[#7C5CFF]/10 transition-colors"
             >
               🔊 Hear it
             </button>
@@ -115,7 +115,7 @@ export function VocabCard({ id, korean, romanization, english, audioHint }: Prop
                 "text-xs px-3 py-1.5 rounded-lg transition-colors",
                 known
                   ? "bg-[#10B981]/20 text-[#10B981] border border-[#10B981]/40 cursor-default"
-                  : "border border-[#F0E6EE] text-[#6B5F7A] hover:bg-[#FFF5F8]",
+                  : "border border-[#EAE4F7] text-[#5A5475] hover:bg-[#F8F5FF]",
               ].join(" ")}
             >
               {known ? "✓ Added to review" : "Mark as known"}

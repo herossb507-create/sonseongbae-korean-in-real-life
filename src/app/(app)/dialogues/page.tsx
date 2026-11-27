@@ -29,22 +29,22 @@ const DIFFICULTY_BADGE: Record<string, { label: string; style: React.CSSProperti
 
 export default function DialoguesPage() {
   return (
-    <div className="min-h-screen" style={{ background: "#FFF5F8" }}>
+    <div className="min-h-screen" style={{ background: "#F8F5FF" }}>
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Header */}
         <div className="mb-10">
           <div className="flex items-center gap-3 mb-2">
             <span className="text-4xl">💬</span>
             <div>
-              <h1 className="text-3xl font-black" style={{ color: "#1E1225" }}>
+              <h1 className="text-3xl font-black" style={{ color: "#140F2D" }}>
                 Conversation Dialogues
               </h1>
-              <p className="text-sm font-medium" style={{ color: "#9B7FE8" }}>
+              <p className="text-sm font-medium" style={{ color: "#7C5CFF" }}>
                 대화 시나리오
               </p>
             </div>
           </div>
-          <p className="mt-2 text-sm" style={{ color: "#6B5F7A" }}>
+          <p className="mt-2 text-sm" style={{ color: "#5A5475" }}>
             Practice realistic Korean conversations for everyday situations. Each
             scenario includes pronunciation playback and romanization support.
           </p>
@@ -63,13 +63,13 @@ export default function DialoguesPage() {
                   background: "#FFFFFF",
                   backdropFilter: "blur(16px)",
                   border: "1px solid rgba(240,230,238,1)",
-                  boxShadow: "0 4px 16px rgba(232,67,111,0.08)",
+                  boxShadow: "0 4px 16px rgba(255,61,139,0.08)",
                 }}
               >
                 {/* Emoji */}
                 <div
                   className="w-12 h-12 rounded-2xl flex items-center justify-center text-2xl mb-3"
-                  style={{ background: "rgba(155,127,232,0.15)" }}
+                  style={{ background: "rgba(124,92,255,0.15)" }}
                 >
                   {scenario.emoji}
                 </div>
@@ -77,21 +77,21 @@ export default function DialoguesPage() {
                 {/* Korean title */}
                 <p
                   className="text-xs font-medium mb-0.5 font-noto-kr"
-                  style={{ color: "#6B5F7A" }}
+                  style={{ color: "#5A5475" }}
                 >
                   {scenario.titleKo}
                 </p>
 
                 {/* English title */}
                 <h2
-                  className="font-bold text-base mb-1 group-hover:text-[#E8436F] transition-colors"
-                  style={{ color: "#1E1225" }}
+                  className="font-bold text-base mb-1 group-hover:text-[#FF3D8B] transition-colors"
+                  style={{ color: "#140F2D" }}
                 >
                   {scenario.title}
                 </h2>
 
                 {/* Setting */}
-                <p className="text-xs mb-3" style={{ color: "#B0A8BB" }}>
+                <p className="text-xs mb-3" style={{ color: "#9E98B8" }}>
                   {scenario.setting}
                 </p>
 
@@ -103,7 +103,7 @@ export default function DialoguesPage() {
                   >
                     {badge.label}
                   </span>
-                  <span className="text-xs" style={{ color: "#B0A8BB" }}>
+                  <span className="text-xs" style={{ color: "#9E98B8" }}>
                     {scenario.lines.length} lines →
                   </span>
                 </div>
@@ -116,13 +116,13 @@ export default function DialoguesPage() {
         <div
           className="mt-10 rounded-2xl p-5 text-center"
           style={{
-            background: "rgba(155,127,232,0.05)",
-            border: "1px solid rgba(155,127,232,0.15)",
+            background: "rgba(124,92,255,0.05)",
+            border: "1px solid rgba(124,92,255,0.15)",
           }}
         >
-          <p className="text-sm" style={{ color: "#6B5F7A" }}>
-            <span style={{ color: "#9B7FE8" }}>💡 Tip:</span> Use the{" "}
-            <strong style={{ color: "#1E1225" }}>Play All</strong> button inside
+          <p className="text-sm" style={{ color: "#5A5475" }}>
+            <span style={{ color: "#7C5CFF" }}>💡 Tip:</span> Use the{" "}
+            <strong style={{ color: "#140F2D" }}>Play All</strong> button inside
             each scenario to listen to the full conversation in sequence.
           </p>
         </div>

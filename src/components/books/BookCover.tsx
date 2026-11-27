@@ -19,7 +19,7 @@ export function BookCover({
         alt={`${book.title} — ${book.subtitle}`}
         width={240}
         height={384}
-        className={`${className} h-auto shrink-0 self-start rounded-lg shadow-[0_8px_24px_rgba(30,18,37,0.18)]`}
+        className={`${className} h-auto shrink-0 self-start rounded-lg shadow-[0_8px_24px_rgba(20,15,45,0.18)]`}
       />
     );
   }
@@ -27,7 +27,7 @@ export function BookCover({
     return (
       <div
         aria-hidden
-        className={`${className} aspect-[2/3] shrink-0 rounded-md bg-gradient-to-br ${book.coverGradient} flex items-center justify-center text-center text-[10px] font-black leading-tight text-white shadow-[0_4px_12px_rgba(30,18,37,0.18)]`}
+        className={`${className} aspect-[2/3] shrink-0 rounded-md bg-gradient-to-br ${book.coverGradient} flex items-center justify-center text-center text-[10px] font-black leading-tight text-white shadow-[0_4px_12px_rgba(20,15,45,0.18)]`}
       >
         {book.coverLabel ?? (book.series ? `Vol. ${book.series.match(/\d/)?.[0]}` : "Korea")}
       </div>
@@ -36,7 +36,7 @@ export function BookCover({
   return (
     <div
       aria-hidden
-      className={`${className} aspect-[2/3] shrink-0 rounded-lg bg-gradient-to-br ${book.coverGradient} p-2.5 flex flex-col justify-between text-white shadow-[0_8px_24px_rgba(30,18,37,0.18)]`}
+      className={`${className} aspect-[2/3] shrink-0 rounded-lg bg-gradient-to-br ${book.coverGradient} p-2.5 flex flex-col justify-between text-white shadow-[0_8px_24px_rgba(20,15,45,0.18)]`}
     >
       <span className="text-[9px] font-semibold uppercase tracking-wider opacity-80">{book.series ?? "Travel guide"}</span>
       <span className="text-sm font-black leading-tight">{book.title}</span>

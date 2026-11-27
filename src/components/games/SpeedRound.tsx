@@ -171,10 +171,10 @@ export default function SpeedRound({ chapterId, vocab, allVocab }: Props) {
       <div className="flex flex-col items-center gap-8 py-8 px-4 text-center">
         <div className="text-7xl">⚡</div>
         <div>
-          <h2 className="text-3xl font-black mb-2" style={{ color: "#1E1225" }}>
+          <h2 className="text-3xl font-black mb-2" style={{ color: "#140F2D" }}>
             Speed Round
           </h2>
-          <p className="text-sm" style={{ color: "#6B5F7A" }}>
+          <p className="text-sm" style={{ color: "#5A5475" }}>
             60 seconds · answer as many as you can!
           </p>
         </div>
@@ -193,8 +193,8 @@ export default function SpeedRound({ chapterId, vocab, allVocab }: Props) {
             ["⚡ Max XP", `${MAX_XP} XP`],
           ].map(([label, value]) => (
             <div key={label} className="flex justify-between text-sm">
-              <span style={{ color: "#6B5F7A" }}>{label}</span>
-              <span className="font-semibold" style={{ color: "#1E1225" }}>
+              <span style={{ color: "#5A5475" }}>{label}</span>
+              <span className="font-semibold" style={{ color: "#140F2D" }}>
                 {value}
               </span>
             </div>
@@ -208,7 +208,7 @@ export default function SpeedRound({ chapterId, vocab, allVocab }: Props) {
           className="px-10 py-4 rounded-2xl text-lg font-black"
           style={{
             background: "linear-gradient(to right, #F4A261, #F7B88A)",
-            color: "#1E1225",
+            color: "#140F2D",
             boxShadow: "0 4px 24px rgba(244,162,97,0.40)",
           }}
         >
@@ -227,7 +227,7 @@ export default function SpeedRound({ chapterId, vocab, allVocab }: Props) {
         className="text-center space-y-6 py-8 px-4"
       >
         <div className="text-6xl">⚡</div>
-        <h2 className="text-4xl font-black" style={{ color: "#1E1225" }}>
+        <h2 className="text-4xl font-black" style={{ color: "#140F2D" }}>
           Time&apos;s Up!
         </h2>
 
@@ -235,7 +235,7 @@ export default function SpeedRound({ chapterId, vocab, allVocab }: Props) {
           {[
             { label: "Score", value: score, color: "#F4A261" },
             { label: "Accuracy", value: `${accuracy}%`, color: "#10B981" },
-            { label: "Answered", value: totalAnswered, color: "#9B7FE8" },
+            { label: "Answered", value: totalAnswered, color: "#7C5CFF" },
           ].map(({ label, value, color }) => (
             <div
               key={label}
@@ -248,7 +248,7 @@ export default function SpeedRound({ chapterId, vocab, allVocab }: Props) {
               <div className="text-2xl font-black" style={{ color }}>
                 {value}
               </div>
-              <div className="text-xs mt-0.5" style={{ color: "#6B5F7A" }}>
+              <div className="text-xs mt-0.5" style={{ color: "#5A5475" }}>
                 {label}
               </div>
             </div>
@@ -266,7 +266,7 @@ export default function SpeedRound({ chapterId, vocab, allVocab }: Props) {
             <span className="font-bold text-lg" style={{ color: "#F4A261" }}>
               +{xpEarned} XP
             </span>
-            <span className="text-sm" style={{ color: "#6B5F7A" }}>
+            <span className="text-sm" style={{ color: "#5A5475" }}>
               earned
             </span>
           </div>
@@ -278,7 +278,7 @@ export default function SpeedRound({ chapterId, vocab, allVocab }: Props) {
             className="px-6 py-2.5 rounded-xl text-sm font-semibold transition-all hover:opacity-90"
             style={{
               background: "linear-gradient(to right, #F4A261, #F7B88A)",
-              color: "#1E1225",
+              color: "#140F2D",
             }}
           >
             ⚡ Play Again
@@ -289,7 +289,7 @@ export default function SpeedRound({ chapterId, vocab, allVocab }: Props) {
             style={{
               background: "white",
               border: "1px solid rgba(240,230,238,1)",
-              color: "#6B5F7A",
+              color: "#5A5475",
             }}
           >
             Other Games
@@ -298,9 +298,9 @@ export default function SpeedRound({ chapterId, vocab, allVocab }: Props) {
             href={`/vocab/${chapterId}`}
             className="px-6 py-2.5 rounded-xl text-sm font-medium"
             style={{
-              background: "rgba(155,127,232,0.12)",
-              border: "1px solid rgba(155,127,232,0.25)",
-              color: "#9B7FE8",
+              background: "rgba(124,92,255,0.12)",
+              border: "1px solid rgba(124,92,255,0.25)",
+              color: "#7C5CFF",
             }}
           >
             Study Vocab
@@ -322,14 +322,14 @@ export default function SpeedRound({ chapterId, vocab, allVocab }: Props) {
             initial={{ scale: 1.2 }}
             animate={{ scale: 1 }}
             className="text-3xl font-black tabular-nums"
-            style={{ color: isLow ? "#E8436F" : "#1E1225" }}
+            style={{ color: isLow ? "#FF3D8B" : "#140F2D" }}
           >
             {timeLeft}s
           </motion.span>
 
           {/* Score */}
           <div className="flex items-center gap-1.5">
-            <span className="text-sm" style={{ color: "#6B5F7A" }}>
+            <span className="text-sm" style={{ color: "#5A5475" }}>
               Score
             </span>
             <span
@@ -350,8 +350,8 @@ export default function SpeedRound({ chapterId, vocab, allVocab }: Props) {
             className="h-full rounded-full"
             style={{
               background: isLow
-                ? "linear-gradient(to right, #E8436F, #F06B8A)"
-                : "linear-gradient(to right, #E8436F, #F4A261)",
+                ? "linear-gradient(to right, #FF3D8B, #FF6FB1)"
+                : "linear-gradient(to right, #FF3D8B, #F4A261)",
             }}
             animate={{ width: `${timerPct}%` }}
             transition={{ duration: 0.4 }}
@@ -364,7 +364,7 @@ export default function SpeedRound({ chapterId, vocab, allVocab }: Props) {
             animate={{ opacity: [1, 0.4, 1] }}
             transition={{ duration: 0.6, repeat: Infinity }}
             className="text-xs text-center font-semibold"
-            style={{ color: "#E8436F" }}
+            style={{ color: "#FF3D8B" }}
           >
             Hurry!
           </motion.p>
@@ -401,20 +401,20 @@ export default function SpeedRound({ chapterId, vocab, allVocab }: Props) {
           >
             <p
               className="text-xs uppercase tracking-widest mb-3"
-              style={{ color: "#B0A8BB" }}
+              style={{ color: "#9E98B8" }}
             >
               What does this mean?
             </p>
             <p
               className="text-5xl font-black"
               style={{
-                color: "#1E1225",
+                color: "#140F2D",
                 fontFamily: "'Noto Sans KR', sans-serif",
               }}
             >
               {currentQuestion.vocab.korean}
             </p>
-            <p className="text-sm mt-2" style={{ color: "#B0A8BB" }}>
+            <p className="text-sm mt-2" style={{ color: "#9E98B8" }}>
               {currentQuestion.vocab.romanization}
             </p>
 
@@ -463,7 +463,7 @@ export default function SpeedRound({ chapterId, vocab, allVocab }: Props) {
                 style={{
                   background: "white",
                   border: "1px solid rgba(240,230,238,1)",
-                  color: "#1E1225",
+                  color: "#140F2D",
                   minHeight: "4rem",
                   lineHeight: "1.3",
                   cursor: "pointer",

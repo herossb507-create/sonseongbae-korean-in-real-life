@@ -60,8 +60,8 @@ export default function LearnPage() {
       />
       <div className="flex justify-between items-center mb-8">
         <div>
-          <h1 className="text-2xl font-bold text-[#1E1225]">Chapters</h1>
-          <p className="text-[#6B5F7A] text-sm mt-1">All 16 chapters · free</p>
+          <h1 className="text-2xl font-bold text-[#140F2D]">Chapters</h1>
+          <p className="text-[#5A5475] text-sm mt-1">All 16 chapters · free</p>
         </div>
         <LearnProgress total={CHAPTERS.length} />
       </div>
@@ -71,29 +71,29 @@ export default function LearnPage() {
           return (
             <div
               key={ch.id}
-              className="bg-white border border-[#F0E6EE] rounded-xl p-4 flex items-center gap-4 hover:bg-[#FFF0F5] hover:border-[#E8D5E0] transition-all shadow-sm"
+              className="bg-white border border-[#EAE4F7] rounded-xl p-4 flex items-center gap-4 hover:bg-[#F2ECFF] hover:border-[#DCD2F3] transition-all shadow-sm"
             >
-              <div className="w-10 h-10 rounded-full bg-[#9B7FE8]/20 flex items-center justify-center text-[#9B7FE8] font-bold text-sm shrink-0">
+              <div className="w-10 h-10 rounded-full bg-[#7C5CFF]/20 flex items-center justify-center text-[#7C5CFF] font-bold text-sm shrink-0">
                 {ch.num}
               </div>
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-2">
-                  <span className="font-medium text-[#1E1225] truncate">{ch.title}</span>
+                  <span className="font-medium text-[#140F2D] truncate">{ch.title}</span>
                   <ChapterDoneMark id={ch.id} />
                 </div>
-                <p className="text-xs text-[#6B5F7A] mt-0.5">{ch.wordCount} words</p>
+                <p className="text-xs text-[#5A5475] mt-0.5">{ch.wordCount} words</p>
               </div>
 
               <div className="flex gap-2">
                 <Link
                   href={`/vocab/${ch.id}`}
-                  className="text-xs border border-[#F0E6EE] text-[#6B5F7A] px-3 py-1.5 rounded-lg hover:bg-[#FFF5F8] hover:text-[#1E1225] transition-colors"
+                  className="text-xs border border-[#EAE4F7] text-[#5A5475] px-3 py-1.5 rounded-lg hover:bg-[#F8F5FF] hover:text-[#140F2D] transition-colors"
                 >
                   Vocab
                 </Link>
                 <Link
                   href={`/learn/${ch.id}`}
-                  className="text-xs bg-[#9B7FE8] text-white px-3 py-1.5 rounded-lg hover:bg-[#9B7FE8]/80 transition-colors"
+                  className="text-xs bg-[#7C5CFF] text-white px-3 py-1.5 rounded-lg hover:bg-[#7C5CFF]/80 transition-colors"
                 >
                   Read
                 </Link>
