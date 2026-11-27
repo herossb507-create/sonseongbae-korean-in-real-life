@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { FREE_PDF } from "@/lib/books";
 import { SITE_URL } from "@/lib/concerts/site";
 import { pageMeta } from "@/lib/seo";
 
@@ -10,7 +9,7 @@ export const metadata = pageMeta({
   path: "/privacy",
 });
 
-const EFFECTIVE_DATE = "October 21, 2026";
+const EFFECTIVE_DATE = "November 27, 2026";
 const CONTACT_EMAIL = "hello@koreaninreallife.com";
 
 // Everything the site itself saves in the visitor's browser (see src/lib/progress.ts and friends).
@@ -94,10 +93,9 @@ export default function PrivacyPage() {
             servers to create the audio.
           </li>
           <li>
-            <strong>Free PDF sign-up (MailerLite).</strong> The free Korean guides are delivered by email through a
-            sign-up page hosted by MailerLite ({FREE_PDF.url.replace(/^https?:\/\//, "")}). If you sign up, your email
-            address is collected by MailerLite on our behalf to send the PDFs and occasional updates. Every email has an
-            unsubscribe link, and you can ask us to delete your address.
+            <strong>Free PDFs.</strong> The free Korean guides are plain downloads from this site (/free). There is no
+            sign-up and we don&apos;t ask for your email. Anyone who signed up earlier through our former MailerLite
+            page can ask us to delete their address.
           </li>
           <li>
             <strong>Links to other sites.</strong> Book links go to Amazon, concert ticket links go to ticket
@@ -122,7 +120,7 @@ export default function PrivacyPage() {
         <H2>5. Children</H2>
         <p>
           The site is for a general audience and doesn&apos;t knowingly collect personal information from children
-          under 13. A child should get a parent&apos;s permission before signing up for the free PDFs.
+          under 13.
         </p>
 
         <H2>6. Your rights</H2>
@@ -130,7 +128,7 @@ export default function PrivacyPage() {
           Depending on where you live (for example under the GDPR, UK GDPR, CCPA or Korea&apos;s Personal Information
           Protection Act), you may have the right to access, correct or delete personal information about you, or to
           object to its use. Because we don&apos;t keep accounts, the only personal information we may hold is an email
-          address you gave to the free PDF sign-up. Email us and we&apos;ll handle your request.
+          address you gave to our former free PDF sign-up. Email us and we&apos;ll handle your request.
         </p>
 
         <H2>7. Changes</H2>

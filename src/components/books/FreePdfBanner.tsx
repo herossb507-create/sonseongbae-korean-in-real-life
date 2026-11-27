@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { FREE_PDF } from "@/lib/books";
 
-/** Email sign-up for the free PDFs (hosted on MailerLite). */
+/** Promo for the free PDFs (download page /free, no sign-up). */
 export function FreePdfBanner({ compact = false }: { compact?: boolean }) {
   return (
     <div
@@ -19,30 +19,21 @@ export function FreePdfBanner({ compact = false }: { compact?: boolean }) {
             {FREE_PDF.title} <span className="font-medium text-[#5A5475]">· {FREE_PDF.subtitle}</span>
           </p>
           {!compact && <p className="mt-1 max-w-xl text-sm text-[#5A5475]">{FREE_PDF.description}</p>}
-          <a
+          <Link
             href={FREE_PDF.url}
-            target="_blank"
-            rel="noopener noreferrer"
             className="mt-1.5 inline-block break-all text-sm font-semibold text-[#FF3D8B] underline decoration-[#FF3D8B]/30 underline-offset-2 hover:decoration-[#FF3D8B]"
           >
-            👉 {FREE_PDF.displayUrl}
-          </a>
-          <p className="mt-1 text-[11px] text-[#9E98B8]">
-            Sign-up by email via MailerLite ·{" "}
-            <Link href="/privacy" className="underline">
-              Privacy
-            </Link>
-          </p>
+            👉 {FREE_PDF.linkText}
+          </Link>
+          <p className="mt-1 text-[11px] text-[#9E98B8]">Instant download · no sign-up</p>
         </div>
       </div>
-      <a
+      <Link
         href={FREE_PDF.url}
-        target="_blank"
-        rel="noopener noreferrer"
         className="shrink-0 self-start rounded-xl bg-[#F4A261] px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#F7B88A] sm:self-center"
       >
-        Get the free PDFs ↗
-      </a>
+        Get the free PDFs →
+      </Link>
     </div>
   );
 }

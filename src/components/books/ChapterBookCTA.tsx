@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FREE_PDF, bookForChapter } from "@/lib/books";
 import { BookCover } from "./BookCover";
 
@@ -27,15 +28,13 @@ export function ChapterBookCTA({ chapterId }: { chapterId: string }) {
         </span>
       </a>
       <p className="mt-2 text-center text-xs text-[#5A5475]">
-        🐹 Free PDFs with 90 real Korean phrases:{" "}
-        <a
+        🐹 Free Korean phrase PDFs, no sign-up:{" "}
+        <Link
           href={FREE_PDF.url}
-          target="_blank"
-          rel="noopener noreferrer"
           className="break-all font-semibold text-[#FF3D8B] underline underline-offset-2"
         >
-          {FREE_PDF.displayUrl}
-        </a>
+          {FREE_PDF.linkText}
+        </Link>
       </p>
     </div>
   );

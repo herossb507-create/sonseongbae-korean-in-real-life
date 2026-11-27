@@ -257,15 +257,13 @@ export default function LandingPage() {
               Quick Reference Cards and free Listen &amp; Repeat videos.
             </p>
             <p className="text-sm text-[#5A5475] mt-3">
-              🐹 Not ready to buy? Get Kohami&apos;s free Korean phrase PDFs at{" "}
-              <a
+              🐹 Not ready to buy? Kohami&apos;s Korean phrase PDFs are free —{" "}
+              <Link
                 href={FREE_PDF.url}
-                target="_blank"
-                rel="noopener noreferrer"
                 className="font-semibold text-[#FF3D8B] underline underline-offset-2"
               >
-                {FREE_PDF.displayUrl}
-              </a>
+                {FREE_PDF.linkText}
+              </Link>
             </p>
           </div>
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3 mb-8">
@@ -375,7 +373,7 @@ export default function LandingPage() {
                 <li><Link href="/dashboard" className="hover:text-white transition-colors">Dashboard</Link></li>
                 <li><Link href="/concerts" className="hover:text-white transition-colors">K-pop Concerts</Link></li>
                 <li><Link href="/books" className="hover:text-white transition-colors">Books</Link></li>
-                <li><a href="https://kohami-abahgp.subscribepage.io" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Free PDFs</a></li>
+                <li><Link href="/free" className="hover:text-white transition-colors">Free PDFs</Link></li>
               </ul>
             </div>
             <div>

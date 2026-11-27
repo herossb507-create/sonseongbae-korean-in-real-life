@@ -191,10 +191,10 @@ export default function BookPage({ params }: Props) {
             Get it on Amazon ↗
           </a>
           <p className="text-sm text-[#5A5475]">
-            Not ready yet? Get Kohami&apos;s free Korean phrase PDFs at{" "}
-            <a href={FREE_PDF.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-[#FF3D8B] underline underline-offset-2">
-              {FREE_PDF.displayUrl}
-            </a>
+            Not ready yet? Kohami&apos;s Korean phrase PDFs are free —{" "}
+            <Link href={FREE_PDF.url} className="font-semibold text-[#FF3D8B] underline underline-offset-2">
+              {FREE_PDF.linkText}
+            </Link>
           </p>
         </section>
 

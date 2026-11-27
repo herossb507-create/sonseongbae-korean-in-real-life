@@ -7,7 +7,8 @@ export const LINKS = {
   shygirl: "https://www.amazon.com/dp/B0HS2S2FG8", // Shy Girl, Center Stage
   ku: "https://www.amazon.com/dp/B0GRTZPPBQ", // Korea Unlocked
   author: "https://www.amazon.com/s?k=Seongbae+Son&i=digital-text", // all books
-  pdf: "https://kohami-abahgp.subscribepage.io", // free PDF sign-up
+  pdf: "/free", // free PDF downloads (no sign-up)
+  free: "/free", // same as pdf
   books: "/books", // the site's books page
   learn: "/learn", // the site's free lessons
   concerts: "/concerts", // K-pop concert map

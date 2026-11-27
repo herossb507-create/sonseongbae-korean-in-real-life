@@ -113,13 +113,21 @@ export const BOOKS: Record<BookId, Book> = {
 
 export const FREE_PDF = {
   title: "Kohami's Free Korean Guides",
-  subtitle: "3 levels · 90 real Korean phrases",
+  subtitle: "4 PDFs · 125 real Korean phrases",
   description:
-    "Beginner, Intermediate and Advanced PDFs with Hangul, easy pronunciation and a tip from Kohami the hamster teacher on every page.",
-  url: "https://kohami-abahgp.subscribepage.io",
-  /** Shown as text so readers can type or share it. */
-  displayUrl: "kohami-abahgp.subscribepage.io",
+    "Beginner, Intermediate and Advanced phrase guides plus a K-pop Fan Dictionary, with Hangul, easy pronunciation and a tip from Kohami the hamster teacher on every page. Instant download, no sign-up.",
+  /** Download page on this site (the PDFs live in public/free/). */
+  url: "/free",
+  linkText: "Download the free PDFs",
 };
+
+/** The free PDFs, in the order shown on /free. Pages are the PDFs' own covers. */
+export const FREE_GUIDES = [
+  { file: "kohami-korean-phrases-beginner", level: "Beginner", title: "30 Survival Phrases", desc: "Real Korean for your first week in Korea.", sample: "안녕하세요! · Hello!" },
+  { file: "kohami-korean-phrases-intermediate", level: "Intermediate", title: "30 Natural Phrases", desc: "Sound less like a textbook, more like a friend.", sample: "그러니까요! · I know, right?" },
+  { file: "kohami-korean-phrases-advanced", level: "Advanced", title: "30 Nuance Phrases", desc: "The little endings and idioms that make you sound native.", sample: "정이 들었어요 · I've grown attached" },
+  { file: "kohami-kpop-fan-dictionary", level: "K-pop fans", title: "K-pop Fan Dictionary", desc: "35 words every K-pop fan wants to know.", sample: "무대 찢었다! · That stage was amazing" },
+];
 
 // Which volume covers each site chapter (from the books' tables of contents).
 const VOLUME_FOR_CHAPTER: Record<string, BookId> = {

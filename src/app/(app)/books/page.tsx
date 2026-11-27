@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import { BookCard } from "@/components/books/BookCard";
 import { FreePdfBanner } from "@/components/books/FreePdfBanner";
@@ -35,15 +36,13 @@ export default function BooksPage() {
             answer keys and Listen &amp; Repeat videos — and plan your trip with Korea Unlocked.
           </p>
           <p className="text-sm mt-3">
-            🐹 Start free: get Kohami&apos;s 3 Korean phrase PDFs at{" "}
-            <a
+            🐹 Start free: Kohami&apos;s 4 Korean PDFs, no sign-up —{" "}
+            <Link
               href={FREE_PDF.url}
-              target="_blank"
-              rel="noopener noreferrer"
               className="font-semibold text-[#FF3D8B] underline underline-offset-2"
             >
-              {FREE_PDF.displayUrl}
-            </a>
+              {FREE_PDF.linkText}
+            </Link>
           </p>
         </div>
 

@@ -608,7 +608,7 @@ export function speakKorean(text: string, options?: { rate?: number; pitch?: num
 
 ## 📚 전자책 판매 연계 (2026-10-20)
 
-`src/lib/books.ts`에 책 5권(Korean in Real Life Vol.1·2, Korean on Campus, Shy Girl Center Stage Book 1, Korea Unlocked)의 Amazon 링크와 무료 PDF(MailerLite 구독 페이지)를 한곳에 모아둠. 링크·문구는 이 파일만 고치면 됨.
+`src/lib/books.ts`에 책 5권(Korean in Real Life Vol.1·2, Korean on Campus, Shy Girl Center Stage Book 1, Korea Unlocked)의 Amazon 링크와 무료 PDF(사이트 `/free` 페이지에서 바로 다운로드, 파일은 `public/free/`; 2026-11-27 MailerLite 요금제 만료로 전환)를 한곳에 모아둠. 링크·문구는 이 파일만 고치면 됨.
 
 | 위치 | 내용 |
 |------|------|
